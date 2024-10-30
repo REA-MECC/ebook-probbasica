@@ -1,0 +1,1089 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula</title>
+<!--Generated on Tue Aug 27 14:11:25 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Intro.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="start" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="prev" href="S2.html" title="2 Contagem ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="next" href="S4.html" title="4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S1.html" title="1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S2.html" title="2 Contagem ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S4.html" title="4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S5.html" title="5 Variáveis Aleatórias ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S6.html" title="6 Esperança ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S7.html" title="7 Distribuições discretas multivariadas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S8.html" title="8 A Lei dos Grandes Números ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S9.html" title="9 Covariância ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S10.html" title="10 Desigualdade de Chebyshev ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S11.html" title="11 Coeficiente de Correlação ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S12.html" title="12 Teorema do Limite Central ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S13.html" title="13 Variáveis aleatórias contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S14.html" title="14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S15.html" title="15 Distribuições Conjuntas e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S16.html" title="16 Somas de variáveis aleatórias independentes ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S17.html" title="17 Momentos e funções geradoras de momentos ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A1.html" title="Apêndice A Somas úteis ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A2.html" title="Apêndice B Exponenciais superam polinômios ‣ Introdução à Probabilidade Notas de Aula">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Introdução à Probabilidade <span class="ltx_text"> </span>Notas de Aula</a>
+</li>
+<li class="divider">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Espaços de probabilidade uniforme</a></li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Contagem</a></li>
+<li data-level="3" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Espaços de Probabilidade</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="3.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>Espaço amostral e espaço de eventos</a></li>
+<li data-level="3.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>Probabilidade</a></li>
+</ol>
+</li>
+<li data-level="4" data-path="S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S4.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Probabilidade Condicional e Independência</a></li>
+<li data-level="5" data-path="S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S5.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Variáveis Aleatórias</a></li>
+<li data-level="6" data-path="S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S6.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Esperança</a></li>
+<li data-level="7" data-path="S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S7.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Distribuições discretas multivariadas</a></li>
+<li data-level="8" data-path="S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S8.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>A Lei dos Grandes Números</a></li>
+<li data-level="9" data-path="S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S9.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Covariância</a></li>
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Desigualdade de Chebyshev</a></li>
+<li data-level="11" data-path="S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S11.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Coeficiente de Correlação</a></li>
+<li data-level="12" data-path="S12.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S12.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">12 </span></b>Teorema do Limite Central</a></li>
+<li data-level="13" data-path="S13.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S13.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">13 </span></b>Variáveis aleatórias contínuas</a></li>
+<li data-level="14" data-path="S14.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S14.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14 </span></b>Uma única teoria para discretas e contínuas</a></li>
+<li data-level="15" data-path="S15.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S15.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">15 </span></b>Distribuições Conjuntas e Independência</a></li>
+<li data-level="16" data-path="S16.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S16.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">16 </span></b>Somas de variáveis aleatórias independentes</a></li>
+<li data-level="17" data-path="S17.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S17.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">17 </span></b>Momentos e funções geradoras de momentos</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Somas úteis</a></li>
+<li data-level="B" data-path="A2.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">B </span></b>Exponenciais superam polinômios</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Espaços de Probabilidade</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">3</span> Espaços de Probabilidade</h1>
+
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Na seção <a href="S1.html#SS2" title="1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2</span></a>, definimos um espaço de probabilidade uniforme como o triplete <math id="p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math>, onde <math id="p1.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> é um conjunto finito, <math id="p1.m3" class="ltx_Math" alttext="\mathcal{F}=\mathcal{P}(\Omega)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{F}=\mathcal{P}(\Omega)</annotation></semantics></math> e <math id="p1.m4" class="ltx_Math" alttext="\mathbb{P}:\mathcal{F}\to[0,1]" display="inline"><semantics><mrow><mi>ℙ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}:\mathcal{F}\to[0,1]</annotation></semantics></math> satisfaz as propriedades (<a href="S1.html#E2.1" title="In 1.2 ‣ 3rd item ‣ Definição 1.1. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2a</span></a>) - (<a href="S1.html#E2.3" title="In 1.2 ‣ 3rd item ‣ Definição 1.1. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2c</span></a>). Agora, vamos generalizar o conceito de espaço de probabilidade para permitir o seguinte:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Espaços amostrais arbitrários <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">Espaços de eventos que refletem informações parciais - não é necessário, e às vezes nem é possível, que <math id="I1.i2.p1.m1" class="ltx_Math" alttext="\mathcal{F}=\mathcal{P}(\Omega)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{F}=\mathcal{P}(\Omega)</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Probabilidade definida em um espaço de eventos geral.</p>
+</div>
+</li>
+</ul>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">3.1</span> Espaço amostral e espaço de eventos</h2>
+
+<div id="E1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 3.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E1.p1" class="ltx_para">
+<p class="ltx_p">Um <span class="ltx_text ltx_font_italic">espaço amostral</span> <math id="E1.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> é o conjunto de todos os possíveis resultados de um processo aleatório (ou experimento), ou seja, um processo cujo resultado não pode ser determinado antecipadamente. Pode ser qualquer conjunto.</p>
+</div>
+</div>
+<div id="E2" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 3.2</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E2.p1" class="ltx_para">
+<p class="ltx_p">Qual é o espaço amostral correspondente aos seguintes processos?</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">O lançamento de uma moeda: <math id="I2.i1.p1.m1" class="ltx_Math" alttext="\Omega=\{Cara,Coroa\}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>C</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>a</mi></mrow><mo>,</mo><mrow><mi>C</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\Omega=\{Cara,Coroa\}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">O lançamento de um dado: <math id="I2.i2.p1.m1" class="ltx_Math" alttext="\Omega=\{1,2,3,4,5,6\}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3,4,5,6</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\Omega=\{1,2,3,4,5,6\}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p">O número de e-mails enviados por um endereço @google.com em um ano: <math id="I2.i3.p1.m1" class="ltx_Math" alttext="\Omega=\mathbb{N}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\Omega=\mathbb{N}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p">O peso de uma maçã: <math id="I2.i4.p1.m1" class="ltx_Math" alttext="\Omega=[0,1]" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\Omega=[0,1]</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p">A posição de um dardo lançado em um tabuleiro quadrado de tamanho 1: <math id="I2.i5.p1.m1" class="ltx_Math" alttext="\Omega=[0,1]\times[0,1]" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo rspace="0.055em" stretchy="false">]</mo></mrow><mo rspace="0.222em">×</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\Omega=[0,1]\times[0,1]</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p">O preço das ações do Twitter em um ano: <math id="I2.i6.p1.m1" class="ltx_Math" alttext="\Omega=\mathbb{R}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\Omega=\mathbb{R}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i7.p1" class="ltx_para">​<p class="ltx_p">As flutuações de temperatura em Coventry em 2023: neste caso, o espaço amostral é uma função completa, mapeando o tempo <math id="I2.i7.p1.m1" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> para um número em <math id="I2.i7.p1.m2" class="ltx_Math" alttext="[-50,50]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>50,50</mn></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-50,50]</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i8.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">O estado do mundo em um ano! Neste caso, o espaço amostral não pode ser descrito, mas existe como conceito e pode ser parcialmente observado por meio de sua interação com processos que podem ser medidos (por exemplo, afetará as taxas de juros ou o número de internações hospitalares em um determinado dia no futuro, a frequência de eventos climáticos extremos, etc).</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmremark1" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observação 1</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremark1.p1" class="ltx_para">
+<p class="ltx_p">Embora <math id="Thmremark1.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> possa ser qualquer conjunto em teoria, em ST120, consideraremos apenas os casos em que a cardinalidade de <math id="Thmremark1.p1.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> é igual a <math id="Thmremark1.p1.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, para algum <math id="Thmremark1.p1.m4" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math> (espaço amostral finito), <math id="Thmremark1.p1.m5" class="ltx_Math" alttext="|\Omega|=|\mathbb{N}|" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>ℕ</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">|\Omega|=|\mathbb{N}|</annotation></semantics></math> (espaço amostral contável) ou <math id="Thmremark1.p1.m6" class="ltx_Math" alttext="|\Omega|=|\mathbb{R}|" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>ℝ</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">|\Omega|=|\mathbb{R}|</annotation></semantics></math> (espaço amostral não contável ou contínuo - para incluir intervalos ou produtos cartesianos de <math id="Thmremark1.p1.m7" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math> e seus intervalos).</p>
+</div>
+</div>
+<div id="SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Como já vimos no caso do espaço de probabilidade uniforme, eventos são subconjuntos de <math id="SS1.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>. Mais geralmente, um evento é um subconjunto de <math id="SS1.p1.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> quando é possível dizer se algum resultado dado pertence ao conjunto (ou seja, ’o evento ocorreu’) ou não, dadas as informações que temos sobre o resultado - observe que nem sempre temos informações completas sobre o resultado e o espaço de eventos reflete as informações que temos. O exemplo a seguir demonstra exatamente essa propriedade do espaço de eventos.</p>
+</div>
+<div id="E3" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 3.3</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Suponha que eu lance um dado (<math id="E3.p1.m1" class="ltx_Math" alttext="\Omega=\{1,2,3,4,5,6\}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3,4,5,6</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\Omega=\{1,2,3,4,5,6\}</annotation></semantics></math>) e relato as seguintes informações a dois alunos: eu digo a James se o resultado é um número par ou não, e digo a Lily o quociente de <math id="E3.p1.m2" class="ltx_Math" alttext="(\omega-1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>ω</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\omega-1)</annotation></semantics></math> dividido por dois (ou seja, relato <math id="E3.p1.m3" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> para <math id="E3.p1.m4" class="ltx_Math" alttext="\{1,2\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,2\}</annotation></semantics></math>, <math id="E3.p1.m5" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> para <math id="E3.p1.m6" class="ltx_Math" alttext="\{3,4\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>3,4</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{3,4\}</annotation></semantics></math> e <math id="E3.p1.m7" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> para <math id="E3.p1.m8" class="ltx_Math" alttext="\{5,6\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>5,6</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{5,6\}</annotation></semantics></math>). Quais são os espaços de eventos correspondentes?</p>
+</div>
+<div id="E3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">James só sabe se o resultado é ímpar ou par, então ele só pode dizer se pertence a <math id="E3.p2.m1" class="ltx_Math" alttext="\{1,3,5\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1,3,5</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,3,5\}</annotation></semantics></math> ou <math id="E3.p2.m2" class="ltx_Math" alttext="\{2,4,6\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>2,4,6</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{2,4,6\}</annotation></semantics></math>. Já que, pela construção de <math id="E3.p2.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>, todos os resultados estão em <math id="E3.p2.m4" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>, ele também pode dizer que o resultado está em <math id="E3.p2.m5" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> e não em <math id="E3.p2.m6" class="ltx_Math" alttext="\emptyset" display="inline"><semantics><mi>∅︀</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math> - observe que tanto <math id="E3.p2.m7" class="ltx_Math" alttext="\emptyset" display="inline"><semantics><mi>∅︀</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math> quanto <math id="E3.p2.m8" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> são subconjuntos de <math id="E3.p2.m9" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>. Portanto, a coleção de eventos (ou seja, o espaço de eventos) correspondente às informações que James possui é</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\mathcal{F}_{J}=\left\{\emptyset,\{1,3,5\},\{2,4,6\},\Omega\right\}." display="block"><semantics><mrow><mrow><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>J</mi></msub><mo>=</mo><mrow><mo>{</mo><mi>∅︀</mi><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,3,5</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>2,4,6</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mi mathvariant="normal">Ω</mi><mo>}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathcal{F}_{J}=\left\{\emptyset,\{1,3,5\},\{2,4,6\},\Omega\right\}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">(Pense sobre o motivo pelo qual James não pode afirmar com certeza se o resultado está em outro subconjunto).</p>
+</div>
+<div id="E3.p3" class="ltx_para">
+<p class="ltx_p">Com base nas informações fornecidas a ela, Lily poderá dizer se o resultado está em <math id="E3.p3.m1" class="ltx_Math" alttext="\{1,2\},\{3,4\}" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>3,4</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\{1,2\},\{3,4\}</annotation></semantics></math> ou <math id="E3.p3.m2" class="ltx_Math" alttext="\{5,6\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>5,6</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{5,6\}</annotation></semantics></math>. Ela também pode dizer se o resultado estará em <math id="E3.p3.m3" class="ltx_Math" alttext="\{1,2,3,4\},\{1,2,5,6\}" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mn>1,2,3,4</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,2,5,6</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\{1,2,3,4\},\{1,2,5,6\}</annotation></semantics></math> ou <math id="E3.p3.m4" class="ltx_Math" alttext="\{3,4,5,6\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>3,4,5,6</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{3,4,5,6\}</annotation></semantics></math> (por exemplo, <math id="E3.p3.m5" class="ltx_Math" alttext="\{1,2,3,4\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1,2,3,4</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,2,3,4\}</annotation></semantics></math> corresponde ao número informado a Lily sendo <math id="E3.p3.m6" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> ou <math id="E3.p3.m7" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>) e ela pode dizer, por padrão, que o resultado estará em <math id="E3.p3.m8" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> e não em <math id="E3.p3.m9" class="ltx_Math" alttext="\emptyset" display="inline"><semantics><mi>∅︀</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math> (o <math id="E3.p3.m10" class="ltx_Math" alttext="\emptyset" display="inline"><semantics><mi>∅︀</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math> é definido como o complemento de <math id="E3.p3.m11" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> em relação a <math id="E3.p3.m12" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>, então todos os pontos em <math id="E3.p3.m13" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> que não estão em <math id="E3.p3.m14" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>, que é, é claro, nenhum! É mais fácil pensar nisso como o evento em que o resultado não está no espaço amostral do que no evento em que nada acontece). Portanto, o espaço de eventos correspondente às informações fornecidas a Lily é</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\mathcal{F}_{L}=\left\{\emptyset,\{1,2\},\{3,4\},\{5,6\},\{1,2,3,4\},\{1,2,5,6%
+\},\{3,4,5,6\},\Omega\right\}." display="block"><semantics><mrow><mrow><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>L</mi></msub><mo>=</mo><mrow><mo>{</mo><mi>∅︀</mi><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>3,4</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>5,6</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3,4</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,2,5,6</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>3,4,5,6</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mi mathvariant="normal">Ω</mi><mo>}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathcal{F}_{L}=\left\{\emptyset,\{1,2\},\{3,4\},\{5,6\},\{1,2,3,4\},\{1,2,5,6%
+\},\{3,4,5,6\},\Omega\right\}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Observe que há redundância na forma como as informações são codificadas no espaço de eventos - a informação corresponde a saber simultaneamente a resposta para ’o evento ocorreu ou não’ para todos os eventos no espaço de eventos, mas saber, por exemplo, que tanto <math id="E3.p3.m15" class="ltx_Math" alttext="\{1,2\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,2\}</annotation></semantics></math> quanto <math id="E3.p3.m16" class="ltx_Math" alttext="\{1,2,3,4\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1,2,3,4</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,2,3,4\}</annotation></semantics></math> aconteceram nos permite deduzir a resposta para tudo o mais. Que suposição estamos fazendo que nos permite dizer isso?</p>
+</div>
+</div>
+<div id="SS1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Se <math id="SS1.p2.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e <math id="SS1.p2.m2" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> são eventos, de acordo com nossa intuição, esperamos que o seguinte também sejam eventos:</p>
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_Math" alttext="A\cap B" display="inline"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\cap B</annotation></semantics></math> (Ambos <math id="I3.i1.p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e <math id="I3.i1.p1.m3" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> aconteceram).</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="A\cup B" display="inline"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\cup B</annotation></semantics></math> (Ou <math id="I3.i2.p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> ou <math id="I3.i2.p1.m3" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> aconteceu).</p>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i3.p1.m1" class="ltx_Math" alttext="A^{c}" display="inline"><semantics><msup><mi>A</mi><mi>c</mi></msup><annotation encoding="application/x-tex">A^{c}</annotation></semantics></math> (<math id="I3.i3.p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> não aconteceu).</p>
+</div>
+</li>
+<li id="I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i4.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I3.i4.p1.m1" class="ltx_Math" alttext="A\setminus B=A\cap B^{c}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>∖</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>A</mi><mo>∩</mo><msup><mi>B</mi><mi>c</mi></msup></mrow></mrow><annotation encoding="application/x-tex">A\setminus B=A\cap B^{c}</annotation></semantics></math> (<math id="I3.i4.p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> aconteceu, mas <math id="I3.i4.p1.m3" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> não aconteceu).</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="Thmnotationx1" class="ltx_theorem ltx_theorem_notation">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Notação</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmnotationx1.p1" class="ltx_para">
+<p class="ltx_p">Quando escrevemos <math id="Thmnotationx1.p1.m1" class="ltx_Math" alttext="A^{c}" display="inline"><semantics><msup><mi>A</mi><mi>c</mi></msup><annotation encoding="application/x-tex">A^{c}</annotation></semantics></math>, implicitamente estamos considerando o complemento em relação a um espaço amostral dado <math id="Thmnotationx1.p1.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.
+Uma notação mais explícita é escrever <math id="Thmnotationx1.p1.m3" class="ltx_Math" alttext="\Omega\setminus A" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>∖</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\Omega\setminus A</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">Portanto, gostaríamos que o espaço de eventos fosse fechado sob as operações de união, interseção, complemento e diferença (quando dizemos que um conjunto é fechado sob uma operação, queremos dizer que, se aplicarmos a operação a quaisquer elementos do conjunto, o resultado ainda estará no conjunto). Será que isso é suficiente? Vamos considerar o seguinte</p>
+</div>
+<div id="E4" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 3.4</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E4.p1" class="ltx_para">
+<p class="ltx_p">Considere o caso em que <math id="E4.p1.m1" class="ltx_Math" alttext="\Omega=\mathbb{N}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\Omega=\mathbb{N}</annotation></semantics></math> (ou seja, qualquer número natural pode ser o resultado do processo aleatório que consideramos) e suponha que temos informações suficientes para dizer se o evento <math id="E4.p1.m2" class="ltx_Math" alttext="\{n\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{n\}</annotation></semantics></math> aconteceu ou não, para qualquer <math id="E4.p1.m3" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math>. De acordo com nossa intuição, se podemos dizer se qualquer resultado <math id="E4.p1.m4" class="ltx_Math" alttext="\omega" display="inline"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> pertence a qualquer conjunto <math id="E4.p1.m5" class="ltx_Math" alttext="\{n\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{n\}</annotation></semantics></math> ou não (o que você pode dizer para <math id="E4.p1.m6" class="ltx_Math" alttext="\omega" display="inline"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> quando <math id="E4.p1.m7" class="ltx_Math" alttext="\omega\in\{n\}" display="inline"><semantics><mrow><mi>ω</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\omega\in\{n\}</annotation></semantics></math>?), então também deveríamos ser capazes de dizer se <math id="E4.p1.m8" class="ltx_Math" alttext="\omega\in\{2n|n\in\mathbb{N}\}" display="inline"><semantics><mrow><mi>ω</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo lspace="0em" rspace="0em">|</mo><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\omega\in\{2n|n\in\mathbb{N}\}</annotation></semantics></math> ou não, ou seja, deveríamos ser capazes de dizer se <math id="E4.p1.m9" class="ltx_Math" alttext="\omega" display="inline"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> é par. Portanto, esperamos</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\bigcup_{n=0}^{\infty}\{2n\}=\{2n|n\in\mathbb{N}\}" display="block"><semantics><mrow><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo lspace="0em" stretchy="false">{</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo lspace="0em" rspace="0em">|</mo><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\bigcup_{n=0}^{\infty}\{2n\}=\{2n|n\in\mathbb{N}\}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">estar no espaço de eventos. Agora estamos fazendo a suposição de que o espaço de eventos não é apenas fechado para uniões, mas também para uniões de conjuntos contáveis (ou seja, infinitos, mas com cardinalidade igual a <math id="E4.p1.m10" class="ltx_Math" alttext="|\mathbb{N}|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>ℕ</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|\mathbb{N}|</annotation></semantics></math>).</p>
+</div>
+</div>
+<div id="SS1.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Seguindo nossa intuição, definimos o espaço de eventos da seguinte forma</p>
+</div>
+<div id="E5" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 3.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E5.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E5.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> o espaço amostral e <math id="E5.p1.m2" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> uma coleção de subconjuntos de <math id="E5.p1.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>. <math id="E5.p1.m4" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> é um <em class="ltx_emph ltx_font_italic">espaço de eventos</em> (também chamado de <math id="E5.p1.m5" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-<em class="ltx_emph ltx_font_italic">álgebra</em>) se satisfaz as seguintes condições:</p>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i1.p1.m1" class="ltx_Math" alttext="\Omega\in\mathcal{F}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\Omega\in\mathcal{F}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I4.i2.p1.m1" class="ltx_Math" alttext="A\subseteq\Omega" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">A\subseteq\Omega</annotation></semantics></math>, <math id="I4.i2.p1.m2" class="ltx_Math" alttext="A\in\mathcal{F}\Rightarrow A^{c}\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">⇒</mo><msup><mi>A</mi><mi>c</mi></msup><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}\Rightarrow A^{c}\in\mathcal{F}</annotation></semantics></math> (<math id="I4.i2.p1.m3" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> é fechado sob complementos).</p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I4.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">se <math id="I4.i3.p1.m1" class="ltx_Math" alttext="\{A_{n}:n\in\mathbb{N}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>A</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{A_{n}:n\in\mathbb{N}\}</annotation></semantics></math> é tal que <math id="I4.i3.p1.m2" class="ltx_Math" alttext="A_{n}\in\mathcal{F}" display="inline"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{n}\in\mathcal{F}</annotation></semantics></math> <math id="I4.i3.p1.m3" class="ltx_Math" alttext="\forall\,n" display="inline"><semantics><mrow><mo rspace="0.337em">∀</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\forall\,n</annotation></semantics></math>, então</p>
+<div id="E6" class="ltx_equation ltx_eqn_div">
+<span><math id="E6.m1" class="ltx_Math" alttext="\bigcup_{n=1}^{\infty}A_{n}\in\mathcal{F}\,." display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\bigcup_{n=1}^{\infty}A_{n}\in\mathcal{F}\,.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.6)</span>
+                    
+                    
+                  
+</div>
+<p class="ltx_p">(<math id="I4.i3.p1.m4" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> é fechado sob uniões contáveis.)</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmexercise1" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 3.1</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexercise1.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Thmexercise1.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> um conjunto não vazio e <math id="Thmexercise1.p1.m2" class="ltx_Math" alttext="\mathcal{F}=\mathcal{P}(\Omega)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{F}=\mathcal{P}(\Omega)</annotation></semantics></math>, ou seja, o conjunto de todos os subconjuntos de <math id="Thmexercise1.p1.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>. Então, <math id="Thmexercise1.p1.m4" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> é um espaço de eventos em <math id="Thmexercise1.p1.m5" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmsolutionx2" class="ltx_theorem ltx_theorem_solution">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Solução</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmsolutionx2.p1" class="ltx_para">
+<p class="ltx_p">Precisamos mostrar que <math id="Thmsolutionx2.p1.m1" class="ltx_Math" alttext="\mathcal{F}=\mathcal{P}(\Omega)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{F}=\mathcal{P}(\Omega)</annotation></semantics></math> satisfaz as três propriedades da <a href="#E5" title="Definição 3.5. ‣ 3.1 Espaço amostral e espaço de eventos ‣ 3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5</span></a>.</p>
+<ol id="I5" class="ltx_enumerate">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i1.p1.m1" class="ltx_Math" alttext="\Omega\subseteq\Omega" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\Omega\subseteq\Omega</annotation></semantics></math> e, portanto, <math id="I5.i1.p1.m2" class="ltx_Math" alttext="\Omega\in\mathcal{P}(\Omega)=\mathcal{F}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\Omega\in\mathcal{P}(\Omega)=\mathcal{F}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I5.i2.p1" class="ltx_para">​<p class="ltx_p">Suponha que <math id="I5.i2.p1.m1" class="ltx_Math" alttext="A\subseteq\Omega" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">A\subseteq\Omega</annotation></semantics></math>, <math id="I5.i2.p1.m2" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math>. Então, <math id="I5.i2.p1.m3" class="ltx_Math" alttext="A^{c}=\Omega\setminus A\subseteq\Omega" display="inline"><semantics><mrow><msup><mi>A</mi><mi>c</mi></msup><mo>=</mo><mrow><mi mathvariant="normal">Ω</mi><mo>∖</mo><mi>A</mi></mrow><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">A^{c}=\Omega\setminus A\subseteq\Omega</annotation></semantics></math>. Assim, <math id="I5.i2.p1.m4" class="ltx_Math" alttext="A^{c}\in\mathcal{P}(\Omega)=\mathcal{F}" display="inline"><semantics><mrow><msup><mi>A</mi><mi>c</mi></msup><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A^{c}\in\mathcal{P}(\Omega)=\mathcal{F}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I5.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Suponha que <math id="I5.i3.p1.m1" class="ltx_Math" alttext="A_{n}" display="inline"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math> são tais que <math id="I5.i3.p1.m2" class="ltx_Math" alttext="A_{n}\subseteq\Omega" display="inline"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">A_{n}\subseteq\Omega</annotation></semantics></math>, <math id="I5.i3.p1.m3" class="ltx_Math" alttext="\forall n\in\mathbb{N}" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\forall n\in\mathbb{N}</annotation></semantics></math>. Então</p>
+<div id="E7" class="ltx_equation ltx_eqn_div">
+<span><math id="E7.m1" class="ltx_Math" alttext="\bigcup_{n=1}^{\infty}A_{n}\subseteq\bigcup_{n=1}^{\infty}\Omega=\Omega%
+\Rightarrow\bigcup_{n=1}^{\infty}A_{n}\in\mathcal{P}(\Omega)=\mathcal{F}\,." display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>A</mi><mi>n</mi></msub></mrow><mo rspace="0.111em">⊆</mo><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mi mathvariant="normal">Ω</mi></mrow><mo>=</mo><mi mathvariant="normal">Ω</mi><mo rspace="0.111em" stretchy="false">⇒</mo><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\bigcup_{n=1}^{\infty}A_{n}\subseteq\bigcup_{n=1}^{\infty}\Omega=\Omega%
+\Rightarrow\bigcup_{n=1}^{\infty}A_{n}\in\mathcal{P}(\Omega)=\mathcal{F}\,.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.7)</span>
+                    
+                    
+                  
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmexercise2" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 3.2</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexercise2.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Thmexercise2.p1.m1" class="ltx_Math" alttext="A\subseteq\Omega" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">A\subseteq\Omega</annotation></semantics></math> um subconjunto não vazio de <math id="Thmexercise2.p1.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>. Então</p>
+<div id="E8" class="ltx_equation ltx_eqn_div">
+<span><math id="E8.m1" class="ltx_Math" alttext="\{\emptyset,A,A^{c},\Omega\}" display="block"><semantics><mrow><mo stretchy="false">{</mo><mi>∅︀</mi><mo>,</mo><mi>A</mi><mo>,</mo><msup><mi>A</mi><mi>c</mi></msup><mo>,</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{\emptyset,A,A^{c},\Omega\}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.8)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">é um espaço de eventos em <math id="Thmexercise2.p1.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmsolutionx3" class="ltx_theorem ltx_theorem_solution">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Solução</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmsolutionx3.p1" class="ltx_para">
+<p class="ltx_p">Precisamos mostrar que <math id="Thmsolutionx3.p1.m1" class="ltx_Math" alttext="\{\emptyset,A,A^{c},\Omega\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mi>∅︀</mi><mo>,</mo><mi>A</mi><mo>,</mo><msup><mi>A</mi><mi>c</mi></msup><mo>,</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{\emptyset,A,A^{c},\Omega\}</annotation></semantics></math> satisfaz as três propriedades da <a href="#E5" title="Definição 3.5. ‣ 3.1 Espaço amostral e espaço de eventos ‣ 3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5</span></a>.</p>
+<ol id="I6" class="ltx_enumerate">
+<li id="I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I6.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i1.p1.m1" class="ltx_Math" alttext="\Omega\in\mathcal{F}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\Omega\in\mathcal{F}</annotation></semantics></math> por definição.</p>
+</div>
+</li>
+<li id="I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I6.i2.p1" class="ltx_para">​<p class="ltx_p">Verificamos que a propriedade é satisfeita para cada evento: <math id="I6.i2.p1.m1" class="ltx_Math" alttext="\emptyset^{c}=\Omega\in\mathcal{F}" display="inline"><semantics><mrow><msup><mi>∅︀</mi><mi>c</mi></msup><mo>=</mo><mi mathvariant="normal">Ω</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\emptyset^{c}=\Omega\in\mathcal{F}</annotation></semantics></math>, <math id="I6.i2.p1.m2" class="ltx_Math" alttext="A^{c}\in\mathcal{F}" display="inline"><semantics><mrow><msup><mi>A</mi><mi>c</mi></msup><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A^{c}\in\mathcal{F}</annotation></semantics></math>, <math id="I6.i2.p1.m3" class="ltx_Math" alttext="(A^{c})^{c}=A\in\mathcal{F}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow><mi>c</mi></msup><mo>=</mo><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">(A^{c})^{c}=A\in\mathcal{F}</annotation></semantics></math>,
+<math id="I6.i2.p1.m4" class="ltx_Math" alttext="\Omega^{c}=\emptyset\in\mathcal{F}" display="inline"><semantics><mrow><msup><mi mathvariant="normal">Ω</mi><mi>c</mi></msup><mo>=</mo><mi>∅︀</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\Omega^{c}=\emptyset\in\mathcal{F}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I6.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I6.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Seja <math id="I6.i3.p1.m1" class="ltx_Math" alttext="\{B_{n}:n\in\mathbb{N}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>B</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{B_{n}:n\in\mathbb{N}\}</annotation></semantics></math> uma sequência de subconjuntos de <math id="I6.i3.p1.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> tal que <math id="I6.i3.p1.m3" class="ltx_Math" alttext="B_{n}\in\mathcal{F}" display="inline"><semantics><mrow><msub><mi>B</mi><mi>n</mi></msub><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">B_{n}\in\mathcal{F}</annotation></semantics></math> <math id="I6.i3.p1.m4" class="ltx_Math" alttext="\forall\,n" display="inline"><semantics><mrow><mo rspace="0.337em">∀</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\forall\,n</annotation></semantics></math>. Vamos considerar todas as possibilidades:</p>
+<ul id="I6.i3.I1" class="ltx_itemize">
+<li id="I6.i3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I6.i3.I1.i1.p1" class="ltx_para">​<p class="ltx_p">Se todos os conjuntos <math id="I6.i3.I1.i1.p1.m1" class="ltx_Math" alttext="B_{n}" display="inline"><semantics><msub><mi>B</mi><mi>n</mi></msub><annotation encoding="application/x-tex">B_{n}</annotation></semantics></math> forem idênticos e iguais a <math id="I6.i3.I1.i1.p1.m2" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> (ou seja, <math id="I6.i3.I1.i1.p1.m3" class="ltx_Math" alttext="B\in\mathcal{F}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">B\in\mathcal{F}</annotation></semantics></math>), ou existe uma subsequência <math id="I6.i3.I1.i1.p1.m4" class="ltx_Math" alttext="B_{n_{k}}" display="inline"><semantics><msub><mi>B</mi><msub><mi>n</mi><mi>k</mi></msub></msub><annotation encoding="application/x-tex">B_{n_{k}}</annotation></semantics></math> de conjuntos que são idênticos a <math id="I6.i3.I1.i1.p1.m5" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> e o restante é todo <math id="I6.i3.I1.i1.p1.m6" class="ltx_Math" alttext="\emptyset" display="inline"><semantics><mi>∅︀</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math>, então
+<math id="I6.i3.I1.i1.p1.m7" class="ltx_Math" alttext="\bigcup_{n=1}^{\infty}B_{n}=B\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msubsup><mo>⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>B</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\bigcup_{n=1}^{\infty}B_{n}=B\in\mathcal{F}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I6.i3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I6.i3.I1.i2.p1" class="ltx_para">​<p class="ltx_p">Se pelo menos um dos conjuntos for o espaço amostral (por exemplo, <math id="I6.i3.I1.i2.p1.m1" class="ltx_Math" alttext="B_{i}=\Omega" display="inline"><semantics><mrow><msub><mi>B</mi><mi>i</mi></msub><mo>=</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">B_{i}=\Omega</annotation></semantics></math>, para algum <math id="I6.i3.I1.i2.p1.m2" class="ltx_Math" alttext="i\in\mathbb{N}" display="inline"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">i\in\mathbb{N}</annotation></semantics></math>), então</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\bigcup_{n=1}^{\infty}B_{n}=\Omega" display="block"><semantics><mrow><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>B</mi><mi>n</mi></msub></mrow><mo>=</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\bigcup_{n=1}^{\infty}B_{n}=\Omega</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e, portanto, <math id="I6.i3.I1.i2.p1.m3" class="ltx_Math" alttext="\bigcup_{n=1}^{\infty}B_{n}\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msubsup><mo>⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>B</mi><mi>n</mi></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\bigcup_{n=1}^{\infty}B_{n}\in\mathcal{F}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I6.i3.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I6.i3.I1.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Se houver pelo menos um conjunto <math id="I6.i3.I1.i3.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e um conjunto <math id="I6.i3.I1.i3.p1.m2" class="ltx_Math" alttext="A^{c}" display="inline"><semantics><msup><mi>A</mi><mi>c</mi></msup><annotation encoding="application/x-tex">A^{c}</annotation></semantics></math>, então</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\Omega=A\cup A^{c}\subseteq\bigcup_{n=1}^{\infty}B_{n}\subseteq\Omega," display="block"><semantics><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mi>A</mi><mo>∪</mo><msup><mi>A</mi><mi>c</mi></msup></mrow><mo rspace="0.111em">⊆</mo><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>B</mi><mi>n</mi></msub></mrow><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\Omega=A\cup A^{c}\subseteq\bigcup_{n=1}^{\infty}B_{n}\subseteq\Omega,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">onde o último relacionamento segue do fato de que todos os eventos são subconjuntos de <math id="I6.i3.I1.i3.p1.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>. Portanto, <math id="I6.i3.I1.i3.p1.m4" class="ltx_Math" alttext="\bigcup_{n=1}^{\infty}B_{n}=\Omega" display="inline"><semantics><mrow><mrow><msubsup><mo>⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>B</mi><mi>n</mi></msub></mrow><mo>=</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\bigcup_{n=1}^{\infty}B_{n}=\Omega</annotation></semantics></math> e, assim, <math id="I6.i3.I1.i3.p1.m5" class="ltx_Math" alttext="\bigcup_{n=1}^{\infty}B_{n}\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msubsup><mo>⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>B</mi><mi>n</mi></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\bigcup_{n=1}^{\infty}B_{n}\in\mathcal{F}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="E9" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 3.9</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E9.p1.m1" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> um espaço de eventos em <math id="E9.p1.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>. Então</span></p>
+<ol id="I7" class="ltx_enumerate">
+<li id="I7.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I7.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.i1.p1.m1" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é fechado sob uniões finitas.</span></p>
+</div>
+</li>
+<li id="I7.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I7.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.i2.p1.m1" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é fechado sob interseções finitas.</span></p>
+</div>
+</li>
+<li id="I7.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I7.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I7.i3.p1.m1" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é fechado sob interseções contáveis.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p5" class="ltx_para">
+<ol id="I8" class="ltx_enumerate">
+<li id="I8.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I8.i1.p1" class="ltx_para">​<p class="ltx_p">Sejam <math id="I8.i1.p1.m1" class="ltx_Math" alttext="A_{1},\dots,A_{n}\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{n}\in\mathcal{F}</annotation></semantics></math>. Defina <math id="I8.i1.p1.m2" class="ltx_Math" alttext="A_{j}=\emptyset\in\mathcal{F}\,\,\forall\,\,j&gt;n" display="inline"><semantics><mrow><msub><mi>A</mi><mi>j</mi></msub><mo>=</mo><mi>∅︀</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo lspace="0.497em">⁢</mo><mrow><mo rspace="0.497em">∀</mo><mi>j</mi></mrow></mrow><mo>&gt;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">A_{j}=\emptyset\in\mathcal{F}\,\,\forall\,\,j&gt;n</annotation></semantics></math>, portanto <math id="I8.i1.p1.m3" class="ltx_Math" alttext="A_{n}\in\mathcal{F}\,\forall\,n\geqslant 1" display="inline"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo lspace="0.337em">⁢</mo><mrow><mo rspace="0.337em">∀</mo><mi>n</mi></mrow></mrow><mo>⩾</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">A_{n}\in\mathcal{F}\,\forall\,n\geqslant 1</annotation></semantics></math>. Como os conjuntos vazios não contribuirão para a união, podemos mostrar que</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="\bigcup_{j=1}^{n}A_{j}=\bigcup_{j=1}^{\infty}A_{j}\in\mathcal{F}," display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>A</mi><mi>j</mi></msub></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\bigcup_{j=1}^{n}A_{j}=\bigcup_{j=1}^{\infty}A_{j}\in\mathcal{F},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">pois <math id="I8.i1.p1.m4" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> é fechado sob uniões contáveis.</p>
+</div>
+</li>
+<li id="I8.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I8.i2.p1" class="ltx_para">​<p class="ltx_p">Sejam <math id="I8.i2.p1.m1" class="ltx_Math" alttext="A_{1},\dots,A_{n}\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{n}\in\mathcal{F}</annotation></semantics></math>. Queremos mostrar que <math id="I8.i2.p1.m2" class="ltx_Math" alttext="\bigcap_{j=1}^{n}A_{j}\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msubsup><mo>⋂</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\bigcap_{j=1}^{n}A_{j}\in\mathcal{F}</annotation></semantics></math>. Pela lei de De Morgan (mostrando que cada elemento de um conjunto precisa pertencer ao outro conjunto também)</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\bigcap_{j=1}^{n}A_{j}=\left(\bigcup_{j=1}^{n}A_{j}^{c}\right)^{c}." display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">⋂</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>=</mo><msup><mrow><mo>(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">⋃</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>A</mi><mi>j</mi><mi>c</mi></msubsup></mrow><mo>)</mo></mrow><mi>c</mi></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\bigcap_{j=1}^{n}A_{j}=\left(\bigcup_{j=1}^{n}A_{j}^{c}\right)^{c}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Como o espaço de eventos <math id="I8.i2.p1.m3" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> é fechado sob complementos, <math id="I8.i2.p1.m4" class="ltx_Math" alttext="A_{j}^{c}\in\mathcal{F}" display="inline"><semantics><mrow><msubsup><mi>A</mi><mi>j</mi><mi>c</mi></msubsup><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{j}^{c}\in\mathcal{F}</annotation></semantics></math>, para todo <math id="I8.i2.p1.m5" class="ltx_Math" alttext="j=1,\dots,n" display="inline"><semantics><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">j=1,\dots,n</annotation></semantics></math>. Como é fechado sob uniões finitas (afirmação 1 da proposição, mostrada acima),</p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="\bigcup_{j=1}^{n}A_{j}^{c}\ \in\mathcal{F}" display="block"><semantics><mrow><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>A</mi><mi>j</mi><mi>c</mi></msubsup></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\bigcup_{j=1}^{n}A_{j}^{c}\ \in\mathcal{F}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Ao tomar o complemento mais uma vez, segue que <math id="I8.i2.p1.m6" class="ltx_Math" alttext="\bigcap_{j=1}^{n}A_{j}\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msubsup><mo>⋂</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\bigcap_{j=1}^{n}A_{j}\in\mathcal{F}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I8.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I8.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">A prova é semelhante à da afirmação 2 acima, observando que a lei de De Morgan também vale para uniões e interseções contáveis. Ou seja, podemos escrever</p>
+<div id="Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex9.m1" class="ltx_Math" alttext="\bigcap_{j=1}^{\infty}A_{j}=\left(\bigcup_{j=1}^{\infty}A_{j}^{c}\right)^{c}." display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">⋂</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>=</mo><msup><mrow><mo>(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">⋃</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msubsup><mi>A</mi><mi>j</mi><mi>c</mi></msubsup></mrow><mo>)</mo></mrow><mi>c</mi></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\bigcap_{j=1}^{\infty}A_{j}=\left(\bigcup_{j=1}^{\infty}A_{j}^{c}\right)^{c}.</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ol>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">3.2</span> Probabilidade</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">O último elemento da tripla do espaço de probabilidade é a medida de probabilidade <math id="SS2.p1.m1" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math>.
+Na definição <a href="S1.html#E1" title="Definição 1.1. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a> do espaço de probabilidade uniforme, definimos a medida de probabilidade como uma função do espaço de eventos para <math id="SS2.p1.m2" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>, de modo que a probabilidade do evento <math id="SS2.p1.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> (‘o resultado está no espaço amostral’) é <math id="SS2.p1.m4" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> e para dois eventos disjuntos <math id="SS2.p1.m5" class="ltx_Math" alttext="A,B" display="inline"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A,B</annotation></semantics></math>, <math id="SS2.p1.m6" class="ltx_Math" alttext="\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)</annotation></semantics></math> – a última propriedade pode ser generalizada por indução para a aditividade finita: se <math id="SS2.p1.m7" class="ltx_Math" alttext="A_{1},\dots,A_{n}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{n}</annotation></semantics></math> são eventos disjuntos, então</p>
+<div id="Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex10.m1" class="ltx_Math" alttext="\mathbb{P}(\bigcup_{i=1}^{n}A_{k})=\sum_{k=1}^{n}\mathbb{P}(A_{k})." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">⋃</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>A</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(\bigcup_{i=1}^{n}A_{k})=\sum_{k=1}^{n}\mathbb{P}(A_{k}).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Isso é suficiente para espaços de probabilidade infinitos? Vamos considerar o seguinte</p>
+</div>
+<div id="E10" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 3.10</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E10.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Seja <math id="E10.p1.m1" class="ltx_Math" alttext="\Omega=\mathbb{N}^{*}=\{1,2,\dots\}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><msup><mi>ℕ</mi><mo>∗</mo></msup><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\Omega=\mathbb{N}^{*}=\{1,2,\dots\}</annotation></semantics></math> o conjunto dos números naturais positivos e <math id="E10.p1.m2" class="ltx_Math" alttext="\mathcal{F}=\mathcal{P}(\Omega)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{F}=\mathcal{P}(\Omega)</annotation></semantics></math>. Suponha que <math id="E10.p1.m3" class="ltx_Math" alttext="\mathbb{P}(\{n\})=\frac{1}{2^{n}}" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{P}(\{n\})=\frac{1}{2^{n}}</annotation></semantics></math>, para todo <math id="E10.p1.m4" class="ltx_Math" alttext="n\geqslant 1" display="inline"><semantics><mrow><mi>n</mi><mo>⩾</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geqslant 1</annotation></semantics></math>. O que esperaríamos que o evento <math id="E10.p1.m5" class="ltx_Math" alttext="\{2n|n\geqslant 1\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo lspace="0em" rspace="0em">|</mo><mrow><mi>n</mi><mo>⩾</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{2n|n\geqslant 1\}</annotation></semantics></math> (‘o resultado é um número par’) seja?</p>
+</div>
+<div id="E10.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Intuitivamente, somaríamos as probabilidades correspondentes ao resultado ser par, ou seja,</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_Math" alttext="\mathbb{P}(\{2n|n\geqslant 1\})=\sum_{n=1}^{\infty}\mathbb{P}(\{2n\})=\sum_{n=%
+1}^{\infty}\frac{1}{2^{2n}}=\sum_{n=1}^{\infty}\frac{1}{4^{n}}=\frac{1}{3}." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo lspace="0em" rspace="0em">|</mo><mrow><mi>n</mi><mo>⩾</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup></mfrac></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mn>4</mn><mi>n</mi></msup></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(\{2n|n\geqslant 1\})=\sum_{n=1}^{\infty}\mathbb{P}(\{2n\})=\sum_{n=%
+1}^{\infty}\frac{1}{2^{2n}}=\sum_{n=1}^{\infty}\frac{1}{4^{n}}=\frac{1}{3}.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="E10.p3" class="ltx_para">
+<p class="ltx_p">(Note que o evento <math id="E10.p3.m1" class="ltx_Math" alttext="\{n\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{n\}</annotation></semantics></math> corresponde a ‘o resultado é <math id="E10.p3.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>’). O cálculo acima não pode ser justificado, a menos que estendamos a propriedade da aditividade finita para valer também para uniões contáveis de eventos disjuntos. De fato, é isso que fazemos!</p>
+</div>
+</div>
+<div id="E11" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 3.11</span></span><span class="ltx_text ltx_font_bold"> </span>(Medida de Probabilidade)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E11.p1" class="ltx_para">
+<p class="ltx_p">Dado um espaço amostral <math id="E11.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> e um espaço de eventos <math id="E11.p1.m2" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>, uma função <math id="E11.p1.m3" class="ltx_Math" alttext="\mathbb{P}:\mathcal{F}\to\mathbb{R}" display="inline"><semantics><mrow><mi>ℙ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}:\mathcal{F}\to\mathbb{R}</annotation></semantics></math> é chamada de <em class="ltx_emph ltx_font_italic">medida de probabilidade</em> se satisfaz</p>
+<ol id="I9" class="ltx_enumerate">
+<li id="I9.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I9.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I9.i1.p1.m1" class="ltx_Math" alttext="\mathbb{P}(B)\in[0,1]" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(B)\in[0,1]</annotation></semantics></math> para todo <math id="I9.i1.p1.m2" class="ltx_Math" alttext="B\in\mathcal{F}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">B\in\mathcal{F}</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I9.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I9.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I9.i2.p1.m1" class="ltx_Math" alttext="\mathbb{P}(\Omega)=1" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(\Omega)=1</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I9.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I9.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">(Aditividade Contável) Para todo <math id="I9.i3.p1.m1" class="ltx_Math" alttext="A_{n}\in\mathcal{F},\ n\geqslant 1" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mo rspace="0.667em">,</mo><mrow><mi>n</mi><mo>⩾</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">A_{n}\in\mathcal{F},\ n\geqslant 1</annotation></semantics></math> eventos disjuntos (ou seja, para todos <math id="I9.i3.p1.m2" class="ltx_Math" alttext="m,n\geqslant" display="inline"><semantics><mrow><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow><mo>⩾</mo><mi></mi></mrow><annotation encoding="application/x-tex">m,n\geqslant</annotation></semantics></math> tais que <math id="I9.i3.p1.m3" class="ltx_Math" alttext="m\neq n" display="inline"><semantics><mrow><mi>m</mi><mo>≠</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m\neq n</annotation></semantics></math>, <math id="I9.i3.p1.m4" class="ltx_Math" alttext="A_{m}\cap A_{n}=\emptyset" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mi>m</mi></msub><mo>∩</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{m}\cap A_{n}=\emptyset</annotation></semantics></math>,</p>
+<div id="E12" class="ltx_equation ltx_eqn_div">
+<span><math id="E12.m1" class="ltx_Math" alttext="\mathbb{P}\left(\bigcup_{n=1}^{\infty}A_{n}\right)=\sum_{n=1}^{\infty}\mathbb{%
+P}(A_{n})." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}\left(\bigcup_{n=1}^{\infty}A_{n}\right)=\sum_{n=1}^{\infty}\mathbb{%
+P}(A_{n}).</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.12)</span>
+                    
+                    
+                  
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">Nós agora apresentamos a definição de um espaço de probabilidade abstrato.</p>
+</div>
+<div id="E13" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 3.13</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E13.p1" class="ltx_para">
+<p class="ltx_p">Um <em class="ltx_emph ltx_font_italic">espaço de probabilidade</em> é definido como o triplo <math id="E13.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math>, onde</p>
+<ul id="I10" class="ltx_itemize">
+<li id="I10.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I10.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I10.i1.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> (o <em class="ltx_emph ltx_font_italic">espaço amostral</em>) é o conjunto de todos os possíveis resultados do experimento (sempre assumimos que não é vazio);</p>
+</div>
+</li>
+<li id="I10.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I10.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I10.i2.p1.m1" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> é um espaço de eventos de subconjuntos de <math id="I10.i2.p1.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I10.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I10.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I10.i3.p1.m1" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> é uma medida de probabilidade em <math id="I10.i3.p1.m2" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="E14" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 3.14</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E14.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E14.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade. Então, <math id="E14.p1.m2" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> possui as seguintes propriedades</span></p>
+<ol id="I11" class="ltx_enumerate">
+<li id="I11.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I11.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se </span><math id="I11.i1.p1.m1" class="ltx_Math" alttext="A,B\in\mathcal{F}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A,B\in\mathcal{F}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tal que </span><math id="I11.i1.p1.m2" class="ltx_Math" alttext="A\subseteq B" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\subseteq B</annotation></semantics></math><span class="ltx_text ltx_font_italic">, então</span></p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_Math" alttext="\mathbb{P}(B-A)=\mathbb{P}(B)-\mathbb{P}(A)." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(B-A)=\mathbb{P}(B)-\mathbb{P}(A).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Observe que </span><math id="I11.i1.p1.m3" class="ltx_Math" alttext="B-A=B\cap A^{c}" display="inline"><semantics><mrow><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>∩</mo><msup><mi>A</mi><mi>c</mi></msup></mrow></mrow><annotation encoding="application/x-tex">B-A=B\cap A^{c}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> e deve ser interpretado como ’todos os elementos de </span><math id="I11.i1.p1.m4" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math><span class="ltx_text ltx_font_italic"> que não estão em </span><math id="I11.i1.p1.m5" class="ltx_Math" alttext="A^{\prime}" display="inline"><semantics><msup><mi>A</mi><mo>′</mo></msup><annotation encoding="application/x-tex">A^{\prime}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I11.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I11.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para todo </span><math id="I11.i2.p1.m1" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math><span class="ltx_text ltx_font_italic">,</span></p>
+<div id="Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex13.m1" class="ltx_Math" alttext="\mathbb{P}(A^{c})=1-\mathbb{P}(A)." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A^{c})=1-\mathbb{P}(A).</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I11.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I11.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I11.i3.p1.m1" class="ltx_Math" alttext="\mathbb{P}(\emptyset)=0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>∅︀</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(\emptyset)=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS2.p3" class="ltx_para">
+<ol id="I12" class="ltx_enumerate">
+<li id="I12.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I12.i1.p1" class="ltx_para">​<p class="ltx_p">Escrevemos <math id="I12.i1.p1.m1" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> como a união do conjunto com todos os elementos em <math id="I12.i1.p1.m2" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> que não estão em <math id="I12.i1.p1.m3" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e aqueles que estão, ou seja, <math id="I12.i1.p1.m4" class="ltx_Math" alttext="B=(B-A)\cup A" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∪</mo><mi>A</mi></mrow></mrow><annotation encoding="application/x-tex">B=(B-A)\cup A</annotation></semantics></math>. Pela aditividade finita,</p>
+<div id="Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex14.m1" class="ltx_Math" alttext="\mathbb{P}(B)=\mathbb{P}((B-A)\cup A)=\mathbb{P}(B-A)+\mathbb{P}(A)," display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∪</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(B)=\mathbb{P}((B-A)\cup A)=\mathbb{P}(B-A)+\mathbb{P}(A),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">o que prova a afirmação.</p>
+</div>
+</li>
+<li id="I12.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I12.i2.p1" class="ltx_para">​<p class="ltx_p">Usando a propriedade acima,</p>
+<div id="Ex15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex15.m1" class="ltx_Math" alttext="\mathbb{P}(A^{c})=\mathbb{P}(\Omega-A)=\mathbb{P}(\Omega)-\mathbb{P}(A)=1-%
+\mathbb{P}(A)." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">Ω</mi><mo>−</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A^{c})=\mathbb{P}(\Omega-A)=\mathbb{P}(\Omega)-\mathbb{P}(A)=1-%
+\mathbb{P}(A).</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I12.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I12.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I12.i3.p1.m1" class="ltx_Math" alttext="\mathbb{P}(\emptyset)=\mathbb{P}(\Omega^{c})=1-\mathbb{P}(\Omega)=1-1=0." display="inline"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>∅︀</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi mathvariant="normal">Ω</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(\emptyset)=\mathbb{P}(\Omega^{c})=1-\mathbb{P}(\Omega)=1-1=0.</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="SS2.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Podemos usar a aditividade contável para calcular a probabilidade de uma união de eventos disjuntos. Como podemos calcular a probabilidade de qualquer união de eventos? A seguinte proposição nos fornece uma maneira de fazer isso.</p>
+</div>
+<div id="E15" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 3.15</span></span><span class="ltx_text ltx_font_bold"> </span>(Fórmula de Inclusão-Exclusão)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E15.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E15.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade. Então, para qualquer coleção finita <math id="E15.p1.m2" class="ltx_Math" alttext="A_{1},\dots,A_{n}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{n}</annotation></semantics></math> de eventos em <math id="E15.p1.m3" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>, temos</span></p>
+<div id="E16" class="ltx_equation ltx_eqn_div">
+<span><math id="E16.m1" class="ltx_Math" alttext="\mathbb{P}\left(\bigcup_{k=1}^{n}A_{k}\right)=\sum_{k=1}^{n}(-1)^{k-1}\sum_{1%
+\leqslant i_{1}&lt;\dots&lt;i_{k}\leqslant n}\mathbb{P}(A_{i_{1}}\cap\dots\cap A_{i_%
+{k}})\,." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">⋃</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>A</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mn>1</mn><mo>⩽</mo><msub><mi>i</mi><mn>1</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>i</mi><mi>k</mi></msub><mo>⩽</mo><mi>n</mi></mrow></munder><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><msub><mi>i</mi><mn>1</mn></msub></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><msub><mi>i</mi><mi>k</mi></msub></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}\left(\bigcup_{k=1}^{n}A_{k}\right)=\sum_{k=1}^{n}(-1)^{k-1}\sum_{1%
+\leqslant i_{1}&lt;\dots&lt;i_{k}\leqslant n}\mathbb{P}(A_{i_{1}}\cap\dots\cap A_{i_%
+{k}})\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.16)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="Thmremark2" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observação 2</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremark2.p1" class="ltx_para">
+<p class="ltx_p">A fórmula <a href="#E16" title="In Proposição 3.15 (Fórmula de Inclusão-Exclusão). ‣ 3.2 Probabilidade ‣ 3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.16</span></a> acima usa uma notação concisa e não é imediatamente fácil de interpretar. Para entendê-la melhor, vamos considerar alguns casos específicos.</p>
+<ul id="I13" class="ltx_itemize">
+<li id="I13.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I13.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I13.i1.p1.m1" class="ltx_Math" alttext="n=2" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=2</annotation></semantics></math></p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx7" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E17.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}\left(\bigcup_{k=1}^{2}A_{k}\right)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">⋃</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover></mstyle><msub><mi>A</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}\left(\bigcup_{k=1}^{2}A_{k}\right)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E17.m2" class="ltx_Math" alttext="\displaystyle=\sum_{k=1}^{2}(-1)^{k-1}\sum_{1\leqslant i_{1}&lt;\dots&lt;i_{k}%
+\leqslant 2}\mathbb{P}(A_{1}\cap\dots\cap A_{k})" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mn>1</mn><mo>⩽</mo><msub><mi>i</mi><mn>1</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>i</mi><mi>k</mi></msub><mo>⩽</mo><mn>2</mn></mrow></munder></mstyle><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{k=1}^{2}(-1)^{k-1}\sum_{1\leqslant i_{1}&lt;\dots&lt;i_{k}%
+\leqslant 2}\mathbb{P}(A_{1}\cap\dots\cap A_{k})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.17)</span></td>
+</tr></tbody>
+<tbody id="E18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E18.m1" class="ltx_Math" alttext="\displaystyle=\sum_{1\leqslant i\leqslant 2}\mathbb{P}(A_{i})-\sum_{1\leqslant
+i%
+_{1}&lt;i_{2}\leqslant 2}\mathbb{P}(A_{i_{1}}\cap A_{i_{2}})" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mn>1</mn><mo>⩽</mo><mi>i</mi><mo>⩽</mo><mn>2</mn></mrow></munder></mstyle><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mn>1</mn><mo>⩽</mo><msub><mi>i</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>i</mi><mn>2</mn></msub><mo>⩽</mo><mn>2</mn></mrow></munder></mstyle><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><msub><mi>i</mi><mn>1</mn></msub></msub><mo>∩</mo><msub><mi>A</mi><msub><mi>i</mi><mn>2</mn></msub></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{1\leqslant i\leqslant 2}\mathbb{P}(A_{i})-\sum_{1\leqslant
+i%
+_{1}&lt;i_{2}\leqslant 2}\mathbb{P}(A_{i_{1}}\cap A_{i_{2}})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.18)</span></td>
+</tr></tbody>
+<tbody id="E19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E19.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})-\mathbb{P}(A_{1}\cap A_{2})\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})-\mathbb{P}(A_{1}\cap A_{2})\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.19)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</li>
+<li id="I13.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I13.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I13.i2.p1.m1" class="ltx_Math" alttext="n=3" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n=3</annotation></semantics></math></p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx8" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E20"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E20.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}\left(\bigcup_{k=1}^{3}A_{k}\right)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">⋃</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover></mstyle><msub><mi>A</mi><mi>k</mi></msub></mrow><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}\left(\bigcup_{k=1}^{3}A_{k}\right)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E20.m2" class="ltx_Math" alttext="\displaystyle=\sum_{k=1}^{3}(-1)^{k-1}\sum_{1\leqslant i_{1}&lt;\dots&lt;i_{k}%
+\leqslant 3}\mathbb{P}(A_{1}\cap\dots\cap A_{k})" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover></mstyle><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mn>1</mn><mo>⩽</mo><msub><mi>i</mi><mn>1</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>i</mi><mi>k</mi></msub><mo>⩽</mo><mn>3</mn></mrow></munder></mstyle><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{k=1}^{3}(-1)^{k-1}\sum_{1\leqslant i_{1}&lt;\dots&lt;i_{k}%
+\leqslant 3}\mathbb{P}(A_{1}\cap\dots\cap A_{k})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.20)</span></td>
+</tr></tbody>
+<tbody id="E21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E21.m1" class="ltx_Math" alttext="\displaystyle=\sum_{1\leqslant i\leqslant 3}\mathbb{P}(A_{i})-\sum_{1\leqslant
+i%
+_{1}&lt;i_{2}\leqslant 3}\mathbb{P}(A_{i_{1}}\cap A_{i_{2}})" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mn>1</mn><mo>⩽</mo><mi>i</mi><mo>⩽</mo><mn>3</mn></mrow></munder></mstyle><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mn>1</mn><mo>⩽</mo><msub><mi>i</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>i</mi><mn>2</mn></msub><mo>⩽</mo><mn>3</mn></mrow></munder></mstyle><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><msub><mi>i</mi><mn>1</mn></msub></msub><mo>∩</mo><msub><mi>A</mi><msub><mi>i</mi><mn>2</mn></msub></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{1\leqslant i\leqslant 3}\mathbb{P}(A_{i})-\sum_{1\leqslant
+i%
+_{1}&lt;i_{2}\leqslant 3}\mathbb{P}(A_{i_{1}}\cap A_{i_{2}})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.21)</span></td>
+</tr></tbody>
+<tbody id="E22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E22.m1" class="ltx_Math" alttext="\displaystyle\hskip 11.38092pt+\sum_{1\leqslant i_{1}&lt;i_{2}&lt;i_{3}\leqslant 3}%
+\mathbb{P}(A_{i_{1}}\cap A_{i_{2}}\cap A_{i_{3}})" display="inline"><semantics><mrow><mo>+</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mn>1</mn><mo>⩽</mo><msub><mi>i</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>i</mi><mn>2</mn></msub><mo>&lt;</mo><msub><mi>i</mi><mn>3</mn></msub><mo>⩽</mo><mn>3</mn></mrow></munder></mstyle><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><msub><mi>i</mi><mn>1</mn></msub></msub><mo>∩</mo><msub><mi>A</mi><msub><mi>i</mi><mn>2</mn></msub></msub><mo>∩</mo><msub><mi>A</mi><msub><mi>i</mi><mn>3</mn></msub></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\hskip 11.38092pt+\sum_{1\leqslant i_{1}&lt;i_{2}&lt;i_{3}\leqslant 3}%
+\mathbb{P}(A_{i_{1}}\cap A_{i_{2}}\cap A_{i_{3}})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.22)</span></td>
+</tr></tbody>
+<tbody id="E23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E23.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})+\mathbb{P}(A_{3})-\mathbb{P}%
+(A_{1}\cap A_{2})-\mathbb{P}(A_{1}\cap A_{3})" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})+\mathbb{P}(A_{3})-\mathbb{P}%
+(A_{1}\cap A_{2})-\mathbb{P}(A_{1}\cap A_{3})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.23)</span></td>
+</tr></tbody>
+<tbody id="E24"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E24.m1" class="ltx_Math" alttext="\displaystyle\hskip 11.38092pt-\mathbb{P}(A_{2}\cap A_{3})+\mathbb{P}(A_{1}%
+\cap A_{2}\cap A_{3})\,." display="inline"><semantics><mrow><mrow><mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\hskip 11.38092pt-\mathbb{P}(A_{2}\cap A_{3})+\mathbb{P}(A_{1}%
+\cap A_{2}\cap A_{3})\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.24)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Portanto, a soma <math id="I13.i2.p1.m2" class="ltx_Math" alttext="\sum_{1\leqslant i_{1}&lt;\dots&lt;i_{k}\leqslant 2}" display="inline"><semantics><msub><mo>∑</mo><mrow><mn>1</mn><mo>⩽</mo><msub><mi>i</mi><mn>1</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>i</mi><mi>k</mi></msub><mo>⩽</mo><mn>2</mn></mrow></msub><annotation encoding="application/x-tex">\sum_{1\leqslant i_{1}&lt;\dots&lt;i_{k}\leqslant 2}</annotation></semantics></math> deve ser interpretada como a soma de todos os <math id="I13.i2.p1.m3" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-uplas <math id="I13.i2.p1.m4" class="ltx_Math" alttext="(i_{1},\dots,i_{k})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>i</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>i</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(i_{1},\dots,i_{k})</annotation></semantics></math> de números <math id="I13.i2.p1.m5" class="ltx_Math" alttext="\{1,\dots,n\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,\dots,n\}</annotation></semantics></math> sem repetição (as desigualdades são estritas). Como vimos na seção <a href="S2.html" title="2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>, existem <math id="I13.i2.p1.m6" class="ltx_Math" alttext="\binom{n}{k}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">\binom{n}{k}</annotation></semantics></math> dessas <math id="I13.i2.p1.m7" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-uplas, portanto a soma terá <math id="I13.i2.p1.m8" class="ltx_Math" alttext="\binom{n}{k}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">\binom{n}{k}</annotation></semantics></math> parcelas.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS2.p5" class="ltx_para">
+<p class="ltx_p">Vamos provar o resultado apenas para <math id="SS2.p5.m1" class="ltx_Math" alttext="n=2" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=2</annotation></semantics></math> (a prova do passo de indução no caso geral é semelhante, mas mais confusa!). Escrevemos</p>
+<div id="Ex16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex16.m1" class="ltx_Math" alttext="A_{1}\cup A_{2}=(A_{1}-B)\cup B\cup(A_{2}-B)," display="block"><semantics><mrow><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>−</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∪</mo><mi>B</mi><mo>∪</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>−</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">A_{1}\cup A_{2}=(A_{1}-B)\cup B\cup(A_{2}-B),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">onde <math id="SS2.p5.m2" class="ltx_Math" alttext="B=A_{1}\cap A_{2}" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">B=A_{1}\cap A_{2}</annotation></semantics></math>. Os conjuntos <math id="SS2.p5.m3" class="ltx_Math" alttext="A_{1}-B" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>−</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A_{1}-B</annotation></semantics></math>, <math id="SS2.p5.m4" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> e <math id="SS2.p5.m5" class="ltx_Math" alttext="A_{2}-B" display="inline"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>−</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A_{2}-B</annotation></semantics></math> são todos disjuntos, então podemos escrever</p>
+<div id="Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex17.m1" class="ltx_Math" alttext="\mathbb{P}(A_{1}\cup A_{2})=\mathbb{P}\left((A_{1}-B)\cup B\cup(A_{2}-B)\right%
+)=\mathbb{P}(A_{1}-B)+\mathbb{P}(B)+\mathbb{P}(A_{2}-B)" display="block"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>−</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∪</mo><mi>B</mi><mo>∪</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>−</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>−</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>−</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{1}\cup A_{2})=\mathbb{P}\left((A_{1}-B)\cup B\cup(A_{2}-B)\right%
+)=\mathbb{P}(A_{1}-B)+\mathbb{P}(B)+\mathbb{P}(A_{2}-B)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">usando a aditividade finita. Sabemos, pela proposição <a href="#E14" title="Proposição 3.14. ‣ 3.2 Probabilidade ‣ 3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.14</span></a>, que <math id="SS2.p5.m6" class="ltx_Math" alttext="\mathbb{P}(A_{1}-B)=\mathbb{P}(A_{1})-\mathbb{P}(B)" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>−</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{1}-B)=\mathbb{P}(A_{1})-\mathbb{P}(B)</annotation></semantics></math> e, da mesma forma, <math id="SS2.p5.m7" class="ltx_Math" alttext="\mathbb{P}(A_{2}-B)=\mathbb{P}(A_{2})-\mathbb{P}(B)" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>−</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{2}-B)=\mathbb{P}(A_{2})-\mathbb{P}(B)</annotation></semantics></math>. Substituindo esses valores na fórmula acima, obtemos</p>
+<div id="Ex18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex18.m1" class="ltx_Math" alttext="\mathbb{P}(A_{1}\cup A_{2})=(\mathbb{P}(A_{1})-\mathbb{P}(B))+\mathbb{P}(B)+(%
+\mathbb{P}(A_{2})-\mathbb{P}(B))=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})-\mathbb{P%
+}(B)," display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{1}\cup A_{2})=(\mathbb{P}(A_{1})-\mathbb{P}(B))+\mathbb{P}(B)+(%
+\mathbb{P}(A_{2})-\mathbb{P}(B))=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})-\mathbb{P%
+}(B),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">o que comprova a alegação.
+∎</p>
+</div>
+</div>
+<div id="E25" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 3.25</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E25.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E25.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade. Se <math id="E25.p1.m2" class="ltx_Math" alttext="A,B\in\mathcal{F}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A,B\in\mathcal{F}</annotation></semantics></math> e <math id="E25.p1.m3" class="ltx_Math" alttext="A\subseteq B" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\subseteq B</annotation></semantics></math>, então</span></p>
+<div id="E26" class="ltx_equation ltx_eqn_div">
+<span><math id="E26.m1" class="ltx_Math" alttext="\mathbb{P}(A)\leqslant\mathbb{P}(B)\,." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⩽</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)\leqslant\mathbb{P}(B)\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.26)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS2.p6" class="ltx_para">
+<p class="ltx_p">Uma vez que <math id="SS2.p6.m1" class="ltx_Math" alttext="A\subseteq B" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\subseteq B</annotation></semantics></math>, segue que <math id="SS2.p6.m2" class="ltx_Math" alttext="\mathbb{P}(B-A)=\mathbb{P}(B)-\mathbb{P}(A)" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(B-A)=\mathbb{P}(B)-\mathbb{P}(A)</annotation></semantics></math> ou, equivalentemente, <math id="SS2.p6.m3" class="ltx_Math" alttext="\mathbb{P}(A)=\mathbb{P}(B)-\mathbb{P}(B-A)\leqslant\mathbb{P}(B)" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>⩽</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)=\mathbb{P}(B)-\mathbb{P}(B-A)\leqslant\mathbb{P}(B)</annotation></semantics></math>, onde a desigualdade decorre do fato de que as probabilidades são sempre não negativas.
+∎</p>
+</div>
+</div>
+<div id="E27" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 3.27</span></span><span class="ltx_text ltx_font_bold"> </span>(Desigualdade de Boole)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E27.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E27.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade. Se <math id="E27.p1.m2" class="ltx_Math" alttext="A_{1},\dots,A_{n}\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{n}\in\mathcal{F}</annotation></semantics></math>, então</span></p>
+<div id="E28" class="ltx_equation ltx_eqn_div">
+<span><math id="E28.m1" class="ltx_Math" alttext="\mathbb{P}\left(\bigcup_{i=1}^{n}A_{i}\right)\leqslant\sum_{i=1}^{n}\mathbb{P}%
+(A_{i})\quad{\rm(*)}" display="block"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">⋃</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>A</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo rspace="0.111em">⩽</mo><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">∗</mo><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}\left(\bigcup_{i=1}^{n}A_{i}\right)\leqslant\sum_{i=1}^{n}\mathbb{P}%
+(A_{i})\quad{\rm(*)}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.28)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS2.p7" class="ltx_para">
+<p class="ltx_p">Procedemos por indução. Para <math id="SS2.p7.m1" class="ltx_Math" alttext="n=2" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=2</annotation></semantics></math>, observe que</p>
+<div id="E29" class="ltx_equation ltx_eqn_div">
+<span><math id="E29.m1" class="ltx_Math" alttext="\mathbb{P}(A_{1}\cup A_{2})=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})-\underbrace{%
+\mathbb{P}(A_{1}\cap A_{2})}_{\geqslant 0}\leqslant\mathbb{P}(A_{1})+\mathbb{P%
+}(A_{2})\,." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><munder><munder accentunder="true"><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⏟</mo></munder><mrow><mi></mi><mo>⩾</mo><mn>0</mn></mrow></munder></mrow><mo>⩽</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{1}\cup A_{2})=\mathbb{P}(A_{1})+\mathbb{P}(A_{2})-\underbrace{%
+\mathbb{P}(A_{1}\cap A_{2})}_{\geqslant 0}\leqslant\mathbb{P}(A_{1})+\mathbb{P%
+}(A_{2})\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.29)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Portanto, (*) vale para <math id="SS2.p7.m2" class="ltx_Math" alttext="n=2" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=2</annotation></semantics></math>. Suponha agora que (*) vale <math id="SS2.p7.m3" class="ltx_Math" alttext="\forall\,j\leqslant n" display="inline"><semantics><mrow><mrow><mo rspace="0.337em">∀</mo><mi>j</mi></mrow><mo>⩽</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\forall\,j\leqslant n</annotation></semantics></math>, então precisamos provar que vale para <math id="SS2.p7.m4" class="ltx_Math" alttext="n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math> eventos. Seja <math id="SS2.p7.m5" class="ltx_Math" alttext="A_{1},\dots,A_{n+1}\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{n+1}\in\mathcal{F}</annotation></semantics></math>, então, argumentando como acima, temos</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx9" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E30"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E30.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}\left(\bigcup_{j=1}^{n+1}A_{j}\right)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">⋃</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></munderover></mstyle><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}\left(\bigcup_{j=1}^{n+1}A_{j}\right)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E30.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{P}\left(\left(\bigcup_{j=1}^{n}A_{j}\right)\cup A_{n+1}\right)" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">⋃</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>∪</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}\left(\left(\bigcup_{j=1}^{n}A_{j}\right)\cup A_{n+1}\right)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.30)</span></td>
+</tr></tbody>
+<tbody id="E31"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E31.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{P}\left(\bigcup_{j=1}^{n}A_{j}\right)+\mathbb{P}\left(A_%
+{n+1}\right)-\mathbb{P}\left(\left(\bigcup_{j=1}^{n}A_{j}\right)\cap A_{n+1}\right)" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">⋃</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">⋃</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mo>∩</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}\left(\bigcup_{j=1}^{n}A_{j}\right)+\mathbb{P}\left(A_%
+{n+1}\right)-\mathbb{P}\left(\left(\bigcup_{j=1}^{n}A_{j}\right)\cap A_{n+1}\right)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.31)</span></td>
+</tr></tbody>
+<tbody id="E32"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E32.m1" class="ltx_Math" alttext="\displaystyle\leqslant\mathbb{P}\left(\bigcup_{j=1}^{n}A_{j}\right)+\mathbb{P}%
+(A_{n+1})" display="inline"><semantics><mrow><mi></mi><mo>⩽</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">⋃</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\leqslant\mathbb{P}\left(\bigcup_{j=1}^{n}A_{j}\right)+\mathbb{P}%
+(A_{n+1})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.32)</span></td>
+</tr></tbody>
+<tbody id="E33"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E33.m1" class="ltx_Math" alttext="\displaystyle\leqslant\sum_{j=1}^{n}\mathbb{P}(A_{j})+\mathbb{P}(A_{n+1})=\sum%
+_{j=1}^{n+1}\mathbb{P}(A_{j})\,.\qed" display="inline"><semantics><mrow><mrow><mi></mi><mo>⩽</mo><mrow><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></munderover></mstyle><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em" rspace="0.0835em">.</mo><mo class="ltx_mathvariant_italic" lspace="0.0835em" mathvariant="italic" separator="true">∎</mo></mrow><annotation encoding="application/x-tex">\displaystyle\leqslant\sum_{j=1}^{n}\mathbb{P}(A_{j})+\mathbb{P}(A_{n+1})=\sum%
+_{j=1}^{n+1}\mathbb{P}(A_{j})\,.\qed</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.33)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="SSx1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">Revisão de espaços de probabilidade</h2>
+
+<div id="SSx1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="SSx1.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> – <em class="ltx_emph ltx_font_italic">espaço amostral</em>: elementos <math id="SSx1.p1.m2" class="ltx_Math" alttext="\omega\in\Omega" display="inline"><semantics><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\omega\in\Omega</annotation></semantics></math> são resultados, <math id="SSx1.p1.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> é um conjunto não vazio.</p>
+</div>
+<div id="SSx1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="SSx1.p2.m1" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> – <em class="ltx_emph ltx_font_italic">espaço de eventos</em>: elementos <math id="SSx1.p2.m2" class="ltx_Math" alttext="A\in\Omega" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">A\in\Omega</annotation></semantics></math> são eventos (<math id="SSx1.p2.m3" class="ltx_Math" alttext="A\subseteq\Omega" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">A\subseteq\Omega</annotation></semantics></math>)</p>
+</div>
+<div id="SSx1.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Deve satisfazer três condições:</p>
+<ul id="I14" class="ltx_itemize">
+<li id="I14.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I14.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I14.i1.p1.m1" class="ltx_Math" alttext="\mathcal{F}\neq\emptyset" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>≠</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">\mathcal{F}\neq\emptyset</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I14.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I14.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I14.i2.p1.m1" class="ltx_Math" alttext="A^{c}\in\mathcal{F}" display="inline"><semantics><mrow><msup><mi>A</mi><mi>c</mi></msup><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A^{c}\in\mathcal{F}</annotation></semantics></math> para todo <math id="I14.i2.p1.m2" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I14.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I14.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I14.i3.p1.m1" class="ltx_Math" alttext="(\cup_{n=1}^{\infty}A_{n})\in\mathcal{F}" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msubsup><mo lspace="0em">∪</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">(\cup_{n=1}^{\infty}A_{n})\in\mathcal{F}</annotation></semantics></math> para toda sequência de eventos <math id="I14.i3.p1.m2" class="ltx_Math" alttext="A_{1},A_{2},A_{3},\dots" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><msub><mi>A</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">A_{1},A_{2},A_{3},\dots</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+</div>
+<div id="SSx1.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Consequências dessas condições:</p>
+<ul id="I15" class="ltx_itemize">
+<li id="I15.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I15.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I15.i1.p1.m1" class="ltx_Math" alttext="\Omega\in\mathcal{F}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\Omega\in\mathcal{F}</annotation></semantics></math> (de fato, tome <math id="I15.i1.p1.m2" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math>, <math id="I15.i1.p1.m3" class="ltx_Math" alttext="A\cup A^{c}=\Omega" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>∪</mo><msup><mi>A</mi><mi>c</mi></msup></mrow><mo>=</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">A\cup A^{c}=\Omega</annotation></semantics></math>)</p>
+</div>
+</li>
+<li id="I15.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I15.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I15.i2.p1.m1" class="ltx_Math" alttext="\emptyset\in\mathcal{F}" display="inline"><semantics><mrow><mi>∅︀</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\emptyset\in\mathcal{F}</annotation></semantics></math> (de fato, <math id="I15.i2.p1.m2" class="ltx_Math" alttext="\Omega^{c}=\emptyset" display="inline"><semantics><mrow><msup><mi mathvariant="normal">Ω</mi><mi>c</mi></msup><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">\Omega^{c}=\emptyset</annotation></semantics></math>)</p>
+</div>
+</li>
+<li id="I15.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I15.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I15.i3.p1.m1" class="ltx_Math" alttext="(\cap_{n=1}^{\infty}A_{n})\in\mathcal{F}" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msubsup><mo lspace="0em">∩</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">(\cap_{n=1}^{\infty}A_{n})\in\mathcal{F}</annotation></semantics></math>
+para cada sequência de eventos <math id="I15.i3.p1.m2" class="ltx_Math" alttext="A_{1},A_{2},A_{3},\dots" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><msub><mi>A</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">A_{1},A_{2},A_{3},\dots</annotation></semantics></math>
+
+<br class="ltx_break">(de fato, <math id="I15.i3.p1.m3" class="ltx_Math" alttext="\cap_{n=1}^{\infty}A_{n}=(\cup_{n=1}^{\infty}A_{n}^{c})^{c}" display="inline"><semantics><mrow><mrow><msubsup><mo>∩</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msubsup><mo lspace="0em">∪</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msubsup><mi>A</mi><mi>n</mi><mi>c</mi></msubsup></mrow><mo stretchy="false">)</mo></mrow><mi>c</mi></msup></mrow><annotation encoding="application/x-tex">\cap_{n=1}^{\infty}A_{n}=(\cup_{n=1}^{\infty}A_{n}^{c})^{c}</annotation></semantics></math>)</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="SSx1.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="SSx1.p5.m1" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math>
+–
+<em class="ltx_emph ltx_font_italic">medida de probabilidade</em>: <math id="SSx1.p5.m2" class="ltx_Math" alttext="\mathbb{P}:\mathcal{F}\to\mathbb{R}" display="inline"><semantics><mrow><mi>ℙ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}:\mathcal{F}\to\mathbb{R}</annotation></semantics></math>.</p>
+</div>
+<div id="SSx1.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">Deve satisfazer três condições:</p>
+<ul id="I16" class="ltx_itemize">
+<li id="I16.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I16.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I16.i1.p1.m1" class="ltx_Math" alttext="\mathbb{P}(A)\geqslant 0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⩾</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)\geqslant 0</annotation></semantics></math> para todo <math id="I16.i1.p1.m2" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I16.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I16.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I16.i2.p1.m1" class="ltx_Math" alttext="\mathbb{P}(\Omega)=1" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(\Omega)=1</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I16.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I16.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I16.i3.p1.m1" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> é aditiva contável:
+<math id="I16.i3.p1.m2" class="ltx_Math" alttext="\mathbb{P}(\cup_{n=1}^{\infty}A_{n})=\sum_{n=1}^{\infty}\mathbb{P}(A_{n})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mo lspace="0em">∪</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(\cup_{n=1}^{\infty}A_{n})=\sum_{n=1}^{\infty}\mathbb{P}(A_{n})</annotation></semantics></math>
+
+<br class="ltx_break">para cada sequência de eventos <em class="ltx_emph ltx_font_italic">disjuntos</em> <math id="I16.i3.p1.m3" class="ltx_Math" alttext="A_{1},A_{2},A_{3},\dots" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><msub><mi>A</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">A_{1},A_{2},A_{3},\dots</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+</div>
+<div id="SSx1.p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">O triplo <math id="SSx1.p7.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> é chamado de <em class="ltx_emph ltx_font_italic">espaço de probabilidade</em>.</p>
+</div>
+<div id="E34" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 3.34</span></span><span class="ltx_text ltx_font_italic"> </span>(Espaços de probabilidade uniformes)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E34.p1" class="ltx_para">
+<p class="ltx_p"><math id="E34.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> é um conjunto finito,
+<math id="E34.p1.m2" class="ltx_Math" alttext="\mathcal{F}=\mathcal{P}(\Omega)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{F}=\mathcal{P}(\Omega)</annotation></semantics></math>,
+<math id="E34.p1.m3" class="ltx_Math" alttext="\mathbb{P}(A)=\frac{|A|}{|\Omega|}" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)=\frac{|A|}{|\Omega|}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="E35" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 3.35</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E35.p1" class="ltx_para">
+<p class="ltx_p">Não existe um espaço de probabilidade para modelar o experimento "escolher um número inteiro aleatoriamente".
+Por mais que gostaríamos de dizer que um número inteiro <math id="E35.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> escolhido aleatoriamente será par com probabilidade <math id="E35.p1.m2" class="ltx_Math" alttext="\frac{1}{2}" display="inline"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math> e o último dígito em sua representação decimal será <math id="E35.p1.m3" class="ltx_Math" alttext="7" display="inline"><semantics><mn>7</mn><annotation encoding="application/x-tex">7</annotation></semantics></math> com probabilidade <math id="E35.p1.m4" class="ltx_Math" alttext="\frac{1}{10}" display="inline"><semantics><mfrac><mn>1</mn><mn>10</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{10}</annotation></semantics></math>, não existe um espaço de probabilidade que possa modelar isso.
+Mais precisamente, para <math id="E35.p1.m5" class="ltx_Math" alttext="\Omega=\mathbb{Z}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\Omega=\mathbb{Z}</annotation></semantics></math>, <math id="E35.p1.m6" class="ltx_Math" alttext="\mathcal{F}=\mathbb{P}(\mathbb{Z})" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℤ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{F}=\mathbb{P}(\mathbb{Z})</annotation></semantics></math>, não existe uma medida de probabilidade <math id="E35.p1.m7" class="ltx_Math" alttext="\mathbb{P}:\mathcal{F}\to\mathbb{R}" display="inline"><semantics><mrow><mi>ℙ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}:\mathcal{F}\to\mathbb{R}</annotation></semantics></math> tal que <math id="E35.p1.m8" class="ltx_Math" alttext="\mathbb{P}(\{j\})=\mathbb{P}(\{k\})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>j</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>k</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(\{j\})=\mathbb{P}(\{k\})</annotation></semantics></math> para todos <math id="E35.p1.m9" class="ltx_Math" alttext="j,k\in\mathbb{Z}" display="inline"><semantics><mrow><mrow><mi>j</mi><mo>,</mo><mi>k</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">j,k\in\mathbb{Z}</annotation></semantics></math>.
+De fato,
+se <math id="E35.p1.m10" class="ltx_Math" alttext="\mathbb{P}(\{j\})&gt;0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>j</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(\{j\})&gt;0</annotation></semantics></math>, então <math id="E35.p1.m11" class="ltx_Math" alttext="\mathbb{P}(\mathbb{Z})=\sum{x\in\mathbb{Z}}\mathbb{P}(\{x\})=+\infty" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℤ</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∑</mo><mi>x</mi></mrow><mo>∈</mo><mrow><mi>ℤ</mi><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(\mathbb{Z})=\sum{x\in\mathbb{Z}}\mathbb{P}(\{x\})=+\infty</annotation></semantics></math>,
+e
+se <math id="E35.p1.m12" class="ltx_Math" alttext="\mathbb{P}(\{j\})=0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>j</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(\{j\})=0</annotation></semantics></math>, então <math id="E35.p1.m13" class="ltx_Math" alttext="\mathbb{P}(\mathbb{Z})=\sum{x\in\mathbb{Z}}\mathbb{P}(\{x\})=0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℤ</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∑</mo><mi>x</mi></mrow><mo>∈</mo><mrow><mi>ℤ</mi><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(\mathbb{Z})=\sum{x\in\mathbb{Z}}\mathbb{P}(\{x\})=0</annotation></semantics></math>, e em ambos os casos <math id="E35.p1.m14" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> viola os requisitos para ser uma medida de probabilidade, ou seja, <math id="E35.p1.m15" class="ltx_Math" alttext="\mathbb{P}(\mathbb{Z})=1" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℤ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(\mathbb{Z})=1</annotation></semantics></math>.</p>
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S4.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Intro.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

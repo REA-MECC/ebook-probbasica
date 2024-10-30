@@ -1,0 +1,1154 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula</title>
+<!--Generated on Tue Aug 27 14:11:25 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Intro.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="start" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="prev" href="S3.html" title="3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="next" href="S5.html" title="5 Variáveis Aleatórias ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S1.html" title="1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S2.html" title="2 Contagem ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S3.html" title="3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S5.html" title="5 Variáveis Aleatórias ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S6.html" title="6 Esperança ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S7.html" title="7 Distribuições discretas multivariadas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S8.html" title="8 A Lei dos Grandes Números ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S9.html" title="9 Covariância ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S10.html" title="10 Desigualdade de Chebyshev ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S11.html" title="11 Coeficiente de Correlação ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S12.html" title="12 Teorema do Limite Central ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S13.html" title="13 Variáveis aleatórias contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S14.html" title="14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S15.html" title="15 Distribuições Conjuntas e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S16.html" title="16 Somas de variáveis aleatórias independentes ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S17.html" title="17 Momentos e funções geradoras de momentos ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A1.html" title="Apêndice A Somas úteis ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A2.html" title="Apêndice B Exponenciais superam polinômios ‣ Introdução à Probabilidade Notas de Aula">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Introdução à Probabilidade <span class="ltx_text"> </span>Notas de Aula</a>
+</li>
+<li class="divider">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Espaços de probabilidade uniforme</a></li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Contagem</a></li>
+<li data-level="3" data-path="S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S3.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Espaços de Probabilidade</a></li>
+<li data-level="4" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Probabilidade Condicional e Independência</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="4.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Probabilidade Condicional</a></li>
+<li data-level="4.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Lei da Probabilidade Total</a></li>
+<li data-level="4.3" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS3" title="In 4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Teorema de Bayes</a></li>
+<li data-level="4.4" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS4" title="In 4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>Independência</a></li>
+</ol>
+</li>
+<li data-level="5" data-path="S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S5.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Variáveis Aleatórias</a></li>
+<li data-level="6" data-path="S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S6.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Esperança</a></li>
+<li data-level="7" data-path="S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S7.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Distribuições discretas multivariadas</a></li>
+<li data-level="8" data-path="S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S8.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>A Lei dos Grandes Números</a></li>
+<li data-level="9" data-path="S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S9.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Covariância</a></li>
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Desigualdade de Chebyshev</a></li>
+<li data-level="11" data-path="S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S11.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Coeficiente de Correlação</a></li>
+<li data-level="12" data-path="S12.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S12.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">12 </span></b>Teorema do Limite Central</a></li>
+<li data-level="13" data-path="S13.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S13.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">13 </span></b>Variáveis aleatórias contínuas</a></li>
+<li data-level="14" data-path="S14.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S14.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14 </span></b>Uma única teoria para discretas e contínuas</a></li>
+<li data-level="15" data-path="S15.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S15.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">15 </span></b>Distribuições Conjuntas e Independência</a></li>
+<li data-level="16" data-path="S16.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S16.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">16 </span></b>Somas de variáveis aleatórias independentes</a></li>
+<li data-level="17" data-path="S17.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S17.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">17 </span></b>Momentos e funções geradoras de momentos</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Somas úteis</a></li>
+<li data-level="B" data-path="A2.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">B </span></b>Exponenciais superam polinômios</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Probabilidade Condicional e Independência</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">4</span> Probabilidade Condicional e Independência</h1>
+
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">4.1</span> Probabilidade Condicional</h2>
+
+<div id="E1" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 4.1</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Suponha que antes de lançar um dado justo, você faz uma aposta de uma libra que o resultado será <math id="E1.p1.m1" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>. Seu amigo vê o resultado antes de você e lhe diz que o dado mostrou um número par. Você continuaria com a aposta ou desistiria dela? E se você fosse informado de que o resultado é ímpar? Como essas informações parciais sobre o resultado mudam a probabilidade?</p>
+</div>
+<div id="E1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Modelamos o espaço de probabilidade correspondente ao lançamento de um dado justo tomando
+<math id="E1.p2.m1" class="ltx_Math" alttext="\Omega=\{1,2,\dots,6\}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>,6</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\Omega=\{1,2,\dots,6\}</annotation></semantics></math>, <math id="E1.p2.m2" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> como o conjunto de todos os subconjuntos e <math id="E1.p2.m3" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> como a probabilidade uniforme sobre ele. Então, o evento que nosso amigo nos diz que ocorreu é</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx10" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E2.m1" class="ltx_Math" alttext="\displaystyle B=\{2,4,6\}," display="inline"><semantics><mrow><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>2,4,6</mn><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle B=\{2,4,6\},</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E2.m2" class="ltx_Math" alttext="\displaystyle\quad\text{e sua probabilidade \'{e}}\qquad\mathbb{P}(B)=\frac{3}%
+{6}=\frac{1}{2}&gt;0" display="inline"><semantics><mrow><mrow><mtext>e sua probabilidade é</mtext><mspace width="2em"></mspace><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>6</mn></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\quad\text{e sua probabilidade \'{e}}\qquad\mathbb{P}(B)=\frac{3}%
+{6}=\frac{1}{2}&gt;0</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.2)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">O evento favorável para nós é</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="A=\{3\}\quad\text{e sua probabilidade \'{e}}\qquad\mathbb{P}(A)=\frac{1}{6}\,." display="block"><semantics><mrow><mrow><mrow><mi>A</mi><mo>=</mo><mrow><mrow><mo stretchy="false">{</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><mspace width="1em"></mspace><mtext>e sua probabilidade é</mtext></mrow></mrow><mspace width="2em"></mspace><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">A=\{3\}\quad\text{e sua probabilidade \'{e}}\qquad\mathbb{P}(A)=\frac{1}{6}\,.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Saber que o resultado é par pode ser interpretado como mudar o espaço amostral de <math id="E1.p2.m4" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> para <math id="E1.p2.m5" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>. Intuitivamente, assumiríamos que a probabilidade no novo espaço amostral permanece uniforme, mas a probabilidade de cada resultado muda de <math id="E1.p2.m6" class="ltx_Math" alttext="\frac{1}{6}" display="inline"><semantics><mfrac><mn>1</mn><mn>6</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{6}</annotation></semantics></math> para <math id="E1.p2.m7" class="ltx_Math" alttext="\frac{1}{3}" display="inline"><semantics><mfrac><mn>1</mn><mn>3</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{3}</annotation></semantics></math>, pois agora existem apenas <math id="E1.p2.m8" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math> resultados possíveis. Dado que nosso resultado preferido, o <math id="E1.p2.m9" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>, não está no novo espaço amostral, esperaríamos que a probabilidade de obter <math id="E1.p2.m10" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math> seja <math id="E1.p2.m11" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> e, portanto, faria sentido desistir da aposta. Se, por outro lado, nos dissessem que o resultado é ímpar, poderíamos reformular o espaço de probabilidade como um com espaço amostral <math id="E1.p2.m12" class="ltx_Math" alttext="B^{c}=\{1,3,5\}" display="inline"><semantics><mrow><msup><mi>B</mi><mi>c</mi></msup><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,3,5</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">B^{c}=\{1,3,5\}</annotation></semantics></math> e esperaríamos que a probabilidade de vencer a aposta fosse <math id="E1.p2.m13" class="ltx_Math" alttext="\frac{1}{3}" display="inline"><semantics><mfrac><mn>1</mn><mn>3</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{3}</annotation></semantics></math>, pois é um dos <math id="E1.p2.m14" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math> resultados possíveis.</p>
+</div>
+<div id="E1.p3" class="ltx_para">
+<p class="ltx_p">E se apostássemos em <math id="E1.p3.m1" class="ltx_Math" alttext="\{2,3\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>2,3</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{2,3\}</annotation></semantics></math>? Então estaríamos olhando para a quantidade de maneiras pelas quais ainda podemos vencer, dividida pela quantidade de resultados possíveis. Portanto, de acordo com nossa intuição, esperaríamos que a probabilidade atualizada, dada que o evento <math id="E1.p3.m2" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> ocorreu, fosse</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\mathbf{P}_{B}(A)=\frac{|A\cap B|}{|B|}=\frac{(\frac{|A\cap B|}{|\Omega|})}{(%
+\frac{|B|}{|\Omega|})}=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}." display="block"><semantics><mrow><mrow><mrow><msub><mi>𝐏</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mo stretchy="false">|</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mfrac><mrow><mo stretchy="false">|</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mfrac><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mfrac><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mfrac><mo stretchy="false">)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbf{P}_{B}(A)=\frac{|A\cap B|}{|B|}=\frac{(\frac{|A\cap B|}{|\Omega|})}{(%
+\frac{|B|}{|\Omega|})}=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Mas isso é uma probabilidade bem definida?</p>
+</div>
+</div>
+<div id="E3" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 4.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E3.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade e <math id="E3.p1.m2" class="ltx_Math" alttext="B\in\mathcal{F}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">B\in\mathcal{F}</annotation></semantics></math> tal que <math id="E3.p1.m3" class="ltx_Math" alttext="\mathbb{P}(B)&gt;0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(B)&gt;0</annotation></semantics></math>. Seja <math id="E3.p1.m4" class="ltx_Math" alttext="\mathbf{P}_{B}:\mathcal{F}\rightarrow\mathbb{R}" display="inline"><semantics><mrow><msub><mi>𝐏</mi><mi>B</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\mathbf{P}_{B}:\mathcal{F}\rightarrow\mathbb{R}</annotation></semantics></math> tal que</span></p>
+<div id="E4" class="ltx_equation ltx_eqn_div">
+<span><math id="E4.m1" class="ltx_Math" alttext="\mathbf{P}_{B}(A)=\mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}\,." display="block"><semantics><mrow><mrow><mrow><msub><mi>𝐏</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbf{P}_{B}(A)=\mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.4)</span>
+              
+              
+            
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Então, <math id="E3.p1.m5" class="ltx_Math" alttext="\mathbf{P}_{B}" display="inline"><semantics><msub><mi>𝐏</mi><mi>B</mi></msub><annotation encoding="application/x-tex">\mathbf{P}_{B}</annotation></semantics></math> é uma medida de probabilidade.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Precisamos verificar se todas as propriedades das medidas de probabilidade são satisfeitas.</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Primeiro, precisamos mostrar que <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\mathbf{P}_{B}" display="inline"><semantics><msub><mi>𝐏</mi><mi>B</mi></msub><annotation encoding="application/x-tex">\mathbf{P}_{B}</annotation></semantics></math> está definido para todo <math id="I1.i1.p1.m2" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math> e assume valores em <math id="I1.i1.p1.m3" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>, ou seja, <math id="I1.i1.p1.m4" class="ltx_Math" alttext="\mathbf{P}_{B}" display="inline"><semantics><msub><mi>𝐏</mi><mi>B</mi></msub><annotation encoding="application/x-tex">\mathbf{P}_{B}</annotation></semantics></math> é um mapeamento de <math id="I1.i1.p1.m5" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> para <math id="I1.i1.p1.m6" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>, como deveria ser.</p>
+<ul id="I1.i1.I1" class="ltx_itemize">
+<li id="I1.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i1.I1.i1.p1" class="ltx_para">​<p class="ltx_p">Seja <math id="I1.i1.I1.i1.p1.m1" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math>. Assumimos que <math id="I1.i1.I1.i1.p1.m2" class="ltx_Math" alttext="B\in\mathcal{F}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">B\in\mathcal{F}</annotation></semantics></math> e, portanto, <math id="I1.i1.I1.i1.p1.m3" class="ltx_Math" alttext="A\cap B\in\mathcal{F}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\cap B\in\mathcal{F}</annotation></semantics></math>, pois o espaço de eventos é fechado sob interseções. Portanto, <math id="I1.i1.I1.i1.p1.m4" class="ltx_Math" alttext="\mathbb{P}(A\cap B)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A\cap B)</annotation></semantics></math> está bem definido e, como <math id="I1.i1.I1.i1.p1.m5" class="ltx_Math" alttext="\mathbb{P}(B)&gt;0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(B)&gt;0</annotation></semantics></math>, sua razão <math id="I1.i1.I1.i1.p1.m6" class="ltx_Math" alttext="\mathbf{P}_{B}(A)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}" display="inline"><semantics><mrow><mrow><msub><mi>𝐏</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{P}_{B}(A)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}</annotation></semantics></math> está bem definida.</p>
+</div>
+</li>
+<li id="I1.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i1.I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I1.i1.I1.i2.p1.m1" class="ltx_Math" alttext="A\cap B\subseteq B" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\cap B\subseteq B</annotation></semantics></math> e, portanto, <math id="I1.i1.I1.i2.p1.m2" class="ltx_Math" alttext="\mathbb{P}(A\cap B)\leqslant\mathbb{P}(B)" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⩽</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A\cap B)\leqslant\mathbb{P}(B)</annotation></semantics></math> (proposição  <a href="S3.html#E25" title="Proposição 3.25. ‣ 3.2 Probabilidade ‣ 3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.25</span></a>). Segue que <math id="I1.i1.I1.i2.p1.m3" class="ltx_Math" alttext="\mathbf{P}_{B}(A)\leqslant 1" display="inline"><semantics><mrow><mrow><msub><mi>𝐏</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⩽</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathbf{P}_{B}(A)\leqslant 1</annotation></semantics></math>. Da mesma forma, como <math id="I1.i1.I1.i2.p1.m4" class="ltx_Math" alttext="\mathbb{P}(A\cap B)&gt;0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(A\cap B)&gt;0</annotation></semantics></math> e <math id="I1.i1.I1.i2.p1.m5" class="ltx_Math" alttext="\mathbb{P}(B)&gt;0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(B)&gt;0</annotation></semantics></math>, segue que <math id="I1.i1.I1.i2.p1.m6" class="ltx_Math" alttext="\mathbf{P}_{B}(A)&gt;0" display="inline"><semantics><mrow><mrow><msub><mi>𝐏</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbf{P}_{B}(A)&gt;0</annotation></semantics></math>. Portanto, <math id="I1.i1.I1.i2.p1.m7" class="ltx_Math" alttext="\mathbf{P}_{B}(A)\in[0,1]" display="inline"><semantics><mrow><mrow><msub><mi>𝐏</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{P}_{B}(A)\in[0,1]</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I1.i2.p1" class="ltx_para">
+<div id="E5" class="ltx_equation ltx_eqn_div">
+<span><math id="E5.m1" class="ltx_Math" alttext="\mathbf{P}_{B}(\Omega)=\frac{\mathbb{P}(\Omega\cap B)}{\mathbb{P}(B)}=\frac{%
+\mathbb{P}(B)}{\mathbb{P}(B)}=1\,," display="block"><semantics><mrow><mrow><mrow><msub><mi>𝐏</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">Ω</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mn>1</mn></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\mathbf{P}_{B}(\Omega)=\frac{\mathbb{P}(\Omega\cap B)}{\mathbb{P}(B)}=\frac{%
+\mathbb{P}(B)}{\mathbb{P}(B)}=1\,,</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.5)</span>
+                    
+                    
+                  
+</div>​<p class="ltx_p">conforme requerido.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I1.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">(aditividade contável) Seja <math id="I1.i3.p1.m1" class="ltx_Math" alttext="A_{n}\in\mathcal{F}" display="inline"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{n}\in\mathcal{F}</annotation></semantics></math> para todo <math id="I1.i3.p1.m2" class="ltx_Math" alttext="n\geqslant 1" display="inline"><semantics><mrow><mi>n</mi><mo>⩾</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geqslant 1</annotation></semantics></math>, de modo que
+<math id="I1.i3.p1.m3" class="ltx_Math" alttext="A_{n}\cap A_{m}=\emptyset" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∩</mo><msub><mi>A</mi><mi>m</mi></msub></mrow><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{n}\cap A_{m}=\emptyset</annotation></semantics></math> para todos <math id="I1.i3.p1.m4" class="ltx_Math" alttext="n\neq m" display="inline"><semantics><mrow><mi>n</mi><mo>≠</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n\neq m</annotation></semantics></math> (eventos disjuntos). Então</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx11" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E6.m1" class="ltx_Math" alttext="\displaystyle\mathbf{P}_{B}\left(\bigcup_{n=1}^{\infty}A_{n}\right)" display="inline"><semantics><mrow><msub><mi>𝐏</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbf{P}_{B}\left(\bigcup_{n=1}^{\infty}A_{n}\right)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E6.m2" class="ltx_Math" alttext="\displaystyle=\frac{1}{\mathbb{P}(B)}\mathbb{P}\left(\left(\bigcup_{n=1}^{%
+\infty}A_{n}\right)\cap B\right)" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{1}{\mathbb{P}(B)}\mathbb{P}\left(\left(\bigcup_{n=1}^{%
+\infty}A_{n}\right)\cap B\right)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.6)</span></td>
+</tr></tbody>
+<tbody id="E7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E7.m1" class="ltx_Math" alttext="\displaystyle=\frac{1}{\mathbb{P}(B)}\mathbb{P}\left(\bigcup_{n=1}^{\infty}(A_%
+{n}\cap B)\right)\quad\text{(**)}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mspace width="1em"></mspace><mtext>(**)</mtext></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{1}{\mathbb{P}(B)}\mathbb{P}\left(\bigcup_{n=1}^{\infty}(A_%
+{n}\cap B)\right)\quad\text{(**)}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.7)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Agora, como <math id="SS1.p1.m1" class="ltx_Math" alttext="A_{n}\in\mathcal{F}" display="inline"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{n}\in\mathcal{F}</annotation></semantics></math> e <math id="SS1.p1.m2" class="ltx_Math" alttext="B\in\mathcal{F}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">B\in\mathcal{F}</annotation></semantics></math> para todos <math id="SS1.p1.m3" class="ltx_Math" alttext="n\geqslant 1" display="inline"><semantics><mrow><mi>n</mi><mo>⩾</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geqslant 1</annotation></semantics></math>, segue que <math id="SS1.p1.m4" class="ltx_Math" alttext="A_{n}\cap B\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∩</mo><mi>B</mi></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{n}\cap B\in\mathcal{F}</annotation></semantics></math> para todos <math id="SS1.p1.m5" class="ltx_Math" alttext="n\geqslant 1" display="inline"><semantics><mrow><mi>n</mi><mo>⩾</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geqslant 1</annotation></semantics></math>. Além disso, os eventos <math id="SS1.p1.m6" class="ltx_Math" alttext="A_{n}\cap B" display="inline"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∩</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A_{n}\cap B</annotation></semantics></math> são disjuntos. De fato, para <math id="SS1.p1.m7" class="ltx_Math" alttext="n\neq m" display="inline"><semantics><mrow><mi>n</mi><mo>≠</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n\neq m</annotation></semantics></math></p>
+<div id="E8" class="ltx_equation ltx_eqn_div">
+<span><math id="E8.m1" class="ltx_Math" alttext="(A_{n}\cap B)\cap(A_{m}\cap B)\subseteq A_{n}\cap A_{m}=\emptyset\,." display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>m</mi></msub><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⊆</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∩</mo><msub><mi>A</mi><mi>m</mi></msub></mrow><mo>=</mo><mi>∅︀</mi></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">(A_{n}\cap B)\cap(A_{m}\cap B)\subseteq A_{n}\cap A_{m}=\emptyset\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.8)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Uma vez que <math id="SS1.p1.m8" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> é uma medida de probabilidade, ela é aditiva contável, o que implica que</p>
+<div id="E9" class="ltx_equation ltx_eqn_div">
+<span><math id="E9.m1" class="ltx_math_unparsed" alttext="\text{(**)}=\quad\frac{1}{\mathbb{P}(B)}\sum_{n=1}^{\infty}\mathbb{P}(A_{n}%
+\cap B)=\sum_{n=1}^{\infty}\frac{\mathbb{P}(A_{n}\cap B)}{\mathbb{P}(B)}=\sum_%
+{n=1}^{\infty}\mathbb{P}(A_{n}|B)=\sum_{n=1}^{\infty}\mathbf{P}_{B}(A_{n})\,." display="block"><semantics><mrow><mtext>(**)</mtext><mo>=</mo><mspace width="1em"></mspace><mfrac><mn>1</mn><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mi>ℙ</mi><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo rspace="0.111em">=</mo><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo rspace="0.111em">=</mo><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mi>ℙ</mi><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo rspace="0.111em">=</mo><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>𝐏</mi><mi>B</mi></msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\text{(**)}=\quad\frac{1}{\mathbb{P}(B)}\sum_{n=1}^{\infty}\mathbb{P}(A_{n}%
+\cap B)=\sum_{n=1}^{\infty}\frac{\mathbb{P}(A_{n}\cap B)}{\mathbb{P}(B)}=\sum_%
+{n=1}^{\infty}\mathbb{P}(A_{n}|B)=\sum_{n=1}^{\infty}\mathbf{P}_{B}(A_{n})\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.9)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="E10" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 4.10</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E10.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E10.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade e <math id="E10.p1.m2" class="ltx_Math" alttext="B\in\mathcal{F}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">B\in\mathcal{F}</annotation></semantics></math> tal que <math id="E10.p1.m3" class="ltx_Math" alttext="\mathbb{P}(B)&gt;0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(B)&gt;0</annotation></semantics></math>. Para <math id="E10.p1.m4" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math>, a <em class="ltx_emph ltx_font_italic">probabilidade condicional de <math id="E10.p1.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> dado <math id="E10.p1.m6" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math></em> é denotada por <math id="E10.p1.m7" class="ltx_Math" alttext="\mathbb{P}(A|B)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A|B)</annotation></semantics></math> e é definida como</p>
+<div id="E11" class="ltx_equation ltx_eqn_div">
+<span><math id="E11.m1" class="ltx_Math" alttext="\mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}\quad\text{(*)}" display="block"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mspace width="1em"></mspace><mtext>(*)</mtext></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}\quad\text{(*)}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.11)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="Thmexercise1" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.1</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexercise1.p1" class="ltx_para">
+<p class="ltx_p">Um experimento consiste em lançar uma moeda justa 7 vezes.</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I2.ix1.p1" class="ltx_para">​<p class="ltx_p">Descreva o espaço de probabilidade associado a ele.</p>
+</div>
+</li>
+<li id="I2.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I2.ix2.p1" class="ltx_para">​<p class="ltx_p">Seja <math id="I2.ix2.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> o evento correspondente a obter um número primo de caras. Qual é <math id="I2.ix2.p1.m2" class="ltx_Math" alttext="\mathbb{P}(E)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(E)</annotation></semantics></math>?</p>
+</div>
+</li>
+<li id="I2.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I2.ix3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Seja <math id="I2.ix3.p1.m1" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> o evento "Cara ocorre pelo menos 6 vezes". Qual é <math id="I2.ix3.p1.m2" class="ltx_Math" alttext="\mathbb{P}(E|B)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(E|B)</annotation></semantics></math>?</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmsolutionx4" class="ltx_theorem ltx_theorem_solution">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Solução</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmsolutionx4.p1" class="ltx_para">
+<ul id="I3" class="ltx_itemize">
+<li id="I3.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I3.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.ix1.p1.m1" class="ltx_Math" alttext="\Omega=\{(a_{1},\dots,a_{7}):a_{i}\in\{H,T\}\}=S_{2,7}(\{H,T\})" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mn>7</mn></msub><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.278em">:</mo><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>∈</mo><mrow><mo stretchy="false">{</mo><mi>H</mi><mo>,</mo><mi>T</mi><mo stretchy="false">}</mo></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>=</mo><mrow><msub><mi>S</mi><mn>2,7</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>H</mi><mo>,</mo><mi>T</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\Omega=\{(a_{1},\dots,a_{7}):a_{i}\in\{H,T\}\}=S_{2,7}(\{H,T\})</annotation></semantics></math>,
+<math id="I3.ix1.p1.m2" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> é o conjunto das partes de <math id="I3.ix1.p1.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> e <math id="I3.ix1.p1.m4" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> é a probabilidade uniforme, ou seja, <math id="I3.ix1.p1.m5" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> é tal que</p>
+<div id="E12" class="ltx_equation ltx_eqn_div">
+<span><math id="E12.m1" class="ltx_Math" alttext="\forall\,A\in\mathcal{F}\quad\mathbb{P}(A)=\frac{|A|}{|\Omega|}\,." display="block"><semantics><mrow><mrow><mrow><mrow><mo rspace="0.337em">∀</mo><mi>A</mi></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mspace width="1em"></mspace><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mfrac></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\forall\,A\in\mathcal{F}\quad\mathbb{P}(A)=\frac{|A|}{|\Omega|}\,.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.12)</span>
+                    
+                    
+                  
+</div>
+<p class="ltx_p">Lembrando que <math id="I3.ix1.p1.m6" class="ltx_Math" alttext="|\Omega|=|S_{2,7}(\{H,T\})|=2^{7}." display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><msub><mi>S</mi><mn>2,7</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>H</mi><mo>,</mo><mi>T</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><msup><mn>2</mn><mn>7</mn></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">|\Omega|=|S_{2,7}(\{H,T\})|=2^{7}.</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I3.ix2.p1" class="ltx_para">​<p class="ltx_p">Para <math id="I3.ix2.p1.m1" class="ltx_Math" alttext="i=1,\dots,7" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>,7</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">i=1,\dots,7</annotation></semantics></math>, seja
+<math id="I3.ix2.p1.m2" class="ltx_Math" alttext="A_{i}" display="inline"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_{i}</annotation></semantics></math> o evento "obtemos exatamente <math id="I3.ix2.p1.m3" class="ltx_Math" alttext="i" display="inline"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math> caras". Os elementos de <math id="I3.ix2.p1.m4" class="ltx_Math" alttext="A_{i}" display="inline"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_{i}</annotation></semantics></math> podem ser caracterizados de forma única pela posição de H na sequência. Portanto, pelo princípio fundamental da contagem, <math id="I3.ix2.p1.m5" class="ltx_Math" alttext="|A_{i}|=\binom{7}{i}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>7</mn><mi>i</mi></mfrac><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">|A_{i}|=\binom{7}{i}</annotation></semantics></math>. Assim,</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\mathbb{P}(A_{i})=\frac{1}{2^{7}}\binom{7}{i}" display="block"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mn>7</mn></msup></mfrac><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>7</mn><mi>i</mi></mfrac><mo>)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{i})=\frac{1}{2^{7}}\binom{7}{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Agora, observe que <math id="I3.ix2.p1.m6" class="ltx_Math" alttext="A_{i}\cap A_{j}=\emptyset" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>∩</mo><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{i}\cap A_{j}=\emptyset</annotation></semantics></math> para <math id="I3.ix2.p1.m7" class="ltx_Math" alttext="i\neq j" display="inline"><semantics><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i\neq j</annotation></semantics></math> (nenhum resultado tem tanto <math id="I3.ix2.p1.m8" class="ltx_Math" alttext="i" display="inline"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math> quanto <math id="I3.ix2.p1.m9" class="ltx_Math" alttext="j" display="inline"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math> caras) e</p>
+<div id="E13" class="ltx_equation ltx_eqn_div">
+<span><math id="E13.m1" class="ltx_Math" alttext="E=A_{2}\cup A_{3}\cup A_{5}\cup A_{7}\,." display="block"><semantics><mrow><mrow><mi>E</mi><mo>=</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>3</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>5</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>7</mn></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E=A_{2}\cup A_{3}\cup A_{5}\cup A_{7}\,.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.13)</span>
+                    
+                    
+                  
+</div>
+<p class="ltx_p">Então, pela aditividade finita</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx12" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E14.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(E)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(E)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E14.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{P}(A_{2})+\mathbb{P}(A_{3})+\mathbb{P}(A_{5})+\mathbb{P}%
+(A_{7})" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>5</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>7</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}(A_{2})+\mathbb{P}(A_{3})+\mathbb{P}(A_{5})+\mathbb{P}%
+(A_{7})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.14)</span></td>
+</tr></tbody>
+<tbody id="E15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E15.m1" class="ltx_Math" alttext="\displaystyle=\binom{7}{2}\frac{1}{2^{7}}+\binom{7}{3}\frac{1}{2^{7}}+\binom{7%
+}{5}\frac{1}{2^{7}}+\binom{7}{7}\frac{1}{2^{7}}=\frac{78}{128}\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mn>7</mn><mn>2</mn></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mn>7</mn><mn>3</mn></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mn>7</mn><mn>5</mn></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mn>7</mn><mn>7</mn></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>78</mn><mn>128</mn></mfrac></mstyle></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\binom{7}{2}\frac{1}{2^{7}}+\binom{7}{3}\frac{1}{2^{7}}+\binom{7%
+}{5}\frac{1}{2^{7}}+\binom{7}{7}\frac{1}{2^{7}}=\frac{78}{128}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.15)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</li>
+<li id="I3.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I3.ix3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I3.ix3.p1.m1" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> é o evento "H aparece pelo menos 6 vezes", então <math id="I3.ix3.p1.m2" class="ltx_Math" alttext="B=A_{6}\cup A_{7}" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><msub><mi>A</mi><mn>6</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>7</mn></msub></mrow></mrow><annotation encoding="application/x-tex">B=A_{6}\cup A_{7}</annotation></semantics></math>. Observe que,</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx13" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E16.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(B)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(B)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E16.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{P}(A_{6})+\mathbb{P}(A_{7})=\binom{7}{6}\frac{1}{2^{7}}+%
+\binom{7}{7}\frac{1}{2^{7}}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>6</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>7</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mn>7</mn><mn>6</mn></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mn>7</mn><mn>7</mn></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}(A_{6})+\mathbb{P}(A_{7})=\binom{7}{6}\frac{1}{2^{7}}+%
+\binom{7}{7}\frac{1}{2^{7}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.16)</span></td>
+</tr></tbody>
+<tbody id="E17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E17.m1" class="ltx_Math" alttext="\displaystyle=\frac{7!}{6!1!}\cdot\frac{1}{2^{7}}+\frac{7!}{6!0!}\cdot\frac{1}%
+{2^{7}}=\frac{7+1}{2^{7}}=\frac{7+1}{2^{7}}=\frac{8}{2^{7}}=\frac{1}{2^{4}}&gt;0\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>7</mn><mo>!</mo></mrow><mrow><mrow><mn>6</mn><mo>!</mo></mrow><mo>⁢</mo><mrow><mn>1</mn><mo>!</mo></mrow></mrow></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>7</mn><mo>!</mo></mrow><mrow><mrow><mn>6</mn><mo>!</mo></mrow><mo>⁢</mo><mrow><mn>0</mn><mo>!</mo></mrow></mrow></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>7</mn><mo>+</mo><mn>1</mn></mrow><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>7</mn><mo>+</mo><mn>1</mn></mrow><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>8</mn><msup><mn>2</mn><mn>7</mn></msup></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>2</mn><mn>4</mn></msup></mfrac></mstyle><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{7!}{6!1!}\cdot\frac{1}{2^{7}}+\frac{7!}{6!0!}\cdot\frac{1}%
+{2^{7}}=\frac{7+1}{2^{7}}=\frac{7+1}{2^{7}}=\frac{8}{2^{7}}=\frac{1}{2^{4}}&gt;0\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.17)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Agora, podemos calcular <math id="I3.ix3.p1.m3" class="ltx_Math" alttext="\mathbb{P}(E|B)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(E|B)</annotation></semantics></math>. Pela definição,</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx14" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E18.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(E|B)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(E|B)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E18.m2" class="ltx_Math" alttext="\displaystyle=\frac{\mathbb{P}(E\cap B)}{\mathbb{P}(B)}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{\mathbb{P}(E\cap B)}{\mathbb{P}(B)}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.18)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Como <math id="I3.ix3.p1.m4" class="ltx_Math" alttext="E\cap B=(A_{2}\cup A_{3}\cup A_{5}\cup A_{7})\cap(A_{6}\cup A_{7})=A_{7}" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>∩</mo><mi>B</mi></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>3</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>5</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>7</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>6</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>7</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>A</mi><mn>7</mn></msub></mrow><annotation encoding="application/x-tex">E\cap B=(A_{2}\cup A_{3}\cup A_{5}\cup A_{7})\cap(A_{6}\cup A_{7})=A_{7}</annotation></semantics></math>, temos</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\mathbb{P}(E|B)=\frac{\mathbb{P}(A_{7})}{\mathbb{P}(B)}=\frac{1/2^{7}}{1/2^{4}%
+}=\frac{2^{4}}{2^{7}}=\frac{1}{8}\,." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>7</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>/</mo><msup><mn>2</mn><mn>7</mn></msup></mrow><mrow><mn>1</mn><mo>/</mo><msup><mn>2</mn><mn>4</mn></msup></mrow></mfrac><mo>=</mo><mfrac><msup><mn>2</mn><mn>4</mn></msup><msup><mn>2</mn><mn>7</mn></msup></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(E|B)=\frac{\mathbb{P}(A_{7})}{\mathbb{P}(B)}=\frac{1/2^{7}}{1/2^{4}%
+}=\frac{2^{4}}{2^{7}}=\frac{1}{8}\,.</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="E19" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 4.19</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E19.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Um estudante compra 2 maçãs, 3 bananas e 5 cocos. Todos os dias o estudante escolhe uma fruta uniformemente ao acaso e a come.</p>
+</div>
+<div id="E19.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">O espaço amostral é o conjunto de todas as tríades que podem ser construídas com as frutas disponíveis, em que cada resultado corresponde à fruta comida em cada dia. Como no final dos três dias temos todas as informações, o espaço de eventos é o conjunto das partes do espaço amostral. Definimos os eventos <math id="E19.p2.m1" class="ltx_math_unparsed" alttext="A_{i}=\{" display="inline"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>=</mo><mo stretchy="false">{</mo></mrow><annotation encoding="application/x-tex">A_{i}=\{</annotation></semantics></math>o estudante come uma maçã no dia i<math id="E19.p2.m2" class="ltx_Math" alttext="\}" display="inline"><semantics><mo stretchy="false">}</mo><annotation encoding="application/x-tex">\}</annotation></semantics></math>, <math id="E19.p2.m3" class="ltx_math_unparsed" alttext="B_{i}=\{" display="inline"><semantics><mrow><msub><mi>B</mi><mi>i</mi></msub><mo>=</mo><mo stretchy="false">{</mo></mrow><annotation encoding="application/x-tex">B_{i}=\{</annotation></semantics></math>o estudante come uma banana no dia i<math id="E19.p2.m4" class="ltx_Math" alttext="\}" display="inline"><semantics><mo stretchy="false">}</mo><annotation encoding="application/x-tex">\}</annotation></semantics></math> e <math id="E19.p2.m5" class="ltx_math_unparsed" alttext="C_{i}=\{" display="inline"><semantics><mrow><msub><mi>C</mi><mi>i</mi></msub><mo>=</mo><mo stretchy="false">{</mo></mrow><annotation encoding="application/x-tex">C_{i}=\{</annotation></semantics></math>o estudante come um coco no dia i<math id="E19.p2.m6" class="ltx_Math" alttext="\}" display="inline"><semantics><mo stretchy="false">}</mo><annotation encoding="application/x-tex">\}</annotation></semantics></math>.</p>
+</div>
+<div id="E19.p3" class="ltx_para">
+<ul id="I4" class="ltx_itemize">
+<li id="I4.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I4.ix1.p1" class="ltx_para">​<p class="ltx_p">Qual é a probabilidade de o estudante comer um coco no dia 1 e uma banana no dia 2? O evento ’o estudante come um coco no dia 1 <span class="ltx_text ltx_font_bold">e</span> uma banana no dia 2’ corresponde ao evento <math id="I4.ix1.p1.m1" class="ltx_Math" alttext="C_{1}\cap B_{2}" display="inline"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>B</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">C_{1}\cap B_{2}</annotation></semantics></math>. Observe que a maneira como a informação sobre a probabilidade é codificada é por meio de probabilidades condicionais: a afirmação ’<span class="ltx_text ltx_font_bold">todos os dias</span> o estudante escolhe uma fruta <span class="ltx_text ltx_font_bold">uniformemente ao acaso</span> e a come’ pode ser interpretada como a probabilidade condicional de escolher qualquer uma das frutas restantes uniformemente ao acaso, então sabemos que</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\mathbb{P}(B_{2}|C_{1})=\frac{3}{9}." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>B</mi><mn>2</mn></msub><mo fence="false">|</mo><msub><mi>C</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>3</mn><mn>9</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(B_{2}|C_{1})=\frac{3}{9}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Segue da definição de probabilidade condicional que</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="\mathbb{P}(C_{1}\cap B_{2})=\mathbb{P}(B_{2}|C_{1})\mathbb{P}(C_{1})=\frac{3}{%
+9}\frac{5}{10}=\frac{1}{6}." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>B</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>B</mi><mn>2</mn></msub><mo fence="false">|</mo><msub><mi>C</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>C</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>3</mn><mn>9</mn></mfrac><mo>⁢</mo><mfrac><mn>5</mn><mn>10</mn></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(C_{1}\cap B_{2})=\mathbb{P}(B_{2}|C_{1})\mathbb{P}(C_{1})=\frac{3}{%
+9}\frac{5}{10}=\frac{1}{6}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Escrever a probabilidade de interseção de dois eventos como um produto de uma probabilidade condicional e uma probabilidade é chamado de ’regra da multiplicação’ e pode ser estendido para interseções de mais de dois eventos. Por exemplo, consideremos a seguinte pergunta.</p>
+</div>
+</li>
+<li id="I4.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I4.ix2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Qual é a probabilidade de no terceiro dia o estudante comer a última maçã? Como existem exatamente duas maçãs, isso significa que o estudante comerá a primeira maçã no dia 1 ou no dia 2. Portanto, se <math id="I4.ix2.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> é o evento ’estudante come a última maçã no terceiro dia’, podemos escrever</p>
+<div id="E20" class="ltx_equation ltx_eqn_div">
+<span><math id="E20.m1" class="ltx_Math" alttext="A=(A_{1}\cap A_{2}^{c}\cap A_{3})\cup(A_{1}^{c}\cap A_{2}\cap A_{3})\,." display="block"><semantics><mrow><mrow><mi>A</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msubsup><mi>A</mi><mn>2</mn><mi>c</mi></msubsup><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>A</mi><mn>1</mn><mi>c</mi></msubsup><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">A=(A_{1}\cap A_{2}^{c}\cap A_{3})\cup(A_{1}^{c}\cap A_{2}\cap A_{3})\,.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.20)</span>
+                    
+                    
+                  
+</div>
+<p class="ltx_p">Observe que os eventos <math id="I4.ix2.p1.m2" class="ltx_Math" alttext="A_{1}\cap A_{2}^{c}\cap A_{3}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msubsup><mi>A</mi><mn>2</mn><mi>c</mi></msubsup><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">A_{1}\cap A_{2}^{c}\cap A_{3}</annotation></semantics></math> e <math id="I4.ix2.p1.m3" class="ltx_Math" alttext="A_{1}^{c}\cap A_{2}\cap A_{3}" display="inline"><semantics><mrow><msubsup><mi>A</mi><mn>1</mn><mi>c</mi></msubsup><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">A_{1}^{c}\cap A_{2}\cap A_{3}</annotation></semantics></math> são
+disjuntos, portanto</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx15" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E21.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E21.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{P}(A_{1}\cap A_{2}^{c}\cap A_{3})+\mathbb{P}(A_{1}^{c}%
+\cap A_{2}\cap A_{3})" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msubsup><mi>A</mi><mn>2</mn><mi>c</mi></msubsup><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>A</mi><mn>1</mn><mi>c</mi></msubsup><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}(A_{1}\cap A_{2}^{c}\cap A_{3})+\mathbb{P}(A_{1}^{c}%
+\cap A_{2}\cap A_{3})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.21)</span></td>
+</tr></tbody>
+<tbody id="E22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E22.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{P}(A_{1})\mathbb{P}(A_{2}^{c}|A_{1})\mathbb{P}(A_{3}|A_{%
+1}\cap A_{2}^{c})+\mathbb{P}(A_{1}^{c})\mathbb{P}(A_{2}|A_{1})\mathbb{P}(A_{3}%
+|A_{1}^{c}\cap A_{2})" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>A</mi><mn>2</mn><mi>c</mi></msubsup><mo fence="false">|</mo><msub><mi>A</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>3</mn></msub><mo fence="false">|</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msubsup><mi>A</mi><mn>2</mn><mi>c</mi></msubsup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>A</mi><mn>1</mn><mi>c</mi></msubsup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo fence="false">|</mo><msub><mi>A</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>3</mn></msub><mo fence="false">|</mo><mrow><msubsup><mi>A</mi><mn>1</mn><mi>c</mi></msubsup><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}(A_{1})\mathbb{P}(A_{2}^{c}|A_{1})\mathbb{P}(A_{3}|A_{%
+1}\cap A_{2}^{c})+\mathbb{P}(A_{1}^{c})\mathbb{P}(A_{2}|A_{1})\mathbb{P}(A_{3}%
+|A_{1}^{c}\cap A_{2})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.22)</span></td>
+</tr></tbody>
+<tbody id="E23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E23.m1" class="ltx_Math" alttext="\displaystyle=\frac{2}{10}\cdot\frac{8}{9}\cdot\frac{1}{8}+\frac{8}{10}\cdot%
+\frac{2}{9}\cdot\frac{1}{8}=\frac{1}{45}+\frac{1}{45}=\frac{2}{45}\,," display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>10</mn></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>8</mn><mn>9</mn></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>8</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>8</mn><mn>10</mn></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>9</mn></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>8</mn></mfrac></mstyle></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>45</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>45</mn></mfrac></mstyle></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>45</mn></mfrac></mstyle></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{2}{10}\cdot\frac{8}{9}\cdot\frac{1}{8}+\frac{8}{10}\cdot%
+\frac{2}{9}\cdot\frac{1}{8}=\frac{1}{45}+\frac{1}{45}=\frac{2}{45}\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.23)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">usando a regra da multiplicação duas vezes.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="E24" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 4.24</span></span><span class="ltx_text ltx_font_bold"> </span>(Regra da Multiplicação)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E24.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E24.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade e <math id="E24.p1.m2" class="ltx_Math" alttext="A_{1},\dots,A_{n}\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{n}\in\mathcal{F}</annotation></semantics></math> de modo que <math id="E24.p1.m3" class="ltx_Math" alttext="\mathbb{P}(A_{1}\cap\dots\cap A_{n-1})&gt;0." display="inline"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{1}\cap\dots\cap A_{n-1})&gt;0.</annotation></semantics></math> Então,</span></p>
+<div id="E25" class="ltx_equation ltx_eqn_div">
+<span><math id="E25.m1" class="ltx_Math" alttext="\mathbb{P}(A_{1}\cap\dots\cap A_{n})=\mathbb{P}(A_{1})\mathbb{P}(A_{2}|A_{1})%
+\mathbb{P}(A_{3}|A_{1}\cap A_{2})\dots\mathbb{P}(A_{n}|A_{1}\cap\dots\cap A_{n%
+-1})\,." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo fence="false">|</mo><msub><mi>A</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>3</mn></msub><mo fence="false">|</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo fence="false">|</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{1}\cap\dots\cap A_{n})=\mathbb{P}(A_{1})\mathbb{P}(A_{2}|A_{1})%
+\mathbb{P}(A_{3}|A_{1}\cap A_{2})\dots\mathbb{P}(A_{n}|A_{1}\cap\dots\cap A_{n%
+-1})\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.25)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Observe que para <math id="SS1.p2.m1" class="ltx_Math" alttext="k=1,\dots,n-1" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">k=1,\dots,n-1</annotation></semantics></math>, <math id="SS1.p2.m2" class="ltx_Math" alttext="A_{1}\cap\dots\cap A_{k}\supseteq A_{1}\cap\dots\cap A_{n-1}." display="inline"><semantics><mrow><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mi>k</mi></msub></mrow><mo>⊇</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">A_{1}\cap\dots\cap A_{k}\supseteq A_{1}\cap\dots\cap A_{n-1}.</annotation></semantics></math> Portanto, pela Proposição  <a href="S3.html#E25" title="Proposição 3.25. ‣ 3.2 Probabilidade ‣ 3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.25</span></a> e pela hipótese</p>
+<div id="E26" class="ltx_equation ltx_eqn_div">
+<span><math id="E26.m1" class="ltx_Math" alttext="\mathbb{P}(A_{1}\cap A_{2}\cap\dots\cap A_{k})\geqslant\mathbb{P}(A_{1}\cap%
+\dots\cap A_{n-1})&gt;0\,." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⩾</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{1}\cap A_{2}\cap\dots\cap A_{k})\geqslant\mathbb{P}(A_{1}\cap%
+\dots\cap A_{n-1})&gt;0\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.26)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">que garante que todas as probabilidades condicionais no lado direito sejam bem definidas. O resultado segue de uma aplicação direta da definição de probabilidade condicional no lado direito:</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx16" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E27"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E27.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{1})\mathbb{P}(A_{2}|A_{1})\mathbb{P}(A_{3}|A_{1}%
+\cap A_{2})\dots\mathbb{P}(A_{n}|A_{1}\cap\dots\cap A_{n-1})" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo fence="false">|</mo><msub><mi>A</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>3</mn></msub><mo fence="false">|</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>n</mi></msub><mo fence="false">|</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{1})\mathbb{P}(A_{2}|A_{1})\mathbb{P}(A_{3}|A_{1}%
+\cap A_{2})\dots\mathbb{P}(A_{n}|A_{1}\cap\dots\cap A_{n-1})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.27)</span></td>
+</tr></tbody>
+<tbody id="E28"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E28.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{P}(A_{1})\frac{\mathbb{P}(A_{1}\cap A_{2})}{\mathbb{P}(A%
+_{1})}\frac{\mathbb{P}(A_{3}\cap A_{1}\cap A_{2})}{\mathbb{P}(A_{1}\cap A_{2})%
+}\dots\frac{\mathbb{P}(A_{1}\cap\dots\cap A_{n})}{\mathbb{P}(A_{1}\cap\dots%
+\cap A_{n-1})}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>3</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}(A_{1})\frac{\mathbb{P}(A_{1}\cap A_{2})}{\mathbb{P}(A%
+_{1})}\frac{\mathbb{P}(A_{3}\cap A_{1}\cap A_{2})}{\mathbb{P}(A_{1}\cap A_{2})%
+}\dots\frac{\mathbb{P}(A_{1}\cap\dots\cap A_{n})}{\mathbb{P}(A_{1}\cap\dots%
+\cap A_{n-1})}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.28)</span></td>
+</tr></tbody>
+<tbody id="E29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E29.m1" class="ltx_Math" alttext="\displaystyle=\mathbb{P}(A_{1}\cap\dots\cap A_{n})\,.\qed" display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em" rspace="0.0835em">.</mo><mo class="ltx_mathvariant_italic" lspace="0.0835em" mathvariant="italic" separator="true">∎</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}(A_{1}\cap\dots\cap A_{n})\,.\qed</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.29)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">4.2</span> Lei da Probabilidade Total</h2>
+
+<div id="E30" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 4.30</span></span><span class="ltx_text ltx_font_italic"> </span>(<a href="#E19" title="Exemplo 4.19. ‣ 4.1 Probabilidade Condicional ‣ 4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.19</span></a> continuado)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E30.p1" class="ltx_para">
+<p class="ltx_p">Suponha que agora nos seja perguntado para calcular a probabilidade de o estudante comer um coco no dia 2. Para calcular a probabilidade, precisamos condicionar o que aconteceu no dia 1, percorrendo todas as opções possíveis. Neste caso, existem duas opções que afetam o cálculo da probabilidade condicional: se o estudante também comeu um coco no dia 1 (evento <math id="E30.p1.m1" class="ltx_Math" alttext="C_{1}" display="inline"><semantics><msub><mi>C</mi><mn>1</mn></msub><annotation encoding="application/x-tex">C_{1}</annotation></semantics></math>) ou não (evento <math id="E30.p1.m2" class="ltx_Math" alttext="C_{1}^{c}" display="inline"><semantics><msubsup><mi>C</mi><mn>1</mn><mi>c</mi></msubsup><annotation encoding="application/x-tex">C_{1}^{c}</annotation></semantics></math>). Portanto,</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\mathbb{P}(C_{2})=\mathbb{P}(C_{2}|C_{1})\cdot\mathbb{P}(C_{1})+\mathbb{P}(C_{%
+2}|C_{1}^{c})\cdot\mathbb{P}(C_{1}^{c})=\frac{4}{9}\cdot\frac{5}{10}+\frac{5}{%
+9}\cdot\frac{5}{10}=\frac{1}{2}." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>C</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>C</mi><mn>2</mn></msub><mo fence="false">|</mo><msub><mi>C</mi><mn>1</mn></msub></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>C</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>C</mi><mn>2</mn></msub><mo fence="false">|</mo><msubsup><mi>C</mi><mn>1</mn><mi>c</mi></msubsup></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>C</mi><mn>1</mn><mi>c</mi></msubsup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mn>4</mn><mn>9</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>5</mn><mn>10</mn></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>5</mn><mn>9</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>5</mn><mn>10</mn></mfrac></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(C_{2})=\mathbb{P}(C_{2}|C_{1})\cdot\mathbb{P}(C_{1})+\mathbb{P}(C_{%
+2}|C_{1}^{c})\cdot\mathbb{P}(C_{1}^{c})=\frac{4}{9}\cdot\frac{5}{10}+\frac{5}{%
+9}\cdot\frac{5}{10}=\frac{1}{2}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">De onde vem esta fórmula? Nós escrevemos</p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="C_{2}=(C_{2}\cap C_{1})\cup(C_{2}\cap C_{1}^{c})." display="block"><semantics><mrow><mrow><msub><mi>C</mi><mn>2</mn></msub><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>C</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>C</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>C</mi><mn>2</mn></msub><mo>∩</mo><msubsup><mi>C</mi><mn>1</mn><mi>c</mi></msubsup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">C_{2}=(C_{2}\cap C_{1})\cup(C_{2}\cap C_{1}^{c}).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Assim, a partir da aditividade finita, segue que</p>
+<div id="Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex9.m1" class="ltx_Math" alttext="\mathbb{P}(C_{2})=\mathbb{P}(C_{2}\cap C_{1})+\mathbb{P}(C_{2}\cap C_{1}^{c})." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>C</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>C</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>C</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>C</mi><mn>2</mn></msub><mo>∩</mo><msubsup><mi>C</mi><mn>1</mn><mi>c</mi></msubsup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(C_{2})=\mathbb{P}(C_{2}\cap C_{1})+\mathbb{P}(C_{2}\cap C_{1}^{c}).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Ao aplicar a regra da multiplicação às probabilidades condicionais acima, obtemos a fórmula que é um exemplo específico da <span class="ltx_text ltx_font_italic">lei da probabilidade total</span>.</p>
+</div>
+</div>
+<div id="SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">A lei da probabilidade total nos permite calcular a probabilidade de um evento, condicionando em todas as instâncias possíveis de um ’evento diferente’, ou, de forma mais formal, em todos os conjuntos de uma partição do espaço amostral.</p>
+</div>
+<div id="E31" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 4.31</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E31.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E31.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade. Seja <math id="E31.p1.m2" class="ltx_Math" alttext="B_{n}\in\mathcal{F}" display="inline"><semantics><mrow><msub><mi>B</mi><mi>n</mi></msub><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">B_{n}\in\mathcal{F}</annotation></semantics></math> para todos <math id="E31.p1.m3" class="ltx_math_unparsed" alttext="n=1,\dots,N\}" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">n=1,\dots,N\}</annotation></semantics></math> (onde <math id="E31.p1.m4" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> é finito ou infinito). Então, a coleção de todos os <math id="E31.p1.m5" class="ltx_Math" alttext="B_{n}" display="inline"><semantics><msub><mi>B</mi><mi>n</mi></msub><annotation encoding="application/x-tex">B_{n}</annotation></semantics></math>, <math id="E31.p1.m6" class="ltx_Math" alttext="\{B_{n}:n=1,\dots,N\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>B</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{B_{n}:n=1,\dots,N\}</annotation></semantics></math>, é chamada de <em class="ltx_emph ltx_font_italic">partição</em> de <math id="E31.p1.m7" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> se</p>
+<ul id="I5" class="ltx_itemize">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i1.p1.m1" class="ltx_Math" alttext="B_{n}\neq\emptyset\quad\forall\,\,n=1,\dots,N" display="inline"><semantics><mrow><mrow><msub><mi>B</mi><mi>n</mi></msub><mo>≠</mo><mi>∅︀</mi></mrow><mspace width="1.167em"></mspace><mrow><mrow><mo rspace="0.497em">∀</mo><mi>n</mi></mrow><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">B_{n}\neq\emptyset\quad\forall\,\,n=1,\dots,N</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I5.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i2.p1.m1" class="ltx_Math" alttext="B_{n}\cap B_{m}=\emptyset\qquad\forall n\neq m" display="inline"><semantics><mrow><mrow><mrow><msub><mi>B</mi><mi>n</mi></msub><mo>∩</mo><msub><mi>B</mi><mi>m</mi></msub></mrow><mo>=</mo><mi>∅︀</mi></mrow><mspace width="2.167em"></mspace><mrow><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow><mo>≠</mo><mi>m</mi></mrow></mrow><annotation encoding="application/x-tex">B_{n}\cap B_{m}=\emptyset\qquad\forall n\neq m</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I5.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I5.i3.p1.m1" class="ltx_Math" alttext="\bigcup_{n=1}^{N}B_{n}=\Omega" display="inline"><semantics><mrow><mrow><msubsup><mo>⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msub><mi>B</mi><mi>n</mi></msub></mrow><mo>=</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\bigcup_{n=1}^{N}B_{n}=\Omega</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="SS2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Portanto, uma partição é uma coleção de eventos não vazios e disjuntos que abrange todo o espaço.</p>
+</div>
+<div id="E32" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 4.32</span></span><span class="ltx_text ltx_font_bold"> </span>(Lei da Probabilidade Total)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E32.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E32.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade e <math id="E32.p1.m2" class="ltx_Math" alttext="\{B_{n}:n=1,\dots,N\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>B</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{B_{n}:n=1,\dots,N\}</annotation></semantics></math> com <math id="E32.p1.m3" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> finito ou infinito, seja uma partição de <math id="E32.p1.m4" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> tal que <math id="E32.p1.m5" class="ltx_Math" alttext="\mathbb{P}(B_{n})&gt;0,\quad\forall\,\,n=1,\dots,N" display="inline"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo rspace="1.167em">,</mo><mrow><mrow><mo rspace="0.497em">∀</mo><mi>n</mi></mrow><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(B_{n})&gt;0,\quad\forall\,\,n=1,\dots,N</annotation></semantics></math>. Então, para todo <math id="E32.p1.m6" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math></span></p>
+<div id="E33" class="ltx_equation ltx_eqn_div">
+<span><math id="E33.m1" class="ltx_Math" alttext="\mathbb{P}(A)=\sum_{n=1}^{N}\mathbb{P}(A|B_{n})\mathbb{P}(B_{n})\,." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>B</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)=\sum_{n=1}^{N}\mathbb{P}(A|B_{n})\mathbb{P}(B_{n})\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.33)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS2.p3" class="ltx_para">
+<p class="ltx_p">Observe que, uma vez que <math id="SS2.p3.m1" class="ltx_Math" alttext="\{B_{n}:n=1,\dots,N\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>B</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{B_{n}:n=1,\dots,N\}</annotation></semantics></math> forma uma partição de <math id="SS2.p3.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>, temos</p>
+<div id="E34" class="ltx_equation ltx_eqn_div">
+<span><math id="E34.m1" class="ltx_Math" alttext="A=A\cap\Omega=A\cap\bigcup_{n=1}^{N}B_{n}=\bigcup_{n=1}^{N}(A\cap B_{n})\,." display="block"><semantics><mrow><mrow><mi>A</mi><mo>=</mo><mrow><mi>A</mi><mo>∩</mo><mi mathvariant="normal">Ω</mi></mrow><mo>=</mo><mrow><mi>A</mi><mo rspace="0.055em">∩</mo><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>B</mi><mi>n</mi></msub></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><msub><mi>B</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">A=A\cap\Omega=A\cap\bigcup_{n=1}^{N}B_{n}=\bigcup_{n=1}^{N}(A\cap B_{n})\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.34)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Além disso, uma vez que os <math id="SS2.p3.m3" class="ltx_Math" alttext="B_{n}" display="inline"><semantics><msub><mi>B</mi><mi>n</mi></msub><annotation encoding="application/x-tex">B_{n}</annotation></semantics></math>’s são disjuntos, os conjuntos <math id="SS2.p3.m4" class="ltx_Math" alttext="\{A\cap B_{n}:n=1\dots N\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mrow><mi>A</mi><mo>∩</mo><msub><mi>B</mi><mi>n</mi></msub></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mi>N</mi></mrow></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{A\cap B_{n}:n=1\dots N\}</annotation></semantics></math> também são disjuntos, portanto, pela aditividade finita/contável, temos</p>
+<div id="E35" class="ltx_equation ltx_eqn_div">
+<span><math id="E35.m1" class="ltx_Math" alttext="\mathbb{P}(A)=\mathbb{P}\left(\bigcup_{n=1}^{N}{A\cap B_{n}}\right)=\sum_{n=1}%
+^{N}\mathbb{P}(A\cap B_{n})=\sum_{n=1}^{N}\mathbb{P}(A|B_{n})\mathbb{P}(B_{n})\,." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><munderover><mo lspace="0em" movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mi>A</mi></mrow><mo>∩</mo><msub><mi>B</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><msub><mi>B</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>B</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)=\mathbb{P}\left(\bigcup_{n=1}^{N}{A\cap B_{n}}\right)=\sum_{n=1}%
+^{N}\mathbb{P}(A\cap B_{n})=\sum_{n=1}^{N}\mathbb{P}(A|B_{n})\mathbb{P}(B_{n})\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.35)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Na última igualdade, usamos a definição de probabilidade condicional com a suposição de que <math id="SS2.p3.m5" class="ltx_Math" alttext="\mathbb{P}(B_{n})&gt;0\quad\forall\,\,n=1,\dots,N" display="inline"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mspace width="1.167em"></mspace><mrow><mrow><mo rspace="0.497em">∀</mo><mi>n</mi></mrow><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(B_{n})&gt;0\quad\forall\,\,n=1,\dots,N</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="E36" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 4.36</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E36.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Um estudante enfrenta uma pergunta de múltipla escolha, com 4 opções. O estudante ou sabe a resposta ou escolhe uma das respostas de forma uniforme e aleatória. A probabilidade de o estudante saber a resposta é <math id="E36.p1.m1" class="ltx_Math" alttext="\frac{2}{3}" display="inline"><semantics><mfrac><mn>2</mn><mn>3</mn></mfrac><annotation encoding="application/x-tex">\frac{2}{3}</annotation></semantics></math>.</p>
+<ul id="I6" class="ltx_itemize">
+<li id="I6.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I6.ix1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">O estudante deseja calcular a probabilidade de responder corretamente. Vamos começar definindo os eventos de interesse:</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx17" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E37"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E37.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E37.m2" class="ltx_Math" alttext="\displaystyle=\{\text{o estudante responde corretamente}\}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mtext>o estudante responde corretamente</mtext><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\{\text{o estudante responde corretamente}\}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.37)</span></td>
+</tr></tbody>
+<tbody id="E38"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E38.m1" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E38.m2" class="ltx_Math" alttext="\displaystyle=\{\text{o estudante sabe a resposta}\}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mtext>o estudante sabe a resposta</mtext><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\{\text{o estudante sabe a resposta}\}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.38)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">As informações que temos sobre a probabilidade são que ’o estudante ou sabe a resposta (e, portanto, responde corretamente)’ ou ’escolhe uma das respostas de forma uniforme e aleatória’. Isso pode ser expresso como <math id="I6.ix1.p1.m1" class="ltx_Math" alttext="\mathbb{P}(A|B)=1" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(A|B)=1</annotation></semantics></math> e <math id="I6.ix1.p1.m2" class="ltx_Math" alttext="\mathbb{P}(A|B^{c})=\frac{1}{4}" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msup><mi>B</mi><mi>c</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{P}(A|B^{c})=\frac{1}{4}</annotation></semantics></math>. Também nos foi dito que a probabilidade de o estudante saber a resposta é <math id="I6.ix1.p1.m3" class="ltx_Math" alttext="\frac{2}{3}" display="inline"><semantics><mfrac><mn>2</mn><mn>3</mn></mfrac><annotation encoding="application/x-tex">\frac{2}{3}</annotation></semantics></math>. Portanto, <math id="I6.ix1.p1.m4" class="ltx_Math" alttext="\mathbb{P}(B)=\frac{2}{3}" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{P}(B)=\frac{2}{3}</annotation></semantics></math>. Dadas essas informações, nos é pedido para encontrar <math id="I6.ix1.p1.m5" class="ltx_Math" alttext="\mathbb{P}(A)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)</annotation></semantics></math>.</p>
+</div>
+<div id="I6.ix1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Uma vez que <math id="I6.ix1.p2.m1" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> e <math id="I6.ix1.p2.m2" class="ltx_Math" alttext="B^{c}" display="inline"><semantics><msup><mi>B</mi><mi>c</mi></msup><annotation encoding="application/x-tex">B^{c}</annotation></semantics></math> formam uma partição do espaço amostral, aplicando a lei da probabilidade total obtemos</p>
+<div id="Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex10.m1" class="ltx_Math" alttext="\mathbb{P}(A)=\mathbb{P}(A|B)\mathbb{P}(B)+\mathbb{P}(A|B^{c})\mathbb{P}(B^{c}%
+)=1\cdot\frac{2}{3}+\frac{1}{4}\cdot\frac{1}{3}=\frac{3}{4}." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msup><mi>B</mi><mi>c</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>B</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></mrow><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)=\mathbb{P}(A|B)\mathbb{P}(B)+\mathbb{P}(A|B^{c})\mathbb{P}(B^{c}%
+)=1\cdot\frac{2}{3}+\frac{1}{4}\cdot\frac{1}{3}=\frac{3}{4}.</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="E36.p2" class="ltx_para">
+<p class="ltx_p">O professor gostaria de saber a probabilidade de o estudante saber a resposta se ele respondeu corretamente, ou seja, <math id="E36.p2.m1" class="ltx_Math" alttext="\mathbb{P}(B|A)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo fence="false">|</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(B|A)</annotation></semantics></math>. Como podemos usar as informações que temos para calcular isso? Escrevemos</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_Math" alttext="\mathbb{P}(B|A)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(A)}=\frac{\mathbb{P}(A|B%
+)\mathbb{P}(B)}{\mathbb{P}(A)}=\frac{2/3}{3/4}=\frac{8}{9}." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo fence="false">|</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow><mrow><mn>3</mn><mo>/</mo><mn>4</mn></mrow></mfrac><mo>=</mo><mfrac><mn>8</mn><mn>9</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(B|A)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(A)}=\frac{\mathbb{P}(A|B%
+)\mathbb{P}(B)}{\mathbb{P}(A)}=\frac{2/3}{3/4}=\frac{8}{9}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Isso é um exemplo específico do que é conhecido como a fórmula de Bayes.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">4.3</span> Teorema de Bayes</h2>
+
+<div id="E39" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 4.39</span></span><span class="ltx_text ltx_font_bold"> </span>(Teorema de Bayes)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E39.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E39.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade e <math id="E39.p1.m2" class="ltx_Math" alttext="\{B_{n}:n=1,\dots,N\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>B</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{B_{n}:n=1,\dots,N\}</annotation></semantics></math>, com <math id="E39.p1.m3" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> finito ou infinito, seja uma partição de <math id="E39.p1.m4" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> tal que <math id="E39.p1.m5" class="ltx_Math" alttext="\mathbb{P}(B_{n})&gt;0\quad\forall\,\,n=1,\dots,N" display="inline"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mspace width="1.167em"></mspace><mrow><mrow><mo rspace="0.497em">∀</mo><mi>n</mi></mrow><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(B_{n})&gt;0\quad\forall\,\,n=1,\dots,N</annotation></semantics></math>. Então, para <math id="E39.p1.m6" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math> tal que <math id="E39.p1.m7" class="ltx_Math" alttext="\mathbb{P}(A)&gt;0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)&gt;0</annotation></semantics></math></span></p>
+<div id="E40" class="ltx_equation ltx_eqn_div">
+<span><math id="E40.m1" class="ltx_Math" alttext="\mathbb{P}(B_{n}|A)=\frac{\mathbb{P}(A|B_{n})\mathbb{P}(B_{n})}{\sum_{j=1}^{N}%
+\mathbb{P}(A|B_{j})\mathbb{P}(B_{j})}\quad\forall\,\,n=1,\dots,N\,." display="block"><semantics><mrow><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>B</mi><mi>n</mi></msub><mo fence="false">|</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>B</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>B</mi><mi>j</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow><mspace width="1.167em"></mspace><mrow><mrow><mo rspace="0.497em">∀</mo><mi>n</mi></mrow><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>N</mi></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(B_{n}|A)=\frac{\mathbb{P}(A|B_{n})\mathbb{P}(B_{n})}{\sum_{j=1}^{N}%
+\mathbb{P}(A|B_{j})\mathbb{P}(B_{j})}\quad\forall\,\,n=1,\dots,N\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.40)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">Pela definição de probabilidade condicional e como <math id="SS3.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> é tal que <math id="SS3.p1.m2" class="ltx_Math" alttext="\mathbb{P}(A)&gt;0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)&gt;0</annotation></semantics></math>, então pela definição de probabilidade condicional e pela lei da probabilidade total:</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx18" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E41"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E41.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(B_{n}|A)=\frac{\mathbb{P}(B_{n}\cap A)}{\mathbb{P}(A)}" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>B</mi><mi>n</mi></msub><mo fence="false">|</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>B</mi><mi>n</mi></msub><mo>∩</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(B_{n}|A)=\frac{\mathbb{P}(B_{n}\cap A)}{\mathbb{P}(A)}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E41.m2" class="ltx_Math" alttext="\displaystyle=\frac{\mathbb{P}(A|B_{n})\mathbb{P}(B_{n})}{\mathbb{P}(A)}=\frac%
+{\mathbb{P}(A|B_{n})\mathbb{P}(B_{n})}{\sum_{j=1}^{N}\mathbb{P}(A|B_{j})%
+\mathbb{P}(B_{j})}\,.\qed" display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>B</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>B</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>B</mi><mi>j</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mstyle></mrow><mo lspace="0.170em" rspace="0.0835em">.</mo><mo class="ltx_mathvariant_italic" lspace="0.0835em" mathvariant="italic" separator="true">∎</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{\mathbb{P}(A|B_{n})\mathbb{P}(B_{n})}{\mathbb{P}(A)}=\frac%
+{\mathbb{P}(A|B_{n})\mathbb{P}(B_{n})}{\sum_{j=1}^{N}\mathbb{P}(A|B_{j})%
+\mathbb{P}(B_{j})}\,.\qed</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.41)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="E42" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 4.42</span></span><span class="ltx_text ltx_font_italic"> </span>(Falsos Positivos)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E42.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Uma doença tem uma incidência de <math id="E42.p1.m1" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> em <math id="E42.p1.m2" class="ltx_Math" alttext="100" display="inline"><semantics><mn>100</mn><annotation encoding="application/x-tex">100</annotation></semantics></math> na população. O teste diagnóstico disponível é tal que</p>
+<ul id="I7" class="ltx_itemize">
+<li id="I7.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I7.i1.p1" class="ltx_para">​<p class="ltx_p">se você tem a doença, o teste é positivo com probabilidade <math id="I7.i1.p1.m1" class="ltx_Math" alttext="\frac{72}{100}" display="inline"><semantics><mfrac><mn>72</mn><mn>100</mn></mfrac><annotation encoding="application/x-tex">\frac{72}{100}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I7.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I7.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">se você não tem a doença, o teste é positivo com probabilidade <math id="I7.i2.p1.m1" class="ltx_Math" alttext="\frac{5}{1000}" display="inline"><semantics><mfrac><mn>5</mn><mn>1000</mn></mfrac><annotation encoding="application/x-tex">\frac{5}{1000}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Uma pessoa recebe um resultado positivo. Qual é a probabilidade de ela realmente ter a doença?</p>
+</div>
+<div id="E42.p2" class="ltx_para">
+<p class="ltx_p">Os dois eventos de interesse são <math id="E42.p2.m1" class="ltx_math_unparsed" alttext="D=\{" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mo stretchy="false">{</mo></mrow><annotation encoding="application/x-tex">D=\{</annotation></semantics></math>a pessoa tem a doença<math id="E42.p2.m2" class="ltx_Math" alttext="\}" display="inline"><semantics><mo stretchy="false">}</mo><annotation encoding="application/x-tex">\}</annotation></semantics></math> e <math id="E42.p2.m3" class="ltx_math_unparsed" alttext="P=\{" display="inline"><semantics><mrow><mi>P</mi><mo>=</mo><mo stretchy="false">{</mo></mrow><annotation encoding="application/x-tex">P=\{</annotation></semantics></math>a pessoa tem um teste positivo<math id="E42.p2.m4" class="ltx_Math" alttext="\}" display="inline"><semantics><mo stretchy="false">}</mo><annotation encoding="application/x-tex">\}</annotation></semantics></math>. Estamos interessados em <math id="E42.p2.m5" class="ltx_Math" alttext="\mathbb{P}(D|P)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>D</mi><mo fence="false">|</mo><mi>P</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(D|P)</annotation></semantics></math>. As informações que temos são <math id="E42.p2.m6" class="ltx_Math" alttext="\mathbb{P}(D)=\frac{1}{100}" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>100</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{P}(D)=\frac{1}{100}</annotation></semantics></math>, <math id="E42.p2.m7" class="ltx_Math" alttext="\mathbb{P}(P|D)=\frac{72}{100}" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo fence="false">|</mo><mi>D</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>72</mn><mn>100</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{P}(P|D)=\frac{72}{100}</annotation></semantics></math> e <math id="E42.p2.m8" class="ltx_Math" alttext="\mathbb{P}(P|D^{c})=\frac{5}{1000}" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo fence="false">|</mo><msup><mi>D</mi><mi>c</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>5</mn><mn>1000</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{P}(P|D^{c})=\frac{5}{1000}</annotation></semantics></math>. Pelo Teorema de Bayes</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx19" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E43"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E43.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(D|P)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>D</mi><mo fence="false">|</mo><mi>P</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(D|P)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E43.m2" class="ltx_Math" alttext="\displaystyle=\frac{\mathbb{P}(P|D)\mathbb{P}(D)}{\mathbb{P}(P|D)\mathbb{P}(D)%
++\mathbb{P}(P|D^{c})\mathbb{P}(D^{c})}\approx 0.59\,." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo fence="false">|</mo><mi>D</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo fence="false">|</mo><mi>D</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo fence="false">|</mo><msup><mi>D</mi><mi>c</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>D</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mstyle><mo>≈</mo><mn>0.59</mn></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{\mathbb{P}(P|D)\mathbb{P}(D)}{\mathbb{P}(P|D)\mathbb{P}(D)%
++\mathbb{P}(P|D^{c})\mathbb{P}(D^{c})}\approx 0.59\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.43)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="SS3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">O Teorema de Bayes nos permite calcular a probabilidade condicional de um evento, dado outro, em termos das probabilidades condicionais inversas. É particularmente útil em Estatística, levando a uma área inteira chamada Estatística Bayesiana: enquanto na probabilidade, estamos interessados em calcular probabilidades dadas um ’modelo’ (ou seja, informações suficientes que determinam as probabilidades), na estatística, estamos interessados em escolher um modelo, dadas as observações que fazemos. O Teorema de Bayes nos permite conectar os dois.</p>
+</div>
+</div>
+</section>
+<section id="SS4" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">4.4</span> Independência</h2>
+
+<div id="E44" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 4.44</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E44.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E44.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade.
+Dizemos que os eventos <math id="E44.p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e <math id="E44.p1.m3" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> são <em class="ltx_emph ltx_font_italic">independentes</em>
+se
+<math id="E44.p1.m4" class="ltx_Math" alttext="\mathbb{P}(A\cap B)=\mathbb{P}(A)\cdot\mathbb{P}(B)." display="inline"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A\cap B)=\mathbb{P}(A)\cdot\mathbb{P}(B).</annotation></semantics></math></p>
+</div>
+</div>
+<div id="SS4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Uma maneira de pensar na independência é que o conhecimento sobre a ocorrência de um dos eventos não aumentará nem diminuirá a chance de o outro ocorrer.
+De fato, assumindo que <math id="SS4.p1.m1" class="ltx_Math" alttext="\mathbb{P}(B)&gt;0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(B)&gt;0</annotation></semantics></math>, você pode verificar que <math id="SS4.p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e <math id="SS4.p1.m3" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> são independentes se e somente se <math id="SS4.p1.m4" class="ltx_Math" alttext="\mathbb{P}(A|B)=\mathbb{P}(A)" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A|B)=\mathbb{P}(A)</annotation></semantics></math> (exercício!).
+Em particular, se <math id="SS4.p1.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e <math id="SS4.p1.m6" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> são independentes, então <math id="SS4.p1.m7" class="ltx_Math" alttext="A^{c}" display="inline"><semantics><msup><mi>A</mi><mi>c</mi></msup><annotation encoding="application/x-tex">A^{c}</annotation></semantics></math> e <math id="SS4.p1.m8" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> também são independentes.</p>
+</div>
+<div id="Thmremark3" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observação 3</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremark3.p1" class="ltx_para">
+<p class="ltx_p">As noções de eventos "independentes"e "disjuntos"são muito diferentes.
+Na verdade, essas noções são normalmente incompatíveis: dois eventos disjuntos são independentes se e somente se a probabilidade de um deles for <math id="Thmremark3.p1.m1" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> (exercício!).</p>
+</div>
+</div>
+<div id="E45" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 4.45</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E45.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E45.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade e <math id="E45.p1.m2" class="ltx_Math" alttext="A_{1},A_{2},\dots,A_{n}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">A_{1},A_{2},\dots,A_{n}</annotation></semantics></math> sejam eventos.
+Dizemos que os eventos <math id="E45.p1.m3" class="ltx_Math" alttext="A_{1},\dots,A_{n}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{n}</annotation></semantics></math> são
+<em class="ltx_emph ltx_font_italic">mutuamente independentes aos pares</em> se <math id="E45.p1.m4" class="ltx_Math" alttext="A_{j}" display="inline"><semantics><msub><mi>A</mi><mi>j</mi></msub><annotation encoding="application/x-tex">A_{j}</annotation></semantics></math> e <math id="E45.p1.m5" class="ltx_Math" alttext="A_{k}" display="inline"><semantics><msub><mi>A</mi><mi>k</mi></msub><annotation encoding="application/x-tex">A_{k}</annotation></semantics></math> forem independentes para todas as escolhas de <math id="E45.p1.m6" class="ltx_Math" alttext="j" display="inline"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math> e <math id="E45.p1.m7" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> distintos.
+Dizemos que os eventos <math id="E45.p1.m8" class="ltx_Math" alttext="A_{1},\dots,A_{n}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{n}</annotation></semantics></math> são <em class="ltx_emph ltx_font_italic">mutuamente independentes</em>,
+se</p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_Math" alttext="\mathbb{P}(A_{j_{1}}\cap A_{j_{2}}\cap\dots\cap A_{j_{k}})=\mathbb{P}(A_{j_{1}%
+})\mathbb{P}(A_{j_{2}})\cdots\mathbb{P}(A_{j_{k}})" display="block"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><msub><mi>j</mi><mn>1</mn></msub></msub><mo>∩</mo><msub><mi>A</mi><msub><mi>j</mi><mn>2</mn></msub></msub><mo>∩</mo><mi mathvariant="normal">⋯</mi><mo>∩</mo><msub><mi>A</mi><msub><mi>j</mi><mi>k</mi></msub></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><msub><mi>j</mi><mn>1</mn></msub></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><msub><mi>j</mi><mn>2</mn></msub></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><msub><mi>j</mi><mi>k</mi></msub></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{j_{1}}\cap A_{j_{2}}\cap\dots\cap A_{j_{k}})=\mathbb{P}(A_{j_{1}%
+})\mathbb{P}(A_{j_{2}})\cdots\mathbb{P}(A_{j_{k}})</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="E45.p1.m9" class="ltx_Math" alttext="k=2,\dots,n" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mrow><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">k=2,\dots,n</annotation></semantics></math> e para todas as escolhas de <math id="E45.p1.m10" class="ltx_Math" alttext="1\leqslant j_{1}&lt;j_{2}&lt;\dots&lt;j_{k}\leqslant n" display="inline"><semantics><mrow><mn>1</mn><mo>⩽</mo><msub><mi>j</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>j</mi><mn>2</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>j</mi><mi>k</mi></msub><mo>⩽</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">1\leqslant j_{1}&lt;j_{2}&lt;\dots&lt;j_{k}\leqslant n</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="SS4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">No caso em que <math id="SS4.p2.m1" class="ltx_Math" alttext="n=2" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=2</annotation></semantics></math>, independência aos pares é obviamente o mesmo que independência mútua.
+No caso em que <math id="SS4.p2.m2" class="ltx_Math" alttext="n=3" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n=3</annotation></semantics></math>, independência aos pares significa</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx20" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E46"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E46.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{1}\cap A_{2})=\mathbb{P}(A_{1})\cdot\mathbb{P}(A_{2})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{1}\cap A_{2})=\mathbb{P}(A_{1})\cdot\mathbb{P}(A_{2})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.46)</span></td>
+</tr></tbody>
+<tbody id="E47"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E47.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{1}\cap A_{3})=\mathbb{P}(A_{1})\cdot\mathbb{P}(A_{3})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{1}\cap A_{3})=\mathbb{P}(A_{1})\cdot\mathbb{P}(A_{3})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.47)</span></td>
+</tr></tbody>
+<tbody id="E48"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E48.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{2}\cap A_{3})=\mathbb{P}(A_{2})\cdot\mathbb{P}(A_{3%
+})." display="inline"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{2}\cap A_{3})=\mathbb{P}(A_{2})\cdot\mathbb{P}(A_{3%
+}).</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.48)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">enquanto independência mútua significa</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx21" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E49"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E49.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{1}\cap A_{2})=\mathbb{P}(A_{1})\cdot\mathbb{P}(A_{2})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{1}\cap A_{2})=\mathbb{P}(A_{1})\cdot\mathbb{P}(A_{2})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.49)</span></td>
+</tr></tbody>
+<tbody id="E50"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E50.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{1}\cap A_{3})=\mathbb{P}(A_{1})\cdot\mathbb{P}(A_{3})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{1}\cap A_{3})=\mathbb{P}(A_{1})\cdot\mathbb{P}(A_{3})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.50)</span></td>
+</tr></tbody>
+<tbody id="E51"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E51.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{2}\cap A_{3})=\mathbb{P}(A_{2})\cdot\mathbb{P}(A_{3})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{2}\cap A_{3})=\mathbb{P}(A_{2})\cdot\mathbb{P}(A_{3})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.51)</span></td>
+</tr></tbody>
+<tbody id="E52"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E52.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{1}\cap A_{2}\cap A_{3})=\mathbb{P}(A_{1})\cdot%
+\mathbb{P}(A_{2})\cdot\mathbb{P}(A_{3})." display="inline"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{1}\cap A_{2}\cap A_{3})=\mathbb{P}(A_{1})\cdot%
+\mathbb{P}(A_{2})\cdot\mathbb{P}(A_{3}).</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.52)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Isso ilustra que a independência mútua é mais forte do que a independência aos pares.
+É difícil listar as condições para valores maiores de <math id="SS4.p2.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Por exemplo, se <math id="SS4.p2.m4" class="ltx_Math" alttext="n=5" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">n=5</annotation></semantics></math>, a independência aos pares envolve <math id="SS4.p2.m5" class="ltx_Math" alttext="\binom{5}{2}=10" display="inline"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>5</mn><mn>2</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">\binom{5}{2}=10</annotation></semantics></math> condições a serem verificadas, e a independência mútua envolve <math id="SS4.p2.m6" class="ltx_Math" alttext="2^{5}-5-1=26" display="inline"><semantics><mrow><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>−</mo><mn>5</mn><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mn>26</mn></mrow><annotation encoding="application/x-tex">2^{5}-5-1=26</annotation></semantics></math> condições a serem verificadas.</p>
+</div>
+<div id="E53" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 4.53</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E53.p1" class="ltx_para">
+<p class="ltx_p">Dois dados são lançados. Sejam</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx22" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E54"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E54.m1" class="ltx_Math" alttext="\displaystyle A_{1}" display="inline"><semantics><msub><mi>A</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle A_{1}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E54.m2" class="ltx_Math" alttext="\displaystyle=\{\text{o primeiro dado \'{e} par}\}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mtext>o primeiro dado é par</mtext><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\{\text{o primeiro dado \'{e} par}\}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.54)</span></td>
+</tr></tbody>
+<tbody id="E55"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E55.m1" class="ltx_Math" alttext="\displaystyle A_{2}" display="inline"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\displaystyle A_{2}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E55.m2" class="ltx_Math" alttext="\displaystyle=\{\text{o segundo dado \'{e} \'{\i}mpar}\}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mtext>o segundo dado é ímpar</mtext><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\{\text{o segundo dado \'{e} \'{\i}mpar}\}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.55)</span></td>
+</tr></tbody>
+<tbody id="E56"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E56.m1" class="ltx_Math" alttext="\displaystyle A_{3}" display="inline"><semantics><msub><mi>A</mi><mn>3</mn></msub><annotation encoding="application/x-tex">\displaystyle A_{3}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E56.m2" class="ltx_Math" alttext="\displaystyle=\{\text{soma dos dados \'{e} }7\}." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mtext>soma dos dados é </mtext><mo>⁢</mo><mn>7</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\{\text{soma dos dados \'{e} }7\}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.56)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Esses eventos são independentes aos pares, pois</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx23" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E57"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E57.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{1}\cap A_{2})=\frac{1}{4}=\mathbb{P}(A_{1})\cdot%
+\mathbb{P}(A_{2})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{1}\cap A_{2})=\frac{1}{4}=\mathbb{P}(A_{1})\cdot%
+\mathbb{P}(A_{2})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.57)</span></td>
+</tr></tbody>
+<tbody id="E58"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E58.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{1}\cap A_{3})=\frac{1}{12}=\mathbb{P}(A_{1})\cdot%
+\mathbb{P}(A_{3})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>12</mn></mfrac></mstyle><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{1}\cap A_{3})=\frac{1}{12}=\mathbb{P}(A_{1})\cdot%
+\mathbb{P}(A_{3})</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.58)</span></td>
+</tr></tbody>
+<tbody id="E59"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E59.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A_{2}\cap A_{3})=\frac{1}{12}=\mathbb{P}(A_{2})\cdot%
+\mathbb{P}(A_{3})." display="inline"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>12</mn></mfrac></mstyle><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A_{2}\cap A_{3})=\frac{1}{12}=\mathbb{P}(A_{2})\cdot%
+\mathbb{P}(A_{3}).</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.59)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Isso significa que, para cada par de eventos dessa família, o conhecimento sobre a ocorrência de um deles não afetará as chances de que os outros dois ocorram.
+Em particular, nem <math id="E53.p1.m1" class="ltx_Math" alttext="A_{1}" display="inline"><semantics><msub><mi>A</mi><mn>1</mn></msub><annotation encoding="application/x-tex">A_{1}</annotation></semantics></math> nem <math id="E53.p1.m2" class="ltx_Math" alttext="A_{2}" display="inline"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding="application/x-tex">A_{2}</annotation></semantics></math> isoladamente afetarão as chances de <math id="E53.p1.m3" class="ltx_Math" alttext="A_{3}" display="inline"><semantics><msub><mi>A</mi><mn>3</mn></msub><annotation encoding="application/x-tex">A_{3}</annotation></semantics></math>.
+No entanto, saber que <math id="E53.p1.m4" class="ltx_Math" alttext="A_{1}" display="inline"><semantics><msub><mi>A</mi><mn>1</mn></msub><annotation encoding="application/x-tex">A_{1}</annotation></semantics></math> e <math id="E53.p1.m5" class="ltx_Math" alttext="A_{2}" display="inline"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding="application/x-tex">A_{2}</annotation></semantics></math> ocorrem aumentará de fato a chance de que <math id="E53.p1.m6" class="ltx_Math" alttext="A_{3}" display="inline"><semantics><msub><mi>A</mi><mn>3</mn></msub><annotation encoding="application/x-tex">A_{3}</annotation></semantics></math> ocorra, como</p>
+<div id="Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex13.m1" class="ltx_Math" alttext="\mathbb{P}(A_{3}|A_{1}\cap A_{2})=\frac{1}{3}\neq\frac{1}{6}=\mathbb{P}(A_{3})." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>3</mn></msub><mo fence="false">|</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>≠</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{3}|A_{1}\cap A_{2})=\frac{1}{3}\neq\frac{1}{6}=\mathbb{P}(A_{3}).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">De maneira mais formal,</p>
+<div id="Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex14.m1" class="ltx_Math" alttext="\mathbb{P}(A_{1}\cap A_{2}\cap A_{3})=\frac{1}{12}\neq\frac{1}{24}=\mathbb{P}(%
+A_{1}\cap A_{2}\cap A_{3})=\mathbb{P}(A_{1})\cdot\mathbb{P}(A_{2})\cdot\mathbb%
+{P}(A_{3})." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mo>≠</mo><mfrac><mn>1</mn><mn>24</mn></mfrac><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{1}\cap A_{2}\cap A_{3})=\frac{1}{12}\neq\frac{1}{24}=\mathbb{P}(%
+A_{1}\cap A_{2}\cap A_{3})=\mathbb{P}(A_{1})\cdot\mathbb{P}(A_{2})\cdot\mathbb%
+{P}(A_{3}).</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="E60" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 4.60</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E60.p1" class="ltx_para">
+<p class="ltx_p">Lance três moedas justas.
+Considere os eventos:</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx24" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E61"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E61.m1" class="ltx_Math" alttext="\displaystyle A_{1}=\text{Primeira moeda d\'{a} Cara}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>=</mo><mtext>Primeira moeda dá Cara</mtext></mrow><annotation encoding="application/x-tex">\displaystyle A_{1}=\text{Primeira moeda d\'{a} Cara}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.61)</span></td>
+</tr></tbody>
+<tbody id="E62"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E62.m1" class="ltx_Math" alttext="\displaystyle A_{2}=\text{Segunda moeda d\'{a} o mesmo que a primeira moeda}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>=</mo><mtext>Segunda moeda dá o mesmo que a primeira moeda</mtext></mrow><annotation encoding="application/x-tex">\displaystyle A_{2}=\text{Segunda moeda d\'{a} o mesmo que a primeira moeda}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.62)</span></td>
+</tr></tbody>
+<tbody id="E63"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E63.m1" class="ltx_Math" alttext="\displaystyle A_{3}=\text{Segunda moeda d\'{a} o mesmo que a terceira moeda}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>3</mn></msub><mo>=</mo><mtext>Segunda moeda dá o mesmo que a terceira moeda</mtext></mrow><annotation encoding="application/x-tex">\displaystyle A_{3}=\text{Segunda moeda d\'{a} o mesmo que a terceira moeda}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.63)</span></td>
+</tr></tbody>
+<tbody id="E64"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E64.m1" class="ltx_Math" alttext="\displaystyle A_{4}=\text{Terceira d\'{a} Coroa}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>4</mn></msub><mo>=</mo><mtext>Terceira dá Coroa</mtext></mrow><annotation encoding="application/x-tex">\displaystyle A_{4}=\text{Terceira d\'{a} Coroa}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.64)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Então:
+
+<br class="ltx_break">Esses eventos são independentes aos pares.
+
+<br class="ltx_break"><math id="E60.p1.m1" class="ltx_Math" alttext="A_{1}" display="inline"><semantics><msub><mi>A</mi><mn>1</mn></msub><annotation encoding="application/x-tex">A_{1}</annotation></semantics></math>, <math id="E60.p1.m2" class="ltx_Math" alttext="A_{2}" display="inline"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding="application/x-tex">A_{2}</annotation></semantics></math> e <math id="E60.p1.m3" class="ltx_Math" alttext="A_{3}" display="inline"><semantics><msub><mi>A</mi><mn>3</mn></msub><annotation encoding="application/x-tex">A_{3}</annotation></semantics></math> são mutuamente independentes.
+
+<br class="ltx_break"><math id="E60.p1.m4" class="ltx_Math" alttext="A_{1}" display="inline"><semantics><msub><mi>A</mi><mn>1</mn></msub><annotation encoding="application/x-tex">A_{1}</annotation></semantics></math>, <math id="E60.p1.m5" class="ltx_Math" alttext="A_{2}" display="inline"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding="application/x-tex">A_{2}</annotation></semantics></math>, <math id="E60.p1.m6" class="ltx_Math" alttext="A_{3}" display="inline"><semantics><msub><mi>A</mi><mn>3</mn></msub><annotation encoding="application/x-tex">A_{3}</annotation></semantics></math> e <math id="E60.p1.m7" class="ltx_Math" alttext="A_{4}" display="inline"><semantics><msub><mi>A</mi><mn>4</mn></msub><annotation encoding="application/x-tex">A_{4}</annotation></semantics></math> não são mutuamente independentes.</p>
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S5.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Intro.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

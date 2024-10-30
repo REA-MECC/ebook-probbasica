@@ -1,0 +1,447 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula</title>
+<!--Generated on Tue Aug 27 14:11:25 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Intro.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="start" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="prev" href="S13.html" title="13 Variáveis aleatórias contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="next" href="S15.html" title="15 Distribuições Conjuntas e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S1.html" title="1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S2.html" title="2 Contagem ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S3.html" title="3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S4.html" title="4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S5.html" title="5 Variáveis Aleatórias ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S6.html" title="6 Esperança ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S7.html" title="7 Distribuições discretas multivariadas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S8.html" title="8 A Lei dos Grandes Números ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S9.html" title="9 Covariância ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S10.html" title="10 Desigualdade de Chebyshev ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S11.html" title="11 Coeficiente de Correlação ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S12.html" title="12 Teorema do Limite Central ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S13.html" title="13 Variáveis aleatórias contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S15.html" title="15 Distribuições Conjuntas e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S16.html" title="16 Somas de variáveis aleatórias independentes ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S17.html" title="17 Momentos e funções geradoras de momentos ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A1.html" title="Apêndice A Somas úteis ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A2.html" title="Apêndice B Exponenciais superam polinômios ‣ Introdução à Probabilidade Notas de Aula">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Introdução à Probabilidade <span class="ltx_text"> </span>Notas de Aula</a>
+</li>
+<li class="divider">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Espaços de probabilidade uniforme</a></li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Contagem</a></li>
+<li data-level="3" data-path="S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S3.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Espaços de Probabilidade</a></li>
+<li data-level="4" data-path="S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S4.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Probabilidade Condicional e Independência</a></li>
+<li data-level="5" data-path="S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S5.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Variáveis Aleatórias</a></li>
+<li data-level="6" data-path="S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S6.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Esperança</a></li>
+<li data-level="7" data-path="S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S7.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Distribuições discretas multivariadas</a></li>
+<li data-level="8" data-path="S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S8.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>A Lei dos Grandes Números</a></li>
+<li data-level="9" data-path="S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S9.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Covariância</a></li>
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Desigualdade de Chebyshev</a></li>
+<li data-level="11" data-path="S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S11.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Coeficiente de Correlação</a></li>
+<li data-level="12" data-path="S12.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S12.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">12 </span></b>Teorema do Limite Central</a></li>
+<li data-level="13" data-path="S13.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S13.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">13 </span></b>Variáveis aleatórias contínuas</a></li>
+<li data-level="14" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14 </span></b>Uma única teoria para discretas e contínuas</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="14.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14.1 </span></b>Função de distribuição cumulativa</a></li>
+<li data-level="14.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14.2 </span></b>Casos discretos e contínuos</a></li>
+<li data-level="14.3" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS3" title="In 14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14.3 </span></b>Esperança e variância</a></li>
+</ol>
+</li>
+<li data-level="15" data-path="S15.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S15.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">15 </span></b>Distribuições Conjuntas e Independência</a></li>
+<li data-level="16" data-path="S16.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S16.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">16 </span></b>Somas de variáveis aleatórias independentes</a></li>
+<li data-level="17" data-path="S17.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S17.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">17 </span></b>Momentos e funções geradoras de momentos</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Somas úteis</a></li>
+<li data-level="B" data-path="A2.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">B </span></b>Exponenciais superam polinômios</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Uma única teoria para discretas e contínuas</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">14</span> Uma única teoria para discretas e contínuas</h1>
+
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">14.1</span> Função de distribuição cumulativa</h2>
+
+<div id="SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Uma maneira de especificar uma distribuição de probabilidade em <math id="SS1.p1.m1" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math> é dizer o quanto de probabilidade está à esquerda de cada ponto <math id="SS1.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Em termos de uma variável aleatória <math id="SS1.p1.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> com a distribuição dada, essa probabilidade é uma função de <math id="SS1.p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</p>
+</div>
+<div id="E1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 14.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E1.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E1.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> uma variável aleatória. A <em class="ltx_emph ltx_font_italic">função de distribuição cumulativa de <math id="E1.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math></em> é a função <math id="E1.p1.m3" class="ltx_Math" alttext="F_{X}:\mathbb{R}\to[0,\infty)" display="inline"><semantics><mrow><msub><mi>F</mi><mi>X</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">F_{X}:\mathbb{R}\to[0,\infty)</annotation></semantics></math> definida por</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="F_{X}(x)=\mathbb{P}(X\leqslant x)" display="block"><semantics><mrow><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⩽</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">F_{X}(x)=\mathbb{P}(X\leqslant x)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="E1.p1.m4" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>.</p>
+</div>
+</div>
+<section id="SS1.SSSx1" class="ltx_subsubsection normal">
+<div class="section level3">
+
+<h3 class="ltx_title ltx_title_subsubsection">Outras probabilidades a partir de <math id="SS1.SSSx1.m1" class="ltx_Math" alttext="F_{X}" display="inline"><semantics><msub><mi>F</mi><mi>X</mi></msub><annotation encoding="application/x-tex">F_{X}</annotation></semantics></math>
+</h3>
+
+<div id="SS1.SSSx1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Agora, observamos que, embora <math id="SS1.SSSx1.p1.m1" class="ltx_Math" alttext="F_{X}(x)" display="inline"><semantics><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">F_{X}(x)</annotation></semantics></math> seja definido como <math id="SS1.SSSx1.p1.m2" class="ltx_Math" alttext="\mathbb{P}(X\leqslant x)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⩽</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(X\leqslant x)</annotation></semantics></math>, é possível usar <math id="SS1.SSSx1.p1.m3" class="ltx_Math" alttext="F_{X}" display="inline"><semantics><msub><mi>F</mi><mi>X</mi></msub><annotation encoding="application/x-tex">F_{X}</annotation></semantics></math> para obter outras probabilidades envolvendo <math id="SS1.SSSx1.p1.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>. Fórmulas importantes são</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\mathbb{P}(X&gt;x)=1-\mathbb{P}(X\leqslant x)=1-F_{X}(x)" display="block"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>&gt;</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⩽</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(X&gt;x)=1-\mathbb{P}(X\leqslant x)=1-F_{X}(x)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e, para <math id="SS1.SSSx1.p1.m5" class="ltx_Math" alttext="x&lt;y" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x&lt;y</annotation></semantics></math>,</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\mathbb{P}(x&lt;X\leqslant y)=\mathbb{P}(X\leqslant y)-\mathbb{P}(X\leqslant x)=F%
+_{X}(y)-F_{X}(x)." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>&lt;</mo><mi>X</mi><mo>⩽</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⩽</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⩽</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(x&lt;X\leqslant y)=\mathbb{P}(X\leqslant y)-\mathbb{P}(X\leqslant x)=F%
+_{X}(y)-F_{X}(x).</annotation></semantics></math></span>
+</div>
+</div>
+<div id="SS1.SSSx1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Observe também que</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\mathbb{P}(X=x)&gt;0\quad\text{se e somente se}\quad F_{X}\text{ tem um salto em%
+\leavevmode\nobreak\ $x$}" display="block"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mrow><mn>0</mn><mspace width="1em"></mspace><mtext>se e somente se</mtext><mspace width="1em"></mspace><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mtext> tem um salto em </mtext><mi>x</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(X=x)&gt;0\quad\text{se e somente se}\quad F_{X}\text{ tem um salto em%
+\leavevmode\nobreak\ $x$}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e, nesse caso, o tamanho do salto é a probabilidade de <math id="SS1.SSSx1.p2.m1" class="ltx_Math" alttext="X=x" display="inline"><semantics><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">X=x</annotation></semantics></math>.</p>
+</div>
+</div>
+</section>
+<section id="SS1.SSSx2" class="ltx_subsubsection normal">
+<div class="section level3">
+
+<h3 class="ltx_title ltx_title_subsubsection">
+<math id="SS1.SSSx2.m1" class="ltx_Math" alttext="F_{X}" display="inline"><semantics><msub><mi>F</mi><mi>X</mi></msub><annotation encoding="application/x-tex">F_{X}</annotation></semantics></math> determina <math id="SS1.SSSx2.m2" class="ltx_Math" alttext="\mathbb{P}_{X}" display="inline"><semantics><msub><mi>ℙ</mi><mi>X</mi></msub><annotation encoding="application/x-tex">\mathbb{P}_{X}</annotation></semantics></math>
+</h3>
+
+<div id="E2" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 14.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="E2.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="E2.p1.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> são duas variáveis aleatórias com <math id="E2.p1.m3" class="ltx_Math" alttext="F_{X}=F_{Y}" display="inline"><semantics><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>=</mo><msub><mi>F</mi><mi>Y</mi></msub></mrow><annotation encoding="application/x-tex">F_{X}=F_{Y}</annotation></semantics></math>, então <math id="E2.p1.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="E2.p1.m5" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> têm a mesma distribuição.</span></p>
+</div>
+</div>
+<div id="SS1.SSSx2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Essa proposição nos diz que a função de distribuição cumulativa realmente codifica a distribuição de uma variável aleatória (no sentido de que, dada a função de distribuição cumulativa, há apenas uma distribuição correspondente a ela).</p>
+</div>
+<div id="SS1.SSSx2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Já vimos que <math id="SS1.SSSx2.p2.m1" class="ltx_Math" alttext="F_{X}" display="inline"><semantics><msub><mi>F</mi><mi>X</mi></msub><annotation encoding="application/x-tex">F_{X}</annotation></semantics></math> determina <math id="SS1.SSSx2.p2.m2" class="ltx_Math" alttext="\mathbb{P}_{X}(\{x\})" display="inline"><semantics><mrow><msub><mi>ℙ</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}_{X}(\{x\})</annotation></semantics></math> para cada <math id="SS1.SSSx2.p2.m3" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math> e <math id="SS1.SSSx2.p2.m4" class="ltx_Math" alttext="\mathbb{P}_{X}((a,b])" display="inline"><semantics><mrow><msub><mi>ℙ</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}_{X}((a,b])</annotation></semantics></math> para todo <math id="SS1.SSSx2.p2.m5" class="ltx_Math" alttext="a&lt;b\in\mathbb{R}" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">a&lt;b\in\mathbb{R}</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.SSSx2.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Faltam-nos as ferramentas necessárias para provar que ela determina <math id="SS1.SSSx2.p3.m1" class="ltx_Math" alttext="\mathbb{P}_{X}(B)" display="inline"><semantics><mrow><msub><mi>ℙ</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}_{X}(B)</annotation></semantics></math> para todo <math id="SS1.SSSx2.p3.m2" class="ltx_Math" alttext="B\in\mathcal{B}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℬ</mi></mrow><annotation encoding="application/x-tex">B\in\mathcal{B}</annotation></semantics></math>.</p>
+</div>
+</div>
+</section>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">14.2</span> Casos discretos e contínuos</h2>
+
+<figure id="F1" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x3.png" id="F1.g1" class="ltx_graphics ltx_img_landscape" width="829" height="370" alt="Refer to caption"></div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 14.1: </span>Função de distribuição cumulativa de uma variável aleatória discreta.</figcaption>
+</figure>
+<div id="SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Para obter uma primeira ideia de como se parece uma função de distribuição cumulativa, consideremos o caso em que <math id="SS2.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é discreto e tem suporte discreto contido em <math id="SS2.p1.m2" class="ltx_Math" alttext="\mathbb{N}_{0}" display="inline"><semantics><msub><mi>ℕ</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\mathbb{N}_{0}</annotation></semantics></math>,
+de modo que</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\sum_{k=0}^{\infty}\mathbb{P}(X=k)=1." display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\sum_{k=0}^{\infty}\mathbb{P}(X=k)=1.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Em seguida, observe primeiro que
+<math id="SS2.p1.m3" class="ltx_Math" alttext="F_{X}(x)=\mathbb{P}(X\leqslant x)=0" display="inline"><semantics><mrow><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⩽</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">F_{X}(x)=\mathbb{P}(X\leqslant x)=0</annotation></semantics></math>
+para todos os <math id="SS2.p1.m4" class="ltx_Math" alttext="x&lt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&lt;0</annotation></semantics></math>.
+A seguir,
+e para todo <math id="SS2.p1.m5" class="ltx_math_unparsed" alttext="x\in[0,1)" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[0,1)</annotation></semantics></math>,</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="F_{X}(x)=\mathbb{P}(X\leqslant x)=\mathbb{P}(X&lt;0)+\mathbb{P}(X=0)+\mathbb{P}(0%
+&lt;X\leqslant x)=0+p_{X}(0)+0=p_{X}(0)." display="block"><semantics><mrow><mrow><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⩽</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>&lt;</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>0</mn><mo>&lt;</mo><mi>X</mi><mo>⩽</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo>+</mo><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>0</mn></mrow><mo>=</mo><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">F_{X}(x)=\mathbb{P}(X\leqslant x)=\mathbb{P}(X&lt;0)+\mathbb{P}(X=0)+\mathbb{P}(0%
+&lt;X\leqslant x)=0+p_{X}(0)+0=p_{X}(0).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Ao argumentar de maneira semelhante, concluímos que</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_math_unparsed" alttext="F_{X}(x)=\begin{cases}0&amp;\text{se }x&lt;0,\\
+p_{X}(0)&amp;\text{se }x\in[0,1),\\
+p_{X}(0)+p_{X}(1)&amp;\text{se }x\in[1,2),\\
+p_{X}(0)+p_{X}(1)+p_{X}(2)&amp;\text{se }x\in[2,3)\\
+\cdots\end{cases}" display="block"><semantics><mrow><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mn>0</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mtext>se </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext>se </mtext><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext>se </mtext><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>1,2</mn><mo stretchy="false">)</mo></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext>se </mtext><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>2,3</mn><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mi mathvariant="normal">⋯</mi></mtd><mtd></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">F_{X}(x)=\begin{cases}0&amp;\text{se }x&lt;0,\\
+p_{X}(0)&amp;\text{se }x\in[0,1),\\
+p_{X}(0)+p_{X}(1)&amp;\text{se }x\in[1,2),\\
+p_{X}(0)+p_{X}(1)+p_{X}(2)&amp;\text{se }x\in[2,3)\\
+\cdots\end{cases}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="SS2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">O gráfico de <math id="SS2.p2.m1" class="ltx_Math" alttext="F_{X}" display="inline"><semantics><msub><mi>F</mi><mi>X</mi></msub><annotation encoding="application/x-tex">F_{X}</annotation></semantics></math> se parece com o da Figura <a href="#F1" title="Figura 14.1 ‣ 14.2 Casos discretos e contínuos ‣ 14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.1</span></a>.</p>
+</div>
+<figure id="F2" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x4.png" id="F2.g1" class="ltx_graphics ltx_img_landscape" width="830" height="184" alt="Refer to caption"></div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 14.2: </span>Função de distribuição cumulativa de uma variável aleatória uniforme.</figcaption>
+</figure>
+<figure id="F3" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x5.png" id="F3.g1" class="ltx_graphics ltx_img_landscape" width="830" height="253" alt="Refer to caption"></div>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figura 14.3: </span>Função de distribuição cumulativa de uma variável aleatória exponencial.</figcaption>
+</figure>
+<div id="SS2.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Se <math id="SS2.p3.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> for contínuo, então</p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="F_{X}(x)=\mathbb{P}(X\leqslant x)=\mathbb{P}(X\in(-\infty,x])=\int_{-\infty}^{%
+x}f_{X}(y)\mathrm{d}y." display="block"><semantics><mrow><mrow><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⩽</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi>x</mi></msubsup><mrow><msub><mi>f</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>y</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">F_{X}(x)=\mathbb{P}(X\leqslant x)=\mathbb{P}(X\in(-\infty,x])=\int_{-\infty}^{%
+x}f_{X}(y)\mathrm{d}y.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">O teorema fundamental do Cálculo implica então que, nos pontos onde <math id="SS2.p3.m2" class="ltx_Math" alttext="f_{X}" display="inline"><semantics><msub><mi>f</mi><mi>X</mi></msub><annotation encoding="application/x-tex">f_{X}</annotation></semantics></math> é contínuo,</p>
+<div id="Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex9.m1" class="ltx_Math" alttext="f_{X}(x)=\tfrac{\mathrm{d}}{\mathrm{d}x}F_{X}^{\prime}(x)," display="block"><semantics><mrow><mrow><mrow><msub><mi>f</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mi mathvariant="normal">d</mi><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><msubsup><mi>F</mi><mi>X</mi><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">f_{X}(x)=\tfrac{\mathrm{d}}{\mathrm{d}x}F_{X}^{\prime}(x),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">ou seja, a função de distribuição cumulativa é diferenciável e sua derivada é a função de densidade de probabilidade.
+O gráfico de <math id="SS2.p3.m3" class="ltx_Math" alttext="F_{X}" display="inline"><semantics><msub><mi>F</mi><mi>X</mi></msub><annotation encoding="application/x-tex">F_{X}</annotation></semantics></math> se parece com o das Figuras <a href="#F2" title="Figura 14.2 ‣ 14.2 Casos discretos e contínuos ‣ 14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.2</span></a> e <a href="#F3" title="Figura 14.3 ‣ 14.2 Casos discretos e contínuos ‣ 14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">14.3</span></a>.</p>
+</div>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">14.3</span> Esperança e variância</h2>
+
+<div id="SS3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">É possível fornecer uma definição unificada de esperança de uma variável aleatória, sem assumir que ela seja discreta ou que tenha uma densidade.
+Há uma fórmula mágica usando <math id="SS3.p1.m1" class="ltx_Math" alttext="F_{X}" display="inline"><semantics><msub><mi>F</mi><mi>X</mi></msub><annotation encoding="application/x-tex">F_{X}</annotation></semantics></math> que funciona simultaneamente para qualquer tipo de variável aleatória.
+Não vamos nos preocupar em fornecer tal fórmula, mas é importante ter em mente que a esperança é algo que pode ser definido para qualquer variável aleatória limitada (e, desde que algumas somas ou integrais sejam convergentes, também pode ser definida para variáveis aleatórias ilimitadas).
+Novamente, dizemos que <math id="SS3.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é <em class="ltx_emph ltx_font_italic">integrável</em> se <math id="SS3.p1.m3" class="ltx_Math" alttext="\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]</annotation></semantics></math> for definido e finito.</p>
+</div>
+<div id="SS3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Essa definição geral de esperança ainda satisfaz as três propriedades:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Unitária: <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\mathbb{E}[\mathds{1}_{A}]=\mathbb{P}(A)" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mn>𝟙</mn><mi>A</mi></msub><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[\mathds{1}_{A}]=\mathbb{P}(A)</annotation></semantics></math>,</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">Monótona:
+Se <math id="I1.i2.p1.m1" class="ltx_Math" alttext="0\leqslant Z\leqslant X" display="inline"><semantics><mrow><mn>0</mn><mo>⩽</mo><mi>Z</mi><mo>⩽</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">0\leqslant Z\leqslant X</annotation></semantics></math> para todo <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\omega\in\Omega" display="inline"><semantics><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\omega\in\Omega</annotation></semantics></math>, então <math id="I1.i2.p1.m3" class="ltx_Math" alttext="0\leqslant\mathbb{E}[Z]\leqslant\mathbb{E}[X]" display="inline"><semantics><mrow><mn>0</mn><mo>⩽</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Z</mi><mo stretchy="false">]</mo></mrow></mrow><mo>⩽</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">0\leqslant\mathbb{E}[Z]\leqslant\mathbb{E}[X]</annotation></semantics></math>,</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Linear: <math id="I1.i3.p1.m1" class="ltx_Math" alttext="\mathbb{E}[aX+bY]=a\mathbb{E}[X]+b\mathbb{E}[Y]" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>X</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>Y</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[aX+bY]=a\mathbb{E}[X]+b\mathbb{E}[Y]</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">desde que <math id="SS3.p2.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS3.p2.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> sejam integráveis.</p>
+</div>
+<div id="SS3.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Não provaremos essas propriedades.
+Claro, não poderíamos possivelmente prová-las, pois nem mesmo fornecemos a definição geral de esperança.
+Mas mesmo que tivéssemos escrito a fórmula, com as ferramentas atuais não seríamos capazes de provar que a esperança é linear em geral.
+A ideia da prova é a seguinte: quaisquer variáveis aleatórias <math id="SS3.p3.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS3.p3.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> podem ser aproximadas por variáveis aleatórias discretas <math id="SS3.p3.m3" class="ltx_Math" alttext="X^{\prime}" display="inline"><semantics><msup><mi>X</mi><mo>′</mo></msup><annotation encoding="application/x-tex">X^{\prime}</annotation></semantics></math> e <math id="SS3.p3.m4" class="ltx_Math" alttext="Y^{\prime}" display="inline"><semantics><msup><mi>Y</mi><mo>′</mo></msup><annotation encoding="application/x-tex">Y^{\prime}</annotation></semantics></math> e, uma vez que <math id="SS3.p3.m5" class="ltx_Math" alttext="\mathbb{E}[X^{\prime}+Y^{\prime}]=\mathbb{E}[X^{\prime}]+\mathbb{E}[Y^{\prime}]" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo>+</mo><msup><mi>Y</mi><mo>′</mo></msup></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>X</mi><mo>′</mo></msup><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>Y</mi><mo>′</mo></msup><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X^{\prime}+Y^{\prime}]=\mathbb{E}[X^{\prime}]+\mathbb{E}[Y^{\prime}]</annotation></semantics></math>, concluímos que <math id="SS3.p3.m6" class="ltx_Math" alttext="\mathbb{E}[X+Y]=\mathbb{E}[X]+\mathbb{E}[Y]" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X+Y]=\mathbb{E}[X]+\mathbb{E}[Y]</annotation></semantics></math>.</p>
+</div>
+<div id="SS3.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Mais uma vez, e <math id="SS3.p4.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é <em class="ltx_emph ltx_font_italic">quadraticamente integrável</em> se <math id="SS3.p4.m2" class="ltx_Math" alttext="\mathbb{E}[X^{2}]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X^{2}]</annotation></semantics></math> for finito, e observe que se <math id="SS3.p4.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é quadraticamente integrável, então ele é automaticamente integrável (porque <math id="SS3.p4.m4" class="ltx_Math" alttext="|x|\leqslant 1+x^{2}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>⩽</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">|x|\leqslant 1+x^{2}</annotation></semantics></math>).</p>
+</div>
+<div id="E3" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 14.3</span></span><span class="ltx_text ltx_font_bold"> </span>(Variância)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E3.p1" class="ltx_para">
+<p class="ltx_p">A <em class="ltx_emph ltx_font_italic">variância</em> de uma variável aleatória quadraticamente integrável <math id="E3.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é definida como</p>
+<div id="Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex10.m1" class="ltx_Math" alttext="\mathrm{Var}(X)=\mathbb{E}[(X-\mathbb{E}[X])^{2}]." display="block"><semantics><mrow><mrow><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>−</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathrm{Var}(X)=\mathbb{E}[(X-\mathbb{E}[X])^{2}].</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="SS3.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Observamos que a desigualdade de Chebyshev é válida para qualquer variável aleatória quadraticamente integrável.
+De fato, na prova dada na Seção <a href="S10.html#SS2" title="10.2 Desigualdade de Chebyshev ‣ 10 Desigualdade de Chebyshev ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10.2</span></a>, usamos apenas as propriedades de esperança mencionadas acima e nada mais.</p>
+</div>
+<div id="E4" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 14.4</span></span><span class="ltx_text ltx_font_bold"> </span>(Covariância)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E4.p1" class="ltx_para">
+<p class="ltx_p">Também definimos a <em class="ltx_emph ltx_font_italic">covariância</em> de duas variáveis aleatórias quadraticamente integráveis como</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_Math" alttext="\mathrm{Cov}(X,Y)=\mathbb{E}[(X-\mathbb{E}[X])(Y-\mathbb{E}[Y])]" display="block"><semantics><mrow><mrow><mi>Cov</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>−</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>−</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Cov}(X,Y)=\mathbb{E}[(X-\mathbb{E}[X])(Y-\mathbb{E}[Y])]</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e dizemos que elas são <em class="ltx_emph ltx_font_italic">não correlacionadas</em> se sua covariância for zero.</p>
+</div>
+</div>
+<div id="SS3.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">Observe que a covariância possui todas as propriedades mencionadas na Seção <a href="S9.html#SS2" title="9.2 Propriedades ‣ 9 Covariância ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.2</span></a>.
+De fato, a prova dessas propriedades usou apenas as três propriedades de esperança mencionadas acima e nada mais.
+Em particular, o Corolário <a href="S9.html#E23" title="Corolário 9.23. ‣ 9.2 Propriedades ‣ 9 Covariância ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9.23</span></a> vale em geral, ou seja,</p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_Math" alttext="\mathrm{Var}(X_{1}+\dots+X_{n})=\mathrm{Var}(X_{1})+\dots+\mathrm{Var}(X_{n})" display="block"><semantics><mrow><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Var}(X_{1}+\dots+X_{n})=\mathrm{Var}(X_{1})+\dots+\mathrm{Var}(X_{n})</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">desde que <math id="SS3.p6.m1" class="ltx_Math" alttext="X_{1},\dots,X_{n}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">X_{1},\dots,X_{n}</annotation></semantics></math> sejam não correlacionados.</p>
+</div>
+<div id="SS3.p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">A independência é discutida na próxima seção.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S13.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S15.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Intro.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

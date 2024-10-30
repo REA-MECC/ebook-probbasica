@@ -1,0 +1,579 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula</title>
+<!--Generated on Tue Aug 27 14:11:25 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Intro.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="start" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="prev" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="next" href="S2.html" title="2 Contagem ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S2.html" title="2 Contagem ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S3.html" title="3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S4.html" title="4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S5.html" title="5 Variáveis Aleatórias ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S6.html" title="6 Esperança ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S7.html" title="7 Distribuições discretas multivariadas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S8.html" title="8 A Lei dos Grandes Números ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S9.html" title="9 Covariância ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S10.html" title="10 Desigualdade de Chebyshev ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S11.html" title="11 Coeficiente de Correlação ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S12.html" title="12 Teorema do Limite Central ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S13.html" title="13 Variáveis aleatórias contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S14.html" title="14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S15.html" title="15 Distribuições Conjuntas e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S16.html" title="16 Somas de variáveis aleatórias independentes ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S17.html" title="17 Momentos e funções geradoras de momentos ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A1.html" title="Apêndice A Somas úteis ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A2.html" title="Apêndice B Exponenciais superam polinômios ‣ Introdução à Probabilidade Notas de Aula">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Introdução à Probabilidade <span class="ltx_text"> </span>Notas de Aula</a>
+</li>
+<li class="divider">
+<li data-level="1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Espaços de probabilidade uniforme</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="1.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.1 </span></b>Probabilidade em termos de conjuntos e funções</a></li>
+<li data-level="1.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.2 </span></b>Espaço de Probabilidade Uniforme</a></li>
+</ol>
+</li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Contagem</a></li>
+<li data-level="3" data-path="S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S3.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Espaços de Probabilidade</a></li>
+<li data-level="4" data-path="S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S4.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Probabilidade Condicional e Independência</a></li>
+<li data-level="5" data-path="S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S5.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Variáveis Aleatórias</a></li>
+<li data-level="6" data-path="S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S6.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Esperança</a></li>
+<li data-level="7" data-path="S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S7.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Distribuições discretas multivariadas</a></li>
+<li data-level="8" data-path="S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S8.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>A Lei dos Grandes Números</a></li>
+<li data-level="9" data-path="S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S9.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Covariância</a></li>
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Desigualdade de Chebyshev</a></li>
+<li data-level="11" data-path="S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S11.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Coeficiente de Correlação</a></li>
+<li data-level="12" data-path="S12.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S12.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">12 </span></b>Teorema do Limite Central</a></li>
+<li data-level="13" data-path="S13.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S13.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">13 </span></b>Variáveis aleatórias contínuas</a></li>
+<li data-level="14" data-path="S14.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S14.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14 </span></b>Uma única teoria para discretas e contínuas</a></li>
+<li data-level="15" data-path="S15.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S15.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">15 </span></b>Distribuições Conjuntas e Independência</a></li>
+<li data-level="16" data-path="S16.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S16.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">16 </span></b>Somas de variáveis aleatórias independentes</a></li>
+<li data-level="17" data-path="S17.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S17.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">17 </span></b>Momentos e funções geradoras de momentos</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Somas úteis</a></li>
+<li data-level="B" data-path="A2.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">B </span></b>Exponenciais superam polinômios</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Espaços de probabilidade uniforme</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">1</span> Espaços de probabilidade uniforme</h1>
+
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">1.1</span> Probabilidade em termos de conjuntos e funções</h2>
+
+<div id="SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Considere o seguinte experimento: uma caixa contém 4 bolas vermelhas, 6 bolas azuis e 10 bolas verdes. Escolhemos uma bola <em class="ltx_emph ltx_font_italic">aleatoriamente</em>. Qual é a <em class="ltx_emph ltx_font_italic">probabilidade</em> de essa bola ser vermelha? Aprendemos na escola que isso deveria ser o número de bolas vermelhas sobre o número total de bolas, ou seja, <math id="SS1.p1.m1" class="ltx_Math" alttext="\frac{4}{20}=0.2=20\%" display="inline"><semantics><mrow><mfrac><mn>4</mn><mn>20</mn></mfrac><mo>=</mo><mn>0.2</mn><mo>=</mo><mrow><mn>20</mn><mo>%</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{4}{20}=0.2=20\%</annotation></semantics></math>, e isso é de fato verdade sob certas suposições. Para entender as suposições que implicitamente fazemos ao realizar esse cálculo, fazemos as seguintes perguntas:</p>
+</div>
+<div id="SS1.p2" class="ltx_para ltx_noindent">
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">O que é uma probabilidade como objeto matemático?</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">Que outras perguntas poderíamos fazer sem alterar o experimento?</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">A resposta seria a mesma se algumas bolas fossem mais difíceis de segurar (por exemplo, se tivessem tamanhos diferentes)?</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Observe que quando perguntamos sobre uma probabilidade, precisamos determinar o evento cuja probabilidade nos interessa - enquanto a probabilidade de um evento específico (por exemplo, ’a bola é vermelha’) é um número no intervalo de <math id="SS1.p2.m1" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>, <em class="ltx_emph ltx_font_italic">a probabilidade em si é um mapeamento que associa a cada evento um número</em>.</p>
+</div>
+<div id="SS1.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Há três possíveis resultados para este experimento: vermelho, azul e verde. Chamamos o conjunto de todos os resultados possíveis de <em class="ltx_emph ltx_font_italic">espaço amostral</em>, normalmente representado por <math id="SS1.p3.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>. Como objeto matemático, <math id="SS1.p3.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> é qualquer conjunto não vazio - neste caso, <math id="SS1.p3.m3" class="ltx_Math" alttext="\Omega={vermelho,azul,verde}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>e</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\Omega={vermelho,azul,verde}</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">No entanto, podemos fazer outras perguntas também. Por exemplo, podemos perguntar qual é a probabilidade de ’a bola ser azul ou verde’ (o que seria equivalente a ’a bola não ser vermelha’). Em palavras, um evento é uma afirmação na qual você pode determinar se é verdadeira ou não após ver o resultado do experimento. Neste caso, todos os eventos possíveis são:</p>
+</div>
+<div id="SS1.p5" class="ltx_para ltx_noindent">
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">’A bola não é de nenhuma das três cores ou de qualquer outra cor’ - matematicamente, isso será representado pelo conjunto vazio <math id="I2.i1.p1.m1" class="ltx_Math" alttext="\emptyset" display="inline"><semantics><mi>∅︀</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math>, já que não contém nenhum dos resultados possíveis.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">’A bola é vermelha’ - representado por <math id="I2.i2.p1.m1" class="ltx_Math" alttext="{vermelho}" display="inline"><semantics><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><annotation encoding="application/x-tex">{vermelho}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p">’A bola é azul’ - representado por <math id="I2.i3.p1.m1" class="ltx_Math" alttext="{azul}" display="inline"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow><annotation encoding="application/x-tex">{azul}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p">’A bola é verde’ - representado por <math id="I2.i4.p1.m1" class="ltx_Math" alttext="{verde}" display="inline"><semantics><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">{verde}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p">’A bola é ou vermelha ou azul’ - representado por <math id="I2.i5.p1.m1" class="ltx_Math" alttext="{vermelho,azul}" display="inline"><semantics><mrow><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow></mrow><annotation encoding="application/x-tex">{vermelho,azul}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p">’A bola é ou vermelha ou verde’ - representado por <math id="I2.i6.p1.m1" class="ltx_Math" alttext="{vermelho,verde}" display="inline"><semantics><mrow><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>e</mi></mrow></mrow><annotation encoding="application/x-tex">{vermelho,verde}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i7.p1" class="ltx_para">​<p class="ltx_p">’A bola é ou azul ou verde’ - representado por <math id="I2.i7.p1.m1" class="ltx_Math" alttext="{azul,verde}" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>e</mi></mrow></mrow><annotation encoding="application/x-tex">{azul,verde}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i8.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">’A bola é qualquer uma das cores vermelha, azul ou verde’ - representado por <math id="I2.i8.p1.m1" class="ltx_Math" alttext="{vermelho,azul,verde}=\Omega" display="inline"><semantics><mrow><mrow><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>e</mi></mrow></mrow><mo>=</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">{vermelho,azul,verde}=\Omega</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="SS1.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">Desta lista exaustiva, fica claro que todos os eventos são subconjuntos de <math id="SS1.p6.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> e, de fato, neste caso pelo menos, todos os subconjuntos de <math id="SS1.p6.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> são eventos. Chamamos a coleção de todos os eventos de <em class="ltx_emph ltx_font_italic">espaço de eventos</em> (ou, mais formalmente, <math id="SS1.p6.m3" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra), normalmente representado por <math id="SS1.p6.m4" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>. Como objeto matemático, isso é uma coleção de subconjuntos do espaço amostral - veremos mais tarde que essa coleção deve satisfazer certas propriedades, mas por enquanto, supomos que ela inclui todos os subconjuntos, então <math id="SS1.p6.m5" class="ltx_Math" alttext="\mathcal{F}=\mathcal{P}(\Omega)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{F}=\mathcal{P}(\Omega)</annotation></semantics></math>, onde <math id="SS1.p6.m6" class="ltx_Math" alttext="\mathcal{P}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒫</mi><annotation encoding="application/x-tex">\mathcal{P}</annotation></semantics></math> denota o conjunto das partes (a coleção de todos os subconjuntos).</p>
+</div>
+<div id="SS1.p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">Já argumentamos que a probabilidade, normalmente representada por <math id="SS1.p7.m1" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math>, é um mapeamento do espaço de eventos para números em <math id="SS1.p7.m2" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math> - o representamos como <math id="SS1.p7.m3" class="ltx_Math" alttext="\mathbb{P}:\mathcal{F}\to[0,1]" display="inline"><semantics><mrow><mi>ℙ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}:\mathcal{F}\to[0,1]</annotation></semantics></math>. No entanto, com base em nossa intuição, esperamos que:</p>
+</div>
+<div id="SS1.p8" class="ltx_para ltx_noindent">
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_Math" alttext="\mathbb{P}(\emptyset)=0" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>∅︀</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(\emptyset)=0</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="\mathbb{P}({vermelho})=0,2" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0,2</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}({vermelho})=0,2</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i3.p1.m1" class="ltx_Math" alttext="\mathbb{P}({azul})=0,3" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0,3</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}({azul})=0,3</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i4.p1.m1" class="ltx_Math" alttext="\mathbb{P}({verde})=0,5" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>e</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0,5</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}({verde})=0,5</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i5.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i5.p1.m1" class="ltx_Math" alttext="\mathbb{P}({vermelho,azul})=0,5" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0,5</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}({vermelho,azul})=0,5</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i6.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i6.p1.m1" class="ltx_Math" alttext="\mathbb{P}({vermelho,verde})=0,7" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>e</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0,7</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}({vermelho,verde})=0,7</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i7.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i7.p1.m1" class="ltx_Math" alttext="\mathbb{P}({azul,verde})=0,8" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>e</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0,8</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}({azul,verde})=0,8</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i8.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I3.i8.p1.m1" class="ltx_Math" alttext="\mathbb{P}({vermelho,azul,verde})=1" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>e</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}({vermelho,azul,verde})=1</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="SS1.p9" class="ltx_para ltx_noindent">
+<p class="ltx_p">Quais suposições implícitas estamos fazendo ao fazer esses cálculos, com base em nossa intuição?</p>
+</div>
+<div id="SS1.p10" class="ltx_para ltx_noindent">
+<ul id="I4" class="ltx_itemize">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p">A probabilidade do evento <math id="I4.i1.p1.m1" class="ltx_Math" alttext="\emptyset" display="inline"><semantics><mi>∅︀</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math>, que não inclui nenhum resultado, deve ser 0.</p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p">A probabilidade do evento <math id="I4.i2.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>, que inclui todos os resultados, deve ser 1.</p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I4.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Quando um evento pode ser decomposto na união de dois eventos disjuntos, sua probabilidade deve ser a soma das duas probabilidades, por exemplo, <math id="I4.i3.p1.m1" class="ltx_Math" alttext="\mathbb{P}({vermelho,azul})=\mathbb{P}({vermelho})+\mathbb{P}({azul})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>o</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>l</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}({vermelho,azul})=\mathbb{P}({vermelho})+\mathbb{P}({azul})</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="SS1.p11" class="ltx_para ltx_noindent">
+<p class="ltx_p">Essas são propriedades fundamentais que um mapeamento de probabilidade deve ter.</p>
+</div>
+<div id="SS1.p12" class="ltx_para ltx_noindent">
+<p class="ltx_p">In conclusion, the triplet <math id="SS1.p12.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> of sample space <math id="SS1.p12.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>, event space <math id="SS1.p12.m3" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> and probability <math id="SS1.p12.m4" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> form what is called a <em class="ltx_emph ltx_font_italic">probability space</em>.</p>
+</div>
+<div id="SS1.p13" class="ltx_para ltx_noindent">
+<p class="ltx_p">Em conclusão, o trio <math id="SS1.p13.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math>, composto pelo espaço amostral <math id="SS1.p13.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>, espaço de eventos <math id="SS1.p13.m3" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> e probabilidade <math id="SS1.p13.m4" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math>, forma o que é chamado de um <em class="ltx_emph ltx_font_italic">espaço de probabilidade</em>.</p>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">1.2</span> Espaço de Probabilidade Uniforme</h2>
+
+<div id="SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">No exemplo anterior, a maneira como postulamos a probabilidade de cada cor tinha uma suposição implícita: que todas as bolas têm a mesma chance de serem escolhidas. Essa é uma suposição correta se as bolas têm o mesmo peso, tamanho, textura, etc.</p>
+</div>
+<div id="SS2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">E se, em vez de serem coloridas em vermelho, verde ou azul, as bolas fossem numeradas de 1 a 20?
+Sob a mesma suposição (que as bolas têm o mesmo peso, tamanho, textura, etc.), teríamos</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\Omega=\{vermelho_{1},\dots,vermelho_{4},azul_{1},\dots,azul_{6},verde_{1},%
+\dots,verde_{10}\}" display="block"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><msub><mi>o</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><msub><mi>o</mi><mn>4</mn></msub></mrow><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><msub><mi>l</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><msub><mi>l</mi><mn>6</mn></msub></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>e</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>e</mi><mn>10</mn></msub></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\Omega=\{vermelho_{1},\dots,vermelho_{4},azul_{1},\dots,azul_{6},verde_{1},%
+\dots,verde_{10}\}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e <math id="SS2.p2.m1" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> seria tal que cada bola teria a mesma chance de ser escolhida, ou seja, cada elemento <math id="SS2.p2.m2" class="ltx_Math" alttext="\omega\in\Omega" display="inline"><semantics><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\omega\in\Omega</annotation></semantics></math> teria a mesma chance. Então, o evento ’a bola é vermelha’ corresponderia ao evento <math id="SS2.p2.m3" class="ltx_Math" alttext="A=\{vermelho_{1},\dots,vermelho_{4}\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><msub><mi>o</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><msub><mi>o</mi><mn>4</mn></msub></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A=\{vermelho_{1},\dots,vermelho_{4}\}</annotation></semantics></math> e intuitivamente esperaríamos que a probabilidade de obter uma bola vermelha fosse igual a <math id="SS2.p2.m4" class="ltx_Math" alttext="\frac{4}{20}" display="inline"><semantics><mfrac><mn>4</mn><mn>20</mn></mfrac><annotation encoding="application/x-tex">\frac{4}{20}</annotation></semantics></math>, onde <math id="SS2.p2.m5" class="ltx_Math" alttext="4" display="inline"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math> é o número de elementos em <math id="SS2.p2.m6" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> (e bolas vermelhas) e <math id="SS2.p2.m7" class="ltx_Math" alttext="20" display="inline"><semantics><mn>20</mn><annotation encoding="application/x-tex">20</annotation></semantics></math> é o número de todos os resultados possíveis.</p>
+</div>
+<div id="SS2.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Quando cada resultado é igualmente provável, temos um espaço de probabilidade uniforme.</p>
+</div>
+<div id="E1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 1.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E1.p1" class="ltx_para">
+<p class="ltx_p">Um <em class="ltx_emph ltx_font_italic">espaço de probabilidade uniforme</em> é definido como o trio <math id="E1.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math>, onde</p>
+<ul id="I5" class="ltx_itemize">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i1.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> (o <em class="ltx_emph ltx_font_italic">espaço amostral</em>) é um conjunto finito não vazio de todos os resultados possíveis do experimento;</p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I5.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i2.p1.m1" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> (o <em class="ltx_emph ltx_font_italic">espaço de eventos</em>) é a coleção de todos os eventos, dada pelo conjunto de potências <math id="I5.i2.p1.m2" class="ltx_Math" alttext="\mathcal{P}(\Omega)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{P}(\Omega)</annotation></semantics></math> de <math id="I5.i2.p1.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I5.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I5.i3.p1.m1" class="ltx_Math" alttext="\mathbb{P}:\mathcal{F}\to[0,1]" display="inline"><semantics><mrow><mi>ℙ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}:\mathcal{F}\to[0,1]</annotation></semantics></math> é um mapeamento do espaço de eventos para <math id="I5.i3.p1.m2" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>, satisfazendo</p>
+<div class="bml-overflow-wrapper">
+<table id="E2" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="A2.EGx1" class="ltx_eqn_row"><td class="ltx_eqn_cell" colspan="4"></td></tr>
+<tr id="E2.1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E2.1.m1" class="ltx_Math" alttext="\displaystyle\hskip 8.5359pt-\,\mathbb{P}(\emptyset)=0,\mathbb{P}(\Omega)=1\,," display="inline"><semantics><mrow><mrow><mrow><mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>∅︀</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\hskip 8.5359pt-\,\mathbb{P}(\emptyset)=0,\mathbb{P}(\Omega)=1\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.2a)</span></td>
+</tr>
+<tr id="E2.x1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E2.x1.m1" class="ltx_Math" alttext="\displaystyle\hskip 8.5359pt-\,\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)%
+\,,\text{ para todo }A,B\in\mathcal{F}\text{ tal que }A\cap B=\emptyset%
+\phantom{-----}" display="inline"><semantics><mrow><mrow><mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo rspace="0.170em" stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mtext> para todo </mtext><mo>⁢</mo><mi>A</mi></mrow></mrow></mrow><mo>,</mo><mrow><mi>B</mi><mo>∈</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>⁢</mo><mtext> tal que </mtext><mo>⁢</mo><mi>A</mi></mrow><mo>∩</mo><mi>B</mi></mrow><mo>=</mo><mi>∅︀</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\hskip 8.5359pt-\,\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)%
+\,,\text{ para todo }A,B\in\mathcal{F}\text{ tal que }A\cap B=\emptyset%
+\phantom{-----}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="E2.2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">(aditividade finita)</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.2b)</span></td>
+</tr>
+<tr id="E2.3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E2.3.m1" class="ltx_Math" alttext="\displaystyle\hskip 8.5359pt-\,\mathbb{P}(\{\omega\})=\mathbb{P}(\{\tilde{%
+\omega}\})\text{ para todo }\omega,\tilde{\omega}\in\Omega\qquad\text{(%
+uniforme)}" display="inline"><semantics><mrow><mrow><mrow><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>ω</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mover accent="true"><mi>ω</mi><mo>~</mo></mover><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mtext> para todo </mtext><mo>⁢</mo><mi>ω</mi></mrow></mrow><mo>,</mo><mrow><mover accent="true"><mi>ω</mi><mo>~</mo></mover><mo>∈</mo><mrow><mi mathvariant="normal">Ω</mi><mspace width="2em"></mspace><mtext>(uniforme)</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\hskip 8.5359pt-\,\mathbb{P}(\{\omega\})=\mathbb{P}(\{\tilde{%
+\omega}\})\text{ para todo }\omega,\tilde{\omega}\in\Omega\qquad\text{(%
+uniforme)}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.2c)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="SS2.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Como resultado da suposição uniforme, calcular a probabilidade de qualquer evento se resume a calcular a cardinalidade do evento. Lembre-se de que um evento é um conjunto (um subconjunto do espaço amostral <math id="SS2.p4.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>) - a cardinalidade de um conjunto é o número de seus elementos. Para um conjunto <math id="SS2.p4.m2" class="ltx_Math" alttext="A\subseteq\Omega" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">A\subseteq\Omega</annotation></semantics></math>, ele é denotado por <math id="SS2.p4.m3" class="ltx_Math" alttext="|A|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|A|</annotation></semantics></math>.</p>
+</div>
+<div id="SS2.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Para definir formalmente a cardinalidade, primeiro precisamos definir uma correspondência um a um entre dois conjuntos: dados dois conjuntos <math id="SS2.p5.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e <math id="SS2.p5.m2" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>, dizemos que eles estão em uma correspondência um a um se existir um mapa bijetivo entre eles, ou seja, uma função <math id="SS2.p5.m3" class="ltx_Math" alttext="f:A\to B" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>A</mi><mo stretchy="false">→</mo><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">f:A\to B</annotation></semantics></math> que seja tanto injetiva quanto sobrejetiva.</p>
+</div>
+<div id="E3" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 1.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E3.p1" class="ltx_para">
+<p class="ltx_p">Um conjunto <math id="E3.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> possui cardinalidade <math id="E3.p1.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math> se estiver em uma correspondência um a um com <math id="E3.p1.m3" class="ltx_Math" alttext="\{1,2,\dots,n\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,2,\dots,n\}</annotation></semantics></math> e <math id="E3.p1.m4" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> possui cardinalidade <math id="E3.p1.m5" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> se <math id="E3.p1.m6" class="ltx_Math" alttext="A=\emptyset" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A=\emptyset</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="E4" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 1.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E4.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> um espaço de probabilidade uniforme. Então, para todo <math id="E4.p1.m2" class="ltx_Math" alttext="\omega\in\Omega" display="inline"><semantics><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\omega\in\Omega</annotation></semantics></math></span></p>
+<div id="E5" class="ltx_equation ltx_eqn_div">
+<span><math id="E5.m1" class="ltx_Math" alttext="\mathbb{P}(\{\omega\})=\frac{1}{|\Omega|}\,," display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>ω</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mfrac></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(\{\omega\})=\frac{1}{|\Omega|}\,,</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.5)</span>
+              
+              
+            
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">e para todo <math id="E4.p1.m3" class="ltx_Math" alttext="A\subseteq\Omega" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">A\subseteq\Omega</annotation></semantics></math> (<math id="E4.p1.m4" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math>)</span></p>
+<div id="E6" class="ltx_equation ltx_eqn_div">
+<span><math id="E6.m1" class="ltx_Math" alttext="\mathbb{P}(A)=\frac{|A|}{|\Omega|}\,." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(A)=\frac{|A|}{|\Omega|}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.6)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS2.p6" class="ltx_para">
+<p class="ltx_p">Uma vez que <math id="SS2.p6.m1" class="ltx_Math" alttext="\forall\,\omega_{1},\omega_{2}\in\Omega" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.337em">∀</mo><msub><mi>ω</mi><mn>1</mn></msub></mrow><mo>,</mo><msub><mi>ω</mi><mn>2</mn></msub></mrow><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\forall\,\omega_{1},\omega_{2}\in\Omega</annotation></semantics></math>, <math id="SS2.p6.m2" class="ltx_Math" alttext="\mathbb{P}(\{\omega_{1}\})=\mathbb{P}(\{\omega_{2}\})" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><msub><mi>ω</mi><mn>1</mn></msub><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><msub><mi>ω</mi><mn>2</mn></msub><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(\{\omega_{1}\})=\mathbb{P}(\{\omega_{2}\})</annotation></semantics></math>, seja <math id="SS2.p6.m3" class="ltx_Math" alttext="p\in[0,1]" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">p\in[0,1]</annotation></semantics></math> tal que</p>
+<div id="E7" class="ltx_equation ltx_eqn_div">
+<span><math id="E7.m1" class="ltx_Math" alttext="p:=\mathbb{P}(\{\omega\})\quad\forall\,\omega\in\Omega\,." display="block"><semantics><mrow><mrow><mrow><mi>p</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>ω</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1.167em"></mspace><mrow><mrow><mo rspace="0.337em">∀</mo><mi>ω</mi></mrow><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">p:=\mathbb{P}(\{\omega\})\quad\forall\,\omega\in\Omega\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.7)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Uma vez que <math id="SS2.p6.m4" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> é uma medida de probabilidade</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E8.m1" class="ltx_Math" alttext="\displaystyle 1=\mathbb{P}(\Omega)" display="inline"><semantics><mrow><mn>1</mn><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 1=\mathbb{P}(\Omega)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E8.m2" class="ltx_math_unparsed" alttext="\displaystyle={\sum_{\omega\in\Omega}\mathbb{P}(\{w\})]}\quad\text{por \eqref{%
+fin_ad}}" display="inline"><semantics><mrow><mo>=</mo><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow></munder></mstyle><mi>ℙ</mi><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>w</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">]</mo><mspace width="1em"></mspace><mrow><mtext>por (</mtext><semantics><annotation-xml encoding="text/html" style="display: block;"><a href="#E2.2" title="In 1.2 ‣ 3rd item ‣ Definição 1.1. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2b</span></a></annotation-xml></semantics><mtext>)</mtext></mrow></mrow><annotation encoding="application/x-tex">\displaystyle={\sum_{\omega\in\Omega}\mathbb{P}(\{w\})]}\quad\text{por \eqref{%
+fin_ad}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.8)</span></td>
+</tr></tbody>
+<tbody id="E9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E9.m1" class="ltx_Math" alttext="\displaystyle={\sum_{\omega\in\Omega}p=p\sum_{\omega\in\Omega}1=p|\Omega|\,.}" display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow></munder></mstyle><mi>p</mi></mrow><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow></munder></mstyle><mn>1</mn></mrow></mrow><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle={\sum_{\omega\in\Omega}p=p\sum_{\omega\in\Omega}1=p|\Omega|\,.}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.9)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Portanto</p>
+<div id="E10" class="ltx_equation ltx_eqn_div">
+<span><math id="E10.m1" class="ltx_Math" alttext="p=\frac{1}{|\Omega|}\,." display="block"><semantics><mrow><mrow><mi>p</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">p=\frac{1}{|\Omega|}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.10)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">demonstrando (<a href="#E5" title="In Proposição 1.4. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5</span></a>).
+Vemos que (<a href="#E6" title="In Proposição 1.4. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a>) segue de (<a href="#E2.2" title="In 1.2 ‣ 3rd item ‣ Definição 1.1. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2b</span></a>), pois</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E11.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(A)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(A)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E11.m2" class="ltx_Math" alttext="\displaystyle=\sum_{\omega\in A}\mathbb{P}(\{\omega\}),\quad\text{por \eqref{%
+fin_ad}}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi>A</mi></mrow></munder></mstyle><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>ω</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="1.167em">,</mo><mrow><mtext>por (</mtext><semantics><annotation-xml encoding="text/html" style="display: block;"><a href="#E2.2" title="In 1.2 ‣ 3rd item ‣ Definição 1.1. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2b</span></a></annotation-xml></semantics><mtext>)</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{\omega\in A}\mathbb{P}(\{\omega\}),\quad\text{por \eqref{%
+fin_ad}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.11)</span></td>
+</tr></tbody>
+<tbody id="E12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E12.m1" class="ltx_Math" alttext="\displaystyle=\sum_{\omega\in A}p=p\sum_{\omega\in A}1=p|A|=\frac{|A|}{|\Omega%
+|}\,.\qed" display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi>A</mi></mrow></munder></mstyle><mi>p</mi></mrow><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi>A</mi></mrow></munder></mstyle><mn>1</mn></mrow></mrow><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mfrac></mstyle></mrow><mo lspace="0.170em" rspace="0.0835em">.</mo><mo class="ltx_mathvariant_italic" lspace="0.0835em" mathvariant="italic" separator="true">∎</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{\omega\in A}p=p\sum_{\omega\in A}1=p|A|=\frac{|A|}{|\Omega%
+|}\,.\qed</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.12)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="Thmexercise1" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 1.1</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexercise1.p1" class="ltx_para">
+<p class="ltx_p">Considere uma urna com 50 bolas numeradas de 1 a 50. Suponha que elas sejam sorteadas uniformemente ao acaso. Após definir um espaço de probabilidade adequado, determine a probabilidade de que a primeira bola sorteada mostre um número divisível por 12.</p>
+</div>
+</div>
+<div id="SS2.p7" class="ltx_para ltx_noindent">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Solução:</em> Defina <math id="SS2.p7.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> da seguinte forma: <math id="SS2.p7.m2" class="ltx_Math" alttext="\Omega=\{1,2,3,\dots,50\}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>,50</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\Omega=\{1,2,3,\dots,50\}</annotation></semantics></math>, <math id="SS2.p7.m3" class="ltx_Math" alttext="\mathcal{F}=\mathcal{P}(\Omega)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{F}=\mathcal{P}(\Omega)</annotation></semantics></math> e <math id="SS2.p7.m4" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> a medida de probabilidade uniforme. Então, o evento em questão é</p>
+<div id="E13" class="ltx_equation ltx_eqn_div">
+<span><math id="E13.m1" class="ltx_Math" alttext="E=\{12,24,36,48\}\,." display="block"><semantics><mrow><mrow><mi>E</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>12,24,36,48</mn><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">E=\{12,24,36,48\}\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.13)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Pela Proposição <a href="#E6" title="In Proposição 1.4. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a> (<a href="#E6" title="In Proposição 1.4. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a>),</p>
+<div id="E14" class="ltx_equation ltx_eqn_div">
+<span><math id="E14.m1" class="ltx_Math" alttext="\mathbb{P}(E)=\frac{|E|}{|\Omega|}=\frac{4}{50}=\frac{2}{25}\,." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mo stretchy="false">|</mo><mi>E</mi><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mfrac><mo>=</mo><mfrac><mn>4</mn><mn>50</mn></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>25</mn></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(E)=\frac{|E|}{|\Omega|}=\frac{4}{50}=\frac{2}{25}\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.14)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="index.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Intro.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

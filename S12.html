@@ -1,0 +1,367 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>12 Teorema do Limite Central ‣ Introdução à Probabilidade Notas de Aula</title>
+<!--Generated on Tue Aug 27 14:11:25 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Intro.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="start" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="prev" href="S11.html" title="11 Coeficiente de Correlação ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="next" href="S13.html" title="13 Variáveis aleatórias contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S1.html" title="1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S2.html" title="2 Contagem ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S3.html" title="3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S4.html" title="4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S5.html" title="5 Variáveis Aleatórias ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S6.html" title="6 Esperança ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S7.html" title="7 Distribuições discretas multivariadas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S8.html" title="8 A Lei dos Grandes Números ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S9.html" title="9 Covariância ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S10.html" title="10 Desigualdade de Chebyshev ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S11.html" title="11 Coeficiente de Correlação ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S13.html" title="13 Variáveis aleatórias contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S14.html" title="14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S15.html" title="15 Distribuições Conjuntas e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S16.html" title="16 Somas de variáveis aleatórias independentes ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S17.html" title="17 Momentos e funções geradoras de momentos ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A1.html" title="Apêndice A Somas úteis ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A2.html" title="Apêndice B Exponenciais superam polinômios ‣ Introdução à Probabilidade Notas de Aula">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Introdução à Probabilidade <span class="ltx_text"> </span>Notas de Aula</a>
+</li>
+<li class="divider">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Espaços de probabilidade uniforme</a></li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Contagem</a></li>
+<li data-level="3" data-path="S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S3.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Espaços de Probabilidade</a></li>
+<li data-level="4" data-path="S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S4.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Probabilidade Condicional e Independência</a></li>
+<li data-level="5" data-path="S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S5.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Variáveis Aleatórias</a></li>
+<li data-level="6" data-path="S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S6.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Esperança</a></li>
+<li data-level="7" data-path="S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S7.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Distribuições discretas multivariadas</a></li>
+<li data-level="8" data-path="S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S8.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>A Lei dos Grandes Números</a></li>
+<li data-level="9" data-path="S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S9.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Covariância</a></li>
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Desigualdade de Chebyshev</a></li>
+<li data-level="11" data-path="S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S11.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Coeficiente de Correlação</a></li>
+<li data-level="12" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">12 </span></b>Teorema do Limite Central</a></li>
+<li data-level="13" data-path="S13.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S13.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">13 </span></b>Variáveis aleatórias contínuas</a></li>
+<li data-level="14" data-path="S14.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S14.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14 </span></b>Uma única teoria para discretas e contínuas</a></li>
+<li data-level="15" data-path="S15.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S15.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">15 </span></b>Distribuições Conjuntas e Independência</a></li>
+<li data-level="16" data-path="S16.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S16.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">16 </span></b>Somas de variáveis aleatórias independentes</a></li>
+<li data-level="17" data-path="S17.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S17.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">17 </span></b>Momentos e funções geradoras de momentos</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Somas úteis</a></li>
+<li data-level="B" data-path="A2.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">B </span></b>Exponenciais superam polinômios</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Teorema do Limite Central</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">12</span> Teorema do Limite Central</h1>
+
+<div id="E1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 12.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Teorema do Limite Central)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="E1.p1.m1" class="ltx_Math" alttext="X_{1},X_{2},X_{3},\dots" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><msub><mi>X</mi><mn>3</mn></msub><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">X_{1},X_{2},X_{3},\dots</annotation></semantics></math> variáveis aleatórias independentes entre si, quadrado-integráveis, com a mesma distribuição. Denote sua média por <math id="E1.p1.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> e variância por <math id="E1.p1.m3" class="ltx_Math" alttext="\sigma^{2}&gt;0" display="inline"><semantics><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sigma^{2}&gt;0</annotation></semantics></math>.
+Então, para todo <math id="E1.p1.m4" class="ltx_Math" alttext="a&lt;b" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a&lt;b</annotation></semantics></math></span></p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\mathbb{P}\Big{(}a\leqslant\frac{X_{1}+\dots+X_{n}-n\cdot\mu}{\sigma\cdot\sqrt%
+{n}}\leqslant b\Big{)}\approx\int_{a}^{b}\tfrac{1}{\sqrt{2\pi}}e^{-x^{2}/2}\,%
+\mathrm{d}x." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mi>a</mi><mo>⩽</mo><mfrac><mrow><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><mo>−</mo><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>μ</mi></mrow></mrow><mrow><mi>σ</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msqrt><mi>n</mi></msqrt></mrow></mfrac><mo>⩽</mo><mi>b</mi></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo rspace="0.111em">≈</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac></mstyle><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}\Big{(}a\leqslant\frac{X_{1}+\dots+X_{n}-n\cdot\mu}{\sigma\cdot\sqrt%
+{n}}\leqslant b\Big{)}\approx\int_{a}^{b}\tfrac{1}{\sqrt{2\pi}}e^{-x^{2}/2}\,%
+\mathrm{d}x.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">A aproximação “<math id="p1.m1" class="ltx_Math" alttext="{\approx}" display="inline"><semantics><mo>≈</mo><annotation encoding="application/x-tex">{\approx}</annotation></semantics></math>” significa que a probabilidade se aproxima o quanto desejarmos da integral (como mostrado na Figura <a href="#F1" title="Figura 12.1 ‣ 12 Teorema do Limite Central ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.1</span></a>) se escolhermos <math id="p1.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> suficientemente grande.</p>
+</div>
+<div id="p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Esse fenômeno notável está no cerne da estatística e da maioria das ciências naturais.
+Ele afirma que, <em class="ltx_emph ltx_font_italic">independentemente da distribuição de <math id="p2.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math></em>, se adicionarmos um número suficiente de amostras de <math id="p2.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, só veremos sua média <math id="p2.m3" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> e variância <math id="p2.m4" class="ltx_Math" alttext="\sigma^{2}" display="inline"><semantics><msup><mi>σ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\sigma^{2}</annotation></semantics></math>.</p>
+</div>
+<figure id="F1" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="Pictures/normalarea.png" id="F1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="299" height="121" alt="Refer to caption"></div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figura 12.1: </span>Gráfico de <math id="F1.m5" class="ltx_Math" alttext="y=\frac{1}{\sqrt{2\pi}}e^{-x^{2}/2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow></msup></mrow></mrow><annotation encoding="application/x-tex">y=\frac{1}{\sqrt{2\pi}}e^{-x^{2}/2}</annotation></semantics></math> e a probabilidade de que <math id="F1.m6" class="ltx_Math" alttext="Z\in[a,b]" display="inline"><semantics><mrow><mi>Z</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">Z\in[a,b]</annotation></semantics></math> representada pela área esverdeada entre os pontos <math id="F1.m7" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> e <math id="F1.m8" class="ltx_Math" alttext="b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>.</figcaption>
+</figure>
+<div id="p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Não demonstraremos o Teorema do Limite Central neste módulo, pois são necessárias ferramentas mais avançadas.</p>
+</div>
+<div id="p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">No caso de <math id="p4.m1" class="ltx_Math" alttext="X\sim\mathrm{Bernoulli}(\frac{1}{2})" display="inline"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Bernoulli</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Bernoulli}(\frac{1}{2})</annotation></semantics></math>, o que corresponde a lançar uma moeda justa, podemos visualizar como a distribuição de <math id="p4.m2" class="ltx_Math" alttext="X_{1}+\dots+X_{n}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">X_{1}+\dots+X_{n}</annotation></semantics></math> se aproxima da função
+<math id="p4.m3" class="ltx_Math" alttext="y=\frac{1}{\sqrt{2\pi}}e^{-x^{2}/2}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow></msup></mrow></mrow><annotation encoding="application/x-tex">y=\frac{1}{\sqrt{2\pi}}e^{-x^{2}/2}</annotation></semantics></math>, como ilustrado na Figura <a href="#F2" title="Figura 12.2 ‣ 12 Teorema do Limite Central ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12.2</span></a>.</p>
+</div>
+<div id="E2" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 12.2</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Ao contar os votos em uma eleição muito disputada, 25.301 votos já foram contados: 12.636 para o Candidato A e 12.665 para o Candidato B. Ainda faltam 400 votos para serem contados. Qual é a probabilidade de que o Candidato B vença a eleição?</p>
+</div>
+<div id="E2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Supondo que cada voto seja como uma moeda justa, a pergunta que estamos fazendo é:</p>
+</div>
+<div id="E2.p3" class="ltx_para ltx_noindent">
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\mathbb{P}(X_{1}+\dots+X_{400}\geqslant 215)" display="block"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mn>400</mn></msub></mrow><mo>⩾</mo><mn>215</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(X_{1}+\dots+X_{400}\geqslant 215)</annotation></semantics></math></span>
+</div>
+</div>
+<div id="E2.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">onde <math id="E2.p4.m1" class="ltx_Math" alttext="X_{1},\dots,X_{n}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">X_{1},\dots,X_{n}</annotation></semantics></math> são independentes e têm distribuição <math id="E2.p4.m2" class="ltx_Math" alttext="\mathrm{Bernoulli}(\frac{1}{2})" display="inline"><semantics><mrow><mi>Bernoulli</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Bernoulli}(\frac{1}{2})</annotation></semantics></math>. Pela simetria, isso é o mesmo que:</p>
+</div>
+<div id="E2.p5" class="ltx_para ltx_noindent">
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\mathbb{P}(X_{1}+\dots+X_{400}\leqslant 185)" display="block"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mn>400</mn></msub></mrow><mo>⩽</mo><mn>185</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}(X_{1}+\dots+X_{400}\leqslant 185)</annotation></semantics></math></span>
+</div>
+</div>
+<div id="E2.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">e, portanto, isso é igual a:</p>
+</div>
+<div id="E2.p7" class="ltx_para ltx_noindent">
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\frac{1}{2}\cdot\Big{[}1-\mathbb{P}(185&lt;X_{1}+\dots+X_{400}&lt;215)\Big{]}" display="block"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><mn>1</mn><mo>−</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>185</mn><mo>&lt;</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mn>400</mn></msub></mrow><mo>&lt;</mo><mn>215</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{1}{2}\cdot\Big{[}1-\mathbb{P}(185&lt;X_{1}+\dots+X_{400}&lt;215)\Big{]}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="E2.p8" class="ltx_para ltx_noindent">
+<p class="ltx_p">Dado que <math id="E2.p8.m1" class="ltx_Math" alttext="\mu=\frac{1}{2}" display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\mu=\frac{1}{2}</annotation></semantics></math> e <math id="E2.p8.m2" class="ltx_Math" alttext="\sigma=\frac{1}{2}" display="inline"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\sigma=\frac{1}{2}</annotation></semantics></math>, reescrevemos convenientemente o evento como:</p>
+</div>
+<div id="E2.p9" class="ltx_para ltx_noindent">
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\frac{1}{2}-\frac{1}{2}\cdot\mathbb{P}\Big{(}{-}1.5&lt;\frac{X_{1}+\dots+X_{400}-%
+400\cdot\mu}{\sigma\sqrt{400}}&lt;1.5\Big{)}" display="block"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>−</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mo>−</mo><mn>1.5</mn></mrow><mo>&lt;</mo><mfrac><mrow><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mn>400</mn></msub></mrow><mo>−</mo><mrow><mn>400</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>μ</mi></mrow></mrow><mrow><mi>σ</mi><mo>⁢</mo><msqrt><mn>400</mn></msqrt></mrow></mfrac><mo>&lt;</mo><mn>1.5</mn></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\frac{1}{2}-\frac{1}{2}\cdot\mathbb{P}\Big{(}{-}1.5&lt;\frac{X_{1}+\dots+X_{400}-%
+400\cdot\mu}{\sigma\sqrt{400}}&lt;1.5\Big{)}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="E2.p10" class="ltx_para ltx_noindent">
+<p class="ltx_p">e, usando o Teorema do Limite Central, aproximamos por:</p>
+</div>
+<div id="E2.p11" class="ltx_para ltx_noindent">
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="\frac{1}{2}-\frac{1}{2}\int_{-1.5}^{1.5}\frac{1}{\sqrt{2\pi}}e^{-x^{2}/2}\,%
+\mathrm{d}x\approx 0.07" display="block"><semantics><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>−</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mn>1.5</mn></mrow><mn>1.5</mn></msubsup><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo>≈</mo><mn>0.07</mn></mrow><annotation encoding="application/x-tex">\frac{1}{2}-\frac{1}{2}\int_{-1.5}^{1.5}\frac{1}{\sqrt{2\pi}}e^{-x^{2}/2}\,%
+\mathrm{d}x\approx 0.07</annotation></semantics></math></span>
+</div>
+</div>
+<div id="E2.p12" class="ltx_para ltx_noindent">
+<p class="ltx_p">Você não deve tentar calcular esta integral em casa, a única maneira de obter esse valor é consultando uma tabela, veremos mais sobre isso posteriormente. Portanto, a resposta é 0.07, ou 7</p>
+</div>
+<div id="E2.p13" class="ltx_para">
+<p class="ltx_p">Observe que fornecemos apenas uma resposta aproximada com uma figura significativa. Para obter mais precisão do que isso, seriam necessárias considerações mais cuidadosas e seriam o tema de módulos mais avançados.</p>
+</div>
+</div>
+<figure id="F2" class="ltx_figure"><div class="bml-overflow-wrapper"><img src="x2.png" id="F2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="830" height="259" alt="Refer to caption"></div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figura 12.2: </span>
+Função de probabilidade de <math id="F2.m11" class="ltx_Math" alttext="\smash{\frac{S_{n}-n\mu}{\sigma\sqrt{n}}}" display="inline"><semantics><mfrac><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>−</mo><mrow><mi>n</mi><mo>⁢</mo><mi>μ</mi></mrow></mrow><mrow><mi>σ</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></mfrac><annotation encoding="application/x-tex">\smash{\frac{S_{n}-n\mu}{\sigma\sqrt{n}}}</annotation></semantics></math> para <math id="F2.m12" class="ltx_Math" alttext="S_{n}" display="inline"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math> com distribuições <math id="F2.m13" class="ltx_Math" alttext="\mathrm{Binom}(4,\frac{1}{2})" display="inline"><semantics><mrow><mi>Binom</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Binom}(4,\frac{1}{2})</annotation></semantics></math> e <math id="F2.m14" class="ltx_Math" alttext="\mathrm{Binom}(16,\frac{1}{2})" display="inline"><semantics><mrow><mi>Binom</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>16</mn><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Binom}(16,\frac{1}{2})</annotation></semantics></math> para valores entre <math id="F2.m15" class="ltx_Math" alttext="-3" display="inline"><semantics><mrow><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">-3</annotation></semantics></math> e <math id="F2.m16" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>.
+A área de cada retângulo é dada pela função de probabilidade.
+O terceiro gráfico é a função de densidade de uma normal padrão, assim como as linhas pontilhadas.
+O quarto gráfico representa as frequências relativas de <math id="F2.m17" class="ltx_Math" alttext="\smash{\frac{S_{n}-n\mu}{\sigma\sqrt{n}}}" display="inline"><semantics><mfrac><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>−</mo><mrow><mi>n</mi><mo>⁢</mo><mi>μ</mi></mrow></mrow><mrow><mi>σ</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></mfrac><annotation encoding="application/x-tex">\smash{\frac{S_{n}-n\mu}{\sigma\sqrt{n}}}</annotation></semantics></math> para <math id="F2.m18" class="ltx_Math" alttext="S_{n}" display="inline"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math> com distribuição <math id="F2.m19" class="ltx_Math" alttext="\mathrm{Binom}(16,\frac{1}{2})" display="inline"><semantics><mrow><mi>Binom</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>16</mn><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Binom}(16,\frac{1}{2})</annotation></semantics></math>, em um experimento real com <math id="F2.m20" class="ltx_Math" alttext="200" display="inline"><semantics><mn>200</mn><annotation encoding="application/x-tex">200</annotation></semantics></math> amostras.
+</figcaption>
+</figure>
+<div id="p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Também podemos usar as "versões de um lado"do Teorema do Limite Central.
+Dessa forma, o exemplo anterior fica simplificado:</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx52" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E3.m1" class="ltx_Math" alttext="\displaystyle\mathbb{P}(X_{1}+\dots+X_{400}\geqslant 215)" display="inline"><semantics><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mn>400</mn></msub></mrow><mo>⩾</mo><mn>215</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{P}(X_{1}+\dots+X_{400}\geqslant 215)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E3.m2" class="ltx_Math" alttext="\displaystyle=\mathbb{P}\Big{(}\frac{X_{1}+\dots+X_{400}-400\cdot\mu}{\sigma%
+\sqrt{400}}\geqslant 1.5\Big{)}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mn>400</mn></msub></mrow><mo>−</mo><mrow><mn>400</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>μ</mi></mrow></mrow><mrow><mi>σ</mi><mo>⁢</mo><msqrt><mn>400</mn></msqrt></mrow></mfrac></mstyle><mo>⩾</mo><mn>1.5</mn></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\mathbb{P}\Big{(}\frac{X_{1}+\dots+X_{400}-400\cdot\mu}{\sigma%
+\sqrt{400}}\geqslant 1.5\Big{)}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(12.3)</span></td>
+</tr></tbody>
+<tbody id="E4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E4.m1" class="ltx_Math" alttext="\displaystyle\approx\int_{1.5}^{+\infty}\tfrac{1}{\sqrt{2\pi}}e^{-x^{2}/2}\,%
+\mathrm{d}x" display="inline"><semantics><mrow><mi></mi><mo>≈</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>1.5</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup></mstyle><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>x</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\approx\int_{1.5}^{+\infty}\tfrac{1}{\sqrt{2\pi}}e^{-x^{2}/2}\,%
+\mathrm{d}x</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(12.4)</span></td>
+</tr></tbody>
+<tbody id="E5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E5.m1" class="ltx_Math" alttext="\displaystyle\approx 0.07." display="inline"><semantics><mrow><mrow><mi></mi><mo>≈</mo><mn>0.07</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\approx 0.07.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(12.5)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">Se reescrevermos o Teorema do Limite Central como</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\mathbb{P}\Big{(}\mu+\frac{\sigma}{\sqrt{n}}a\leqslant\frac{X_{1}+\dots+X_{n}}%
+{n}\leqslant\mu+\frac{\sigma}{\sqrt{n}}b\Big{)}\approx\int_{a}^{b}\tfrac{1}{%
+\sqrt{2\pi}}e^{-x^{2}/2}\,\mathrm{d}x," display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mi>μ</mi><mo>+</mo><mrow><mfrac><mi>σ</mi><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><mi>a</mi></mrow></mrow><mo>⩽</mo><mfrac><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><mi>n</mi></mfrac><mo>⩽</mo><mrow><mi>μ</mi><mo>+</mo><mrow><mfrac><mi>σ</mi><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><mi>b</mi></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo rspace="0.111em">≈</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac></mstyle><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}\Big{(}\mu+\frac{\sigma}{\sqrt{n}}a\leqslant\frac{X_{1}+\dots+X_{n}}%
+{n}\leqslant\mu+\frac{\sigma}{\sqrt{n}}b\Big{)}\approx\int_{a}^{b}\tfrac{1}{%
+\sqrt{2\pi}}e^{-x^{2}/2}\,\mathrm{d}x,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">obtemos uma boa descrição do comportamento estatístico da média observada <math id="p6.m1" class="ltx_Math" alttext="\frac{X_{1}+\dots+X_{n}}{n}" display="inline"><semantics><mfrac><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><mi>n</mi></mfrac><annotation encoding="application/x-tex">\frac{X_{1}+\dots+X_{n}}{n}</annotation></semantics></math>.
+Conforme previsto pela lei das médias, a média observada está concentrada em torno de <math id="p6.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>, mas agora podemos dizer algo mais preciso.
+A média observada flutua como <math id="p6.m3" class="ltx_Math" alttext="\mu+\sigma\frac{1}{\sqrt{n}}Z" display="inline"><semantics><mrow><mi>μ</mi><mo>+</mo><mrow><mi>σ</mi><mo>⁢</mo><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><mi>Z</mi></mrow></mrow><annotation encoding="application/x-tex">\mu+\sigma\frac{1}{\sqrt{n}}Z</annotation></semantics></math>, onde <math id="p6.m4" class="ltx_Math" alttext="Z" display="inline"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math> é essa "coisa"descrita por</p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="\mathbb{P}(a\leqslant Z\leqslant b)=\int_{a}^{b}\tfrac{1}{\sqrt{2\pi}}e^{-x^{2%
+}/2}\,\mathrm{d}x." display="block"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⩽</mo><mi>Z</mi><mo>⩽</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac></mstyle><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(a\leqslant Z\leqslant b)=\int_{a}^{b}\tfrac{1}{\sqrt{2\pi}}e^{-x^{2%
+}/2}\,\mathrm{d}x.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Variáveis aleatórias descritas em termos de integrais são chamadas de <em class="ltx_emph ltx_font_italic">variáveis aleatórias contínuas</em>, que é o tema da próxima seção.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S11.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S13.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Intro.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

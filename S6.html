@@ -1,0 +1,1022 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>6 Esperança ‣ Introdução à Probabilidade Notas de Aula</title>
+<!--Generated on Tue Aug 27 14:11:25 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Intro.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="start" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="prev" href="S5.html" title="5 Variáveis Aleatórias ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="next" href="S7.html" title="7 Distribuições discretas multivariadas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S1.html" title="1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S2.html" title="2 Contagem ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S3.html" title="3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S4.html" title="4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S5.html" title="5 Variáveis Aleatórias ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S7.html" title="7 Distribuições discretas multivariadas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S8.html" title="8 A Lei dos Grandes Números ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S9.html" title="9 Covariância ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S10.html" title="10 Desigualdade de Chebyshev ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S11.html" title="11 Coeficiente de Correlação ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S12.html" title="12 Teorema do Limite Central ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S13.html" title="13 Variáveis aleatórias contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S14.html" title="14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S15.html" title="15 Distribuições Conjuntas e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S16.html" title="16 Somas de variáveis aleatórias independentes ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S17.html" title="17 Momentos e funções geradoras de momentos ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A1.html" title="Apêndice A Somas úteis ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A2.html" title="Apêndice B Exponenciais superam polinômios ‣ Introdução à Probabilidade Notas de Aula">
+<meta name="keywords" lang="pt-BR" content="de Poisson, distribuição">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Introdução à Probabilidade <span class="ltx_text"> </span>Notas de Aula</a>
+</li>
+<li class="divider">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Espaços de probabilidade uniforme</a></li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Contagem</a></li>
+<li data-level="3" data-path="S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S3.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Espaços de Probabilidade</a></li>
+<li data-level="4" data-path="S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S4.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Probabilidade Condicional e Independência</a></li>
+<li data-level="5" data-path="S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S5.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Variáveis Aleatórias</a></li>
+<li data-level="6" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Esperança</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="6.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 6 Esperança ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.1 </span></b>Definição e exemplos</a></li>
+<li data-level="6.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 6 Esperança ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.2 </span></b>Propriedades da esperança</a></li>
+<li data-level="6.3" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS3" title="In 6 Esperança ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.3 </span></b>Função de uma variável aleatória</a></li>
+<li data-level="6.4" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS4" title="In 6 Esperança ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4 </span></b>Variância</a></li>
+</ol>
+</li>
+<li data-level="7" data-path="S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S7.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Distribuições discretas multivariadas</a></li>
+<li data-level="8" data-path="S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S8.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>A Lei dos Grandes Números</a></li>
+<li data-level="9" data-path="S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S9.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Covariância</a></li>
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Desigualdade de Chebyshev</a></li>
+<li data-level="11" data-path="S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S11.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Coeficiente de Correlação</a></li>
+<li data-level="12" data-path="S12.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S12.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">12 </span></b>Teorema do Limite Central</a></li>
+<li data-level="13" data-path="S13.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S13.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">13 </span></b>Variáveis aleatórias contínuas</a></li>
+<li data-level="14" data-path="S14.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S14.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14 </span></b>Uma única teoria para discretas e contínuas</a></li>
+<li data-level="15" data-path="S15.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S15.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">15 </span></b>Distribuições Conjuntas e Independência</a></li>
+<li data-level="16" data-path="S16.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S16.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">16 </span></b>Somas de variáveis aleatórias independentes</a></li>
+<li data-level="17" data-path="S17.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S17.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">17 </span></b>Momentos e funções geradoras de momentos</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Somas úteis</a></li>
+<li data-level="B" data-path="A2.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">B </span></b>Exponenciais superam polinômios</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Esperança</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">6</span> Esperança</h1>
+
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Se lançarmos um dado justo muitas vezes, esperamos que cada um dos seis resultados possíveis apareça cerca de um sexto do tempo, e assim a média dos números obtidos seria aproximadamente</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\frac{1}{6}\cdot 1+\frac{1}{6}\cdot 2+\frac{1}{6}\cdot 3+\frac{1}{6}\cdot 4+%
+\frac{1}{6}\cdot 5+\frac{1}{6}\cdot 6=\frac{7}{2}." display="block"><semantics><mrow><mrow><mrow><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>1</mn></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>2</mn></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>3</mn></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>4</mn></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>5</mn></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>6</mn></mrow></mrow><mo>=</mo><mfrac><mn>7</mn><mn>2</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{1}{6}\cdot 1+\frac{1}{6}\cdot 2+\frac{1}{6}\cdot 3+\frac{1}{6}\cdot 4+%
+\frac{1}{6}\cdot 5+\frac{1}{6}\cdot 6=\frac{7}{2}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Chamamos esse número de <em class="ltx_emph ltx_font_italic">esperança</em> de <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.</p>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">6.1</span> Definição e exemplos</h2>
+
+<div id="E1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 6.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Esperança)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E1.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E1.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> uma variável aleatória discreta.
+Definimos a <em class="ltx_emph ltx_font_italic">esperança</em> de <math id="E1.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, denotada por <math id="E1.p1.m3" class="ltx_Math" alttext="\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]</annotation></semantics></math>, como o número real dado por</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\mathbb{E}[X]=\sum_{x:\mathbb{P}(X=x)&gt;0}x\cdot\mathbb{P}(X=x)," display="block"><semantics><mrow><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow></munder><mrow><mrow><mi>x</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]=\sum_{x:\mathbb{P}(X=x)&gt;0}x\cdot\mathbb{P}(X=x),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">desde que essa soma convirja absolutamente, caso contrário <math id="E1.p1.m4" class="ltx_Math" alttext="\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]</annotation></semantics></math> não está definida.</p>
+</div>
+</div>
+<div id="Thmterminologyx1" class="ltx_theorem ltx_theorem_terminology">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Terminologia</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmterminologyx1.p1" class="ltx_para">
+<p class="ltx_p">Dizer que <math id="Thmterminologyx1.p1.m1" class="ltx_Math" alttext="\sum_{n}a_{n}" display="inline"><semantics><mrow><msub><mo>∑</mo><mi>n</mi></msub><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\sum_{n}a_{n}</annotation></semantics></math> <em class="ltx_emph ltx_font_italic">converge absolutamente</em> significa que <math id="Thmterminologyx1.p1.m2" class="ltx_Math" alttext="\sum_{n}|a_{n}|" display="inline"><semantics><mrow><msub><mo>∑</mo><mi>n</mi></msub><mrow><mo lspace="0em" stretchy="false">|</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{n}|a_{n}|</annotation></semantics></math> converge.</p>
+</div>
+</div>
+<div id="E2" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 6.2</span></span><span class="ltx_text ltx_font_bold"> </span>(Integrável)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E2.p1" class="ltx_para">
+<p class="ltx_p">Dizemos que uma variável aleatória discreta <math id="E2.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é <em class="ltx_emph ltx_font_italic">integrável</em> se a sua esperança estiver definida, ou seja, se a soma</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\sum_{x:\mathbb{P}(X=x)&gt;0}|x|\cdot\mathbb{P}(X=x)" display="block"><semantics><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow></munder><mrow><mrow><mrow><mo lspace="0em" stretchy="false">|</mo><mi>x</mi><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sum_{x:\mathbb{P}(X=x)&gt;0}|x|\cdot\mathbb{P}(X=x)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">for convergente.</p>
+</div>
+</div>
+<div id="Thmnotationx5" class="ltx_theorem ltx_theorem_notation">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Notação</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmnotationx5.p1" class="ltx_para">
+<p class="ltx_p">O fato de que <math id="Thmnotationx5.p1.m1" class="ltx_Math" alttext="\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]</annotation></semantics></math> depende de <math id="Thmnotationx5.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> fica evidente pelo fato de "X"aparecer em "<math id="Thmnotationx5.p1.m3" class="ltx_Math" alttext="\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]</annotation></semantics></math>"e o fato de que depende de <math id="Thmnotationx5.p1.m4" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math> fica em parte aparente pelo uso da mesma fonte em "<math id="Thmnotationx5.p1.m5" class="ltx_Math" alttext="\mathbb{E}" display="inline"><semantics><mi>𝔼</mi><annotation encoding="application/x-tex">\mathbb{E}</annotation></semantics></math>"e "<math id="Thmnotationx5.p1.m6" class="ltx_Math" alttext="\mathbb{P}" display="inline"><semantics><mi>ℙ</mi><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math>".</p>
+</div>
+</div>
+<div id="E3" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.3</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E3.p1" class="ltx_para">
+<p class="ltx_p">Lance uma moeda justa <math id="E3.p1.m1" class="ltx_Math" alttext="4" display="inline"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math> vezes e conte o número de caras.</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx27" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E4.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{E}[X]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E4.m2" class="ltx_Math" alttext="\displaystyle=0\cdot\mathbb{P}(X=0)+1\cdot\mathbb{P}(X=1)+2\cdot\mathbb{P}(X=2%
+)+{}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mn>0</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=0\cdot\mathbb{P}(X=0)+1\cdot\mathbb{P}(X=1)+2\cdot\mathbb{P}(X=2%
+)+{}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.4)</span></td>
+</tr></tbody>
+<tbody id="E5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E5.m1" class="ltx_Math" alttext="\displaystyle\quad\quad+3\cdot\mathbb{P}(X=3)+4\cdot\mathbb{P}(X=4)" display="inline"><semantics><mrow><mrow><mo>+</mo><mrow><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mrow><mn>4</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\quad\quad+3\cdot\mathbb{P}(X=3)+4\cdot\mathbb{P}(X=4)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.5)</span></td>
+</tr></tbody>
+<tbody id="E6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E6.m1" class="ltx_Math" alttext="\displaystyle=0\cdot\frac{1}{16}+1\cdot\frac{4}{16}+2\cdot\frac{6}{16}+3\cdot%
+\frac{4}{16}+4\cdot\frac{1}{16}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>0</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>16</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>4</mn><mn>16</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>6</mn><mn>16</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>4</mn><mn>16</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>4</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>16</mn></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=0\cdot\frac{1}{16}+1\cdot\frac{4}{16}+2\cdot\frac{6}{16}+3\cdot%
+\frac{4}{16}+4\cdot\frac{1}{16}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.6)</span></td>
+</tr></tbody>
+<tbody id="E7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E7.m1" class="ltx_Math" alttext="\displaystyle=2." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mn>2</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=2.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.7)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="E8" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.8</span></span><span class="ltx_text ltx_font_italic"> </span>(Função indicadora)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E8.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E8.p1.m1" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math> e defina <math id="E8.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> como</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="X(\omega)=\begin{cases}1,&amp;\omega\in A,\\
+0,&amp;\omega\in A^{c}.\end{cases}" display="block"><semantics><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>1</mn><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>ω</mi><mo>∈</mo><mi>A</mi></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>0</mn><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>ω</mi><mo>∈</mo><msup><mi>A</mi><mi>c</mi></msup></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">X(\omega)=\begin{cases}1,&amp;\omega\in A,\\
+0,&amp;\omega\in A^{c}.\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Uma função assim é chamada de <em class="ltx_emph ltx_font_italic">função indicadora</em> do conjunto <math id="E8.p1.m3" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e é denotada por <math id="E8.p1.m4" class="ltx_Math" alttext="\mathds{1}_{A}" display="inline"><semantics><msub><mn>𝟙</mn><mi>A</mi></msub><annotation encoding="application/x-tex">\mathds{1}_{A}</annotation></semantics></math>.
+Nesse caso,
+<math id="E8.p1.m5" class="ltx_Math" alttext="\mathbb{E}[X]=0\times\mathbb{P}(A^{c})+1\times\mathbb{P}(A)=\mathbb{P}(A)" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mn>0</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]=0\times\mathbb{P}(A^{c})+1\times\mathbb{P}(A)=\mathbb{P}(A)</annotation></semantics></math>.
+Ou seja,</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\mathbb{E}[\mathds{1}_{A}]=\mathbb{P}(A)." display="block"><semantics><mrow><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mn>𝟙</mn><mi>A</mi></msub><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}[\mathds{1}_{A}]=\mathbb{P}(A).</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="E9" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.9</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E9.p1" class="ltx_para">
+<p class="ltx_p">Lance um dado justo duas vezes e some os valores observados.</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx28" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E10.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{E}[X]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E10.m2" class="ltx_Math" alttext="\displaystyle=2\times\frac{1}{36}+3\times\frac{2}{36}+4\times\frac{3}{36}+5%
+\times\frac{4}{36}+6\times\frac{5}{36}+7\times\frac{6}{36}+{}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>36</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>36</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>4</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>36</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>5</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>4</mn><mn>36</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>6</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>5</mn><mn>36</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mrow><mn>7</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>6</mn><mn>36</mn></mfrac></mstyle></mrow><mo>+</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=2\times\frac{1}{36}+3\times\frac{2}{36}+4\times\frac{3}{36}+5%
+\times\frac{4}{36}+6\times\frac{5}{36}+7\times\frac{6}{36}+{}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.10)</span></td>
+</tr></tbody>
+<tbody id="E11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E11.m1" class="ltx_Math" alttext="\displaystyle\qquad+8\times\frac{5}{36}+9\times\frac{4}{36}+10\times\frac{3}{3%
+6}+11\times\frac{2}{36}+12\times\frac{1}{36}=7." display="inline"><semantics><mrow><mrow><mrow><mrow><mo>+</mo><mrow><mn>8</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>5</mn><mn>36</mn></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><mn>9</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>4</mn><mn>36</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>10</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>36</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>11</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>36</mn></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>12</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>36</mn></mfrac></mstyle></mrow></mrow><mo>=</mo><mn>7</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\qquad+8\times\frac{5}{36}+9\times\frac{4}{36}+10\times\frac{3}{3%
+6}+11\times\frac{2}{36}+12\times\frac{1}{36}=7.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.11)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="E12" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.12</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E12.p1" class="ltx_para">
+<p class="ltx_p">Pegue <math id="E12.p1.m1" class="ltx_Math" alttext="3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math> cartas de um baralho de <math id="E12.p1.m2" class="ltx_Math" alttext="52" display="inline"><semantics><mn>52</mn><annotation encoding="application/x-tex">52</annotation></semantics></math> cartas, uma após a outra e sem reposição, e conte quantas são damas de ouros.</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx29" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E13.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}[X]=0\times\frac{48\cdot 47\cdot 46}{52\cdot 51\cdot 50}" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mrow><mn>48</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>47</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>46</mn></mrow><mrow><mn>52</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>51</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>50</mn></mrow></mfrac></mstyle></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{E}[X]=0\times\frac{48\cdot 47\cdot 46}{52\cdot 51\cdot 50}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E13.m2" class="ltx_Math" alttext="\displaystyle+1\times\frac{3\cdot 48\cdot 47\cdot 4}{52\cdot 51\cdot 50}+{}" display="inline"><semantics><mrow><mrow><mo>+</mo><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>48</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>47</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>4</mn></mrow><mrow><mn>52</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>51</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>50</mn></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo></mrow><annotation encoding="application/x-tex">\displaystyle+1\times\frac{3\cdot 48\cdot 47\cdot 4}{52\cdot 51\cdot 50}+{}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.13)</span></td>
+</tr></tbody>
+<tbody id="E14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E14.m1" class="ltx_Math" alttext="\displaystyle+2\times\frac{3\cdot 48\cdot 4\cdot 3}{52\cdot 51\cdot 50}+3%
+\times\frac{4\cdot 3\cdot 2}{52\cdot 51\cdot 50}=\frac{3}{13}." display="inline"><semantics><mrow><mrow><mrow><mrow><mo>+</mo><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>48</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>4</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>3</mn></mrow><mrow><mn>52</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>51</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>50</mn></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mstyle displaystyle="true"><mfrac><mrow><mn>4</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>3</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>2</mn></mrow><mrow><mn>52</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>51</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>50</mn></mrow></mfrac></mstyle></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>13</mn></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle+2\times\frac{3\cdot 48\cdot 4\cdot 3}{52\cdot 51\cdot 50}+3%
+\times\frac{4\cdot 3\cdot 2}{52\cdot 51\cdot 50}=\frac{3}{13}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.14)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="E15" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.15</span></span><span class="ltx_text ltx_font_italic"> </span>(Poisson)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E15.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="E15.p1.m1" class="ltx_Math" alttext="X\sim\mathrm{Poisson}(\lambda)" display="inline"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Poisson</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Poisson}(\lambda)</annotation></semantics></math>, então</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx30" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E16.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{E}[X]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E16.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}n\frac{\lambda^{n}e^{-\lambda}}{n!}=\sum_{n=1%
+}^{\infty}\frac{\lambda^{n}e^{-\lambda}}{(n-1)!}=" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mi>n</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>λ</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mrow><msup><mi>λ</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{n=0}^{\infty}n\frac{\lambda^{n}e^{-\lambda}}{n!}=\sum_{n=1%
+}^{\infty}\frac{\lambda^{n}e^{-\lambda}}{(n-1)!}=</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.16)</span></td>
+</tr></tbody>
+<tbody id="E17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E17.m1" class="ltx_Math" alttext="\displaystyle=\lambda e^{-\lambda}\sum_{n=1}^{\infty}\frac{\lambda^{n-1}}{(n-1%
+)!}=\lambda e^{-\lambda}\sum_{k=0}^{\infty}\frac{\lambda^{k}}{k!}=\lambda e^{-%
+\lambda}e^{\lambda}=\lambda." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msup><mi>λ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msup><mi>λ</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mi>λ</mi></msup></mrow><mo>=</mo><mi>λ</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\lambda e^{-\lambda}\sum_{n=1}^{\infty}\frac{\lambda^{n-1}}{(n-1%
+)!}=\lambda e^{-\lambda}\sum_{k=0}^{\infty}\frac{\lambda^{k}}{k!}=\lambda e^{-%
+\lambda}e^{\lambda}=\lambda.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.17)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Portanto, a esperança de uma variável aleatória distribuída como <math id="E15.p1.m2" class="ltx_Math" alttext="\mathrm{Poisson}(\lambda)" display="inline"><semantics><mrow><mi>Poisson</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Poisson}(\lambda)</annotation></semantics></math> é <math id="E15.p1.m3" class="ltx_Math" alttext="\lambda" display="inline"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="E18" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.18</span></span><span class="ltx_text ltx_font_italic"> </span>(Binomial)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E18.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="E18.p1.m1" class="ltx_Math" alttext="X\sim\mathrm{Binom}(n,p)" display="inline"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Binom</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Binom}(n,p)</annotation></semantics></math>, então</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx31" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E19.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{E}[X]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E19.m2" class="ltx_Math" alttext="\displaystyle=\sum_{k=0}^{n}k\binom{n}{k}p^{k}(1-p)^{n-k}=\sum_{k=1}^{n}n%
+\binom{n-1}{k-1}p^{k}(1-p)^{n-k}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mi>k</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msup><mi>p</mi><mi>k</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mi>n</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msup><mi>p</mi><mi>k</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{k=0}^{n}k\binom{n}{k}p^{k}(1-p)^{n-k}=\sum_{k=1}^{n}n%
+\binom{n-1}{k-1}p^{k}(1-p)^{n-k}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.19)</span></td>
+</tr></tbody>
+<tbody id="E20"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E20.m1" class="ltx_Math" alttext="\displaystyle=n\sum_{j=0}^{n-1}\binom{n-1}{j}p^{j+1}(1-p)^{n-j-1}=np\sum_{j=0}%
+^{n-1}\binom{n-1}{j}p^{j}(1-p)^{n-1-j}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></munderover></mstyle><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mi>j</mi></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msup><mi>p</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></munderover></mstyle><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mi>j</mi></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msup><mi>p</mi><mi>j</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn><mo>−</mo><mi>j</mi></mrow></msup></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=n\sum_{j=0}^{n-1}\binom{n-1}{j}p^{j+1}(1-p)^{n-j-1}=np\sum_{j=0}%
+^{n-1}\binom{n-1}{j}p^{j}(1-p)^{n-1-j}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.20)</span></td>
+</tr></tbody>
+<tbody id="E21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E21.m1" class="ltx_Math" alttext="\displaystyle=np[p+(1-p)]^{n-1}=np." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">[</mo><mrow><mi>p</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mi>p</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=np[p+(1-p)]^{n-1}=np.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.21)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="E22" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.22</span></span><span class="ltx_text ltx_font_italic"> </span>(Geométrica)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E22.p1" class="ltx_para">
+<p class="ltx_p">Suponha que <math id="E22.p1.m1" class="ltx_Math" alttext="X\sim\mathrm{Geom}(p)" display="inline"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Geom</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Geom}(p)</annotation></semantics></math>.
+Vamos calcular</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="\mathbb{E}[X]=\sum_{n=1}^{\infty}n(1-p)^{n-1}p" display="block"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>n</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>p</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]=\sum_{n=1}^{\infty}n(1-p)^{n-1}p</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">através da diferenciação de uma série de potências.
+Escrevendo <math id="E22.p1.m2" class="ltx_Math" alttext="x=1-p" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow></mrow><annotation encoding="application/x-tex">x=1-p</annotation></semantics></math>, podemos desenvolver da seguinte forma:</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx32" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E23.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{E}[X]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E23.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=1}^{\infty}n\cdot p\cdot(1-p)^{n-1}=p\sum_{n=0}^{\infty}%
+n\cdot x^{n-1}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>p</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{n=1}^{\infty}n\cdot p\cdot(1-p)^{n-1}=p\sum_{n=0}^{\infty}%
+n\cdot x^{n-1}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.23)</span></td>
+</tr></tbody>
+<tbody id="E24"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E24.m1" class="ltx_Math" alttext="\displaystyle=p\sum_{n=0}^{\infty}\frac{\mathrm{d}}{\mathrm{d}x}\big{[}x^{n}%
+\big{]}=p\cdot\frac{\mathrm{d}}{\mathrm{d}x}\Big{[}\sum_{n=0}^{\infty}x^{n}%
+\Big{]}=p\cdot\frac{\mathrm{d}}{\mathrm{d}x}\,\Big{[}\frac{1}{1-x}\Big{]}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><mfrac><mi mathvariant="normal">d</mi><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><msup><mi>x</mi><mi>n</mi></msup><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>p</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mi mathvariant="normal">d</mi><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><msup><mi>x</mi><mi>n</mi></msup></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>p</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mi mathvariant="normal">d</mi><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo lspace="0.170em">⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mstyle><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=p\sum_{n=0}^{\infty}\frac{\mathrm{d}}{\mathrm{d}x}\big{[}x^{n}%
+\big{]}=p\cdot\frac{\mathrm{d}}{\mathrm{d}x}\Big{[}\sum_{n=0}^{\infty}x^{n}%
+\Big{]}=p\cdot\frac{\mathrm{d}}{\mathrm{d}x}\,\Big{[}\frac{1}{1-x}\Big{]}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.24)</span></td>
+</tr></tbody>
+<tbody id="E25"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E25.m1" class="ltx_Math" alttext="\displaystyle=p\cdot\Big{(}-(1-x)^{-2}\Big{)}\cdot(-1)=\frac{1}{p}." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mi>p</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mn>2</mn></mrow></msup></mrow><mo maxsize="160%" minsize="160%" rspace="0.055em">)</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>p</mi></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=p\cdot\Big{(}-(1-x)^{-2}\Big{)}\cdot(-1)=\frac{1}{p}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.25)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Portanto, a esperança de uma variável aleatória distribuída como <math id="E22.p1.m3" class="ltx_Math" alttext="\mathrm{Geom}(p)" display="inline"><semantics><mrow><mi>Geom</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Geom}(p)</annotation></semantics></math> é <math id="E22.p1.m4" class="ltx_Math" alttext="\frac{1}{p}" display="inline"><semantics><mfrac><mn>1</mn><mi>p</mi></mfrac><annotation encoding="application/x-tex">\frac{1}{p}</annotation></semantics></math>.
+Sabemos que a série de potências <math id="E22.p1.m5" class="ltx_Math" alttext="\sum_{n}x^{n}" display="inline"><semantics><mrow><msub><mo>∑</mo><mi>n</mi></msub><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\sum_{n}x^{n}</annotation></semantics></math> converge se <math id="E22.p1.m6" class="ltx_Math" alttext="|x|&lt;1" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|x|&lt;1</annotation></semantics></math>, e estamos aceitando uma propriedade que diz que a série de potências pode ser diferenciada termo a termo dentro desse intervalo.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">6.2</span> Propriedades da esperança</h2>
+
+<div id="SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Nos exemplos acima,
+<math id="SS2.p1.m1" class="ltx_Math" alttext="2=\frac{1}{2}+\frac{1}{2}+\frac{1}{2}+\frac{1}{2}" display="inline"><semantics><mrow><mn>2</mn><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">2=\frac{1}{2}+\frac{1}{2}+\frac{1}{2}+\frac{1}{2}</annotation></semantics></math>,
+<math id="SS2.p1.m2" class="ltx_Math" alttext="7=\frac{7}{2}+\frac{7}{2}" display="inline"><semantics><mrow><mn>7</mn><mo>=</mo><mrow><mfrac><mn>7</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>7</mn><mn>2</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">7=\frac{7}{2}+\frac{7}{2}</annotation></semantics></math>,
+<math id="SS2.p1.m3" class="ltx_Math" alttext="\frac{3}{13}=\frac{1}{13}+\frac{1}{13}+\frac{1}{13}" display="inline"><semantics><mrow><mfrac><mn>3</mn><mn>13</mn></mfrac><mo>=</mo><mrow><mfrac><mn>1</mn><mn>13</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>13</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>13</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">\frac{3}{13}=\frac{1}{13}+\frac{1}{13}+\frac{1}{13}</annotation></semantics></math>,
+e
+<math id="SS2.p1.m4" class="ltx_Math" alttext="np=p+\dots+p" display="inline"><semantics><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>p</mi></mrow><mo>=</mo><mrow><mi>p</mi><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mi>p</mi></mrow></mrow><annotation encoding="application/x-tex">np=p+\dots+p</annotation></semantics></math>.
+Isso não é uma coincidência.
+Vem do fato de que</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\mathbb{E}[X+Y]=\mathbb{E}[X]+\mathbb{E}[Y]" display="block"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X+Y]=\mathbb{E}[X]+\mathbb{E}[Y]</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para variáveis aleatórias discretas integráveis <math id="SS2.p1.m5" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS2.p1.m6" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>.</p>
+</div>
+<div id="E26" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 6.26</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E26.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="E26.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="E26.p1.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> variáveis aleatórias discretas integráveis definidas no mesmo espaço de probabilidade <math id="E26.p1.m3" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math>.
+Então:</span></p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\mathbb{E}[\mathds{1}_{A}]=\mathbb{P}(A)" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mn>𝟙</mn><mi>A</mi></msub><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[\mathds{1}_{A}]=\mathbb{P}(A)</annotation></semantics></math><span class="ltx_text ltx_font_italic"> para todo </span><math id="I1.i1.p1.m2" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math><span class="ltx_text ltx_font_italic">,</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se </span><math id="I1.i2.p1.m1" class="ltx_Math" alttext="0\leqslant Z\leqslant X" display="inline"><semantics><mrow><mn>0</mn><mo>⩽</mo><mi>Z</mi><mo>⩽</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">0\leqslant Z\leqslant X</annotation></semantics></math><span class="ltx_text ltx_font_italic"> para todo </span><math id="I1.i2.p1.m2" class="ltx_Math" alttext="\omega\in\Omega" display="inline"><semantics><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\omega\in\Omega</annotation></semantics></math><span class="ltx_text ltx_font_italic">, então </span><math id="I1.i2.p1.m3" class="ltx_Math" alttext="0\leqslant\mathbb{E}[Z]\leqslant\mathbb{E}[X]" display="inline"><semantics><mrow><mn>0</mn><mo>⩽</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Z</mi><mo stretchy="false">]</mo></mrow></mrow><mo>⩽</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">0\leqslant\mathbb{E}[Z]\leqslant\mathbb{E}[X]</annotation></semantics></math><span class="ltx_text ltx_font_italic">,</span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I1.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\mathbb{E}[aX+bY]=a\mathbb{E}[X]+b\mathbb{E}[Y]" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>X</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>Y</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[aX+bY]=a\mathbb{E}[X]+b\mathbb{E}[Y]</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="SS2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Dizemos que a expectativa é <em class="ltx_emph ltx_font_italic">unitária, monótona</em> e <em class="ltx_emph ltx_font_italic">linear</em>.</p>
+</div>
+<div id="SS2.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Veremos uma prova mais adiante.</p>
+</div>
+<div id="E27" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.27</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E27.p1" class="ltx_para">
+<p class="ltx_p">No Exemplo <a href="#E3" title="Exemplo 6.3. ‣ 6.1 Definição e exemplos ‣ 6 Esperança ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.3</span></a>,
+podemos definir <math id="E27.p1.m1" class="ltx_Math" alttext="X_{1}" display="inline"><semantics><msub><mi>X</mi><mn>1</mn></msub><annotation encoding="application/x-tex">X_{1}</annotation></semantics></math>, <math id="E27.p1.m2" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math>, <math id="E27.p1.m3" class="ltx_Math" alttext="X_{3}" display="inline"><semantics><msub><mi>X</mi><mn>3</mn></msub><annotation encoding="application/x-tex">X_{3}</annotation></semantics></math> e <math id="E27.p1.m4" class="ltx_Math" alttext="X_{4}" display="inline"><semantics><msub><mi>X</mi><mn>4</mn></msub><annotation encoding="application/x-tex">X_{4}</annotation></semantics></math> como a função indicadora dos eventos em que o primeiro, segundo, terceiro e quarto lançamentos da moeda resultaram em Caras, respectivamente.
+Como <math id="E27.p1.m5" class="ltx_Math" alttext="X=X_{1}+X_{2}+X_{3}+X_{4}" display="inline"><semantics><mrow><mi>X</mi><mo>=</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><msub><mi>X</mi><mn>2</mn></msub><mo>+</mo><msub><mi>X</mi><mn>3</mn></msub><mo>+</mo><msub><mi>X</mi><mn>4</mn></msub></mrow></mrow><annotation encoding="application/x-tex">X=X_{1}+X_{2}+X_{3}+X_{4}</annotation></semantics></math>, podemos obter a expectativa usando a linearidade, como em</p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="\mathbb{E}[X]=\mathbb{E}[X_{1}]+\mathbb{E}[X_{2}]+\mathbb{E}[X_{3}]+\mathbb{E}%
+[X_{4}]=\frac{1}{2}+\frac{1}{2}+\frac{1}{2}+\frac{1}{2}=2," display="block"><semantics><mrow><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>3</mn></msub><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>4</mn></msub><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>=</mo><mn>2</mn></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]=\mathbb{E}[X_{1}]+\mathbb{E}[X_{2}]+\mathbb{E}[X_{3}]+\mathbb{E}%
+[X_{4}]=\frac{1}{2}+\frac{1}{2}+\frac{1}{2}+\frac{1}{2}=2,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">em vez de calcular a função de massa de probabilidade de <math id="E27.p1.m6" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="E28" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.28</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E28.p1" class="ltx_para">
+<p class="ltx_p">No Exemplo <a href="#E9" title="Exemplo 6.9. ‣ 6.1 Definição e exemplos ‣ 6 Esperança ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.9</span></a>, observe que <math id="E28.p1.m1" class="ltx_Math" alttext="X=Y+Z" display="inline"><semantics><mrow><mi>X</mi><mo>=</mo><mrow><mi>Y</mi><mo>+</mo><mi>Z</mi></mrow></mrow><annotation encoding="application/x-tex">X=Y+Z</annotation></semantics></math>, onde <math id="E28.p1.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> e <math id="E28.p1.m3" class="ltx_Math" alttext="Z" display="inline"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math> representam o resultado do primeiro e do segundo dados.
+Assim,</p>
+<div id="Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex9.m1" class="ltx_Math" alttext="\mathbb{E}[X]=\mathbb{E}[Y]+\mathbb{E}[Z]=\frac{7}{2}+\frac{7}{2}=7." display="block"><semantics><mrow><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Z</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mn>7</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>7</mn><mn>2</mn></mfrac></mrow><mo>=</mo><mn>7</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]=\mathbb{E}[Y]+\mathbb{E}[Z]=\frac{7}{2}+\frac{7}{2}=7.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="E29" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.29</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E29.p1" class="ltx_para">
+<p class="ltx_p">No Exemplo <a href="#E12" title="Exemplo 6.12. ‣ 6.1 Definição e exemplos ‣ 6 Esperança ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.12</span></a>, observe que <math id="E29.p1.m1" class="ltx_Math" alttext="X=X_{1}+X_{2}+X_{3}" display="inline"><semantics><mrow><mi>X</mi><mo>=</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><msub><mi>X</mi><mn>2</mn></msub><mo>+</mo><msub><mi>X</mi><mn>3</mn></msub></mrow></mrow><annotation encoding="application/x-tex">X=X_{1}+X_{2}+X_{3}</annotation></semantics></math>, onde <math id="E29.p1.m2" class="ltx_Math" alttext="X_{k}" display="inline"><semantics><msub><mi>X</mi><mi>k</mi></msub><annotation encoding="application/x-tex">X_{k}</annotation></semantics></math> é a indicadora de se a <math id="E29.p1.m3" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-ésima carta é uma rainha.
+Diferentemente dos exemplos anteriores, observe que aqui <math id="E29.p1.m4" class="ltx_Math" alttext="X_{1}" display="inline"><semantics><msub><mi>X</mi><mn>1</mn></msub><annotation encoding="application/x-tex">X_{1}</annotation></semantics></math>, <math id="E29.p1.m5" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math> e <math id="E29.p1.m6" class="ltx_Math" alttext="X_{3}" display="inline"><semantics><msub><mi>X</mi><mn>3</mn></msub><annotation encoding="application/x-tex">X_{3}</annotation></semantics></math> não são "independentes"(uma noção precisa de independência será introduzida mais adiante).
+No entanto, cada uma delas individualmente satisfaz <math id="E29.p1.m7" class="ltx_Math" alttext="\mathbb{E}[X_{k}]=\frac{1}{13}" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mi>k</mi></msub><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>13</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{E}[X_{k}]=\frac{1}{13}</annotation></semantics></math>, e podemos calcular</p>
+<div id="Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex10.m1" class="ltx_Math" alttext="\mathbb{E}[X]=\mathbb{E}[X_{1}]+\mathbb{E}[X_{2}]+\mathbb{E}[X_{3}]=\frac{3}{1%
+3}." display="block"><semantics><mrow><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>3</mn></msub><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>=</mo><mfrac><mn>3</mn><mn>13</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]=\mathbb{E}[X_{1}]+\mathbb{E}[X_{2}]+\mathbb{E}[X_{3}]=\frac{3}{1%
+3}.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="E30" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.30</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E30.p1" class="ltx_para">
+<p class="ltx_p">No Exemplo <a href="#E18" title="Exemplo 6.18 (Binomial). ‣ 6.1 Definição e exemplos ‣ 6 Esperança ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.18</span></a>, observe que <math id="E30.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> tem a mesma distribuição que <math id="E30.p1.m2" class="ltx_Math" alttext="X_{1}+\cdots+X_{n}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">X_{1}+\cdots+X_{n}</annotation></semantics></math>, onde cada <math id="E30.p1.m3" class="ltx_Math" alttext="X_{k}" display="inline"><semantics><msub><mi>X</mi><mi>k</mi></msub><annotation encoding="application/x-tex">X_{k}</annotation></semantics></math> é distribuída como <math id="E30.p1.m4" class="ltx_Math" alttext="\mathrm{Bernoulli}(p)" display="inline"><semantics><mrow><mi>Bernoulli</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Bernoulli}(p)</annotation></semantics></math>, e, portanto,</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_Math" alttext="\mathbb{E}[X]=\mathbb{E}[X_{1}]+\cdots+\mathbb{E}[X_{n}]=(p+\cdots+p)=np." display="block"><semantics><mrow><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mi>p</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]=\mathbb{E}[X_{1}]+\cdots+\mathbb{E}[X_{n}]=(p+\cdots+p)=np.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="SS2.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Nos exemplos anteriores, foi mais fácil calcular a expectativa usando a linearidade do que usando a distribuição de <math id="SS2.p4.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>. Em muitos outros casos, descrever a distribuição de <math id="SS2.p4.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de uma forma que nos permita calcular a expectativa pode ser muito difícil ou até mesmo impraticável, mas ainda assim pode ser possível calcular a expectativa usando a linearidade.</p>
+</div>
+<div id="E31" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.31</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E31.p1" class="ltx_para">
+<p class="ltx_p">Uma gaveta contém <math id="E31.p1.m1" class="ltx_Math" alttext="10" display="inline"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math> pares de meias, todos diferentes entre si.
+Alguém abre a gaveta no escuro e retira <math id="E31.p1.m2" class="ltx_Math" alttext="6" display="inline"><semantics><mn>6</mn><annotation encoding="application/x-tex">6</annotation></semantics></math> meias dela.
+Qual é a expectativa de <math id="E31.p1.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, o número de pares formados pelas meias retiradas?
+É mais conveniente supor que as meias sejam retiradas em ordem, da <math id="E31.p1.m4" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>-ª à <math id="E31.p1.m5" class="ltx_Math" alttext="6" display="inline"><semantics><mn>6</mn><annotation encoding="application/x-tex">6</annotation></semantics></math>-ª.
+Vamos contar quantas delas têm um par que também foi retirado.
+Isso dará um número <math id="E31.p1.m6" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> que é o dobro do número de pares, porque cada par será contado duas vezes, então <math id="E31.p1.m7" class="ltx_Math" alttext="N=2X" display="inline"><semantics><mrow><mi>N</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>X</mi></mrow></mrow><annotation encoding="application/x-tex">N=2X</annotation></semantics></math>.
+Observe que <math id="E31.p1.m8" class="ltx_Math" alttext="N=X_{1}+\cdots+X_{6}" display="inline"><semantics><mrow><mi>N</mi><mo>=</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mn>6</mn></msub></mrow></mrow><annotation encoding="application/x-tex">N=X_{1}+\cdots+X_{6}</annotation></semantics></math>, onde <math id="E31.p1.m9" class="ltx_Math" alttext="X_{k}=\mathds{1}_{A_{k}}" display="inline"><semantics><mrow><msub><mi>X</mi><mi>k</mi></msub><mo>=</mo><msub><mn>𝟙</mn><msub><mi>A</mi><mi>k</mi></msub></msub></mrow><annotation encoding="application/x-tex">X_{k}=\mathds{1}_{A_{k}}</annotation></semantics></math> e <math id="E31.p1.m10" class="ltx_Math" alttext="A_{k}" display="inline"><semantics><msub><mi>A</mi><mi>k</mi></msub><annotation encoding="application/x-tex">A_{k}</annotation></semantics></math> é o evento de que o par da <math id="E31.p1.m11" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-ésima meia retirada também foi retirado.
+Então <math id="E31.p1.m12" class="ltx_Math" alttext="\mathbb{P}(A_{k})=\frac{5}{19}" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>5</mn><mn>19</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{k})=\frac{5}{19}</annotation></semantics></math> (exercício!) e, portanto, <math id="E31.p1.m13" class="ltx_Math" alttext="\mathbb{E}[N]=\mathbb{E}[X_{1}]+\dots+\mathbb{E}[X_{6}]=6\cdot\frac{5}{19}" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>N</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">]</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>6</mn></msub><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>6</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>5</mn><mn>19</mn></mfrac></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[N]=\mathbb{E}[X_{1}]+\dots+\mathbb{E}[X_{6}]=6\cdot\frac{5}{19}</annotation></semantics></math>.
+Portanto, <math id="E31.p1.m14" class="ltx_Math" alttext="\mathbb{E}[X]=\mathbb{E}[\frac{N}{2}]=\frac{15}{19}" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mfrac><mi>N</mi><mn>2</mn></mfrac><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mfrac><mn>15</mn><mn>19</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]=\mathbb{E}[\frac{N}{2}]=\frac{15}{19}</annotation></semantics></math>.
+A combinatorial envolvida em mostrar que <math id="E31.p1.m15" class="ltx_Math" alttext="\mathbb{P}(A_{k})=\frac{5}{19}" display="inline"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>5</mn><mn>19</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{P}(A_{k})=\frac{5}{19}</annotation></semantics></math> pode não ser muito fácil, mas é muito mais fácil do que descrever a distribuição de <math id="E31.p1.m16" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">6.3</span> Função de uma variável aleatória</h2>
+
+<div id="E32" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 6.32</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E32.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E32.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> uma variável aleatória discreta e <math id="E32.p1.m2" class="ltx_Math" alttext="g:\mathbb{R}\to\mathbb{R}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">g:\mathbb{R}\to\mathbb{R}</annotation></semantics></math> uma função qualquer.
+Então</span></p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_Math" alttext="\mathbb{E}[g(X)]=\sum_{x\in D_{X}}g(x)\cdot\mathbb{P}(X=x)," display="block"><semantics><mrow><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>x</mi><mo>∈</mo><msub><mi>D</mi><mi>X</mi></msub></mrow></munder><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}[g(X)]=\sum_{x\in D_{X}}g(x)\cdot\mathbb{P}(X=x),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">se esta soma convergir absolutamente, e <math id="E32.p1.m3" class="ltx_Math" alttext="\mathbb{E}[g(X)]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[g(X)]</annotation></semantics></math> é indefinida se não convergir.
+Na soma, <math id="E32.p1.m4" class="ltx_Math" alttext="D_{X}" display="inline"><semantics><msub><mi>D</mi><mi>X</mi></msub><annotation encoding="application/x-tex">D_{X}</annotation></semantics></math> denota o suporte discreto de <math id="E32.p1.m5" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="E33" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.33</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E33.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Suponha que <math id="E33.p1.m1" class="ltx_Math" alttext="p_{X}(x)=\frac{1}{3}" display="inline"><semantics><mrow><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">p_{X}(x)=\frac{1}{3}</annotation></semantics></math> para <math id="E33.p1.m2" class="ltx_Math" alttext="x=1,2,3" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1,2,3</mn></mrow><annotation encoding="application/x-tex">x=1,2,3</annotation></semantics></math>.
+Vamos calcular <math id="E33.p1.m3" class="ltx_Math" alttext="\mathbb{E}[(X-2)^{2}]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[(X-2)^{2}]</annotation></semantics></math> de duas maneiras.
+Para a função <math id="E33.p1.m4" class="ltx_Math" alttext="g(x)=(x-2)^{2}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g(x)=(x-2)^{2}</annotation></semantics></math>, queremos calcular <math id="E33.p1.m5" class="ltx_Math" alttext="\mathbb{E}[g(X)]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[g(X)]</annotation></semantics></math>.</p>
+</div>
+<div id="E33.p2" class="ltx_para">
+<p class="ltx_p">A primeira maneira é a seguinte.
+Defina a variável aleatória <math id="E33.p2.m1" class="ltx_Math" alttext="Z=g(X)=(X-2)^{2}" display="inline"><semantics><mrow><mi>Z</mi><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">Z=g(X)=(X-2)^{2}</annotation></semantics></math> e calcule <math id="E33.p2.m2" class="ltx_Math" alttext="\mathbb{E}[Z]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Z</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[Z]</annotation></semantics></math> a partir da definição.
+Começamos calculando <math id="E33.p2.m3" class="ltx_Math" alttext="p_{Z}(0)=\mathbb{P}(X\in\{2\})=\frac{1}{3}" display="inline"><semantics><mrow><mrow><msub><mi>p</mi><mi>Z</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo stretchy="false">}</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">p_{Z}(0)=\mathbb{P}(X\in\{2\})=\frac{1}{3}</annotation></semantics></math> e <math id="E33.p2.m4" class="ltx_Math" alttext="p_{Z}(1)=\mathbb{P}(X\in\{1,3\})=\frac{2}{3}" display="inline"><semantics><mrow><mrow><msub><mi>p</mi><mi>Z</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>1,3</mn><mo stretchy="false">}</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">p_{Z}(1)=\mathbb{P}(X\in\{1,3\})=\frac{2}{3}</annotation></semantics></math>, obtendo a tabela</p>
+<div id="Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex13.m1" class="ltx_Math" alttext="\begin{array}[]{c|c}z&amp;p_{Z}(z)\\
+\hline\cr 0&amp;\frac{1}{3}\\
+1&amp;\frac{2}{3}\end{array}" display="block"><semantics><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r"><mi>z</mi></mtd><mtd><mrow><msub><mi>p</mi><mi>Z</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd class="ltx_border_r"><mn>0</mn></mtd><mtd><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mtd></mtr><mtr><mtd class="ltx_border_r"><mn>1</mn></mtd><mtd><mstyle displaystyle="false"><mfrac><mn>2</mn><mn>3</mn></mfrac></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}[]{c|c}z&amp;p_{Z}(z)\\
+\hline\cr 0&amp;\frac{1}{3}\\
+1&amp;\frac{2}{3}\end{array}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e, finalmente, <math id="E33.p2.m5" class="ltx_Math" alttext="\mathbb{E}[Z]=0\cdot\frac{1}{3}+1\cdot\frac{2}{3}=\frac{2}{3}" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Z</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>0</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>+</mo><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></mrow><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{E}[Z]=0\cdot\frac{1}{3}+1\cdot\frac{2}{3}=\frac{2}{3}</annotation></semantics></math>.
+Para a segunda maneira, basta escrever</p>
+<div id="Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex14.m1" class="ltx_Math" alttext="\begin{array}[]{c|c|c}x&amp;g(x)&amp;p_{X}(x)\\
+\hline\cr 1&amp;1&amp;\frac{1}{3}\\
+2&amp;0&amp;\frac{1}{3}\\
+3&amp;1&amp;\frac{1}{3}\end{array}" display="block"><semantics><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r"><mi>x</mi></mtd><mtd class="ltx_border_r"><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd class="ltx_border_r"><mn>1</mn></mtd><mtd class="ltx_border_r"><mn>1</mn></mtd><mtd><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mtd></mtr><mtr><mtd class="ltx_border_r"><mn>2</mn></mtd><mtd class="ltx_border_r"><mn>0</mn></mtd><mtd><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mtd></mtr><mtr><mtd class="ltx_border_r"><mn>3</mn></mtd><mtd class="ltx_border_r"><mn>1</mn></mtd><mtd><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}[]{c|c|c}x&amp;g(x)&amp;p_{X}(x)\\
+\hline\cr 1&amp;1&amp;\frac{1}{3}\\
+2&amp;0&amp;\frac{1}{3}\\
+3&amp;1&amp;\frac{1}{3}\end{array}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e calcular <math id="E33.p2.m6" class="ltx_Math" alttext="\mathbb{E}[g(X)]=1\cdot\frac{1}{3}+0\cdot\frac{1}{3}+1\cdot\frac{1}{3}=\frac{2%
+}{3}" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>+</mo><mrow><mn>0</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>+</mo><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></mrow><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\mathbb{E}[g(X)]=1\cdot\frac{1}{3}+0\cdot\frac{1}{3}+1\cdot\frac{1}{3}=\frac{2%
+}{3}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="E34" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.34</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E34.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="E34.p1.m1" class="ltx_Math" alttext="X\sim\mathrm{Poisson}(\lambda)" display="inline"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Poisson</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Poisson}(\lambda)</annotation></semantics></math>, então</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx33" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E35"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E35.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}[X^{2}]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{E}[X^{2}]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E35.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=0}^{\infty}n^{2}\frac{\lambda^{n}e^{-\lambda}}{n!}=\sum_%
+{n=1}^{\infty}n\frac{\lambda^{n}e^{-\lambda}}{(n-1)!}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>λ</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mi>n</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>λ</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{n=0}^{\infty}n^{2}\frac{\lambda^{n}e^{-\lambda}}{n!}=\sum_%
+{n=1}^{\infty}n\frac{\lambda^{n}e^{-\lambda}}{(n-1)!}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.35)</span></td>
+</tr></tbody>
+<tbody id="E36"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E36.m1" class="ltx_Math" alttext="\displaystyle=\sum_{n=1}^{\infty}\frac{\lambda^{n}e^{-\lambda}}{(n-1)!}+\sum_{%
+n=1}^{\infty}(n-1)\frac{\lambda^{n}e^{-\lambda}}{(n-1)!}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mrow><msup><mi>λ</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>λ</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{n=1}^{\infty}\frac{\lambda^{n}e^{-\lambda}}{(n-1)!}+\sum_{%
+n=1}^{\infty}(n-1)\frac{\lambda^{n}e^{-\lambda}}{(n-1)!}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.36)</span></td>
+</tr></tbody>
+<tbody id="E37"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E37.m1" class="ltx_Math" alttext="\displaystyle=\sum_{n=1}^{\infty}\frac{\lambda^{n}e^{-\lambda}}{(n-1)!}+\sum_{%
+n=2}^{\infty}\frac{\lambda^{n}e^{-\lambda}}{(n-2)!}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mrow><msup><mi>λ</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mrow><msup><mi>λ</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{n=1}^{\infty}\frac{\lambda^{n}e^{-\lambda}}{(n-1)!}+\sum_{%
+n=2}^{\infty}\frac{\lambda^{n}e^{-\lambda}}{(n-2)!}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.37)</span></td>
+</tr></tbody>
+<tbody id="E38"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E38.m1" class="ltx_Math" alttext="\displaystyle=\lambda e^{-\lambda}\sum_{n=1}^{\infty}\frac{\lambda^{n-1}}{(n-1%
+)!}+\lambda^{2}e^{-\lambda}\sum_{n=2}^{\infty}\frac{\lambda^{n-2}}{(n-2)!}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>λ</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msup><mi>λ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><msup><mi>λ</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msup><mi>λ</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\lambda e^{-\lambda}\sum_{n=1}^{\infty}\frac{\lambda^{n-1}}{(n-1%
+)!}+\lambda^{2}e^{-\lambda}\sum_{n=2}^{\infty}\frac{\lambda^{n-2}}{(n-2)!}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.38)</span></td>
+</tr></tbody>
+<tbody id="E39"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E39.m1" class="ltx_Math" alttext="\displaystyle=\lambda e^{-\lambda}\sum_{k=0}^{\infty}\frac{\lambda^{k}}{k!}+%
+\lambda^{2}e^{-\lambda}\sum_{m=0}^{\infty}\frac{\lambda^{m}}{m!}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>λ</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msup><mi>λ</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow><mo>+</mo><mrow><msup><mi>λ</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msup><mi>λ</mi><mi>m</mi></msup><mrow><mi>m</mi><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\lambda e^{-\lambda}\sum_{k=0}^{\infty}\frac{\lambda^{k}}{k!}+%
+\lambda^{2}e^{-\lambda}\sum_{m=0}^{\infty}\frac{\lambda^{m}}{m!}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.39)</span></td>
+</tr></tbody>
+<tbody id="E40"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E40.m1" class="ltx_Math" alttext="\displaystyle=\lambda+\lambda^{2}." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mi>λ</mi><mo>+</mo><msup><mi>λ</mi><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\lambda+\lambda^{2}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.40)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Embora tenha havido muita computação algébrica envolvida, a alternativa seria pior: definir <math id="E34.p1.m2" class="ltx_Math" alttext="Z=X^{2}" display="inline"><semantics><mrow><mi>Z</mi><mo>=</mo><msup><mi>X</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">Z=X^{2}</annotation></semantics></math>, descrever o suporte discreto de <math id="E34.p1.m3" class="ltx_Math" alttext="Z" display="inline"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>, encontrar uma expressão para <math id="E34.p1.m4" class="ltx_Math" alttext="p_{Z}(z)" display="inline"><semantics><mrow><msub><mi>p</mi><mi>Z</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">p_{Z}(z)</annotation></semantics></math>, escrever <math id="E34.p1.m5" class="ltx_Math" alttext="\mathbb{E}[Z]=\sum_{z}z\cdot p_{Z}(z)" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Z</mi><mo stretchy="false">]</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∑</mo><mi>z</mi></msub><mrow><mrow><mi>z</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>p</mi><mi>Z</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[Z]=\sum_{z}z\cdot p_{Z}(z)</annotation></semantics></math> e, em seguida, tentar avaliar a soma.</p>
+</div>
+</div>
+<div id="E41" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.41</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E41.p1" class="ltx_para">
+<p class="ltx_p">Suponha que <math id="E41.p1.m1" class="ltx_Math" alttext="X\sim\mathrm{Geom}(p)" display="inline"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Geom</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Geom}(p)</annotation></semantics></math>.
+Como antes, calcularemos</p>
+<div id="Ex15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex15.m1" class="ltx_Math" alttext="\mathbb{E}[X^{2}]=\sum_{n=1}^{\infty}n^{2}(1-p)^{n-1}p" display="block"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>p</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X^{2}]=\sum_{n=1}^{\infty}n^{2}(1-p)^{n-1}p</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">por meio da diferenciação de duas séries de potência.
+Para fazer isso, escrevemos <math id="E41.p1.m2" class="ltx_Math" alttext="x=1-p" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow></mrow><annotation encoding="application/x-tex">x=1-p</annotation></semantics></math> e desenvolvemos da seguinte maneira:</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx34" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E42"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E42.m1" class="ltx_Math" alttext="\displaystyle\mathbb{E}[X^{2}]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{E}[X^{2}]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E42.m2" class="ltx_Math" alttext="\displaystyle=\sum_{n=1}^{\infty}n^{2}\cdot p\cdot x^{n-1}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><msup><mi>n</mi><mn>2</mn></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>p</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\sum_{n=1}^{\infty}n^{2}\cdot p\cdot x^{n-1}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.42)</span></td>
+</tr></tbody>
+<tbody id="E43"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E43.m1" class="ltx_Math" alttext="\displaystyle=p\sum_{n=1}^{\infty}n\cdot x^{n-1}+p\sum_{n=1}^{\infty}n\cdot(n-%
+1)\cdot x^{n-1}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow><mo>+</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">⋅</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=p\sum_{n=1}^{\infty}n\cdot x^{n-1}+p\sum_{n=1}^{\infty}n\cdot(n-%
+1)\cdot x^{n-1}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.43)</span></td>
+</tr></tbody>
+<tbody id="E44"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E44.m1" class="ltx_Math" alttext="\displaystyle=p\sum_{n=0}^{\infty}n\cdot x^{n-1}+px\sum_{n=0}^{\infty}n\cdot(n%
+-1)\cdot x^{n-2}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow><mo>+</mo><mrow><mi>p</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">⋅</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msup></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=p\sum_{n=0}^{\infty}n\cdot x^{n-1}+px\sum_{n=0}^{\infty}n\cdot(n%
+-1)\cdot x^{n-2}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.44)</span></td>
+</tr></tbody>
+<tbody id="E45"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E45.m1" class="ltx_Math" alttext="\displaystyle=p\sum_{n=0}^{\infty}\frac{\mathrm{d}}{\mathrm{d}x}[x^{n}]+px\sum%
+_{n=0}^{\infty}\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}[x^{n}]" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><mfrac><mi mathvariant="normal">d</mi><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>x</mi><mi>n</mi></msup><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi>p</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><mfrac><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>x</mi><mi>n</mi></msup><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=p\sum_{n=0}^{\infty}\frac{\mathrm{d}}{\mathrm{d}x}[x^{n}]+px\sum%
+_{n=0}^{\infty}\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}[x^{n}]</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.45)</span></td>
+</tr></tbody>
+<tbody id="E46"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E46.m1" class="ltx_Math" alttext="\displaystyle=p\cdot\frac{\mathrm{d}}{\mathrm{d}x}\Big{[}\sum_{n=0}^{\infty}x^%
+{n}\Big{]}+px\cdot\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}\Big{[}\sum_{n=0}^{%
+\infty}x^{n}\Big{]}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>p</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mi mathvariant="normal">d</mi><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><msup><mi>x</mi><mi>n</mi></msup></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow><mo>+</mo><mrow><mrow><mrow><mi>p</mi><mo>⁢</mo><mi>x</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><msup><mi>x</mi><mi>n</mi></msup></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=p\cdot\frac{\mathrm{d}}{\mathrm{d}x}\Big{[}\sum_{n=0}^{\infty}x^%
+{n}\Big{]}+px\cdot\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}\Big{[}\sum_{n=0}^{%
+\infty}x^{n}\Big{]}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.46)</span></td>
+</tr></tbody>
+<tbody id="E47"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E47.m1" class="ltx_Math" alttext="\displaystyle=p\frac{1}{(1-x)^{2}}+px\frac{2}{(1-x)^{3}}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>p</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle></mrow><mo>+</mo><mrow><mi>p</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=p\frac{1}{(1-x)^{2}}+px\frac{2}{(1-x)^{3}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.47)</span></td>
+</tr></tbody>
+<tbody id="E48"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E48.m1" class="ltx_Math" alttext="\displaystyle=\frac{1}{p}+2\cdot\frac{1-p}{p^{2}}" display="inline"><semantics><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>p</mi></mfrac></mstyle><mo>+</mo><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><msup><mi>p</mi><mn>2</mn></msup></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{1}{p}+2\cdot\frac{1-p}{p^{2}}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.48)</span></td>
+</tr></tbody>
+<tbody id="E49"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E49.m1" class="ltx_Math" alttext="\displaystyle=\frac{2-p}{p^{2}}." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>−</mo><mi>p</mi></mrow><msup><mi>p</mi><mn>2</mn></msup></mfrac></mstyle></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=\frac{2-p}{p^{2}}.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.49)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Como antes, sabemos que a série de potência <math id="E41.p1.m3" class="ltx_Math" alttext="\sum_{n}x^{n}" display="inline"><semantics><mrow><msub><mo>∑</mo><mi>n</mi></msub><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\sum_{n}x^{n}</annotation></semantics></math> converge se <math id="E41.p1.m4" class="ltx_Math" alttext="|x|&lt;1" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|x|&lt;1</annotation></semantics></math>, e estamos aceitando uma propriedade que diz que a série de potência pode ser diferenciada termo a termo dentro desse intervalo.</p>
+</div>
+</div>
+<div id="E50" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.50</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E50.p1" class="ltx_para">
+<p class="ltx_p">Suponha que <math id="E50.p1.m1" class="ltx_Math" alttext="X\sim\mathrm{Geom}(p)" display="inline"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Geom</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Geom}(p)</annotation></semantics></math>.
+Para quais valores de <math id="E50.p1.m2" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> a função <math id="E50.p1.m3" class="ltx_Math" alttext="e^{tX}" display="inline"><semantics><msup><mi>e</mi><mrow><mi>t</mi><mo>⁢</mo><mi>X</mi></mrow></msup><annotation encoding="application/x-tex">e^{tX}</annotation></semantics></math> é integrável e qual é o valor de <math id="E50.p1.m4" class="ltx_Math" alttext="\mathbb{E}[e^{tX}]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>e</mi><mrow><mi>t</mi><mo>⁢</mo><mi>X</mi></mrow></msup><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[e^{tX}]</annotation></semantics></math>?
+Podemos escrever</p>
+<div id="Ex16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex16.m1" class="ltx_Math" alttext="\mathbb{E}[e^{tX}]=\sum_{n=1}^{\infty}e^{tn}\cdot p\cdot(1-p)^{n-1}=pe^{t}\sum%
+_{k=0}^{\infty}[e^{t}\cdot(1-p)]^{n-1}=\frac{pe^{t}}{1-[e^{t}\cdot(1-p)]}." display="block"><semantics><mrow><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>e</mi><mrow><mi>t</mi><mo>⁢</mo><mi>X</mi></mrow></msup><mo stretchy="false">]</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mi>e</mi><mrow><mi>t</mi><mo>⁢</mo><mi>n</mi></mrow></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>p</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><msup><mi>e</mi><mi>t</mi></msup><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mrow><mo stretchy="false">[</mo><mrow><msup><mi>e</mi><mi>t</mi></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>=</mo><mfrac><mrow><mi>p</mi><mo>⁢</mo><msup><mi>e</mi><mi>t</mi></msup></mrow><mrow><mn>1</mn><mo>−</mo><mrow><mo stretchy="false">[</mo><mrow><msup><mi>e</mi><mi>t</mi></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}[e^{tX}]=\sum_{n=1}^{\infty}e^{tn}\cdot p\cdot(1-p)^{n-1}=pe^{t}\sum%
+_{k=0}^{\infty}[e^{t}\cdot(1-p)]^{n-1}=\frac{pe^{t}}{1-[e^{t}\cdot(1-p)]}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Isso pode ser reescrito como</p>
+<div id="Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex17.m1" class="ltx_Math" alttext="\mathbb{E}[e^{tX}]=\frac{p}{e^{-t}+p-1}," display="block"><semantics><mrow><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>e</mi><mrow><mi>t</mi><mo>⁢</mo><mi>X</mi></mrow></msup><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mfrac><mi>p</mi><mrow><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi></mrow></msup><mo>+</mo><mi>p</mi></mrow><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}[e^{tX}]=\frac{p}{e^{-t}+p-1},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e é definido se <math id="E50.p1.m5" class="ltx_Math" alttext="e^{t}\cdot(1-p)&lt;1" display="inline"><semantics><mrow><mrow><msup><mi>e</mi><mi>t</mi></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">e^{t}\cdot(1-p)&lt;1</annotation></semantics></math>, ou alternativamente <math id="E50.p1.m6" class="ltx_Math" alttext="t&lt;\ln\frac{1}{1-p}" display="inline"><semantics><mrow><mi>t</mi><mo>&lt;</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">t&lt;\ln\frac{1}{1-p}</annotation></semantics></math>, e é indefinido caso contrário.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS4" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">6.4</span> Variância</h2>
+
+<div id="SS4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Aqui introduzimos outra quantidade fundamental que descreve a distribuição de uma variável aleatória.
+Enquanto <math id="SS4.p1.m1" class="ltx_Math" alttext="\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]</annotation></semantics></math> fornece o número médio de <math id="SS4.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, agora definimos uma quantidade que quantifica o grau de dispersão de <math id="SS4.p1.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> em relação ao seu valor médio.</p>
+</div>
+<div id="E51" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 6.51</span></span><span class="ltx_text ltx_font_bold"> </span>(Variáveis aleatórias quadrado-integráveis)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E51.p1" class="ltx_para">
+<p class="ltx_p">Dizemos que uma variável aleatória discreta <math id="E51.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é <em class="ltx_emph ltx_font_italic">quadrado-integrável</em> se <math id="E51.p1.m2" class="ltx_Math" alttext="X^{2}" display="inline"><semantics><msup><mi>X</mi><mn>2</mn></msup><annotation encoding="application/x-tex">X^{2}</annotation></semantics></math> for integrável, o que significa que a soma</p>
+<div id="Ex18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex18.m1" class="ltx_Math" alttext="\sum_{x:\mathbb{P}(X=x)&gt;0}x^{2}\cdot\mathbb{P}(X=x)" display="block"><semantics><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow></munder><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>ℙ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sum_{x:\mathbb{P}(X=x)&gt;0}x^{2}\cdot\mathbb{P}(X=x)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é convergente.
+Observe que variáveis aleatórias quadrado-integráveis são automaticamente integráveis, pois <math id="E51.p1.m3" class="ltx_Math" alttext="|x|\leqslant 1+x^{2}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>⩽</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">|x|\leqslant 1+x^{2}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="E52" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 6.52</span></span><span class="ltx_text ltx_font_bold"> </span>(Variância)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E52.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E52.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> uma variável aleatória discreta quadrado-integrável e denote <math id="E52.p1.m2" class="ltx_Math" alttext="\mu=\mathbb{E}[X]" display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu=\mathbb{E}[X]</annotation></semantics></math>.
+Definimos a <em class="ltx_emph ltx_font_italic">variância</em> de <math id="E52.p1.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> como</p>
+<div id="Ex19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex19.m1" class="ltx_Math" alttext="\mathrm{Var}(X)=\mathbb{E}\big{[}(X-\mu)^{2}\big{]}." display="block"><semantics><mrow><mrow><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>−</mo><mi>μ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathrm{Var}(X)=\mathbb{E}\big{[}(X-\mu)^{2}\big{]}.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="SS4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Embora esta fórmula seja a melhor definição para entender as propriedades da variância, muitas vezes existe uma maneira mais conveniente de calculá-la:</p>
+<div id="Ex20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex20.m1" class="ltx_Math" alttext="\mathrm{Var}(X)=\mathbb{E}[X^{2}]-(\mathbb{E}[X])^{2}," display="block"><semantics><mrow><mrow><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathrm{Var}(X)=\mathbb{E}[X^{2}]-(\mathbb{E}[X])^{2},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">que obtemos expandindo <math id="SS4.p2.m1" class="ltx_Math" alttext="\mathbb{E}[(X-\mu)^{2}]=\mathbb{E}[X^{2}-2\mu X+\mu^{2}]" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>−</mo><mi>μ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><msup><mi>X</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>μ</mi><mo>⁢</mo><mi>X</mi></mrow></mrow><mo>+</mo><msup><mi>μ</mi><mn>2</mn></msup></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[(X-\mu)^{2}]=\mathbb{E}[X^{2}-2\mu X+\mu^{2}]</annotation></semantics></math> = <math id="SS4.p2.m2" class="ltx_Math" alttext="\mathbb{E}[X^{2}]-\mu^{2}" display="inline"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><msup><mi>μ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{E}[X^{2}]-\mu^{2}</annotation></semantics></math>.</p>
+</div>
+<div id="E53" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.53</span></span><span class="ltx_text ltx_font_italic"> </span>(Poisson)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E53.p1" class="ltx_para">
+<p class="ltx_p">Suponha que <math id="E53.p1.m1" class="ltx_Math" alttext="X\sim\mathrm{Poisson}(\lambda)" display="inline"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Poisson</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Poisson}(\lambda)</annotation></semantics></math>.
+Então</p>
+<div id="Ex21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex21.m1" class="ltx_Math" alttext="\mathrm{Var}(X)=\mathbb{E}[X^{2}]-(\mathbb{E}[X])^{2}=\lambda+\lambda^{2}-%
+\lambda=\lambda," display="block"><semantics><mrow><mrow><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>=</mo><mrow><mrow><mi>λ</mi><mo>+</mo><msup><mi>λ</mi><mn>2</mn></msup></mrow><mo>−</mo><mi>λ</mi></mrow><mo>=</mo><mi>λ</mi></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathrm{Var}(X)=\mathbb{E}[X^{2}]-(\mathbb{E}[X])^{2}=\lambda+\lambda^{2}-%
+\lambda=\lambda,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">portanto, a variância de uma variável aleatória de Poisson é igual à sua expectativa.</p>
+</div>
+</div>
+<div id="E54" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.54</span></span><span class="ltx_text ltx_font_italic"> </span>(Geométrica)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E54.p1" class="ltx_para">
+<p class="ltx_p">Suponha que <math id="E54.p1.m1" class="ltx_Math" alttext="X\sim\mathrm{Geom}(p)" display="inline"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Geom</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Geom}(p)</annotation></semantics></math>.
+Então</p>
+<div id="Ex22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex22.m1" class="ltx_Math" alttext="\mathrm{Var}(X)=\mathbb{E}[X^{2}]-(\mathbb{E}[X])^{2}=\frac{2-p}{p^{2}}-\frac{%
+1}{p^{2}}=\frac{1-p}{p^{2}}." display="block"><semantics><mrow><mrow><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>=</mo><mrow><mfrac><mrow><mn>2</mn><mo>−</mo><mi>p</mi></mrow><msup><mi>p</mi><mn>2</mn></msup></mfrac><mo>−</mo><mfrac><mn>1</mn><msup><mi>p</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><msup><mi>p</mi><mn>2</mn></msup></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathrm{Var}(X)=\mathbb{E}[X^{2}]-(\mathbb{E}[X])^{2}=\frac{2-p}{p^{2}}-\frac{%
+1}{p^{2}}=\frac{1-p}{p^{2}}.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="E55" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 6.55</span></span><span class="ltx_text ltx_font_italic"> </span>(Bernoulli)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E55.p1" class="ltx_para">
+<p class="ltx_p">Suponha que <math id="E55.p1.m1" class="ltx_Math" alttext="X\sim\mathrm{Bernoulli}(p)" display="inline"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Bernoulli</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Bernoulli}(p)</annotation></semantics></math>.
+Então</p>
+<div id="Ex23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex23.m1" class="ltx_Math" alttext="\mathrm{Var}(X)=\mathbb{E}[X^{2}]-(\mathbb{E}[X])^{2}=p-p^{2}=p\cdot(1-p)." display="block"><semantics><mrow><mrow><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></mrow><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>=</mo><mrow><mi>p</mi><mo>−</mo><msup><mi>p</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mi>p</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathrm{Var}(X)=\mathbb{E}[X^{2}]-(\mathbb{E}[X])^{2}=p-p^{2}=p\cdot(1-p).</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="SS4.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Observe que</p>
+<div id="Ex24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex24.m1" class="ltx_Math" alttext="\mathrm{Var}(aX)=a^{2}\cdot\mathrm{Var}(X)" display="block"><semantics><mrow><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>Var</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Var}(aX)=a^{2}\cdot\mathrm{Var}(X)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">o que significa que <math id="SS4.p3.m1" class="ltx_Math" alttext="\mathrm{Var}(X)" display="inline"><semantics><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Var}(X)</annotation></semantics></math> não está na mesma unidade de medida que <math id="SS4.p3.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.
+Por exemplo, se <math id="SS4.p3.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é medido em metros, então <math id="SS4.p3.m4" class="ltx_Math" alttext="\mathbb{E}[X]" display="inline"><semantics><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]</annotation></semantics></math> também é medido em metros, mas <math id="SS4.p3.m5" class="ltx_Math" alttext="\mathrm{Var}(X)" display="inline"><semantics><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Var}(X)</annotation></semantics></math> é medido em metros quadrados.</p>
+</div>
+<div id="SS4.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Para quantificar a dispersão de <math id="SS4.p4.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> nas mesmas unidades de medida que <math id="SS4.p4.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, precisamos calcular a raiz quadrada.</p>
+</div>
+<div id="E56" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 6.56</span></span><span class="ltx_text ltx_font_bold"> </span>(Desvio padrão)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E56.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E56.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> uma variável aleatória discreta quadrado-integrável.
+Definimos o <em class="ltx_emph ltx_font_italic">desvio padrão de <math id="E56.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math></em> como</p>
+<div id="Ex25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex25.m1" class="ltx_Math" alttext="\sigma(X)=\sqrt{\mathrm{Var}(X)}." display="block"><semantics><mrow><mrow><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><mi>Var</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></msqrt></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\sigma(X)=\sqrt{\mathrm{Var}(X)}.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="SS4.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Ao contrário da variância, o desvio padrão satisfaz <math id="SS4.p5.m1" class="ltx_Math" alttext="\sigma(aX)=|a|\cdot\sigma(X)" display="inline"><semantics><mrow><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">|</mo><mi>a</mi><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mi>σ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sigma(aX)=|a|\cdot\sigma(X)</annotation></semantics></math>.</p>
+</div>
+<div id="SS4.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">O desvio padrão de uma variável aleatória de Poisson é <math id="SS4.p6.m1" class="ltx_Math" alttext="\sqrt{\lambda}" display="inline"><semantics><msqrt><mi>λ</mi></msqrt><annotation encoding="application/x-tex">\sqrt{\lambda}</annotation></semantics></math>, de uma variável aleatória de Bernoulli é <math id="SS4.p6.m2" class="ltx_Math" alttext="\sqrt{p(1-p)}" display="inline"><semantics><msqrt><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{p(1-p)}</annotation></semantics></math>, e de uma variável aleatória geométrica é <math id="SS4.p6.m3" class="ltx_Math" alttext="\sqrt{p^{-2}-p^{-1}}" display="inline"><semantics><msqrt><mrow><msup><mi>p</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>−</mo><msup><mi>p</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></msqrt><annotation encoding="application/x-tex">\sqrt{p^{-2}-p^{-1}}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S5.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S7.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Intro.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

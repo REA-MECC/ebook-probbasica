@@ -1,0 +1,1000 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>2 Contagem ‣ Introdução à Probabilidade Notas de Aula</title>
+<!--Generated on Tue Aug 27 14:11:25 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Intro.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="start" href="index.html" title="Introdução à Probabilidade Notas de Aula">
+<link rel="prev" href="S1.html" title="1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="next" href="S3.html" title="3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S1.html" title="1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S3.html" title="3 Espaços de Probabilidade ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S4.html" title="4 Probabilidade Condicional e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S5.html" title="5 Variáveis Aleatórias ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S6.html" title="6 Esperança ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S7.html" title="7 Distribuições discretas multivariadas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S8.html" title="8 A Lei dos Grandes Números ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S9.html" title="9 Covariância ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S10.html" title="10 Desigualdade de Chebyshev ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S11.html" title="11 Coeficiente de Correlação ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S12.html" title="12 Teorema do Limite Central ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S13.html" title="13 Variáveis aleatórias contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S14.html" title="14 Uma única teoria para discretas e contínuas ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S15.html" title="15 Distribuições Conjuntas e Independência ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S16.html" title="16 Somas de variáveis aleatórias independentes ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="section" href="S17.html" title="17 Momentos e funções geradoras de momentos ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A1.html" title="Apêndice A Somas úteis ‣ Introdução à Probabilidade Notas de Aula">
+<link rel="appendix" href="A2.html" title="Apêndice B Exponenciais superam polinômios ‣ Introdução à Probabilidade Notas de Aula">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Introdução à Probabilidade <span class="ltx_text"> </span>Notas de Aula</a>
+</li>
+<li class="divider">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Espaços de probabilidade uniforme</a></li>
+<li data-level="2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Contagem</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="2.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.1 </span></b>Fundamentos da Combinatória</a></li>
+<li data-level="2.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.2 </span></b>Amostragem</a></li>
+</ol>
+</li>
+<li data-level="3" data-path="S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S3.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Espaços de Probabilidade</a></li>
+<li data-level="4" data-path="S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S4.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Probabilidade Condicional e Independência</a></li>
+<li data-level="5" data-path="S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S5.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Variáveis Aleatórias</a></li>
+<li data-level="6" data-path="S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S6.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Esperança</a></li>
+<li data-level="7" data-path="S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S7.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Distribuições discretas multivariadas</a></li>
+<li data-level="8" data-path="S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S8.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>A Lei dos Grandes Números</a></li>
+<li data-level="9" data-path="S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S9.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Covariância</a></li>
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Desigualdade de Chebyshev</a></li>
+<li data-level="11" data-path="S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S11.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Coeficiente de Correlação</a></li>
+<li data-level="12" data-path="S12.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S12.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">12 </span></b>Teorema do Limite Central</a></li>
+<li data-level="13" data-path="S13.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S13.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">13 </span></b>Variáveis aleatórias contínuas</a></li>
+<li data-level="14" data-path="S14.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S14.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14 </span></b>Uma única teoria para discretas e contínuas</a></li>
+<li data-level="15" data-path="S15.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S15.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">15 </span></b>Distribuições Conjuntas e Independência</a></li>
+<li data-level="16" data-path="S16.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S16.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">16 </span></b>Somas de variáveis aleatórias independentes</a></li>
+<li data-level="17" data-path="S17.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S17.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">17 </span></b>Momentos e funções geradoras de momentos</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Somas úteis</a></li>
+<li data-level="B" data-path="A2.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A2.html" title="In Introdução à Probabilidade Notas de Aula" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">B </span></b>Exponenciais superam polinômios</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Contagem</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">2</span> Contagem</h1>
+
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.1</span> Fundamentos da Combinatória</h2>
+
+<div id="SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Em geral, a fórmula (<a href="S1.html#E6" title="In Proposição 1.4. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a>) afirma que, para calcular probabilidades, precisamos contar. Esta seção aprofunda o problema da contagem.</p>
+</div>
+<div id="E1" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 2.1</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E1.p1" class="ltx_para">
+<p class="ltx_p">Se houver 30 pessoas em uma sala, qual é a probabilidade de pelo menos duas delas terem a mesma data de aniversário? (Assuma que ninguém nasceu em 29 de fevereiro e que cada dia tem a mesma chance de ser o aniversário de alguém).</p>
+</div>
+</div>
+<div id="SS1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Para responder à pergunta no Exemplo <a href="#E1" title="Exemplo 2.1. ‣ 2.1 Fundamentos da Combinatória ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a>, precisamos calcular a cardinalidade do conjunto de todas as possíveis combinações de datas de aniversário, bem como a cardinalidade do conjunto de todas as possíveis combinações de datas de aniversário em que pelo menos duas são iguais. Como fazemos isso? Precisaremos usar o princípio fundamental da contagem, que nos permite calcular as cardinalidades de conjuntos grandes e complexos, onde a contagem explícita não é possível.</p>
+</div>
+<div id="SS1.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Primeiro, começamos identificando as regras fundamentais da contagem:</p>
+<dl id="I1" class="ltx_description">
+<dt id="I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Regra da Correspondência</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix1.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="I1.ix1.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e <math id="I1.ix1.p1.m2" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> estão em correspondência um-para-um, então <math id="I1.ix1.p1.m3" class="ltx_Math" alttext="|A|=|B|" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">|A|=|B|</annotation></semantics></math>.</p>
+</div>
+</dd>
+<dt id="I1.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Regra da Adição</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix2.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="I1.ix2.p1.m1" class="ltx_Math" alttext="A_{1},\dots,A_{n}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{n}</annotation></semantics></math> são subconjuntos mutuamente disjuntos de algum conjunto, então</p>
+<div id="E2" class="ltx_equation ltx_eqn_div">
+<span><math id="E2.m1" class="ltx_Math" alttext="\left|\bigcup_{i=1}^{n}A_{i}\right|=\sum_{i=1}^{n}|A_{i}|\,." display="block"><semantics><mrow><mrow><mrow><mo>|</mo><mrow><munderover><mo lspace="0em" movablelimits="false">⋃</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>A</mi><mi>i</mi></msub></mrow><mo>|</mo></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">|</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\left|\bigcup_{i=1}^{n}A_{i}\right|=\sum_{i=1}^{n}|A_{i}|\,.</annotation></semantics></math></span>
+                  <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.2)</span>
+                  
+                  
+                
+</div>
+</div>
+</dd>
+<dt id="I1.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Princípio Fundamental da Contagem</span></span></dt>
+<dd class="ltx_item">
+<div id="I1.ix3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Suponha que os elementos de um conjunto finito <math id="I1.ix3.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> podem ser determinados em <math id="I1.ix3.p1.m2" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> etapas sucessivas, com <math id="I1.ix3.p1.m3" class="ltx_Math" alttext="n_{1}" display="inline"><semantics><msub><mi>n</mi><mn>1</mn></msub><annotation encoding="application/x-tex">n_{1}</annotation></semantics></math> escolhas possíveis na etapa 1, <math id="I1.ix3.p1.m4" class="ltx_Math" alttext="n_{2}" display="inline"><semantics><msub><mi>n</mi><mn>2</mn></msub><annotation encoding="application/x-tex">n_{2}</annotation></semantics></math> escolhas possíveis na etapa 2, <math id="I1.ix3.p1.m5" class="ltx_Math" alttext="\dots" display="inline"><semantics><mi mathvariant="normal">…</mi><annotation encoding="application/x-tex">\dots</annotation></semantics></math>, <math id="I1.ix3.p1.m6" class="ltx_Math" alttext="n_{k}" display="inline"><semantics><msub><mi>n</mi><mi>k</mi></msub><annotation encoding="application/x-tex">n_{k}</annotation></semantics></math> escolhas possíveis na etapa <math id="I1.ix3.p1.m7" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>. Suponha também que escolhas diferentes levam a elementos diferentes. Então,</p>
+<div id="E3" class="ltx_equation ltx_eqn_div">
+<span><math id="E3.m1" class="ltx_Math" alttext="|E|=n_{1}\cdot n_{2}\cdot\dots\cdot n_{k}\,." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mi>E</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><msub><mi>n</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>n</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>n</mi><mi>k</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">|E|=n_{1}\cdot n_{2}\cdot\dots\cdot n_{k}\,.</annotation></semantics></math></span>
+                  <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.3)</span>
+                  
+                  
+                
+</div>
+</div>
+</dd>
+</dl>
+</div>
+<div id="SS1.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">O conjunto de todas as combinações de datas de aniversário de 30 pessoas, como mostrado no Exemplo <a href="#E1" title="Exemplo 2.1. ‣ 2.1 Fundamentos da Combinatória ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a>, é um exemplo de um conjunto de <math id="SS1.p4.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-tuplas ordenadas de elementos de um conjunto dado. Mais genericamente, isso é definido da seguinte forma:</p>
+</div>
+<div id="E4" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 2.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E4.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E4.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um conjunto finito de cardinalidade <math id="E4.p1.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math>. Uma <em class="ltx_emph ltx_font_italic">sequência de comprimento <math id="E4.p1.m3" class="ltx_Math" alttext="k\in\mathbb{N}" display="inline"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">k\in\mathbb{N}</annotation></semantics></math> de elementos de <math id="E4.p1.m4" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math></em> é uma <math id="E4.p1.m5" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-tupla ordenada <math id="E4.p1.m6" class="ltx_Math" alttext="(a_{1},\dots,a_{k})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a_{1},\dots,a_{k})</annotation></semantics></math> tal que <math id="E4.p1.m7" class="ltx_Math" alttext="a_{i}\in A" display="inline"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">a_{i}\in A</annotation></semantics></math>, <math id="E4.p1.m8" class="ltx_Math" alttext="i=1,2,\dots k" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1,2</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mi>k</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">i=1,2,\dots k</annotation></semantics></math>. Denotamos por <math id="E4.p1.m9" class="ltx_Math" alttext="S_{n,k}(A)" display="inline"><semantics><mrow><msub><mi>S</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">S_{n,k}(A)</annotation></semantics></math> o conjunto de todas as sequências de comprimento <math id="E4.p1.m10" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> de elementos de <math id="E4.p1.m11" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="SS1.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Por “ordenado”, queremos dizer que a ordem da sequência importa, por exemplo: <math id="SS1.p5.m1" class="ltx_Math" alttext="(a_{1},a_{2})\neq(a_{2},a_{1})" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>≠</mo><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><msub><mi>a</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">(a_{1},a_{2})\neq(a_{2},a_{1})</annotation></semantics></math>. Note também que repetições de elementos são permitidas, por exemplo, <math id="SS1.p5.m2" class="ltx_Math" alttext="(1,1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>1,1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,1)</annotation></semantics></math> é uma sequência de comprimento <math id="SS1.p5.m3" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> de elementos de <math id="SS1.p5.m4" class="ltx_Math" alttext="\{1\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1\}</annotation></semantics></math>.</p>
+</div>
+<div id="E5" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 2.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E5.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um conjunto finito de cardinalidade <math id="E5.p1.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math>. O conjunto <math id="E5.p1.m3" class="ltx_Math" alttext="S_{n,k}(A)" display="inline"><semantics><mrow><msub><mi>S</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">S_{n,k}(A)</annotation></semantics></math> de todas as sequências de comprimento <math id="E5.p1.m4" class="ltx_Math" alttext="k\in\mathbb{N}" display="inline"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">k\in\mathbb{N}</annotation></semantics></math> de elementos de <math id="E5.p1.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> tem cardinalidade <math id="E5.p1.m6" class="ltx_Math" alttext="n^{k}" display="inline"><semantics><msup><mi>n</mi><mi>k</mi></msup><annotation encoding="application/x-tex">n^{k}</annotation></semantics></math>, ou seja,</span></p>
+<div id="E6" class="ltx_equation ltx_eqn_div">
+<span><math id="E6.m1" class="ltx_Math" alttext="|S_{n,k}(A)|=n^{k}" display="block"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>S</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><msup><mi>n</mi><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">|S_{n,k}(A)|=n^{k}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.6)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">Para construir um elemento arbitrário <math id="SS1.p6.m1" class="ltx_Math" alttext="(a_{1},a_{2},\dots,a_{k})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a_{1},a_{2},\dots,a_{k})</annotation></semantics></math> de <math id="SS1.p6.m2" class="ltx_Math" alttext="S_{n,k}(A)" display="inline"><semantics><mrow><msub><mi>S</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">S_{n,k}(A)</annotation></semantics></math>, realizamos as seguintes etapas:</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">escolher o primeiro valor <math id="I2.i1.p1.m1" class="ltx_Math" alttext="a_{1}" display="inline"><semantics><msub><mi>a</mi><mn>1</mn></msub><annotation encoding="application/x-tex">a_{1}</annotation></semantics></math>. Existem <math id="I2.i1.p1.m2" class="ltx_Math" alttext="n_{1}=|A|=n" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n_{1}=|A|=n</annotation></semantics></math> maneiras de fazer isso.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">escolher o segundo valor <math id="I2.i2.p1.m1" class="ltx_Math" alttext="a_{2}" display="inline"><semantics><msub><mi>a</mi><mn>2</mn></msub><annotation encoding="application/x-tex">a_{2}</annotation></semantics></math>. Existem <math id="I2.i2.p1.m2" class="ltx_Math" alttext="n_{2}=|A|=n" display="inline"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n_{2}=|A|=n</annotation></semantics></math> maneiras de fazer isso.</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\vdots" display="block"><semantics><mi mathvariant="normal">⋮</mi><annotation encoding="application/x-tex">\vdots</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I2.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.ix1.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.</span><div id="I2.ix1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Escolher o valor <math id="I2.ix1.p1.m1" class="ltx_Math" alttext="a_{k}" display="inline"><semantics><msub><mi>a</mi><mi>k</mi></msub><annotation encoding="application/x-tex">a_{k}</annotation></semantics></math> do <math id="I2.ix1.p1.m2" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math><sup class="ltx_sup">º</sup> elemento. Existem <math id="I2.ix1.p1.m3" class="ltx_Math" alttext="n_{k}=|A|=n" display="inline"><semantics><mrow><msub><mi>n</mi><mi>k</mi></msub><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n_{k}=|A|=n</annotation></semantics></math> maneiras de fazer isso.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Portanto, encontramos</p>
+<div id="E7" class="ltx_equation ltx_eqn_div">
+<span><math id="E7.m1" class="ltx_Math" alttext="|S_{n,k}(A)|=n_{1}\cdot n_{2}\cdot\dots\cdot n_{k}=\underbrace{n\cdot n\cdot%
+\dots\cdot n}_{k\text{ vezes}}=n^{k}\,." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>S</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><msub><mi>n</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>n</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>n</mi><mi>k</mi></msub></mrow><mo>=</mo><munder><munder accentunder="true"><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>n</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>n</mi></mrow><mo>⏟</mo></munder><mrow><mi>k</mi><mo>⁢</mo><mtext> vezes</mtext></mrow></munder><mo>=</mo><msup><mi>n</mi><mi>k</mi></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">|S_{n,k}(A)|=n_{1}\cdot n_{2}\cdot\dots\cdot n_{k}=\underbrace{n\cdot n\cdot%
+\dots\cdot n}_{k\text{ vezes}}=n^{k}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.7)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="SS1.p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">Para completar o Exemplo <a href="#E1" title="Exemplo 2.1. ‣ 2.1 Fundamentos da Combinatória ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a>, também precisamos calcular a cardinalidade do conjunto de todas as datas de aniversário possíveis em que pelo menos duas são iguais. É mais fácil e equivalente (por quê?) calcular a cardinalidade do conjunto em que nenhum dois aniversários são iguais. Como não pode haver repetições, isso é um exemplo de uma "ordenação de comprimento <math id="SS1.p7.m1" class="ltx_Math" alttext="30" display="inline"><semantics><mn>30</mn><annotation encoding="application/x-tex">30</annotation></semantics></math> de elementos de <math id="SS1.p7.m2" class="ltx_Math" alttext="\{1,\dots,365\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>,365</mn></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,\dots,365\}</annotation></semantics></math>". Mais genericamente, definimos ordenações de comprimento <math id="SS1.p7.m3" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> da seguinte forma:</p>
+</div>
+<div id="E8" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 2.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E8.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E8.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um conjunto finito de cardinalidade <math id="E8.p1.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math> e seja <math id="E8.p1.m3" class="ltx_Math" alttext="k\in\mathbb{N}" display="inline"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">k\in\mathbb{N}</annotation></semantics></math> tal que <math id="E8.p1.m4" class="ltx_Math" alttext="k\leqslant n" display="inline"><semantics><mrow><mi>k</mi><mo>⩽</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">k\leqslant n</annotation></semantics></math>. Uma <em class="ltx_emph ltx_font_italic">ordenação de comprimento <math id="E8.p1.m5" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> de elementos de <math id="E8.p1.m6" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math></em> é uma sequência de comprimento <math id="E8.p1.m7" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> de elementos de <math id="E8.p1.m8" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> sem repetições. Denotamos o conjunto de ordenações de comprimento <math id="E8.p1.m9" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> de elementos de <math id="E8.p1.m10" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> por <math id="E8.p1.m11" class="ltx_Math" alttext="O_{n,k}(A)" display="inline"><semantics><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">O_{n,k}(A)</annotation></semantics></math>. Assim, temos</p>
+<div id="E9" class="ltx_equation ltx_eqn_div">
+<span><math id="E9.m1" class="ltx_Math" alttext="O_{n,k}(A)=\{(a_{1},\dots,a_{k}):\,a_{i}\in A\,\forall i=1,\dots,k,\quad a_{i}%
+\neq a_{j}\,\,\forall i\neq j\}\,." display="block"><semantics><mrow><mrow><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>k</mi></msub><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.448em">:</mo><mrow><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>∈</mo><mrow><mi>A</mi><mo lspace="0.337em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>i</mi></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mi mathvariant="normal">…</mi><mo>,</mo><mi>k</mi><mo rspace="1.167em">,</mo><msub><mi>a</mi><mi>i</mi></msub></mrow><mo>≠</mo><mrow><msub><mi>a</mi><mi>j</mi></msub><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>i</mi></mrow></mrow><mo>≠</mo><mi>j</mi></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">O_{n,k}(A)=\{(a_{1},\dots,a_{k}):\,a_{i}\in A\,\forall i=1,\dots,k,\quad a_{i}%
+\neq a_{j}\,\,\forall i\neq j\}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.9)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="SS1.p8" class="ltx_para">
+<span class="ltx_ERROR undefined">{proposi\cc\~ao}</span>
+<p class="ltx_p">Seja <math id="SS1.p8.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um conjunto finito de cardinalidades <math id="SS1.p8.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math> e <math id="SS1.p8.m3" class="ltx_Math" alttext="k\leqslant n" display="inline"><semantics><mrow><mi>k</mi><mo>⩽</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">k\leqslant n</annotation></semantics></math>. Então</p>
+<div id="E10" class="ltx_equation ltx_eqn_div">
+<span><math id="E10.m1" class="ltx_Math" alttext="|O_{n,k}(A)|=n(n-1)\dots(n-k+1)\,." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">|O_{n,k}(A)|=n(n-1)\dots(n-k+1)\,.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.10)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p9" class="ltx_para">
+<p class="ltx_p">Determinamos um elemento de <math id="SS1.p9.m1" class="ltx_Math" alttext="O_{n,k}(A)" display="inline"><semantics><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">O_{n,k}(A)</annotation></semantics></math> pelas seguintes etapas:</p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p">Escolhemos <math id="I3.i1.p1.m1" class="ltx_Math" alttext="a_{1}" display="inline"><semantics><msub><mi>a</mi><mn>1</mn></msub><annotation encoding="application/x-tex">a_{1}</annotation></semantics></math>. Existem <math id="I3.i1.p1.m2" class="ltx_Math" alttext="n_{1}=|A|=n" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n_{1}=|A|=n</annotation></semantics></math> opções para isso.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p">Escolhemos <math id="I3.i2.p1.m1" class="ltx_Math" alttext="a_{2}" display="inline"><semantics><msub><mi>a</mi><mn>2</mn></msub><annotation encoding="application/x-tex">a_{2}</annotation></semantics></math> tal que <math id="I3.i2.p1.m2" class="ltx_Math" alttext="a_{2}\neq a_{1}" display="inline"><semantics><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>≠</mo><msub><mi>a</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">a_{2}\neq a_{1}</annotation></semantics></math>. Existem <math id="I3.i2.p1.m3" class="ltx_Math" alttext="n_{2}=n-1" display="inline"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">n_{2}=n-1</annotation></semantics></math> opções para isso.</p>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I3.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Escolhemos <math id="I3.i3.p1.m1" class="ltx_Math" alttext="a_{3}" display="inline"><semantics><msub><mi>a</mi><mn>3</mn></msub><annotation encoding="application/x-tex">a_{3}</annotation></semantics></math> tal que <math id="I3.i3.p1.m2" class="ltx_Math" alttext="a_{3}\neq a_{2}" display="inline"><semantics><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>≠</mo><msub><mi>a</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">a_{3}\neq a_{2}</annotation></semantics></math> e <math id="I3.i3.p1.m3" class="ltx_Math" alttext="a_{3}\neq a_{1}" display="inline"><semantics><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>≠</mo><msub><mi>a</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">a_{3}\neq a_{1}</annotation></semantics></math>. Existem <math id="I3.i3.p1.m4" class="ltx_Math" alttext="n_{3}=n-2" display="inline"><semantics><mrow><msub><mi>n</mi><mn>3</mn></msub><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">n_{3}=n-2</annotation></semantics></math> opções para isso.</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\vdots" display="block"><semantics><mi mathvariant="normal">⋮</mi><annotation encoding="application/x-tex">\vdots</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I3.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><math id="I3.ix1.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.</span><div id="I3.ix1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Escolhemos <math id="I3.ix1.p1.m1" class="ltx_Math" alttext="a_{k}" display="inline"><semantics><msub><mi>a</mi><mi>k</mi></msub><annotation encoding="application/x-tex">a_{k}</annotation></semantics></math> tal que <math id="I3.ix1.p1.m2" class="ltx_Math" alttext="a_{k}\neq a_{i}" display="inline"><semantics><mrow><msub><mi>a</mi><mi>k</mi></msub><mo>≠</mo><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_{k}\neq a_{i}</annotation></semantics></math> <math id="I3.ix1.p1.m3" class="ltx_Math" alttext="\forall\,i=1,2,\dots,k-1" display="inline"><semantics><mrow><mrow><mo rspace="0.337em">∀</mo><mi>i</mi></mrow><mo>=</mo><mrow><mn>1,2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">\forall\,i=1,2,\dots,k-1</annotation></semantics></math>. Existem <math id="I3.ix1.p1.m4" class="ltx_Math" alttext="n_{k}=n-(k-1)" display="inline"><semantics><mrow><msub><mi>n</mi><mi>k</mi></msub><mo>=</mo><mrow><mi>n</mi><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">n_{k}=n-(k-1)</annotation></semantics></math> opções para isso.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Pelo princípio fundamental da contagem</p>
+<div id="E11" class="ltx_equation ltx_eqn_div">
+<span><math id="E11.m1" class="ltx_Math" alttext="|O_{n,k}(A)|=n_{1}n_{2}\dots n_{k}=n(n-1)\dots(n-k+1)\,." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>n</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>n</mi><mi>k</mi></msub></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">|O_{n,k}(A)|=n_{1}n_{2}\dots n_{k}=n(n-1)\dots(n-k+1)\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.11)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="E12" class="ltx_theorem ltx_theorem_exemplo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 2.12</span></span><span class="ltx_text ltx_font_italic"> </span>(continuação)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E12.p1" class="ltx_para">
+<p class="ltx_p">Agora podemos responder à questão do Exemplo <a href="#E1" title="Exemplo 2.1. ‣ 2.1 Fundamentos da Combinatória ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a>. Primeiro, calculamos a probabilidade de que duas pessoas não façam aniversário no mesmo dia, correspondendo ao evento B. Conforme discutido acima, B é uma ordenação de comprimento 30 (<math id="E12.p1.m1" class="ltx_Math" alttext="k=30" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">k=30</annotation></semantics></math> de um conjunto de cardinalidade 365 (<math id="E12.p1.m2" class="ltx_Math" alttext="n=365" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>365</mn></mrow><annotation encoding="application/x-tex">n=365</annotation></semantics></math>) , então</p>
+<div id="E13" class="ltx_equation ltx_eqn_div">
+<span><math id="E13.m1" class="ltx_Math" alttext="\mathbb{P}(B)=\frac{|B|}{|\Omega|}=\frac{365\times\cdots\times(365-30+1)}{365^%
+{30}}\approx 0,29" display="block"><semantics><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>365</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>365</mn><mo>−</mo><mn>30</mn></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><msup><mn>365</mn><mn>30</mn></msup></mfrac><mo>≈</mo><mn>0,29</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(B)=\frac{|B|}{|\Omega|}=\frac{365\times\cdots\times(365-30+1)}{365^%
+{30}}\approx 0,29</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.13)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">O evento de pelo menos duas pessoas fazerem aniversário no mesmo dia é o complemento do evento B, então a probabilidade de pelo menos duas entre 30 pessoas fazerem aniversário no mesmo dia será próxima de 71%.</p>
+</div>
+</div>
+<div id="Thmremarksx1" class="ltx_theorem ltx_theorem_remarks">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observações</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarksx1.p1" class="ltx_para">
+<p class="ltx_p">Lemos <math id="Thmremarksx1.p1.m1" class="ltx_Math" alttext="n!" display="inline"><semantics><mrow><mi>n</mi><mo>!</mo></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math> como <math id="Thmremarksx1.p1.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> fatorial. A seguinte espera:</p>
+<ul id="I4" class="ltx_itemize">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i1.p1.m1" class="ltx_Math" alttext="n!" display="inline"><semantics><mrow><mi>n</mi><mo>!</mo></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math> é o produto dos primeiros <math id="I4.i1.p1.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> números naturais e por suposição <math id="I4.i1.p1.m3" class="ltx_Math" alttext="0!=1" display="inline"><semantics><mrow><mrow><mn>0</mn><mo>!</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0!=1</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i2.p1.m1" class="ltx_Math" alttext="n!" display="inline"><semantics><mrow><mi>n</mi><mo>!</mo></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math> é o número de maneiras pelas quais podemos ordenar os elementos de um conjunto de cardinalidade <math id="I4.i2.p1.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> ou equivalentemente o número de maneiras de colocar os elementos de um conjunto de cardinalidade <math id="I4.i2.p1.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> em uma linha.</p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I4.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I4.i3.p1.m1" class="ltx_Math" alttext="n(n-1)\dots(n-k+1)" display="inline"><semantics><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">n(n-1)\dots(n-k+1)</annotation></semantics></math> = <math id="I4.i3.p1.m2" class="ltx_Math" alttext="\frac{n!}{(n-k)!}" display="inline"><semantics><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac><annotation encoding="application/x-tex">\frac{n!}{(n-k)!}</annotation></semantics></math> é o número de maneiras de colocar <math id="I4.i3.p1.m3" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> elementos de um conjunto de cardinalidade <math id="I4.i3.p1.m4" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> consecutivos.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="E14" class="ltx_theorem ltx_theorem_exemplo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 2.14</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E14.p1" class="ltx_para">
+<p class="ltx_p">Agora consideramos uma questão ligeiramente diferente daquela do Exemplo <a href="#E1" title="Exemplo 2.1. ‣ 2.1 Fundamentos da Combinatória ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a>: qual é a probabilidade de <em class="ltx_emph ltx_font_italic">exatamente</em> duas pessoas na sala fazerem aniversário no mesmo dia? Para construir tal exemplo, precisaríamos</p>
+<ul id="I5" class="ltx_itemize">
+<li id="I5.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I5.ix1.p1" class="ltx_para">​<p class="ltx_p">Escolha as duas pessoas que fazem aniversário no mesmo dia.</p>
+</div>
+</li>
+<li id="I5.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I5.ix2.p1" class="ltx_para">​<p class="ltx_p">Escolha um dia para o aniversário deles.</p>
+</div>
+</li>
+<li id="I5.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I5.ix3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Escolha um dia para o aniversário de todos os outros, para que nenhum outro aniversário seja igual.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">De quantas maneiras podemos escolher duas pessoas que fazem aniversário no mesmo dia? Precisamos escolher dois números de <math id="E14.p1.m1" class="ltx_Math" alttext="C=\{1,\dots,30\}" display="inline"><semantics><mrow><mi>C</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>,30</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">C=\{1,\dots,30\}</annotation></semantics></math> – esta será uma sequência de comprimento 2 sem repetição, mas o que é diferente do que tínhamos antes é que a ordem não não importa. Quer seja <math id="E14.p1.m2" class="ltx_Math" alttext="(1,2)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>1,2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,2)</annotation></semantics></math> ou <math id="E14.p1.m3" class="ltx_Math" alttext="(2,1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>2,1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(2,1)</annotation></semantics></math>, ainda é o mesmo par de pessoas com a mesma data de aniversário! Para corrigir isso, precisamos dividir por todas as maneiras possíveis pelas quais podemos ordenar os dois elementos - cada forma será uma sequência de comprimento 2 sem repetição, mas agora estamos escolhendo a partir de um conjunto de apenas dois pontos, então o conjunto de todas as possibilidades é <math id="E14.p1.m4" class="ltx_Math" alttext="O_{2,2}" display="inline"><semantics><msub><mi>O</mi><mn>2,2</mn></msub><annotation encoding="application/x-tex">O_{2,2}</annotation></semantics></math>. Isto dá</p>
+<div id="E15" class="ltx_equation ltx_eqn_div">
+<span><math id="E15.m1" class="ltx_Math" alttext="\frac{|O_{30,2}|}{|O_{2,2}|}=\frac{30\times 29}{2!}=\frac{30!}{28!2!}." display="block"><semantics><mrow><mrow><mfrac><mrow><mo stretchy="false">|</mo><msub><mi>O</mi><mn>30,2</mn></msub><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><msub><mi>O</mi><mn>2,2</mn></msub><mo stretchy="false">|</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>30</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>29</mn></mrow><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>30</mn><mo>!</mo></mrow><mrow><mrow><mn>28</mn><mo>!</mo></mrow><mo>⁢</mo><mrow><mn>2</mn><mo>!</mo></mrow></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{|O_{30,2}|}{|O_{2,2}|}=\frac{30\times 29}{2!}=\frac{30!}{28!2!}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.15)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Denotamos isso por <math id="E14.p1.m5" class="ltx_Math" alttext="\binom{30}{2}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>30</mn><mn>2</mn></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">\binom{30}{2}</annotation></semantics></math>. Agora, voltando à nossa questão: calculámos o número de maneiras pelas quais podemos escolher as duas pessoas com o mesmo aniversário. Existem 365 maneiras de escolher o aniversário. Para as 28 pessoas restantes, haverá <math id="E14.p1.m6" class="ltx_Math" alttext="364\times\cdots\times(365-28)" display="inline"><semantics><mrow><mn>364</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mn>365</mn><mo>−</mo><mn>28</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">364\times\cdots\times(365-28)</annotation></semantics></math> maneiras de escolher seus aniversários, já que todos precisam ser diferentes. Portanto, o número total de maneiras de selecionar um resultado no evento “exatamente duas pessoas fazem aniversário no mesmo dia” é</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\frac{30!}{28!2!}365\times 364\times\cdots\times(365-28)." display="block"><semantics><mrow><mrow><mrow><mfrac><mrow><mn>30</mn><mo>!</mo></mrow><mrow><mrow><mn>28</mn><mo>!</mo></mrow><mo>⁢</mo><mrow><mn>2</mn><mo>!</mo></mrow></mrow></mfrac><mo>⁢</mo><mn>365</mn></mrow><mo lspace="0.222em" rspace="0.222em">×</mo><mn>364</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mn>365</mn><mo>−</mo><mn>28</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{30!}{28!2!}365\times 364\times\cdots\times(365-28).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Finalmente, para calcular a probabilidade de exatamente duas pessoas fazerem aniversário no mesmo dia, precisamos dividir pela cardinalidade de todas as combinações de aniversários possíveis dada por <math id="E14.p1.m7" class="ltx_Math" alttext="365^{30}" display="inline"><semantics><msup><mn>365</mn><mn>30</mn></msup><annotation encoding="application/x-tex">365^{30}</annotation></semantics></math>, o que dá aproximadamente 0,38 ou 38%.</p>
+</div>
+</div>
+<div id="SS1.p10" class="ltx_para ltx_noindent">
+<p class="ltx_p">Escolher duas pessoas de um conjunto de 30 é um exemplo de combinação de <math id="SS1.p10.m1" class="ltx_Math" alttext="2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math> elementos de <math id="SS1.p10.m2" class="ltx_Math" alttext="\{1,\dots,30\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>,30</mn></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,\dots,30\}</annotation></semantics></math>. De forma mais geral, podemos perguntar o número de combinações de <math id="SS1.p10.m3" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> elementos de um conjunto finito <math id="SS1.p10.m4" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p11" class="ltx_para ltx_noindent">
+<span class="ltx_ERROR undefined">{defini\cc\~ao}</span>
+<p class="ltx_p">Seja <math id="SS1.p11.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um conjunto finito de cardinalidade <math id="SS1.p11.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math>. Uma <em class="ltx_emph ltx_font_italic">combinação de <math id="SS1.p11.m3" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> elementos de <math id="SS1.p11.m4" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math></em> é um subconjunto de <math id="SS1.p11.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> com <math id="SS1.p11.m6" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> elementos. Denotamos por <math id="SS1.p11.m7" class="ltx_Math" alttext="C_{n,k}(A)" display="inline"><semantics><mrow><msub><mi>C</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">C_{n,k}(A)</annotation></semantics></math> o conjunto de combinações de <math id="SS1.p11.m8" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> elementos de <math id="SS1.p11.m9" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p12" class="ltx_para ltx_noindent">
+<p class="ltx_p">xxx
+xxx
+xxx
+xxx
+xxx
+xxx
+xxx
+xxx
+xxx</p>
+</div>
+<div id="E16" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 2.16</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E16.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E16.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um conjunto finito de cardinalidade <math id="E16.p1.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math> e <math id="E16.p1.m3" class="ltx_Math" alttext="k\leqslant n" display="inline"><semantics><mrow><mi>k</mi><mo>⩽</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">k\leqslant n</annotation></semantics></math>. Então</span></p>
+<div id="E17" class="ltx_equation ltx_eqn_div">
+<span><math id="E17.m1" class="ltx_Math" alttext="|C_{n,k}(A)|=\binom{n}{k}=\frac{n!}{k!(n-k)!}\,." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>C</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><mi>k</mi><mo>!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mrow><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">|C_{n,k}(A)|=\binom{n}{k}=\frac{n!}{k!(n-k)!}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.17)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p13" class="ltx_para">
+<p class="ltx_p">Observe que uma ordenação de comprimento <math id="SS1.p13.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> dos elementos de <math id="SS1.p13.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> pode ser obtida <em class="ltx_emph ltx_font_italic">unicamente</em> pelos seguintes passos:</p>
+<ol id="I6" class="ltx_enumerate">
+<li id="I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I6.i1.p1" class="ltx_para">​<p class="ltx_p">Escolher uma combinação de <math id="I6.i1.p1.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> elementos de <math id="I6.i1.p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>. Existem <math id="I6.i1.p1.m3" class="ltx_Math" alttext="n_{1}=|C_{n,k}(A)|" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><msub><mi>C</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">n_{1}=|C_{n,k}(A)|</annotation></semantics></math> escolhas para isso.</p>
+</div>
+</li>
+<li id="I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I6.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Escolher uma permutação desses elementos. Pelo Corolário <a href="#E21" title="Corolário 2.21. ‣ 2.1 Fundamentos da Combinatória ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.21</span></a>, existem <math id="I6.i2.p1.m1" class="ltx_Math" alttext="n_{2}=k!" display="inline"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>k</mi><mo>!</mo></mrow></mrow><annotation encoding="application/x-tex">n_{2}=k!</annotation></semantics></math> escolhas para isso.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Pelo princípio fundamental da contagem,</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E18.m1" class="ltx_Math" alttext="\displaystyle|O_{n,k}(A)|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">\displaystyle|O_{n,k}(A)|</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E18.m2" class="ltx_Math" alttext="\displaystyle=|C_{n,k}(A)|\cdot k!." display="inline"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>C</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mi>k</mi><mo>!</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle=|C_{n,k}(A)|\cdot k!.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.18)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">A equação acima pode ser resolvida para o único termo desconhecido, resultando em</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx5" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E19.m1" class="ltx_Math" alttext="\displaystyle|C_{n,k}(A)|=\frac{|O_{n,k}(A)|}{k!}=\frac{n!}{(n-k)!k!}=\binom{n%
+}{k}\,." display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>C</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mo stretchy="false">|</mo><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo>⁢</mo><mrow><mi>k</mi><mo>!</mo></mrow></mrow></mfrac></mstyle><mo>=</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac></mstyle><mo>)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle|C_{n,k}(A)|=\frac{|O_{n,k}(A)|}{k!}=\frac{n!}{(n-k)!k!}=\binom{n%
+}{k}\,.</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.19)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Isso conclui a prova.
+∎</p>
+</div>
+</div>
+<div id="SS1.p14" class="ltx_para ltx_noindent">
+<p class="ltx_p">O número de ordenações de comprimento <math id="SS1.p14.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> quando a cardinalidade do conjunto também é <math id="SS1.p14.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> é um caso especial importante das ordenações:</p>
+</div>
+<div id="E20" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 2.20</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E20.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E20.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um conjunto finito de cardinalidade <math id="E20.p1.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math>.
+Uma ordenação de comprimento <math id="E20.p1.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> dos elementos de <math id="E20.p1.m4" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> é chamada de <em class="ltx_emph ltx_font_italic">permutação</em> de <math id="E20.p1.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="E21" class="ltx_theorem ltx_theorem_corollary">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Corolário 2.21</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E21.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E21.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um conjunto finito de cardinalidade <math id="E21.p1.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math>. Então o número de permutações dos elementos de <math id="E21.p1.m3" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> é <math id="E21.p1.m4" class="ltx_Math" alttext="n(n-1)(n-2)\dots 1=n!" display="inline"><semantics><mrow><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>1</mn></mrow><mo>=</mo><mrow><mi>n</mi><mo>!</mo></mrow></mrow><annotation encoding="application/x-tex">n(n-1)(n-2)\dots 1=n!</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p15" class="ltx_para">
+<p class="ltx_p">É suficiente tomar <math id="SS1.p15.m1" class="ltx_Math" alttext="k=n" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">k=n</annotation></semantics></math> na Proposição <a href="#SS1" title="2.1 Fundamentos da Combinatória ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a>.
+∎</p>
+</div>
+</div>
+<div id="Thmexercise1" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.1</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexercise1.p1" class="ltx_para">
+<p class="ltx_p">Um dado justo é lançado 8 vezes. Quantos resultados diferentes podemos obter que contenham o resultado 2 exatamente três vezes e o resultado 3 exatamente cinco vezes?</p>
+</div>
+</div>
+<div id="Thmsolutionx1" class="ltx_theorem ltx_theorem_solution">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Solução</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmsolutionx1.p1" class="ltx_para">
+<p class="ltx_p">Cada resultado possível é completamente determinado especificando quais lançamentos resultam em um 2 - o restante será 3. Por exemplo, o resultado <math id="Thmsolutionx1.p1.m1" class="ltx_Math" alttext="(2,3,2,2,3,3,3,3)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>2,3,2,2,3,3,3,3</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(2,3,2,2,3,3,3,3)</annotation></semantics></math> é determinado pelo subconjunto <math id="Thmsolutionx1.p1.m2" class="ltx_Math" alttext="\{1,3,4\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1,3,4</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,3,4\}</annotation></semantics></math> do conjunto <math id="Thmsolutionx1.p1.m3" class="ltx_Math" alttext="\{1,2,3,4,5,6,7,8\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1,2,3,4,5,6,7,8</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,2,3,4,5,6,7,8\}</annotation></semantics></math>, em que o primeiro corresponde às posições do 2 e o segundo é a numeração de todos os lançamentos. Portanto, para calcular o número de resultados possíveis, é suficiente calcular o número de subconjuntos de tamanho 3 de um conjunto com cardinalidade 8. Isso é exatamente <math id="Thmsolutionx1.p1.m4" class="ltx_Math" alttext="C_{8,3}" display="inline"><semantics><msub><mi>C</mi><mn>8,3</mn></msub><annotation encoding="application/x-tex">C_{8,3}</annotation></semantics></math>, que é igual a 56.
+∎</p>
+</div>
+</div>
+<div id="E22" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 2.22</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E22.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Vamos levar o exercício <a href="#Thmexercise1" title="Exercício 2.1. ‣ 2.1 Fundamentos da Combinatória ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1</span></a> um pouco mais adiante: como calcularíamos o número de resultados de 8 lançamentos de um dado que contenham exatamente três 2, três 4 e dois 5? Como antes, um resultado será completamente determinado especificando as posições de dois dos três possíveis resultados, por exemplo, 2 e 4. Por exemplo, o resultado <math id="E22.p1.m1" class="ltx_Math" alttext="(2,4,5,2,2,5,4,4)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>2,4,5,2,2,5,4,4</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(2,4,5,2,2,5,4,4)</annotation></semantics></math> corresponde aos conjuntos <math id="E22.p1.m2" class="ltx_Math" alttext="A_{2}=\{1,4,5\}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,4,5</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A_{2}=\{1,4,5\}</annotation></semantics></math> e <math id="E22.p1.m3" class="ltx_Math" alttext="A_{4}=\{2,7,8\}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>4</mn></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>2,7,8</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A_{4}=\{2,7,8\}</annotation></semantics></math>, onde <math id="E22.p1.m4" class="ltx_Math" alttext="A_{2}" display="inline"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding="application/x-tex">A_{2}</annotation></semantics></math> é o conjunto de posições do resultado 2 e da mesma forma para <math id="E22.p1.m5" class="ltx_Math" alttext="A_{4}" display="inline"><semantics><msub><mi>A</mi><mn>4</mn></msub><annotation encoding="application/x-tex">A_{4}</annotation></semantics></math>. Segue-se que <math id="E22.p1.m6" class="ltx_Math" alttext="A_{5}=\{3,6\}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>5</mn></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>3,6</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A_{5}=\{3,6\}</annotation></semantics></math>, pois essas são as únicas duas posições restantes.</p>
+</div>
+<div id="E22.p2" class="ltx_para">
+<p class="ltx_p">Portanto, para responder à pergunta, precisamos contar quantas maneiras podemos escolher um subconjunto de <math id="E22.p2.m1" class="ltx_Math" alttext="\{1,2,3,4,5,6,7,8\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>1,2,3,4,5,6,7,8</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1,2,3,4,5,6,7,8\}</annotation></semantics></math> de tamanho 3 e, em seguida, outro subconjunto de tamanho 3 dos 5 elementos restantes. Temos <math id="E22.p2.m2" class="ltx_Math" alttext="\binom{8}{3}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>8</mn><mn>3</mn></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">\binom{8}{3}</annotation></semantics></math> escolhas para o primeiro conjunto e <math id="E22.p2.m3" class="ltx_Math" alttext="\binom{5}{3}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>5</mn><mn>3</mn></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">\binom{5}{3}</annotation></semantics></math> escolhas para o segundo. Aplicando o princípio fundamental da contagem, obtemos</p>
+<div id="E23" class="ltx_equation ltx_eqn_div">
+<span><math id="E23.m1" class="ltx_Math" alttext="\binom{8}{3}\binom{5}{3}=\frac{8!}{5!3!}\frac{5!}{3!2!}=\frac{8!}{3!3!2!}." display="block"><semantics><mrow><mrow><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>8</mn><mn>3</mn></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>5</mn><mn>3</mn></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mn>8</mn><mo>!</mo></mrow><mrow><mrow><mn>5</mn><mo>!</mo></mrow><mo>⁢</mo><mrow><mn>3</mn><mo>!</mo></mrow></mrow></mfrac><mo>⁢</mo><mfrac><mrow><mn>5</mn><mo>!</mo></mrow><mrow><mrow><mn>3</mn><mo>!</mo></mrow><mo>⁢</mo><mrow><mn>2</mn><mo>!</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mfrac><mrow><mn>8</mn><mo>!</mo></mrow><mrow><mrow><mn>3</mn><mo>!</mo></mrow><mo>⁢</mo><mrow><mn>3</mn><mo>!</mo></mrow><mo>⁢</mo><mrow><mn>2</mn><mo>!</mo></mrow></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\binom{8}{3}\binom{5}{3}=\frac{8!}{5!3!}\frac{5!}{3!2!}=\frac{8!}{3!3!2!}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.23)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="SS1.p16" class="ltx_para ltx_noindent">
+<p class="ltx_p">O exemplo acima ilustra a contagem das maneiras de dividir um conjunto em um número fixo de subconjuntos. Para definir isso formalmente, primeiro precisamos definir uma partição:</p>
+</div>
+<div id="E24" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 2.24</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E24.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="E24.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um conjunto de cardinalidade <math id="E24.p1.m2" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math> e <math id="E24.p1.m3" class="ltx_Math" alttext="r\in\mathbb{N}" display="inline"><semantics><mrow><mi>r</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">r\in\mathbb{N}</annotation></semantics></math> tal que <math id="E24.p1.m4" class="ltx_Math" alttext="r\leqslant n" display="inline"><semantics><mrow><mi>r</mi><mo>⩽</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">r\leqslant n</annotation></semantics></math>. Uma <em class="ltx_emph ltx_font_italic">partição de <math id="E24.p1.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> em <math id="E24.p1.m6" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> subconjuntos</em> é uma família <math id="E24.p1.m7" class="ltx_Math" alttext="\{A_{1},\dots,A_{r}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>r</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{A_{1},\dots,A_{r}\}</annotation></semantics></math> de subconjuntos de <math id="E24.p1.m8" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> tal que</p>
+<ol id="I7" class="ltx_enumerate">
+<li id="I7.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I7.i1.p1" class="ltx_para">​<p class="ltx_p">Cada subconjunto na família é não vazio: <math id="I7.i1.p1.m1" class="ltx_Math" alttext="A_{i}\neq\emptyset" display="inline"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>≠</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{i}\neq\emptyset</annotation></semantics></math> <math id="I7.i1.p1.m2" class="ltx_Math" alttext="\forall\,i=1,2,\dots,r" display="inline"><semantics><mrow><mrow><mo rspace="0.337em">∀</mo><mi>i</mi></mrow><mo>=</mo><mrow><mn>1,2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>r</mi></mrow></mrow><annotation encoding="application/x-tex">\forall\,i=1,2,\dots,r</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I7.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I7.i2.p1" class="ltx_para">​<p class="ltx_p">Os subconjuntos na família são mutuamente disjuntos: <math id="I7.i2.p1.m1" class="ltx_Math" alttext="A_{i}\cap A_{j}=\emptyset" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>∩</mo><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{i}\cap A_{j}=\emptyset</annotation></semantics></math> <math id="I7.i2.p1.m2" class="ltx_Math" alttext="\forall\,i\neq j" display="inline"><semantics><mrow><mrow><mo rspace="0.337em">∀</mo><mi>i</mi></mrow><mo>≠</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">\forall\,i\neq j</annotation></semantics></math>, <math id="I7.i2.p1.m3" class="ltx_Math" alttext="i,j=1,2,\dots,r" display="inline"><semantics><mrow><mrow><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><mo>=</mo><mn>1,2</mn></mrow><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>,</mo><mi>r</mi></mrow></mrow><annotation encoding="application/x-tex">i,j=1,2,\dots,r</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I7.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I7.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">A união de todos os subconjuntos na família é igual a <math id="I7.i3.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>: <math id="I7.i3.p1.m2" class="ltx_Math" alttext="\bigcup_{i=1}^{r}A_{i}=A" display="inline"><semantics><mrow><mrow><msubsup><mo>⋃</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>r</mi></msubsup><msub><mi>A</mi><mi>i</mi></msub></mrow><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\bigcup_{i=1}^{r}A_{i}=A</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="E25" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposição 2.25</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="E25.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="E25.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um conjunto finito com <math id="E25.p1.m2" class="ltx_Math" alttext="|A|=n" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">|A|=n</annotation></semantics></math>. Seja <math id="E25.p1.m3" class="ltx_Math" alttext="r\in\mathbb{N}" display="inline"><semantics><mrow><mi>r</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">r\in\mathbb{N}</annotation></semantics></math>, <math id="E25.p1.m4" class="ltx_Math" alttext="r\leqslant n" display="inline"><semantics><mrow><mi>r</mi><mo>⩽</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">r\leqslant n</annotation></semantics></math>. Então, o número de partições de <math id="E25.p1.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> em <math id="E25.p1.m6" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> subconjuntos <math id="E25.p1.m7" class="ltx_Math" alttext="\{A_{1},\dots,A_{r}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>r</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{A_{1},\dots,A_{r}\}</annotation></semantics></math>, de forma que
+<math id="E25.p1.m8" class="ltx_Math" alttext="|A_{1}|=k_{1}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">|A_{1}|=k_{1}</annotation></semantics></math>, <math id="E25.p1.m9" class="ltx_Math" alttext="|A_{2}|=k_{2}\dots" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>⁢</mo><mi>…</mi></mrow></mrow><annotation encoding="application/x-tex">|A_{2}|=k_{2}\dots</annotation></semantics></math>, <math id="E25.p1.m10" class="ltx_Math" alttext="|A_{r}|=k_{r}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mi>r</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><msub><mi>k</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">|A_{r}|=k_{r}</annotation></semantics></math> (<math id="E25.p1.m11" class="ltx_Math" alttext="k_{1}+k_{2}+\dots+k_{r}=n" display="inline"><semantics><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>k</mi><mi>r</mi></msub></mrow><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">k_{1}+k_{2}+\dots+k_{r}=n</annotation></semantics></math>, <math id="E25.p1.m12" class="ltx_Math" alttext="1\leqslant k_{i}\leqslant n" display="inline"><semantics><mrow><mn>1</mn><mo>⩽</mo><msub><mi>k</mi><mi>i</mi></msub><mo>⩽</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">1\leqslant k_{i}\leqslant n</annotation></semantics></math>), é dado por</span></p>
+<div id="E26" class="ltx_equation ltx_eqn_div">
+<span><math id="E26.m1" class="ltx_Math" alttext="\frac{n!}{k_{1}!k_{2}!\dots k_{r}!}\,." display="block"><semantics><mrow><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mrow><msub><mi>k</mi><mi>r</mi></msub><mo>!</mo></mrow></mrow></mfrac><mo lspace="0.170em">.</mo></mrow><annotation encoding="application/x-tex">\frac{n!}{k_{1}!k_{2}!\dots k_{r}!}\,.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.26)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p17" class="ltx_para">
+<p class="ltx_p">Toda partição de <math id="SS1.p17.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> que satisfaça as suposições pode ser determinada de forma única pelos seguintes passos:</p>
+<ol id="I8" class="ltx_enumerate">
+<li id="I8.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I8.i1.p1" class="ltx_para">​<p class="ltx_p">Escolher <math id="I8.i1.p1.m1" class="ltx_Math" alttext="A_{1}\subseteq A" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>⊆</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A_{1}\subseteq A</annotation></semantics></math> de modo que <math id="I8.i1.p1.m2" class="ltx_Math" alttext="|A_{1}|=k_{1}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">|A_{1}|=k_{1}</annotation></semantics></math>. Existem <math id="I8.i1.p1.m3" class="ltx_Math" alttext="{n\choose k_{1}}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">{n\choose k_{1}}</annotation></semantics></math> opções para este passo.</p>
+</div>
+</li>
+<li id="I8.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I8.i2.p1" class="ltx_para">​<p class="ltx_p">Escolher <math id="I8.i2.p1.m1" class="ltx_Math" alttext="A_{2}\subseteq A" display="inline"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>⊆</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A_{2}\subseteq A</annotation></semantics></math> de modo que <math id="I8.i2.p1.m2" class="ltx_Math" alttext="|A_{2}|=k_{2}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">|A_{2}|=k_{2}</annotation></semantics></math> e <math id="I8.i2.p1.m3" class="ltx_Math" alttext="A_{1}\cap A_{2}=\emptyset" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{1}\cap A_{2}=\emptyset</annotation></semantics></math> (o que implica que <math id="I8.i2.p1.m4" class="ltx_Math" alttext="A_{2}\subseteq A\setminus A_{1}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>⊆</mo><mrow><mi>A</mi><mo>∖</mo><msub><mi>A</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">A_{2}\subseteq A\setminus A_{1}</annotation></semantics></math>). Existem
+<math id="I8.i2.p1.m5" class="ltx_Math" alttext="{n-k_{1}\choose k_{2}}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow><msub><mi>k</mi><mn>2</mn></msub></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">{n-k_{1}\choose k_{2}}</annotation></semantics></math> opções para este passo.</p>
+</div>
+</li>
+<li id="I8.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I8.i3.p1" class="ltx_para">​<p class="ltx_p">Escolher <math id="I8.i3.p1.m1" class="ltx_Math" alttext="A_{3}\subseteq A" display="inline"><semantics><mrow><msub><mi>A</mi><mn>3</mn></msub><mo>⊆</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A_{3}\subseteq A</annotation></semantics></math> de modo que <math id="I8.i3.p1.m2" class="ltx_Math" alttext="|A_{3}|=k_{3}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><msub><mi>k</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">|A_{3}|=k_{3}</annotation></semantics></math>, <math id="I8.i3.p1.m3" class="ltx_Math" alttext="A_{3}\cap A_{2}=\emptyset" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>3</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{3}\cap A_{2}=\emptyset</annotation></semantics></math> e <math id="I8.i3.p1.m4" class="ltx_Math" alttext="A_{3}\cap A_{1}=\emptyset" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>3</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>1</mn></msub></mrow><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{3}\cap A_{1}=\emptyset</annotation></semantics></math> (o que implica que <math id="I8.i3.p1.m5" class="ltx_Math" alttext="A_{3}\subseteq A\setminus(A_{1}\cup A_{2})" display="inline"><semantics><mrow><msub><mi>A</mi><mn>3</mn></msub><mo>⊆</mo><mrow><mi>A</mi><mo>∖</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">A_{3}\subseteq A\setminus(A_{1}\cup A_{2})</annotation></semantics></math>). Existem
+<math id="I8.i3.p1.m6" class="ltx_Math" alttext="{n-k_{1}-k_{2}\choose k_{3}}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub><mo>−</mo><msub><mi>k</mi><mn>2</mn></msub></mrow><msub><mi>k</mi><mn>3</mn></msub></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">{n-k_{1}-k_{2}\choose k_{3}}</annotation></semantics></math> opções para este passo.</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\vdots" display="block"><semantics><mi mathvariant="normal">⋮</mi><annotation encoding="application/x-tex">\vdots</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I8.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><math id="I8.ix1.m1" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>.</span><div id="I8.ix1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Finalmente, escolher o conjunto restante <math id="I8.ix1.p1.m1" class="ltx_Math" alttext="A_{r}\subseteq A" display="inline"><semantics><mrow><msub><mi>A</mi><mi>r</mi></msub><mo>⊆</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A_{r}\subseteq A</annotation></semantics></math> de modo que <math id="I8.ix1.p1.m2" class="ltx_Math" alttext="|A_{r}|=k_{r}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mi>r</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><msub><mi>k</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">|A_{r}|=k_{r}</annotation></semantics></math> e <math id="I8.ix1.p1.m3" class="ltx_Math" alttext="A_{i}\cap A_{j}=\emptyset" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>∩</mo><msub><mi>A</mi><mi>j</mi></msub></mrow><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{i}\cap A_{j}=\emptyset</annotation></semantics></math> para todos <math id="I8.ix1.p1.m4" class="ltx_Math" alttext="i=1,2,\dots,r-1" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1,2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>r</mi><mo>−</mo><mn>1</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">i=1,2,\dots,r-1</annotation></semantics></math> (notamos que <math id="I8.ix1.p1.m5" class="ltx_Math" alttext="A_{r}\subseteq A\setminus(A_{1}\cup\dots\cup A_{r})" display="inline"><semantics><mrow><msub><mi>A</mi><mi>r</mi></msub><mo>⊆</mo><mrow><mi>A</mi><mo>∖</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∪</mo><mi mathvariant="normal">⋯</mi><mo>∪</mo><msub><mi>A</mi><mi>r</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">A_{r}\subseteq A\setminus(A_{1}\cup\dots\cup A_{r})</annotation></semantics></math>). Existem
+<math id="I8.ix1.p1.m6" class="ltx_Math" alttext="{n-(k_{1}+k_{2}+\dots+k_{r-1})\choose k_{r}}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>r</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><msub><mi>k</mi><mi>r</mi></msub></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">{n-(k_{1}+k_{2}+\dots+k_{r-1})\choose k_{r}}</annotation></semantics></math> opções para este passo.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Assim, pelo princípio fundamental da contagem, o número de partições de <math id="SS1.p17.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> em <math id="SS1.p17.m3" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> subconjuntos <math id="SS1.p17.m4" class="ltx_Math" alttext="\{A_{1},A_{2},\dots,A_{r}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>r</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{A_{1},A_{2},\dots,A_{r}\}</annotation></semantics></math> de modo que <math id="SS1.p17.m5" class="ltx_Math" alttext="|A_{1}|=k_{1},\dots,|A_{r}|=k_{r}" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mi>r</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><msub><mi>k</mi><mi>r</mi></msub></mrow></mrow><annotation encoding="application/x-tex">|A_{1}|=k_{1},\dots,|A_{r}|=k_{r}</annotation></semantics></math> com <math id="SS1.p17.m6" class="ltx_Math" alttext="k_{1}+k_{2}+\dots+k_{r}=n" display="inline"><semantics><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>k</mi><mi>r</mi></msub></mrow><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">k_{1}+k_{2}+\dots+k_{r}=n</annotation></semantics></math> é</p>
+<div class="bml-overflow-wrapper">
+<table id="A2.EGx6" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E27"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E27.m1" class="ltx_Math" alttext="\displaystyle{n\choose k_{1}}{n-k_{1}\choose k_{2}}\dots n-(k_{1}+\dots+k_{r-1%
+})\choose k_{r}" display="inline"><semantics><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow><msub><mi>k</mi><mn>2</mn></msub></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>r</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><msub><mi>k</mi><mi>r</mi></msub></mfrac></mstyle><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle{n\choose k_{1}}{n-k_{1}\choose k_{2}}\dots n-(k_{1}+\dots+k_{r-1%
+})\choose k_{r}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.27)</span></td>
+</tr></tbody>
+<tbody id="E28"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E28.m1" class="ltx_Math" alttext="\displaystyle\hskip 73.97733pt=\frac{n!}{k_{1}!(n-k_{1})!}\frac{(n-k_{1})!}{k_%
+{2}!(n-k_{1}-k_{2})!}\dots\frac{(n-(k_{1}+\dots+k_{r-1}))!}{k_{r}!(n-(k_{1}+%
+\dots+k_{r}))!}" display="inline"><semantics><mrow><mi></mi><mo lspace="7.678em">=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mrow><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub><mo>−</mo><msub><mi>k</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>k</mi><mrow><mi>r</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mrow><mrow><msub><mi>k</mi><mi>r</mi></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>k</mi><mi>r</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mstyle></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\hskip 73.97733pt=\frac{n!}{k_{1}!(n-k_{1})!}\frac{(n-k_{1})!}{k_%
+{2}!(n-k_{1}-k_{2})!}\dots\frac{(n-(k_{1}+\dots+k_{r-1}))!}{k_{r}!(n-(k_{1}+%
+\dots+k_{r}))!}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.28)</span></td>
+</tr></tbody>
+<tbody id="E29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E29.m1" class="ltx_Math" alttext="\displaystyle\hskip 73.97733pt=\frac{n!}{k_{1}!k_{2}!\dots k_{r}!}\,," display="inline"><semantics><mrow><mrow><mi></mi><mo lspace="7.678em">=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mrow><msub><mi>k</mi><mi>r</mi></msub><mo>!</mo></mrow></mrow></mfrac></mstyle></mrow><mo lspace="0.170em">,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\hskip 73.97733pt=\frac{n!}{k_{1}!k_{2}!\dots k_{r}!}\,,</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2.29)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">onde a última igualdade ocorre pela simplificação das frações e observando que
+<math id="SS1.p17.m7" class="ltx_Math" alttext="(n-(k_{1}+\dots+k_{r}))!=(n-n)!=0!=1." display="inline"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>k</mi><mi>r</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo>=</mo><mrow><mn>0</mn><mo>!</mo></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">(n-(k_{1}+\dots+k_{r}))!=(n-n)!=0!=1.</annotation></semantics></math>
+∎</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.2</span> Amostragem</h2>
+
+<div id="SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Selecionar um subconjunto de um conjunto maior também é chamado de amostragem. A amostragem nos permite usar informações sobre um pequeno grupo para fazer inferências sobre as propriedades ou preferências de um grupo maior. É uma ferramenta fundamental em estatísticas. Quando a população é "homogênea"(cada pessoa no grupo provavelmente tem as mesmas propriedades ou preferências), qualquer amostra escolhida aleatoriamente (com probabilidade uniforme) será representativa do grupo - ainda precisamos usar ferramentas matemáticas avançadas para quantificar a incerteza em nossas inferências sobre uma população, dada o tamanho da amostra, mas esse é o assunto de um módulo diferente. O que gostaríamos de entender agora é como a estrutura de probabilidade nas amostras varia quando a população é mista. Para entender a pergunta, considere o seguinte.</p>
+</div>
+<div id="E30" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 2.30</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E30.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">O professor de ST120 quer saber até que ponto os alunos entenderam o conceito de espaço de probabilidade. Dado o tamanho da turma, não é possível perguntar a cada aluno individualmente. Em vez disso, eles desejam amostrar um pequeno grupo de alunos e perguntar a eles. Como eles devem escolher os alunos?</p>
+</div>
+<div id="E30.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Uma solução prática é conversar com alguns dos alunos na sala de aula. No entanto, existe um viés - os alunos que frequentam as aulas têm mais probabilidade de entender os conceitos! Portanto, o professor decide escolher aleatoriamente um número de números de identificação de alunos e enviá-los por e-mail, e vamos supor que todos os alunos respondam. Este seria um grupo representativo, se a turma fosse homogênea. No entanto, sabemos que a turma é composta por dois grupos de <math id="E30.p2.m1" class="ltx_Math" alttext="n_{1}" display="inline"><semantics><msub><mi>n</mi><mn>1</mn></msub><annotation encoding="application/x-tex">n_{1}</annotation></semantics></math> alunos de Matemática e <math id="E30.p2.m2" class="ltx_Math" alttext="n_{2}" display="inline"><semantics><msub><mi>n</mi><mn>2</mn></msub><annotation encoding="application/x-tex">n_{2}</annotation></semantics></math> alunos de Ciência da Computação. Para entender o viés, o professor precisa calcular a probabilidade de o grupo acabar com <math id="E30.p2.m3" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> alunos de Matemática e <math id="E30.p2.m4" class="ltx_Math" alttext="k_{2}" display="inline"><semantics><msub><mi>k</mi><mn>2</mn></msub><annotation encoding="application/x-tex">k_{2}</annotation></semantics></math> alunos de Ciência da Computação. Qual seria essa probabilidade?</p>
+</div>
+<div id="E30.p3" class="ltx_para">
+<p class="ltx_p">Existem <math id="E30.p3.m1" class="ltx_Math" alttext="\binom{n_{1}}{k_{1}}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><msub><mi>n</mi><mn>1</mn></msub><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">\binom{n_{1}}{k_{1}}</annotation></semantics></math> maneiras de escolher <math id="E30.p3.m2" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> alunos de Matemática e <math id="E30.p3.m3" class="ltx_Math" alttext="\binom{n_{2}}{k_{2}}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><msub><mi>n</mi><mn>2</mn></msub><msub><mi>k</mi><mn>2</mn></msub></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">\binom{n_{2}}{k_{2}}</annotation></semantics></math> de escolher <math id="E30.p3.m4" class="ltx_Math" alttext="k_{2}" display="inline"><semantics><msub><mi>k</mi><mn>2</mn></msub><annotation encoding="application/x-tex">k_{2}</annotation></semantics></math> alunos de Ciência da Computação. Portanto, a cardinalidade do conjunto de todos os grupos de <math id="E30.p3.m5" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> alunos de Matemática e <math id="E30.p3.m6" class="ltx_Math" alttext="k_{2}" display="inline"><semantics><msub><mi>k</mi><mn>2</mn></msub><annotation encoding="application/x-tex">k_{2}</annotation></semantics></math> alunos de Ciência da Computação será</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\binom{n_{1}}{k_{1}}\binom{n_{2}}{k_{2}}" display="block"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><msub><mi>n</mi><mn>1</mn></msub><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><msub><mi>n</mi><mn>2</mn></msub><msub><mi>k</mi><mn>2</mn></msub></mfrac><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\binom{n_{1}}{k_{1}}\binom{n_{2}}{k_{2}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">A cardinalidade do conjunto de todos os grupos de <math id="E30.p3.m7" class="ltx_Math" alttext="k_{1}+k_{2}" display="inline"><semantics><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">k_{1}+k_{2}</annotation></semantics></math> alunos será <math id="E30.p3.m8" class="ltx_Math" alttext="\binom{n_{1}+n_{2}}{k_{1}+k_{2}}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub></mrow></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">\binom{n_{1}+n_{2}}{k_{1}+k_{2}}</annotation></semantics></math>. Portanto, a probabilidade de escolher um grupo com <math id="E30.p3.m9" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> alunos de Matemática e <math id="E30.p3.m10" class="ltx_Math" alttext="k_{2}" display="inline"><semantics><msub><mi>k</mi><mn>2</mn></msub><annotation encoding="application/x-tex">k_{2}</annotation></semantics></math> alunos de Ciência da Computação é</p>
+<div id="E31" class="ltx_equation ltx_eqn_div">
+<span><math id="E31.m1" class="ltx_Math" alttext="\frac{\binom{n_{1}}{k_{1}}\binom{n_{2}}{k_{2}}}{\binom{n_{1}+n_{2}}{k_{1}+k_{2%
+}}}." display="block"><semantics><mrow><mfrac><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><msub><mi>n</mi><mn>1</mn></msub><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><msub><mi>n</mi><mn>2</mn></msub><msub><mi>k</mi><mn>2</mn></msub></mfrac><mo>)</mo></mrow></mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub></mrow></mfrac><mo>)</mo></mrow></mfrac><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{\binom{n_{1}}{k_{1}}\binom{n_{2}}{k_{2}}}{\binom{n_{1}+n_{2}}{k_{1}+k_{2%
+}}}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.31)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">O próximo passo seria usar essa probabilidade para remover o viés, mas eles precisarão consultar os professores de módulos de estatísticas mais avançados sobre como fazer isso!</p>
+</div>
+</div>
+<div id="SS2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">O exemplo acima é um caso de amostragem de uma população de tamanho <math id="SS2.p2.m1" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math>, que tem <math id="SS2.p2.m2" class="ltx_Math" alttext="n_{1}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n_{1}\in\mathbb{N}</annotation></semantics></math> (<math id="SS2.p2.m3" class="ltx_Math" alttext="n_{1}\leqslant n" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>⩽</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n_{1}\leqslant n</annotation></semantics></math>) indivíduos do tipo 1 e <math id="SS2.p2.m4" class="ltx_Math" alttext="n_{2}=n-n_{1}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>n</mi><mo>−</mo><msub><mi>n</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">n_{2}=n-n_{1}</annotation></semantics></math> indivíduos do tipo 2. Retiramos uma amostra de tamanho <math id="SS2.p2.m5" class="ltx_Math" alttext="k&lt;N" display="inline"><semantics><mrow><mi>k</mi><mo>&lt;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">k&lt;N</annotation></semantics></math> da população inteira ’aleatoriamente’ <span class="ltx_text ltx_font_italic">sem reposição</span> (ou seja, um indivíduo não pode ser escolhido duas vezes). Então, a probabilidade de a amostra conter <math id="SS2.p2.m6" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> indivíduos do tipo 1 e <math id="SS2.p2.m7" class="ltx_Math" alttext="k_{2}" display="inline"><semantics><msub><mi>k</mi><mn>2</mn></msub><annotation encoding="application/x-tex">k_{2}</annotation></semantics></math> indivíduos do tipo 2 é dada por</p>
+<div id="E32" class="ltx_equation ltx_eqn_div">
+<span><math id="E32.m1" class="ltx_Math" alttext="\frac{\binom{n_{1}}{k_{1}}\binom{n_{2}}{k_{2}}}{\binom{n}{k}}." display="block"><semantics><mrow><mfrac><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><msub><mi>n</mi><mn>1</mn></msub><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><msub><mi>n</mi><mn>2</mn></msub><msub><mi>k</mi><mn>2</mn></msub></mfrac><mo>)</mo></mrow></mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mfrac><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{\binom{n_{1}}{k_{1}}\binom{n_{2}}{k_{2}}}{\binom{n}{k}}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.32)</span>
+            
+            
+          
+</div>
+</div>
+<div id="Thmexercise2" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.2</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexercise2.p1" class="ltx_para">
+<p class="ltx_p">Construa o espaço de probabilidade uniforme correspondente à amostragem sem reposição de uma população com dois tipos de indivíduos e prove (<a href="#E32" title="In 2.2 Amostragem ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.32</span></a>).
+Em outras palavras, forneça o triplo <math id="Thmexercise2.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mathbb{P})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>ℙ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mathbb{P})</annotation></semantics></math> de acordo com a proposição <a href="S1.html#E6" title="In Proposição 1.4. ‣ 1.2 Espaço de Probabilidade Uniforme ‣ 1 Espaços de probabilidade uniforme ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a>, de modo que, todas as realizações <math id="Thmexercise2.p1.m2" class="ltx_Math" alttext="\omega\in\Omega" display="inline"><semantics><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\omega\in\Omega</annotation></semantics></math> tenham a mesma probabilidade. O evento de interesse <math id="Thmexercise2.p1.m3" class="ltx_Math" alttext="\omega" display="inline"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> é o conjunto de todas as combinações que contêm <math id="Thmexercise2.p1.m4" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> números de <math id="Thmexercise2.p1.m5" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> a <math id="Thmexercise2.p1.m6" class="ltx_Math" alttext="n_{1}" display="inline"><semantics><msub><mi>n</mi><mn>1</mn></msub><annotation encoding="application/x-tex">n_{1}</annotation></semantics></math> e <math id="Thmexercise2.p1.m7" class="ltx_Math" alttext="k_{2}=k-k_{1}" display="inline"><semantics><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>k</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">k_{2}=k-k_{1}</annotation></semantics></math> números de <math id="Thmexercise2.p1.m8" class="ltx_Math" alttext="n_{1}+1" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n_{1}+1</annotation></semantics></math> a <math id="Thmexercise2.p1.m9" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="E33" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exemplo 2.33</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="E33.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Agora considere o seguinte problema: um biólogo ambiental está estudando o peso de uma espécie específica de peixe. Para fazer isso, eles retiram uma amostra dessa população de peixes, pesam os peixes e depois os liberam de volta à natureza. Suponha que não há maneira de saber se um peixe já foi amostrado. Além disso, suponha que a população consiste apenas em dois tipos de peixes - machos e fêmeas - que têm pesos médios ligeiramente diferentes e isso precisa ser levado em consideração ao remover o viés.</p>
+</div>
+<div id="E33.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Se a população inteira de peixes for <math id="E33.p2.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, com <math id="E33.p2.m2" class="ltx_Math" alttext="n_{1}" display="inline"><semantics><msub><mi>n</mi><mn>1</mn></msub><annotation encoding="application/x-tex">n_{1}</annotation></semantics></math> machos e <math id="E33.p2.m3" class="ltx_Math" alttext="n_{2}=n-n_{1}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>n</mi><mo>−</mo><msub><mi>n</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">n_{2}=n-n_{1}</annotation></semantics></math> fêmeas e o tamanho da amostra for <math id="E33.p2.m4" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>, qual é a probabilidade de ter <math id="E33.p2.m5" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> machos e <math id="E33.p2.m6" class="ltx_Math" alttext="k_{2}" display="inline"><semantics><msub><mi>k</mi><mn>2</mn></msub><annotation encoding="application/x-tex">k_{2}</annotation></semantics></math> fêmeas na amostra?</p>
+</div>
+<div id="E33.p3" class="ltx_para">
+<p class="ltx_p">A diferença entre este exemplo e o exemplo <a href="#E30" title="Exemplo 2.30. ‣ 2.2 Amostragem ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.30</span></a> é que agora os indivíduos podem ser escolhidos mais de uma vez. Como resultado, não é mais suficiente determinar apenas as posições dos indivíduos do tipo 1 na amostra, mas também precisamos especificar os indivíduos para que possamos acompanhar os escolhidos repetidamente. Portanto, passamos pelo seguinte processo:</p>
+<ul id="I9" class="ltx_itemize">
+<li id="I9.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I9.i1.p1" class="ltx_para">​<p class="ltx_p">Escolha a posição dos machos (as posições restantes serão ocupadas pelas fêmeas) - há <math id="I9.i1.p1.m1" class="ltx_Math" alttext="\binom{k}{k_{1}}" display="inline"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">\binom{k}{k_{1}}</annotation></semantics></math> escolhas.</p>
+</div>
+</li>
+<li id="I9.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I9.i2.p1" class="ltx_para">​<p class="ltx_p">Escolha os machos que são escolhidos - há <math id="I9.i2.p1.m1" class="ltx_Math" alttext="n_{1}^{k_{1}}" display="inline"><semantics><msubsup><mi>n</mi><mn>1</mn><msub><mi>k</mi><mn>1</mn></msub></msubsup><annotation encoding="application/x-tex">n_{1}^{k_{1}}</annotation></semantics></math> escolhas.</p>
+</div>
+</li>
+<li id="I9.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I9.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Escolha as fêmeas que são escolhidas - há <math id="I9.i3.p1.m1" class="ltx_Math" alttext="n_{2}^{k_{2}}" display="inline"><semantics><msubsup><mi>n</mi><mn>2</mn><msub><mi>k</mi><mn>2</mn></msub></msubsup><annotation encoding="application/x-tex">n_{2}^{k_{2}}</annotation></semantics></math> escolhas.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Portanto, o número de amostras diferentes com <math id="E33.p3.m1" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> machos e <math id="E33.p3.m2" class="ltx_Math" alttext="k_{2}" display="inline"><semantics><msub><mi>k</mi><mn>2</mn></msub><annotation encoding="application/x-tex">k_{2}</annotation></semantics></math> fêmeas será</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="\binom{k}{k_{1}}n_{1}^{k_{1}}n_{2}^{k_{2}}." display="block"><semantics><mrow><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><msubsup><mi>n</mi><mn>1</mn><msub><mi>k</mi><mn>1</mn></msub></msubsup><mo>⁢</mo><msubsup><mi>n</mi><mn>2</mn><msub><mi>k</mi><mn>2</mn></msub></msubsup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\binom{k}{k_{1}}n_{1}^{k_{1}}n_{2}^{k_{2}}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Dado que o número total de amostras possíveis é <math id="E33.p3.m3" class="ltx_Math" alttext="n^{k}" display="inline"><semantics><msup><mi>n</mi><mi>k</mi></msup><annotation encoding="application/x-tex">n^{k}</annotation></semantics></math>, a probabilidade de escolher <math id="E33.p3.m4" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> machos e <math id="E33.p3.m5" class="ltx_Math" alttext="k_{2}" display="inline"><semantics><msub><mi>k</mi><mn>2</mn></msub><annotation encoding="application/x-tex">k_{2}</annotation></semantics></math> fêmeas será dada por</p>
+<div id="E34" class="ltx_equation ltx_eqn_div">
+<span><math id="E34.m1" class="ltx_Math" alttext="\frac{\binom{k}{k_{1}}n_{1}^{k_{1}}n_{2}^{k_{2}}}{n^{k}}=\binom{k}{k_{1}}\,%
+\left(\frac{n_{1}}{n}\right)^{k_{1}}\left(1-\frac{n_{1}}{n}\right)^{k-k_{1}}." display="block"><semantics><mrow><mrow><mfrac><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><msubsup><mi>n</mi><mn>1</mn><msub><mi>k</mi><mn>1</mn></msub></msubsup><mo>⁢</mo><msubsup><mi>n</mi><mn>2</mn><msub><mi>k</mi><mn>2</mn></msub></msubsup></mrow><msup><mi>n</mi><mi>k</mi></msup></mfrac><mo>=</mo><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><msub><mi>n</mi><mn>1</mn></msub><mi>n</mi></mfrac><mo>)</mo></mrow><msub><mi>k</mi><mn>1</mn></msub></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><msub><mi>n</mi><mn>1</mn></msub><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mrow><mi>k</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{\binom{k}{k_{1}}n_{1}^{k_{1}}n_{2}^{k_{2}}}{n^{k}}=\binom{k}{k_{1}}\,%
+\left(\frac{n_{1}}{n}\right)^{k_{1}}\left(1-\frac{n_{1}}{n}\right)^{k-k_{1}}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.34)</span>
+              
+              
+            
+</div>
+</div>
+</div>
+<div id="SS2.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">O acima é um exemplo de amostragem de uma população de tamanho <math id="SS2.p3.m1" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n\in\mathbb{N}</annotation></semantics></math>, que possui <math id="SS2.p3.m2" class="ltx_Math" alttext="n_{1}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">n_{1}\in\mathbb{N}</annotation></semantics></math> (<math id="SS2.p3.m3" class="ltx_Math" alttext="n_{1}\leqslant n" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>⩽</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n_{1}\leqslant n</annotation></semantics></math>) indivíduos do tipo 1 e <math id="SS2.p3.m4" class="ltx_Math" alttext="n_{2}=n-n_{1}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>n</mi><mo>−</mo><msub><mi>n</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">n_{2}=n-n_{1}</annotation></semantics></math> indivíduos do tipo 2. Nós tiramos uma amostra de tamanho <math id="SS2.p3.m5" class="ltx_Math" alttext="k&lt;N" display="inline"><semantics><mrow><mi>k</mi><mo>&lt;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">k&lt;N</annotation></semantics></math> da população inteira ’aleatoriamente’ <span class="ltx_text ltx_font_italic">com reposição</span> (ou seja, um indivíduo pode ser escolhido duas vezes). Então, a probabilidade de a amostra conter <math id="SS2.p3.m6" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> indivíduos do tipo 1 e <math id="SS2.p3.m7" class="ltx_Math" alttext="k_{2}=k-k_{1}" display="inline"><semantics><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>k</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">k_{2}=k-k_{1}</annotation></semantics></math> indivíduos do tipo 2 é dada por (<a href="#E34" title="In Exemplo 2.33. ‣ 2.2 Amostragem ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.34</span></a>).</p>
+</div>
+<div id="Thmexercise3" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.3</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexercise3.p1" class="ltx_para">
+<p class="ltx_p">Construa o espaço de probabilidade uniforme correspondente à amostragem com reposição de uma população com dois tipos de indivíduos e prove (<a href="#E34" title="In Exemplo 2.33. ‣ 2.2 Amostragem ‣ 2 Contagem ‣ Introdução à Probabilidade Notas de Aula" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.34</span></a>).
+Agora, o evento de interesse <math id="Thmexercise3.p1.m1" class="ltx_Math" alttext="\omega" display="inline"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> é o conjunto de todas as sequências que contêm <math id="Thmexercise3.p1.m2" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> números de <math id="Thmexercise3.p1.m3" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> a <math id="Thmexercise3.p1.m4" class="ltx_Math" alttext="n_{1}" display="inline"><semantics><msub><mi>n</mi><mn>1</mn></msub><annotation encoding="application/x-tex">n_{1}</annotation></semantics></math> e <math id="Thmexercise3.p1.m5" class="ltx_Math" alttext="k_{2}=k-k_{1}" display="inline"><semantics><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>k</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">k_{2}=k-k_{1}</annotation></semantics></math> números de <math id="Thmexercise3.p1.m6" class="ltx_Math" alttext="n_{1}+1" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n_{1}+1</annotation></semantics></math> a <math id="Thmexercise3.p1.m7" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmexercise4" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.4</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexercise4.p1" class="ltx_para">
+<p class="ltx_p">As probabilidades de amostragem não devem ser sensíveis a qual tipo foi considerado ’1’ e qual tipo foi considerado ’2’.
+De fato,</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\binom{k}{k_{1}}\Big{(}\frac{n_{1}}{n}\Big{)}^{k_{1}}\Big{(}1-\frac{n_{1}}{n}%
+\Big{)}^{k-k_{1}}=\binom{k}{k_{2}}\Big{(}\frac{n_{2}}{n}\Big{)}^{k_{2}}\Big{(}%
+1-\frac{n_{2}}{n}\Big{)}^{k-k_{2}}." display="block"><semantics><mrow><mrow><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msub><mi>n</mi><mn>1</mn></msub><mi>n</mi></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><msub><mi>k</mi><mn>1</mn></msub></msup><mo>⁢</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><msub><mi>n</mi><mn>1</mn></msub><mi>n</mi></mfrac></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mrow><mi>k</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></msup></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><msub><mi>k</mi><mn>2</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msub><mi>n</mi><mn>2</mn></msub><mi>n</mi></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><msub><mi>k</mi><mn>2</mn></msub></msup><mo>⁢</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><msub><mi>n</mi><mn>2</mn></msub><mi>n</mi></mfrac></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mrow><mi>k</mi><mo>−</mo><msub><mi>k</mi><mn>2</mn></msub></mrow></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\binom{k}{k_{1}}\Big{(}\frac{n_{1}}{n}\Big{)}^{k_{1}}\Big{(}1-\frac{n_{1}}{n}%
+\Big{)}^{k-k_{1}}=\binom{k}{k_{2}}\Big{(}\frac{n_{2}}{n}\Big{)}^{k_{2}}\Big{(}%
+1-\frac{n_{2}}{n}\Big{)}^{k-k_{2}}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Supondo que <math id="Thmexercise4.p1.m1" class="ltx_Math" alttext="k_{1}+k_{2}=k" display="inline"><semantics><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub></mrow><mo>=</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">k_{1}+k_{2}=k</annotation></semantics></math> e <math id="Thmexercise4.p1.m2" class="ltx_Math" alttext="n_{1}+n_{2}=n" display="inline"><semantics><mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n_{1}+n_{2}=n</annotation></semantics></math>, verifique a identidade acima.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SSx1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">Revisão de Combinatória</h2>
+
+<div id="SSx1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Conjunto finito <math id="SSx1.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>, <math id="SSx1.p1.m2" class="ltx_Math" alttext="n=|A|" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">n=|A|</annotation></semantics></math>.</p>
+</div>
+<div id="SSx1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Sequências de comprimento <math id="SSx1.p2.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> de elementos de <math id="SSx1.p2.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>:</p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="|S_{n,k}(A)|=n^{k}," display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>S</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><msup><mi>n</mi><mi>k</mi></msup></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">|S_{n,k}(A)|=n^{k},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">pois para especificar um elemento de
+<math id="SSx1.p2.m3" class="ltx_Math" alttext="S_{n,k}(A)" display="inline"><semantics><mrow><msub><mi>S</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">S_{n,k}(A)</annotation></semantics></math>, precisamos fazer <math id="SSx1.p2.m4" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> escolhas, e em cada escolha temos <math id="SSx1.p2.m5" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> opções.</p>
+</div>
+<div id="SSx1.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Permutações (ou reorganizações) de elementos de <math id="SSx1.p3.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>:</p>
+<div id="Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex9.m1" class="ltx_Math" alttext="n!," display="block"><semantics><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">n!,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">pois precisamos fazer <math id="SSx1.p3.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> escolhas, e a cada escolha o número de opções diminui.
+(leia-se "fatorial de <math id="SSx1.p3.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>")</p>
+</div>
+<div id="SSx1.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Ordenação de comprimento <math id="SSx1.p4.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> de elementos de <math id="SSx1.p4.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>:</p>
+<div id="Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex10.m1" class="ltx_Math" alttext="|O_{n,k}(A)|=\frac{n!}{(n-m)!}," display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">|O_{n,k}(A)|=\frac{n!}{(n-m)!},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">porque podemos obter qualquer elemento de <math id="SSx1.p4.m3" class="ltx_Math" alttext="O_{n,k}(A)" display="inline"><semantics><mrow><msub><mi>O</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">O_{n,k}(A)</annotation></semantics></math> permutando os elementos de <math id="SSx1.p4.m4" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>, mantendo os primeiros <math id="SSx1.p4.m5" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> elementos e esquecendo a ordem dos <math id="SSx1.p4.m6" class="ltx_Math" alttext="n-m" display="inline"><semantics><mrow><mi>n</mi><mo>−</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n-m</annotation></semantics></math> restantes.</p>
+</div>
+<div id="SSx1.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Subconjuntos de <math id="SSx1.p5.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> com cardinalidade <math id="SSx1.p5.m2" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>:</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_Math" alttext="|C_{n,k}(A)|=\binom{n}{k}=\frac{n!}{k!(n-k)!}," display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>C</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><mi>k</mi><mo>!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">|C_{n,k}(A)|=\binom{n}{k}=\frac{n!}{k!(n-k)!},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">pois podemos obter qualquer elemento de <math id="SSx1.p5.m3" class="ltx_Math" alttext="C_{n,k}(A)" display="inline"><semantics><mrow><msub><mi>C</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">C_{n,k}(A)</annotation></semantics></math> tomando os primeiros <math id="SSx1.p5.m4" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> elementos em uma permutação de <math id="SSx1.p5.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>, mantendo os primeiros <math id="SSx1.p5.m6" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> elementos e depois esquecendo a ordem desses <math id="SSx1.p5.m7" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> elementos, assim como os <math id="SSx1.p5.m8" class="ltx_Math" alttext="n-m" display="inline"><semantics><mrow><mi>n</mi><mo>−</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n-m</annotation></semantics></math> restantes.
+(leia-se "combinação de <math id="SSx1.p5.m9" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> escolha <math id="SSx1.p5.m10" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>")</p>
+</div>
+<div id="SSx1.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">Decomposição de <math id="SSx1.p6.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> em conjuntos <em class="ltx_emph ltx_font_italic">rotulados</em> <math id="SSx1.p6.m2" class="ltx_Math" alttext="A_{1},\dots,A_{r}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">A_{1},\dots,A_{r}</annotation></semantics></math> de modo que <math id="SSx1.p6.m3" class="ltx_Math" alttext="|A_{j}|=k_{j}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>A</mi><mi>j</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><msub><mi>k</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">|A_{j}|=k_{j}</annotation></semantics></math> para <math id="SSx1.p6.m4" class="ltx_Math" alttext="j=1,\dots,r" display="inline"><semantics><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>r</mi></mrow></mrow><annotation encoding="application/x-tex">j=1,\dots,r</annotation></semantics></math>, onde <math id="SSx1.p6.m5" class="ltx_Math" alttext="k_{1}+\dots+k_{r}=n" display="inline"><semantics><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>k</mi><mi>r</mi></msub></mrow><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">k_{1}+\dots+k_{r}=n</annotation></semantics></math>.</p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_Math" alttext="\frac{n!}{k_{1}!k_{2}!\cdots k_{r}!}," display="block"><semantics><mrow><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><msub><mi>k</mi><mi>r</mi></msub><mo>!</mo></mrow></mrow></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">\frac{n!}{k_{1}!k_{2}!\cdots k_{r}!},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">pois podemos obter a partição primeiro permutando todos os elementos de <math id="SSx1.p6.m6" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>, tomando <math id="SSx1.p6.m7" class="ltx_Math" alttext="A_{1}" display="inline"><semantics><msub><mi>A</mi><mn>1</mn></msub><annotation encoding="application/x-tex">A_{1}</annotation></semantics></math> como os primeiros <math id="SSx1.p6.m8" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> elementos dessa permutação, <math id="SSx1.p6.m9" class="ltx_Math" alttext="A_{2}" display="inline"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding="application/x-tex">A_{2}</annotation></semantics></math> como os próximos <math id="SSx1.p6.m10" class="ltx_Math" alttext="k_{2}" display="inline"><semantics><msub><mi>k</mi><mn>2</mn></msub><annotation encoding="application/x-tex">k_{2}</annotation></semantics></math> elementos e assim por diante, e depois esquecendo a ordem de cada bloco.
+Este é o número de maneiras pelas quais <math id="SSx1.p6.m11" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> bolas rotuladas podem ser distribuídas em <math id="SSx1.p6.m12" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> baldes rotulados sob a restrição de que, para cada <math id="SSx1.p6.m13" class="ltx_Math" alttext="j=1,\dots,r" display="inline"><semantics><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>r</mi></mrow></mrow><annotation encoding="application/x-tex">j=1,\dots,r</annotation></semantics></math>, o balde número <math id="SSx1.p6.m14" class="ltx_Math" alttext="j" display="inline"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math> recebe <math id="SSx1.p6.m15" class="ltx_Math" alttext="k_{j}" display="inline"><semantics><msub><mi>k</mi><mi>j</mi></msub><annotation encoding="application/x-tex">k_{j}</annotation></semantics></math> bolas.
+As combinações <math id="SSx1.p6.m16" class="ltx_Math" alttext="C_{n,k}(A)" display="inline"><semantics><mrow><msub><mi>C</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">C_{n,k}(A)</annotation></semantics></math> são apenas um caso particular de dois baldes rotulados como "dentro"e "fora".</p>
+</div>
+<div id="SSx1.p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">Para fornecer uma justificação mais rigorosa para os termos no denominador (que chamamos de "esquecer a ordenação"), podemos obter o número raciocinando de trás para frente, como segue. Vamos produzir uma permutação de <math id="SSx1.p7.m1" class="ltx_Math" alttext="A=\{1,\dots,n\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A=\{1,\dots,n\}</annotation></semantics></math> de duas maneiras. A primeira maneira tem três etapas:</p>
+<ol id="I10" class="ltx_enumerate">
+<li id="I10.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I10.i1.p1" class="ltx_para">​<p class="ltx_p">Escolher <math id="I10.i1.p1.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> elementos de <math id="I10.i1.p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> para irem primeiro, e deixar os <math id="I10.i1.p1.m3" class="ltx_Math" alttext="n-k" display="inline"><semantics><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">n-k</annotation></semantics></math> restantes irem depois.
+Existem <math id="I10.i1.p1.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> possibilidades.</p>
+</div>
+</li>
+<li id="I10.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I10.i2.p1" class="ltx_para">​<p class="ltx_p">Permutar os primeiros <math id="I10.i2.p1.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> elementos.
+Existem <math id="I10.i2.p1.m2" class="ltx_Math" alttext="k!" display="inline"><semantics><mrow><mi>k</mi><mo>!</mo></mrow><annotation encoding="application/x-tex">k!</annotation></semantics></math> possibilidades.</p>
+</div>
+</li>
+<li id="I10.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I10.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Permutar os elementos restantes <math id="I10.i3.p1.m1" class="ltx_Math" alttext="n-k" display="inline"><semantics><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">n-k</annotation></semantics></math>.
+Existem <math id="I10.i3.p1.m2" class="ltx_Math" alttext="(n-k)!" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><annotation encoding="application/x-tex">(n-k)!</annotation></semantics></math> possibilidades.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">No total, existem <math id="SSx1.p7.m2" class="ltx_Math" alttext="x\cdot k!\cdot(n-k)!" display="inline"><semantics><mrow><mi>x</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mi>k</mi><mo rspace="0.055em">!</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow><annotation encoding="application/x-tex">x\cdot k!\cdot(n-k)!</annotation></semantics></math> possibilidades.
+A segunda maneira é direta: apenas permutar os <math id="SSx1.p7.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> elementos já existentes, existem <math id="SSx1.p7.m4" class="ltx_Math" alttext="n!" display="inline"><semantics><mrow><mi>n</mi><mo>!</mo></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math> possibilidades.
+Portanto, <math id="SSx1.p7.m5" class="ltx_Math" alttext="n!=x\cdot k!\cdot(n-k)!" display="inline"><semantics><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>=</mo><mrow><mi>x</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mi>k</mi><mo rspace="0.055em">!</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">n!=x\cdot k!\cdot(n-k)!</annotation></semantics></math>, então acabamos de descobrir o que é <math id="SSx1.p7.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>!
+Portanto, <math id="SSx1.p7.m7" class="ltx_Math" alttext="|C_{n,k}(A)|=\frac{n!}{k!(n-k)!}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>C</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><mi>k</mi><mo>!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">|C_{n,k}(A)|=\frac{n!}{k!(n-k)!}</annotation></semantics></math>.</p>
+</div>
+<div id="SSx1.p8" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Revisão de Amostragem</span></p>
+</div>
+<div id="SSx1.p9" class="ltx_para ltx_noindent">
+<p class="ltx_p">População com <math id="SSx1.p9.m1" class="ltx_Math" alttext="n=n_{1}+n_{2}" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">n=n_{1}+n_{2}</annotation></semantics></math> indivíduos,
+onde
+<math id="SSx1.p9.m2" class="ltx_Math" alttext="n_{1}" display="inline"><semantics><msub><mi>n</mi><mn>1</mn></msub><annotation encoding="application/x-tex">n_{1}</annotation></semantics></math> são indivíduos do Tipo 1
+e
+<math id="SSx1.p9.m3" class="ltx_Math" alttext="n_{2}" display="inline"><semantics><msub><mi>n</mi><mn>2</mn></msub><annotation encoding="application/x-tex">n_{2}</annotation></semantics></math> são indivíduos do Tipo 2.</p>
+</div>
+<div id="SSx1.p10" class="ltx_para ltx_noindent">
+<p class="ltx_p">Se tirarmos uma amostra de <math id="SSx1.p10.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> indivíduos, <em class="ltx_emph ltx_font_italic">sem reposição</em>, então a chance de escolher <math id="SSx1.p10.m2" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> elementos do Tipo 1 (e, portanto, <math id="SSx1.p10.m3" class="ltx_Math" alttext="k_{2}=k-k_{1}" display="inline"><semantics><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>k</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">k_{2}=k-k_{1}</annotation></semantics></math> indivíduos do Tipo 2) é</p>
+<div id="Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex13.m1" class="ltx_Math" alttext="\frac{\binom{n_{1}}{k_{1}}\cdot\binom{n_{2}}{k_{2}}}{\binom{n}{k}}." display="block"><semantics><mrow><mfrac><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><msub><mi>n</mi><mn>1</mn></msub><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo rspace="0.055em">)</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><msub><mi>n</mi><mn>2</mn></msub><msub><mi>k</mi><mn>2</mn></msub></mfrac><mo>)</mo></mrow></mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mfrac><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{\binom{n_{1}}{k_{1}}\cdot\binom{n_{2}}{k_{2}}}{\binom{n}{k}}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Isso pode ser obtido assumindo que os indivíduos foram amostrados simultaneamente (então <math id="SSx1.p10.m4" class="ltx_Math" alttext="|\Omega|=\binom{n}{k}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">|\Omega|=\binom{n}{k}</annotation></semantics></math>) ou um após o outro (então <math id="SSx1.p10.m5" class="ltx_Math" alttext="|\Omega|=\frac{n!}{(n-k)!}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">|\Omega|=\frac{n!}{(n-k)!}</annotation></semantics></math>), e ambas as abordagens fornecem a mesma probabilidade (como esperado!).
+De fato, a segunda abordagem fornece</p>
+<div id="Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex14.m1" class="ltx_Math" alttext="\frac{\binom{k}{k_{1}}\frac{n_{1}!}{(n_{1}-k_{1})!}\frac{n_{2}!}{(n_{2}-k_{2})%
+!}}{\frac{n!}{(n-k)!}}" display="block"><semantics><mfrac><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><mfrac><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>!</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac><mo>⁢</mo><mfrac><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>!</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>−</mo><msub><mi>k</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mfrac><annotation encoding="application/x-tex">\frac{\binom{k}{k_{1}}\frac{n_{1}!}{(n_{1}-k_{1})!}\frac{n_{2}!}{(n_{2}-k_{2})%
+!}}{\frac{n!}{(n-k)!}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">que se simplifica para a primeira fórmula se expandirmos o primeiro termo.</p>
+</div>
+<div id="SSx1.p11" class="ltx_para ltx_noindent">
+<p class="ltx_p">Se tirarmos uma amostra de <math id="SSx1.p11.m1" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> indivíduos, <em class="ltx_emph ltx_font_italic">com reposição</em>, então a chance de escolher <math id="SSx1.p11.m2" class="ltx_Math" alttext="k_{1}" display="inline"><semantics><msub><mi>k</mi><mn>1</mn></msub><annotation encoding="application/x-tex">k_{1}</annotation></semantics></math> elementos do Tipo 1 (e, portanto, <math id="SSx1.p11.m3" class="ltx_Math" alttext="k_{2}=k-k_{1}" display="inline"><semantics><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>k</mi><mo>−</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">k_{2}=k-k_{1}</annotation></semantics></math> indivíduos do Tipo 2) é</p>
+<div id="Ex15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex15.m1" class="ltx_Math" alttext="\binom{k}{k_{1}}\Big{(}\frac{n_{1}}{n}\Big{)}^{k_{1}}\Big{(}1-\frac{n_{1}}{n}%
+\Big{)}^{k_{2}}." display="block"><semantics><mrow><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msub><mi>n</mi><mn>1</mn></msub><mi>n</mi></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><msub><mi>k</mi><mn>1</mn></msub></msup><mo>⁢</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><msub><mi>n</mi><mn>1</mn></msub><mi>n</mi></mfrac></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><msub><mi>k</mi><mn>2</mn></msub></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\binom{k}{k_{1}}\Big{(}\frac{n_{1}}{n}\Big{)}^{k_{1}}\Big{(}1-\frac{n_{1}}{n}%
+\Big{)}^{k_{2}}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Isso só pode ser alcançado assumindo que os indivíduos foram amostrados um após o outro, para que possamos devolvê-los à população (então <math id="SSx1.p11.m4" class="ltx_Math" alttext="|\Omega|=n^{k}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><msup><mi>n</mi><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">|\Omega|=n^{k}</annotation></semantics></math>).
+A fórmula acima é obtida após reescrever</p>
+<div id="Ex16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex16.m1" class="ltx_Math" alttext="\frac{\binom{k}{k_{1}}n_{1}^{k_{1}}n_{2}^{k_{2}}}{n^{k}}" display="block"><semantics><mfrac><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>)</mo></mrow><mo>⁢</mo><msubsup><mi>n</mi><mn>1</mn><msub><mi>k</mi><mn>1</mn></msub></msubsup><mo>⁢</mo><msubsup><mi>n</mi><mn>2</mn><msub><mi>k</mi><mn>2</mn></msub></msubsup></mrow><msup><mi>n</mi><mi>k</mi></msup></mfrac><annotation encoding="application/x-tex">\frac{\binom{k}{k_{1}}n_{1}^{k_{1}}n_{2}^{k_{2}}}{n^{k}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">de uma forma mais conveniente (ou significativa).</p>
+</div>
+<div id="SSx1.p12" class="ltx_para ltx_noindent">
+<p class="ltx_p">Observe que, se <math id="SSx1.p12.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> denota o número de indivíduos do Tipo 1 na amostra com reposição, então</p>
+<div id="Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex17.m1" class="ltx_Math" alttext="X\sim\mathrm{Binom}(k,\tfrac{n_{1}}{n})," display="block"><semantics><mrow><mrow><mi>X</mi><mo>∼</mo><mrow><mi>Binom</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>,</mo><mstyle displaystyle="false"><mfrac><msub><mi>n</mi><mn>1</mn></msub><mi>n</mi></mfrac></mstyle><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">X\sim\mathrm{Binom}(k,\tfrac{n_{1}}{n}),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">o que pode ser verificado combinando a fórmula acima com a função de massa de probabilidade de uma variável aleatória binomial.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Intro.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>
